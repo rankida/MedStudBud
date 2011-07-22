@@ -1,0 +1,22 @@
+body {
+	margin: 20px 0px;
+	background: #D8C1D9; /* Previous background: #D2B9D3; */
+	background-image: url('/images/BrushedMetal.png');
+	background-repeat: repeat-x;
+}
+
+#header {
+	height: 170px;
+}
+
+#content {
+	background: white;
+}
+
+#sidebar {
+	background: white;
+}
+
+#footer {
+	background: #A5A5A5;
+}
