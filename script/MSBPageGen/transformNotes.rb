@@ -22,8 +22,6 @@ end
 dc = DaCopier.new(exclude)
 transformer = ParseWordHtml.new(mustacheTemp)
 
-count = dc.copy src, dest, lambda {|source, dest| transform source, dest, transformer}
-
-puts "Transformed #{count} files"
+dc.copy src, dest, lambda {|source, dest| transform source, dest, transformer}
 
 puts 'Fin.'

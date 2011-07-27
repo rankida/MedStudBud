@@ -10,7 +10,6 @@ class DaCopier
 
   def copy src, dest, copyFunc
 
-    count = 0
     stage dest
 
     Dir.foreach(src) do |file|
@@ -23,12 +22,11 @@ class DaCopier
 
       if File.directory?(s)
         FileUtils.mkdir(d)
-        copy s, d, copyFunc # recurrsion :)
+        copy(s, d, copyFunc) # recurrsion :)
       else
         copyFunc == nil ? FileUtils.cp(s, d) : copyFunc.call(s, d)
       end
     end
-
   end
 
   def stage dest
