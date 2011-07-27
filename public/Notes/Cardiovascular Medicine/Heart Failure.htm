@@ -1,0 +1,1551 @@
+<!DOCTYPE html>
+<html>
+  <head>
+	  <title>MedStudyBuddy | Title</title>
+		<!--[if lt IE 9]>
+			<script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+		<![endif]-->
+		<link href="/stylesheets/blueprint/screen.css" media="screen" rel="stylesheet" type="text/css" />
+		<link href="/stylesheets/blueprint/print.css" media="print" rel="stylesheet" type="text/css" />
+		<!--[if lt IE8]>
+			<link href="/stylesheets/blueprint/ie.css" media="screen" rel="stylesheet" type="text/css" />
+		<![endif]-->
+		<link href="/stylesheets/layoutTest.css" media="screen" rel="stylesheet" type="text/css" />
+		<link href="/stylesheets/sticky-footer.css" media="screen" rel="stylesheet" type="text/css" />
+		<link rel="shortcut icon" href="/favicon.ico" />
+		<link rel="shortcut icon" href="/images/favicon.ico" />
+		<style>
+<!--
+ /* Font Definitions */
+ @font-face
+	{font-family:Wingdings;
+	panose-1:5 0 0 0 0 0 0 0 0 0;}
+@font-face
+	{font-family:"Cambria Math";
+	panose-1:2 4 5 3 5 4 6 3 2 4;}
+@font-face
+	{font-family:Cambria;
+	panose-1:2 4 5 3 5 4 6 3 2 4;}
+@font-face
+	{font-family:Calibri;
+	panose-1:2 15 5 2 2 2 4 3 2 4;}
+@font-face
+	{font-family:Candara;
+	panose-1:2 14 5 2 3 3 3 2 2 4;}
+@font-face
+	{font-family:Tahoma;
+	panose-1:2 11 6 4 3 5 4 4 2 4;}
+ /* Style Definitions */
+ p.MsoNormal, li.MsoNormal, div.MsoNormal
+	{margin:0cm;
+	margin-bottom:.0001pt;
+	font-size:11.0pt;
+	font-family:"Arial","sans-serif";}
+h1
+	{mso-style-link:"Heading 1 Char";
+	margin-top:24.0pt;
+	margin-right:0cm;
+	margin-bottom:0cm;
+	margin-left:0cm;
+	margin-bottom:.0001pt;
+	page-break-after:avoid;
+	font-size:14.0pt;
+	font-family:"Cambria","serif";
+	color:#365F91;}
+h2
+	{mso-style-link:"Heading 2 Char";
+	margin-top:10.0pt;
+	margin-right:0cm;
+	margin-bottom:0cm;
+	margin-left:0cm;
+	margin-bottom:.0001pt;
+	page-break-after:avoid;
+	font-size:13.0pt;
+	font-family:"Cambria","serif";
+	color:#4F81BD;}
+p.MsoFooter, li.MsoFooter, div.MsoFooter
+	{mso-style-link:"Footer Char";
+	margin:0cm;
+	margin-bottom:.0001pt;
+	font-size:11.0pt;
+	font-family:"Calibri","sans-serif";}
+p.MsoSubtitle, li.MsoSubtitle, div.MsoSubtitle
+	{mso-style-link:"Subtitle Char";
+	margin:0cm;
+	margin-bottom:.0001pt;
+	font-size:12.0pt;
+	font-family:"Cambria","serif";
+	color:#4F81BD;
+	letter-spacing:.75pt;
+	font-style:italic;}
+a:link, span.MsoHyperlink
+	{color:blue;
+	text-decoration:underline;}
+a:visited, span.MsoHyperlinkFollowed
+	{color:purple;
+	text-decoration:underline;}
+p.MsoAcetate, li.MsoAcetate, div.MsoAcetate
+	{mso-style-link:"Balloon Text Char";
+	margin:0cm;
+	margin-bottom:.0001pt;
+	font-size:8.0pt;
+	font-family:"Tahoma","sans-serif";}
+p.MsoListParagraph, li.MsoListParagraph, div.MsoListParagraph
+	{margin-top:0cm;
+	margin-right:0cm;
+	margin-bottom:0cm;
+	margin-left:36.0pt;
+	margin-bottom:.0001pt;
+	font-size:11.0pt;
+	font-family:"Arial","sans-serif";}
+p.MsoListParagraphCxSpFirst, li.MsoListParagraphCxSpFirst, div.MsoListParagraphCxSpFirst
+	{margin-top:0cm;
+	margin-right:0cm;
+	margin-bottom:0cm;
+	margin-left:36.0pt;
+	margin-bottom:.0001pt;
+	font-size:11.0pt;
+	font-family:"Arial","sans-serif";}
+p.MsoListParagraphCxSpMiddle, li.MsoListParagraphCxSpMiddle, div.MsoListParagraphCxSpMiddle
+	{margin-top:0cm;
+	margin-right:0cm;
+	margin-bottom:0cm;
+	margin-left:36.0pt;
+	margin-bottom:.0001pt;
+	font-size:11.0pt;
+	font-family:"Arial","sans-serif";}
+p.MsoListParagraphCxSpLast, li.MsoListParagraphCxSpLast, div.MsoListParagraphCxSpLast
+	{margin-top:0cm;
+	margin-right:0cm;
+	margin-bottom:0cm;
+	margin-left:36.0pt;
+	margin-bottom:.0001pt;
+	font-size:11.0pt;
+	font-family:"Arial","sans-serif";}
+span.MsoSubtleEmphasis
+	{color:gray;
+	font-style:italic;}
+span.MsoIntenseEmphasis
+	{color:#4F81BD;
+	font-weight:bold;
+	font-style:italic;}
+span.Heading1Char
+	{mso-style-name:"Heading 1 Char";
+	mso-style-link:"Heading 1";
+	font-family:"Cambria","serif";
+	color:#365F91;
+	font-weight:bold;}
+span.Heading2Char
+	{mso-style-name:"Heading 2 Char";
+	mso-style-link:"Heading 2";
+	font-family:"Cambria","serif";
+	color:#4F81BD;
+	font-weight:bold;}
+span.SubtitleChar
+	{mso-style-name:"Subtitle Char";
+	mso-style-link:Subtitle;
+	font-family:"Cambria","serif";
+	color:#4F81BD;
+	letter-spacing:.75pt;
+	font-style:italic;}
+p.MSBHeading1, li.MSBHeading1, div.MSBHeading1
+	{mso-style-name:"MSB Heading 1";
+	mso-style-link:"MSB Heading 1 Char";
+	margin:0cm;
+	margin-bottom:.0001pt;
+	line-height:150%;
+	font-size:18.0pt;
+	font-family:"Candara","sans-serif";
+	color:purple;
+	font-weight:bold;}
+p.MSBHeading2, li.MSBHeading2, div.MSBHeading2
+	{mso-style-name:"MSB Heading 2";
+	mso-style-link:"MSB Heading 2 Char";
+	margin:0cm;
+	margin-bottom:.0001pt;
+	font-size:16.0pt;
+	font-family:"Calibri","sans-serif";
+	font-weight:bold;
+	text-decoration:underline;}
+span.MSBHeading1Char
+	{mso-style-name:"MSB Heading 1 Char";
+	mso-style-link:"MSB Heading 1";
+	font-family:"Candara","sans-serif";
+	color:purple;
+	font-weight:bold;}
+p.MSBsub-heading, li.MSBsub-heading, div.MSBsub-heading
+	{mso-style-name:"MSB sub-heading";
+	mso-style-link:"MSB sub-heading Char";
+	margin:0cm;
+	margin-bottom:.0001pt;
+	font-size:14.0pt;
+	font-family:"Candara","sans-serif";
+	font-weight:bold;
+	text-decoration:underline;}
+span.MSBHeading2Char
+	{mso-style-name:"MSB Heading 2 Char";
+	mso-style-link:"MSB Heading 2";
+	font-family:"Calibri","sans-serif";
+	font-weight:bold;
+	text-decoration:underline;}
+p.MSBnormaltext, li.MSBnormaltext, div.MSBnormaltext
+	{mso-style-name:"MSB normal text";
+	mso-style-link:"MSB normal text Char";
+	margin-top:0cm;
+	margin-right:0cm;
+	margin-bottom:0cm;
+	margin-left:20.95pt;
+	margin-bottom:.0001pt;
+	text-indent:-17.85pt;
+	font-size:11.0pt;
+	font-family:"Arial","sans-serif";}
+p.MSBnormaltextCxSpFirst, li.MSBnormaltextCxSpFirst, div.MSBnormaltextCxSpFirst
+	{mso-style-name:"MSB normal textCxSpFirst";
+	mso-style-link:"MSB normal text Char";
+	margin-top:0cm;
+	margin-right:0cm;
+	margin-bottom:0cm;
+	margin-left:20.95pt;
+	margin-bottom:.0001pt;
+	text-indent:-17.85pt;
+	font-size:11.0pt;
+	font-family:"Arial","sans-serif";}
+p.MSBnormaltextCxSpMiddle, li.MSBnormaltextCxSpMiddle, div.MSBnormaltextCxSpMiddle
+	{mso-style-name:"MSB normal textCxSpMiddle";
+	mso-style-link:"MSB normal text Char";
+	margin-top:0cm;
+	margin-right:0cm;
+	margin-bottom:0cm;
+	margin-left:20.95pt;
+	margin-bottom:.0001pt;
+	text-indent:-17.85pt;
+	font-size:11.0pt;
+	font-family:"Arial","sans-serif";}
+p.MSBnormaltextCxSpLast, li.MSBnormaltextCxSpLast, div.MSBnormaltextCxSpLast
+	{mso-style-name:"MSB normal textCxSpLast";
+	mso-style-link:"MSB normal text Char";
+	margin-top:0cm;
+	margin-right:0cm;
+	margin-bottom:0cm;
+	margin-left:20.95pt;
+	margin-bottom:.0001pt;
+	text-indent:-17.85pt;
+	font-size:11.0pt;
+	font-family:"Arial","sans-serif";}
+span.MSBsub-headingChar
+	{mso-style-name:"MSB sub-heading Char";
+	mso-style-link:"MSB sub-heading";
+	font-family:"Candara","sans-serif";
+	font-weight:bold;
+	text-decoration:underline;}
+span.MSBnormaltextChar
+	{mso-style-name:"MSB normal text Char";
+	mso-style-link:"MSB normal text";
+	font-family:"Arial","sans-serif";}
+p.MSBsub-headingitalics, li.MSBsub-headingitalics, div.MSBsub-headingitalics
+	{mso-style-name:"MSB sub-heading \(italics\)";
+	mso-style-link:"MSB sub-heading \(italics\) Char";
+	margin:0cm;
+	margin-bottom:.0001pt;
+	font-size:14.0pt;
+	font-family:"Candara","sans-serif";
+	font-weight:bold;
+	font-style:italic;
+	text-decoration:underline;}
+span.MSBsub-headingitalicsChar
+	{mso-style-name:"MSB sub-heading \(italics\) Char";
+	mso-style-link:"MSB sub-heading \(italics\)";
+	font-family:"Candara","sans-serif";
+	font-weight:bold;
+	font-style:italic;
+	text-decoration:underline;}
+p.MSBitalicsnormaltext, li.MSBitalicsnormaltext, div.MSBitalicsnormaltext
+	{mso-style-name:"MSB italics normal text";
+	mso-style-link:"MSB italics normal text Char";
+	margin:0cm;
+	margin-bottom:.0001pt;
+	font-size:11.0pt;
+	font-family:"Arial","sans-serif";
+	font-style:italic;}
+p.MSBitalicsnormaltextCxSpFirst, li.MSBitalicsnormaltextCxSpFirst, div.MSBitalicsnormaltextCxSpFirst
+	{mso-style-name:"MSB italics normal textCxSpFirst";
+	mso-style-link:"MSB italics normal text Char";
+	margin:0cm;
+	margin-bottom:.0001pt;
+	font-size:11.0pt;
+	font-family:"Arial","sans-serif";
+	font-style:italic;}
+p.MSBitalicsnormaltextCxSpMiddle, li.MSBitalicsnormaltextCxSpMiddle, div.MSBitalicsnormaltextCxSpMiddle
+	{mso-style-name:"MSB italics normal textCxSpMiddle";
+	mso-style-link:"MSB italics normal text Char";
+	margin:0cm;
+	margin-bottom:.0001pt;
+	font-size:11.0pt;
+	font-family:"Arial","sans-serif";
+	font-style:italic;}
+p.MSBitalicsnormaltextCxSpLast, li.MSBitalicsnormaltextCxSpLast, div.MSBitalicsnormaltextCxSpLast
+	{mso-style-name:"MSB italics normal textCxSpLast";
+	mso-style-link:"MSB italics normal text Char";
+	margin:0cm;
+	margin-bottom:.0001pt;
+	font-size:11.0pt;
+	font-family:"Arial","sans-serif";
+	font-style:italic;}
+p.MSBReference, li.MSBReference, div.MSBReference
+	{mso-style-name:"MSB Reference";
+	mso-style-link:"MSB Reference Char";
+	margin-top:0cm;
+	margin-right:0cm;
+	margin-bottom:0cm;
+	margin-left:20.95pt;
+	margin-bottom:.0001pt;
+	text-indent:-17.85pt;
+	font-size:10.0pt;
+	font-family:"Arial","sans-serif";}
+p.MSBReferenceCxSpFirst, li.MSBReferenceCxSpFirst, div.MSBReferenceCxSpFirst
+	{mso-style-name:"MSB ReferenceCxSpFirst";
+	mso-style-link:"MSB Reference Char";
+	margin-top:0cm;
+	margin-right:0cm;
+	margin-bottom:0cm;
+	margin-left:20.95pt;
+	margin-bottom:.0001pt;
+	text-indent:-17.85pt;
+	font-size:10.0pt;
+	font-family:"Arial","sans-serif";}
+p.MSBReferenceCxSpMiddle, li.MSBReferenceCxSpMiddle, div.MSBReferenceCxSpMiddle
+	{mso-style-name:"MSB ReferenceCxSpMiddle";
+	mso-style-link:"MSB Reference Char";
+	margin-top:0cm;
+	margin-right:0cm;
+	margin-bottom:0cm;
+	margin-left:20.95pt;
+	margin-bottom:.0001pt;
+	text-indent:-17.85pt;
+	font-size:10.0pt;
+	font-family:"Arial","sans-serif";}
+p.MSBReferenceCxSpLast, li.MSBReferenceCxSpLast, div.MSBReferenceCxSpLast
+	{mso-style-name:"MSB ReferenceCxSpLast";
+	mso-style-link:"MSB Reference Char";
+	margin-top:0cm;
+	margin-right:0cm;
+	margin-bottom:0cm;
+	margin-left:20.95pt;
+	margin-bottom:.0001pt;
+	text-indent:-17.85pt;
+	font-size:10.0pt;
+	font-family:"Arial","sans-serif";}
+span.MSBitalicsnormaltextChar
+	{mso-style-name:"MSB italics normal text Char";
+	mso-style-link:"MSB italics normal text";
+	font-family:"Arial","sans-serif";
+	font-style:italic;}
+span.MSBReferenceChar
+	{mso-style-name:"MSB Reference Char";
+	mso-style-link:"MSB Reference";
+	font-family:"Arial","sans-serif";}
+p.MSBreferenceHeading, li.MSBreferenceHeading, div.MSBreferenceHeading
+	{mso-style-name:"MSB reference Heading";
+	mso-style-link:"MSB reference Heading Char";
+	margin:0cm;
+	margin-bottom:.0001pt;
+	font-size:10.0pt;
+	font-family:"Arial","sans-serif";
+	text-decoration:underline;}
+span.MSBreferenceHeadingChar
+	{mso-style-name:"MSB reference Heading Char";
+	mso-style-link:"MSB reference Heading";
+	font-family:"Arial","sans-serif";
+	font-weight:bold;
+	text-decoration:underline;}
+p.MSBunderlinearrowbullet, li.MSBunderlinearrowbullet, div.MSBunderlinearrowbullet
+	{mso-style-name:"MSB underline + arrow bullet";
+	mso-style-link:"MSB underline + arrow bullet Char";
+	margin-top:0cm;
+	margin-right:0cm;
+	margin-bottom:0cm;
+	margin-left:36.0pt;
+	margin-bottom:.0001pt;
+	text-indent:-18.0pt;
+	font-size:11.0pt;
+	font-family:"Arial","sans-serif";
+	text-decoration:underline;}
+p.MSBunderlinearrowbulletCxSpFirst, li.MSBunderlinearrowbulletCxSpFirst, div.MSBunderlinearrowbulletCxSpFirst
+	{mso-style-name:"MSB underline + arrow bulletCxSpFirst";
+	mso-style-link:"MSB underline + arrow bullet Char";
+	margin-top:0cm;
+	margin-right:0cm;
+	margin-bottom:0cm;
+	margin-left:36.0pt;
+	margin-bottom:.0001pt;
+	text-indent:-18.0pt;
+	font-size:11.0pt;
+	font-family:"Arial","sans-serif";
+	text-decoration:underline;}
+p.MSBunderlinearrowbulletCxSpMiddle, li.MSBunderlinearrowbulletCxSpMiddle, div.MSBunderlinearrowbulletCxSpMiddle
+	{mso-style-name:"MSB underline + arrow bulletCxSpMiddle";
+	mso-style-link:"MSB underline + arrow bullet Char";
+	margin-top:0cm;
+	margin-right:0cm;
+	margin-bottom:0cm;
+	margin-left:36.0pt;
+	margin-bottom:.0001pt;
+	text-indent:-18.0pt;
+	font-size:11.0pt;
+	font-family:"Arial","sans-serif";
+	text-decoration:underline;}
+p.MSBunderlinearrowbulletCxSpLast, li.MSBunderlinearrowbulletCxSpLast, div.MSBunderlinearrowbulletCxSpLast
+	{mso-style-name:"MSB underline + arrow bulletCxSpLast";
+	mso-style-link:"MSB underline + arrow bullet Char";
+	margin-top:0cm;
+	margin-right:0cm;
+	margin-bottom:0cm;
+	margin-left:36.0pt;
+	margin-bottom:.0001pt;
+	text-indent:-18.0pt;
+	font-size:11.0pt;
+	font-family:"Arial","sans-serif";
+	text-decoration:underline;}
+span.MSBunderlinearrowbulletChar
+	{mso-style-name:"MSB underline + arrow bullet Char";
+	mso-style-link:"MSB underline + arrow bullet";
+	font-family:"Arial","sans-serif";
+	text-decoration:underline;}
+span.BalloonTextChar
+	{mso-style-name:"Balloon Text Char";
+	mso-style-link:"Balloon Text";
+	font-family:"Tahoma","sans-serif";}
+p.MSBnormaltextnolist, li.MSBnormaltextnolist, div.MSBnormaltextnolist
+	{mso-style-name:"MSB normal text \(no list\)";
+	mso-style-link:"MSB normal text \(no list\) Char";
+	margin-top:0cm;
+	margin-right:0cm;
+	margin-bottom:0cm;
+	margin-left:3.1pt;
+	margin-bottom:.0001pt;
+	font-size:11.0pt;
+	font-family:"Arial","sans-serif";}
+p.MSBnormaltextnolistCxSpFirst, li.MSBnormaltextnolistCxSpFirst, div.MSBnormaltextnolistCxSpFirst
+	{mso-style-name:"MSB normal text \(no list\)CxSpFirst";
+	mso-style-link:"MSB normal text \(no list\) Char";
+	margin-top:0cm;
+	margin-right:0cm;
+	margin-bottom:0cm;
+	margin-left:3.1pt;
+	margin-bottom:.0001pt;
+	font-size:11.0pt;
+	font-family:"Arial","sans-serif";}
+p.MSBnormaltextnolistCxSpMiddle, li.MSBnormaltextnolistCxSpMiddle, div.MSBnormaltextnolistCxSpMiddle
+	{mso-style-name:"MSB normal text \(no list\)CxSpMiddle";
+	mso-style-link:"MSB normal text \(no list\) Char";
+	margin-top:0cm;
+	margin-right:0cm;
+	margin-bottom:0cm;
+	margin-left:3.1pt;
+	margin-bottom:.0001pt;
+	font-size:11.0pt;
+	font-family:"Arial","sans-serif";}
+p.MSBnormaltextnolistCxSpLast, li.MSBnormaltextnolistCxSpLast, div.MSBnormaltextnolistCxSpLast
+	{mso-style-name:"MSB normal text \(no list\)CxSpLast";
+	mso-style-link:"MSB normal text \(no list\) Char";
+	margin-top:0cm;
+	margin-right:0cm;
+	margin-bottom:0cm;
+	margin-left:3.1pt;
+	margin-bottom:.0001pt;
+	font-size:11.0pt;
+	font-family:"Arial","sans-serif";}
+p.MSBboldnormaltext, li.MSBboldnormaltext, div.MSBboldnormaltext
+	{mso-style-name:"MSB bold normal text";
+	mso-style-link:"MSB bold normal text Char";
+	margin:0cm;
+	margin-bottom:.0001pt;
+	font-size:11.0pt;
+	font-family:"Arial","sans-serif";
+	font-weight:bold;}
+p.MSBboldnormaltextCxSpFirst, li.MSBboldnormaltextCxSpFirst, div.MSBboldnormaltextCxSpFirst
+	{mso-style-name:"MSB bold normal textCxSpFirst";
+	mso-style-link:"MSB bold normal text Char";
+	margin:0cm;
+	margin-bottom:.0001pt;
+	font-size:11.0pt;
+	font-family:"Arial","sans-serif";
+	font-weight:bold;}
+p.MSBboldnormaltextCxSpMiddle, li.MSBboldnormaltextCxSpMiddle, div.MSBboldnormaltextCxSpMiddle
+	{mso-style-name:"MSB bold normal textCxSpMiddle";
+	mso-style-link:"MSB bold normal text Char";
+	margin:0cm;
+	margin-bottom:.0001pt;
+	font-size:11.0pt;
+	font-family:"Arial","sans-serif";
+	font-weight:bold;}
+p.MSBboldnormaltextCxSpLast, li.MSBboldnormaltextCxSpLast, div.MSBboldnormaltextCxSpLast
+	{mso-style-name:"MSB bold normal textCxSpLast";
+	mso-style-link:"MSB bold normal text Char";
+	margin:0cm;
+	margin-bottom:.0001pt;
+	font-size:11.0pt;
+	font-family:"Arial","sans-serif";
+	font-weight:bold;}
+span.MSBnormaltextnolistChar
+	{mso-style-name:"MSB normal text \(no list\) Char";
+	mso-style-link:"MSB normal text \(no list\)";
+	font-family:"Arial","sans-serif";}
+p.MSBunderlinenormaltext, li.MSBunderlinenormaltext, div.MSBunderlinenormaltext
+	{mso-style-name:"MSB underline normal text";
+	mso-style-link:"MSB underline normal text Char";
+	margin:0cm;
+	margin-bottom:.0001pt;
+	font-size:11.0pt;
+	font-family:"Arial","sans-serif";
+	text-decoration:underline;}
+p.MSBunderlinenormaltextCxSpFirst, li.MSBunderlinenormaltextCxSpFirst, div.MSBunderlinenormaltextCxSpFirst
+	{mso-style-name:"MSB underline normal textCxSpFirst";
+	mso-style-link:"MSB underline normal text Char";
+	margin:0cm;
+	margin-bottom:.0001pt;
+	font-size:11.0pt;
+	font-family:"Arial","sans-serif";
+	text-decoration:underline;}
+p.MSBunderlinenormaltextCxSpMiddle, li.MSBunderlinenormaltextCxSpMiddle, div.MSBunderlinenormaltextCxSpMiddle
+	{mso-style-name:"MSB underline normal textCxSpMiddle";
+	mso-style-link:"MSB underline normal text Char";
+	margin:0cm;
+	margin-bottom:.0001pt;
+	font-size:11.0pt;
+	font-family:"Arial","sans-serif";
+	text-decoration:underline;}
+p.MSBunderlinenormaltextCxSpLast, li.MSBunderlinenormaltextCxSpLast, div.MSBunderlinenormaltextCxSpLast
+	{mso-style-name:"MSB underline normal textCxSpLast";
+	mso-style-link:"MSB underline normal text Char";
+	margin:0cm;
+	margin-bottom:.0001pt;
+	font-size:11.0pt;
+	font-family:"Arial","sans-serif";
+	text-decoration:underline;}
+span.MSBboldnormaltextChar
+	{mso-style-name:"MSB bold normal text Char";
+	mso-style-link:"MSB bold normal text";
+	font-family:"Arial","sans-serif";
+	font-weight:bold;}
+p.MSBemphasis1x, li.MSBemphasis1x, div.MSBemphasis1x
+	{mso-style-name:"MSB emphasis 1x";
+	mso-style-link:"MSB emphasis 1x Char";
+	margin:0cm;
+	margin-bottom:.0001pt;
+	font-size:11.0pt;
+	font-family:"Arial","sans-serif";
+	font-weight:bold;
+	text-decoration:underline;}
+p.MSBemphasis1xCxSpFirst, li.MSBemphasis1xCxSpFirst, div.MSBemphasis1xCxSpFirst
+	{mso-style-name:"MSB emphasis 1xCxSpFirst";
+	mso-style-link:"MSB emphasis 1x Char";
+	margin:0cm;
+	margin-bottom:.0001pt;
+	font-size:11.0pt;
+	font-family:"Arial","sans-serif";
+	font-weight:bold;
+	text-decoration:underline;}
+p.MSBemphasis1xCxSpMiddle, li.MSBemphasis1xCxSpMiddle, div.MSBemphasis1xCxSpMiddle
+	{mso-style-name:"MSB emphasis 1xCxSpMiddle";
+	mso-style-link:"MSB emphasis 1x Char";
+	margin:0cm;
+	margin-bottom:.0001pt;
+	font-size:11.0pt;
+	font-family:"Arial","sans-serif";
+	font-weight:bold;
+	text-decoration:underline;}
+p.MSBemphasis1xCxSpLast, li.MSBemphasis1xCxSpLast, div.MSBemphasis1xCxSpLast
+	{mso-style-name:"MSB emphasis 1xCxSpLast";
+	mso-style-link:"MSB emphasis 1x Char";
+	margin:0cm;
+	margin-bottom:.0001pt;
+	font-size:11.0pt;
+	font-family:"Arial","sans-serif";
+	font-weight:bold;
+	text-decoration:underline;}
+span.MSBunderlinenormaltextChar
+	{mso-style-name:"MSB underline normal text Char";
+	mso-style-link:"MSB underline normal text";
+	font-family:"Arial","sans-serif";
+	text-decoration:underline;}
+p.MSBemphasis2x, li.MSBemphasis2x, div.MSBemphasis2x
+	{mso-style-name:"MSB emphasis 2x";
+	mso-style-link:"MSB emphasis 2x Char";
+	margin:0cm;
+	margin-bottom:.0001pt;
+	font-size:11.0pt;
+	font-family:"Arial","sans-serif";
+	color:#CC66FF;
+	font-weight:bold;
+	font-style:italic;}
+p.MSBemphasis2xCxSpFirst, li.MSBemphasis2xCxSpFirst, div.MSBemphasis2xCxSpFirst
+	{mso-style-name:"MSB emphasis 2xCxSpFirst";
+	mso-style-link:"MSB emphasis 2x Char";
+	margin:0cm;
+	margin-bottom:.0001pt;
+	font-size:11.0pt;
+	font-family:"Arial","sans-serif";
+	color:#CC66FF;
+	font-weight:bold;
+	font-style:italic;}
+p.MSBemphasis2xCxSpMiddle, li.MSBemphasis2xCxSpMiddle, div.MSBemphasis2xCxSpMiddle
+	{mso-style-name:"MSB emphasis 2xCxSpMiddle";
+	mso-style-link:"MSB emphasis 2x Char";
+	margin:0cm;
+	margin-bottom:.0001pt;
+	font-size:11.0pt;
+	font-family:"Arial","sans-serif";
+	color:#CC66FF;
+	font-weight:bold;
+	font-style:italic;}
+p.MSBemphasis2xCxSpLast, li.MSBemphasis2xCxSpLast, div.MSBemphasis2xCxSpLast
+	{mso-style-name:"MSB emphasis 2xCxSpLast";
+	mso-style-link:"MSB emphasis 2x Char";
+	margin:0cm;
+	margin-bottom:.0001pt;
+	font-size:11.0pt;
+	font-family:"Arial","sans-serif";
+	color:#CC66FF;
+	font-weight:bold;
+	font-style:italic;}
+span.MSBemphasis1xChar
+	{mso-style-name:"MSB emphasis 1x Char";
+	mso-style-link:"MSB emphasis 1x";
+	font-family:"Arial","sans-serif";
+	font-weight:bold;
+	text-decoration:underline;}
+p.Referenceheading, li.Referenceheading, div.Referenceheading
+	{mso-style-name:"Reference heading";
+	mso-style-link:"Reference heading Char";
+	margin:0cm;
+	margin-bottom:.0001pt;
+	font-size:10.0pt;
+	font-family:"Arial","sans-serif";
+	font-weight:bold;
+	text-decoration:underline;}
+span.MSBemphasis2xChar
+	{mso-style-name:"MSB emphasis 2x Char";
+	mso-style-link:"MSB emphasis 2x";
+	font-family:"Arial","sans-serif";
+	color:#CC66FF;
+	font-weight:bold;
+	font-style:italic;}
+span.ReferenceheadingChar
+	{mso-style-name:"Reference heading Char";
+	mso-style-link:"Reference heading";
+	font-family:"Arial","sans-serif";
+	font-weight:bold;
+	text-decoration:underline;}
+p.Style1, li.Style1, div.Style1
+	{mso-style-name:Style1;
+	mso-style-link:"Style1 Char";
+	margin-top:0cm;
+	margin-right:0cm;
+	margin-bottom:0cm;
+	margin-left:3.1pt;
+	margin-bottom:.0001pt;
+	font-size:11.0pt;
+	font-family:"Arial","sans-serif";
+	font-style:italic;}
+p.Style1CxSpFirst, li.Style1CxSpFirst, div.Style1CxSpFirst
+	{mso-style-name:Style1CxSpFirst;
+	mso-style-link:"Style1 Char";
+	margin-top:0cm;
+	margin-right:0cm;
+	margin-bottom:0cm;
+	margin-left:3.1pt;
+	margin-bottom:.0001pt;
+	font-size:11.0pt;
+	font-family:"Arial","sans-serif";
+	font-style:italic;}
+p.Style1CxSpMiddle, li.Style1CxSpMiddle, div.Style1CxSpMiddle
+	{mso-style-name:Style1CxSpMiddle;
+	mso-style-link:"Style1 Char";
+	margin-top:0cm;
+	margin-right:0cm;
+	margin-bottom:0cm;
+	margin-left:3.1pt;
+	margin-bottom:.0001pt;
+	font-size:11.0pt;
+	font-family:"Arial","sans-serif";
+	font-style:italic;}
+p.Style1CxSpLast, li.Style1CxSpLast, div.Style1CxSpLast
+	{mso-style-name:Style1CxSpLast;
+	mso-style-link:"Style1 Char";
+	margin-top:0cm;
+	margin-right:0cm;
+	margin-bottom:0cm;
+	margin-left:3.1pt;
+	margin-bottom:.0001pt;
+	font-size:11.0pt;
+	font-family:"Arial","sans-serif";
+	font-style:italic;}
+span.Style1Char
+	{mso-style-name:"Style1 Char";
+	mso-style-link:Style1;
+	font-family:"Arial","sans-serif";
+	font-style:italic;}
+p.MSBboldunderlinednormaltext, li.MSBboldunderlinednormaltext, div.MSBboldunderlinednormaltext
+	{mso-style-name:"MSB bold underlined normal text";
+	mso-style-link:"MSB bold underlined normal text Char";
+	margin:0cm;
+	margin-bottom:.0001pt;
+	font-size:11.0pt;
+	font-family:"Arial","sans-serif";
+	font-weight:bold;
+	text-decoration:underline;}
+p.MSBboldunderlinednormaltextCxSpFirst, li.MSBboldunderlinednormaltextCxSpFirst, div.MSBboldunderlinednormaltextCxSpFirst
+	{mso-style-name:"MSB bold underlined normal textCxSpFirst";
+	mso-style-link:"MSB bold underlined normal text Char";
+	margin:0cm;
+	margin-bottom:.0001pt;
+	font-size:11.0pt;
+	font-family:"Arial","sans-serif";
+	font-weight:bold;
+	text-decoration:underline;}
+p.MSBboldunderlinednormaltextCxSpMiddle, li.MSBboldunderlinednormaltextCxSpMiddle, div.MSBboldunderlinednormaltextCxSpMiddle
+	{mso-style-name:"MSB bold underlined normal textCxSpMiddle";
+	mso-style-link:"MSB bold underlined normal text Char";
+	margin:0cm;
+	margin-bottom:.0001pt;
+	font-size:11.0pt;
+	font-family:"Arial","sans-serif";
+	font-weight:bold;
+	text-decoration:underline;}
+p.MSBboldunderlinednormaltextCxSpLast, li.MSBboldunderlinednormaltextCxSpLast, div.MSBboldunderlinednormaltextCxSpLast
+	{mso-style-name:"MSB bold underlined normal textCxSpLast";
+	mso-style-link:"MSB bold underlined normal text Char";
+	margin:0cm;
+	margin-bottom:.0001pt;
+	font-size:11.0pt;
+	font-family:"Arial","sans-serif";
+	font-weight:bold;
+	text-decoration:underline;}
+span.MSBboldunderlinednormaltextChar
+	{mso-style-name:"MSB bold underlined normal text Char";
+	mso-style-link:"MSB bold underlined normal text";
+	font-family:"Arial","sans-serif";
+	font-weight:bold;
+	text-decoration:underline;}
+span.FooterChar
+	{mso-style-name:"Footer Char";
+	mso-style-link:Footer;
+	font-family:"Calibri","sans-serif";}
+ /* Page Definitions */
+ @page WordSection1
+	{size:595.3pt 841.9pt;
+	margin:72.0pt 72.0pt 72.0pt 72.0pt;}
+div.WordSection1
+	{page:WordSection1;}
+ /* List Definitions */
+ ol
+	{margin-bottom:0cm;}
+ul
+	{margin-bottom:0cm;}
+-->
+</style>
+  </head>
+  <body>
+	  <div id="wrap">
+			<div id="main" class="container">
+		  	<div id="header">
+					<div style="float:left;">
+						<img src="/images/MSBLogo.png">
+					</div>
+					<img src="/images/MSBText.png">
+				</div>
+				<div id="content" class="span-16 prepend-1">
+					
+					<div class="WordSection1">
+
+<p class="MSBHeading1">Heart failure</p>
+
+<p class="MsoNormal" style="margin-left:36.0pt;text-indent:-18.0pt">-<span style='font:7.0pt "Times New Roman"'>       
+</span>Heart failure is a syndrome, not a diagnosis</p>
+
+<p class="MsoNormal" style="margin-left:36.0pt;text-indent:-18.0pt">-<span style='font:7.0pt "Times New Roman"'>       
+</span>It describes the s/s resulting from inadequate cardiac output </p>
+
+<p class="MsoNormal" style="margin-left:36.0pt;text-indent:-18.0pt">-<span style='font:7.0pt "Times New Roman"'>       
+</span>Poor prognosis: 50% die in 5 years</p>
+
+<p class="MsoNormal"> </p>
+
+<table class="MsoNormalTable" border="1" cellspacing="0" cellpadding="0" style="background:yellow;border-collapse:collapse;border:none"><tr style="height:68.15pt">
+<td width="207" valign="top" style="width:124.0pt;border:solid windowtext 1.0pt;
+  padding:0cm 5.4pt 0cm 5.4pt;height:68.15pt">
+  <p class="MsoNormal">Triad of symptoms:</p>
+  <p class="MsoNormal"> </p>
+  <p class="MsoNormal" style="margin-left:36.0pt;text-indent:-18.0pt"><span style="font-family:Wingdings">Ø<span style='font:7.0pt "Times New Roman"'> 
+  </span></span>Dyspnoea</p>
+  <p class="MsoNormal" style="margin-left:36.0pt;text-indent:-18.0pt"><span style="font-family:Wingdings">Ø<span style='font:7.0pt "Times New Roman"'> 
+  </span></span>Fatigue</p>
+  <p class="MsoNormal" style="margin-left:36.0pt;text-indent:-18.0pt"><span style="font-family:Wingdings">Ø<span style='font:7.0pt "Times New Roman"'> 
+  </span></span>Oedema</p>
+  <p class="MsoNormal"> </p>
+  </td>
+ </tr></table>
+<p class="MsoNormal"> </p>
+
+<p class="MSBemphasis1xCxSpFirst"><u>Causes:</u></p>
+
+<p class="MSBemphasis1xCxSpLast"><u><span style="text-decoration:none"> </span></u></p>
+
+<p class="MsoNormal" style="margin-left:36.0pt;text-indent:-18.0pt">-<span style='font:7.0pt "Times New Roman"'>       
+</span>IHD, HTN, valvular heart disease, arrhythmias, cardiomyopathies,
+alcohol, congenital heart disease</p>
+
+<p class="MSBemphasis1x"><u>Signs</u></p>
+
+<p class="MsoNormal"> </p>
+
+<p class="MsoNormal" style="margin-left:36.0pt;text-indent:-18.0pt">-<span style='font:7.0pt "Times New Roman"'>       
+</span>&#8593;HR, cold peripheries, cyanosis, low BP, narrow pulse pressure on
+BP, displaced apex (dilatation), left parasternal haeve (= RV hypertrophy 2º
+pulmonary hypertension), murmurs, exhaustion.</p>
+
+<p class="MsoNormal"> </p>
+
+<p class="MSBsub-heading">Investigations</p>
+
+<p class="MsoNormal"> </p>
+
+<p class="MsoNormal">Diagnosis requires s/s of HF + objective evidence of cardiac
+dysfunction</p>
+
+<p class="MsoNormal"> </p>
+
+<p class="MsoNormal">1<sup>st</sup> line</p>
+
+<p class="MsoNormal" style="margin-left:36.0pt;text-indent:-18.0pt"><span style="font-family:Wingdings">Ø<span style='font:7.0pt "Times New Roman"'> 
+</span></span><b>ECG </b></p>
+
+<p class="MsoNormal" style="margin-left:36.0pt;text-indent:-18.0pt"><span style="font-family:Wingdings">Ø<span style='font:7.0pt "Times New Roman"'> 
+</span></span><b>BNP </b></p>
+
+<p class="MsoNormal" style="margin-left:72.0pt"><span style="font-family:Wingdings">à</span>
+If both are normal = not HF (<i>NICE</i>)</p>
+
+<p class="MsoNormal" style="margin-left:72.0pt"><span style="font-family:Wingdings">à</span>
+If abnormal <span style="font-family:Wingdings">à</span> do ECHO!</p>
+
+<p class="MsoNormal"> </p>
+
+<p class="MsoNormal">Echo</p>
+
+<p class="MsoNormal" style="margin-left:36.0pt;text-indent:-18.0pt">-<span style='font:7.0pt "Times New Roman"'>       
+</span>Gold standard!</p>
+
+<p class="MsoNormal" style="margin-left:36.0pt;text-indent:-18.0pt">-<span style='font:7.0pt "Times New Roman"'>       
+</span>Shows abnormal wall contraction - ?MI </p>
+
+<p class="MsoNormal" style="margin-left:36.0pt;text-indent:-18.0pt">-<span style='font:7.0pt "Times New Roman"'>       
+</span>Valve dysfunction</p>
+
+<p class="MsoNormal" style="margin-left:36.0pt;text-indent:-18.0pt">-<span style='font:7.0pt "Times New Roman"'>       
+</span>Dilatation or hypertrophy</p>
+
+<p class="MsoNormal" style="margin-left:36.0pt;text-indent:-18.0pt">-<span style='font:7.0pt "Times New Roman"'>       
+</span>LV dysfunction – ejection fraction?</p>
+
+<p class="MsoNormal"> </p>
+
+<p class="MSBemphasis1x"><u>Other tests:</u></p>
+
+<p class="MsoNormal"> </p>
+
+<p class="MsoNormal" style="margin-left:36.0pt;text-indent:-18.0pt">-<span style='font:7.0pt "Times New Roman"'>       
+</span>FBC – anaemia</p>
+
+<p class="MsoNormal" style="margin-left:36.0pt;text-indent:-18.0pt">-<span style='font:7.0pt "Times New Roman"'>       
+</span>U+Es – monitor K – drugs can alter it; disturbances can precipitate
+arrhythmias </p>
+
+<p class="MsoNormal" style="margin-left:36.0pt;text-indent:-18.0pt">-<span style='font:7.0pt "Times New Roman"'>       
+</span>Also: TFTs, LFTs, Ferritin (IDA? haemochromatosis?)</p>
+
+<p class="MsoNormal" style="margin-left:36.0pt;text-indent:-18.0pt">-<span style='font:7.0pt "Times New Roman"'>       
+</span>ABGs</p>
+
+<p class="MsoNormal" style="margin-left:36.0pt;text-indent:-18.0pt">-<span style='font:7.0pt "Times New Roman"'>       
+</span>Troponin if acute setting (± chest pain)</p>
+
+<p class="MsoNormal"> </p>
+
+<p class="MsoNormal" style="margin-left:21.0pt;text-indent:-18.0pt"><span style='font-family:"Times New Roman","serif"'>-<span style='font:7.0pt "Times New Roman"'>       
+</span></span>CXR</p>
+
+<p class="MsoNormal" style="margin-left:57.0pt;text-indent:-18.0pt"><span style="font-family:Symbol;color:#7030A0">·<span style='font:7.0pt "Times New Roman"'>       
+</span></span>Cardiomegaly</p>
+
+<p class="MsoNormal" style="margin-left:57.0pt;text-indent:-18.0pt"><span style="font-family:Symbol;color:#7030A0">·<span style='font:7.0pt "Times New Roman"'>       
+</span></span>Upper lobe venous diversion (prominent upper lobe veins)</p>
+
+<p class="MsoNormal" style="margin-left:57.0pt;text-indent:-18.0pt"><span style="font-family:Symbol;color:#7030A0">·<span style='font:7.0pt "Times New Roman"'>       
+</span></span>Interstitial oedema</p>
+
+<p class="MsoNormal" style="margin-left:93.0pt;text-indent:-18.0pt"><span style="font-family:Wingdings">§<span style='font:7.0pt "Times New Roman"'> 
+</span></span>Kerley-B lines</p>
+
+<p class="MsoNormal" style="margin-left:93.0pt;text-indent:-18.0pt"><span style="font-family:Wingdings">§<span style='font:7.0pt "Times New Roman"'> 
+</span></span>Prominent fissures</p>
+
+<p class="MsoNormal" style="margin-left:93.0pt;text-indent:-18.0pt"><span style="font-family:Wingdings">§<span style='font:7.0pt "Times New Roman"'> 
+</span></span>Peri-bronchial cuffing – interstitial fluid accumulates around
+bronchi; appear like donoughts if seen end on</p>
+
+<p class="MsoNormal" style="margin-left:93.0pt;text-indent:-18.0pt"><span style="font-family:Wingdings">§<span style='font:7.0pt "Times New Roman"'> 
+</span></span>Entire lung field affected</p>
+
+<p class="MsoNormal" style="margin-left:57.0pt;text-indent:-18.0pt"><span style="font-family:Symbol;color:#7030A0">·<span style='font:7.0pt "Times New Roman"'>       
+</span></span>Pleural effusions (often bilateral)</p>
+
+<p class="MsoNormal" style="margin-left:57.0pt;text-indent:-18.0pt"><span style="font-family:Symbol;color:#7030A0">·<span style='font:7.0pt "Times New Roman"'>       
+</span></span>Alveolar shadowing – ‘Bat’s wing appearance’ – peri-hilar
+shadowing with relative sparing of the peripheries</p>
+
+<p class="MsoNormal" style="margin-left:57.0pt;text-indent:-18.0pt"><span style="font-family:Symbol;color:#7030A0">·<span style='font:7.0pt "Times New Roman"'>       
+</span></span> </p>
+
+<p class="MsoNormal"><img width="597" height="287" id="Object 1" src="Heart%20Failure_files/image001.gif"></p>
+
+<p class="MsoNormal" style="margin-left:36.0pt;text-indent:-18.0pt">-<span style='font:7.0pt "Times New Roman"'>       
+</span>ECG – may show cause; rare to have a completely normal ECG in HF</p>
+
+<p class="MsoNormal"> </p>
+
+<p class="MsoNormal" style="margin-left:36.0pt;text-indent:-18.0pt">-<span style='font:7.0pt "Times New Roman"'>       
+</span>BNP – 97% negative predictive value; also prognostic value.</p>
+
+<p class="MsoNormal"> </p>
+
+<p class="MsoNormal"><b> </b></p>
+
+<p class="MSBHeading2">Management of Acute Heart Failure</p>
+
+<p class="MsoNormal"> </p>
+
+<p class="MsoNormal">Acute HF = medical emergency</p>
+
+<p class="MsoNormal"> </p>
+
+<p class="MsoNormal" style="margin-left:36.0pt;text-indent:-18.0pt">-<span style='font:7.0pt "Times New Roman"'>       
+</span>Sit patient upright</p>
+
+<p class="MsoNormal" style="margin-left:36.0pt;text-indent:-18.0pt">-<span style='font:7.0pt "Times New Roman"'>       
+</span>100% O2 (not if COPD)</p>
+
+<p class="MsoNormal" style="margin-left:36.0pt;text-indent:-18.0pt"><span class="MSBboldunderlinednormaltextChar"><span style="font-weight:normal;
+text-decoration:none">-<span style='font:7.0pt "Times New Roman"'>       
+</span></span></span>IV access  - <span class="MSBboldunderlinednormaltextChar">avoid
+fluids!!!</span></p>
+
+<p class="MsoNormal" style="margin-left:36.0pt;text-indent:-18.0pt">-<span style='font:7.0pt "Times New Roman"'>       
+</span>Monitor ECG</p>
+
+<p class="MsoNormal" style="margin-left:36.0pt;text-indent:-18.0pt">-<span style='font:7.0pt "Times New Roman"'>       
+</span>Treat underlying causes:</p>
+
+<p class="MsoNormal" style="margin-left:72.0pt;text-indent:-18.0pt"><span style='font-family:"Courier New"'>o<span style='font:7.0pt "Times New Roman"'>  
+</span></span>PCI if MI; cardiovert if AF; shock if VT/VF; pericardiocentesis
+for tamponade any arrhythmias; pacing is bradycardia.</p>
+
+<p class="MsoNormal" style="margin-left:36.0pt;text-indent:-18.0pt">-<span style='font:7.0pt "Times New Roman"'>       
+</span>IV Opiates (Diamorhpine 2.5-5mg) <span style="font-family:Wingdings">à</span>
+Pulmonary vasodilator, anxiolytic, venodilator so decreases preload. Caution if
+respiratory failure/COPD (resp depressant) </p>
+
+<p class="MsoNormal" style="margin-left:36.0pt;text-indent:-18.0pt">-<span style='font:7.0pt "Times New Roman"'>       
+</span>Furosemide 40-80mg IV</p>
+
+<p class="MsoNormal" style="margin-left:36.0pt;text-indent:-18.0pt">-<span style='font:7.0pt "Times New Roman"'>       
+</span>GTN spray – not if BP &lt;90</p>
+
+<p class="MsoNormal" style="margin-left:36.0pt;text-indent:-18.0pt">-<span style='font:7.0pt "Times New Roman"'>       
+</span>If BP&gt;100 nitrate infusions – IV isorbide dinitrate</p>
+
+<p class="MsoNormal" style="margin-left:36.0pt;text-indent:-18.0pt">-<span style='font:7.0pt "Times New Roman"'>       
+</span>If still breathless <span style="font-family:Wingdings">à</span> CPAP!</p>
+
+<p class="MsoNormal"> </p>
+
+<p class="MsoNormal">If BP &lt;90 = <b><i>cardiogenic shock</i></b></p>
+
+<p class="MsoNormal"> </p>
+
+<p class="MsoNormal" style="margin-left:36.0pt;text-indent:-18.0pt">-<span style='font:7.0pt "Times New Roman"'>       
+</span>Get help immediately (ICU/CCU)</p>
+
+<p class="MsoNormal" style="margin-left:36.0pt;text-indent:-18.0pt">-<span style='font:7.0pt "Times New Roman"'>       
+</span>Inotropes eg dobutamine</p>
+
+<p class="MsoNormal" style="margin-left:36.0pt;text-indent:-18.0pt">-<span style='font:7.0pt "Times New Roman"'>       
+</span>Consider intra-aortic balloon pump!</p>
+
+<p class="MsoNormal" style="margin-left:54.0pt"> </p>
+
+<table class="MsoNormalTable" border="1" cellspacing="0" cellpadding="0" style="background:#D9D9D9;border-collapse:collapse;border:none"><tr>
+<td width="770" valign="top" style="width:462.1pt;border:solid windowtext 1.0pt;
+  padding:0cm 5.4pt 0cm 5.4pt">
+  <p class="MsoNormal"><u>Acute <b>right</b> ventricular failure</u></p>
+  <p class="MsoNormal"> </p>
+  <p class="MsoNormal" style="margin-left:36.0pt;text-indent:-18.0pt">-<span style='font:7.0pt "Times New Roman"'>       
+  </span>Can suspect on ECG if inferior MI but <b>confirm on echo</b></p>
+  <p class="MsoNormal" style="margin-left:36.0pt;text-indent:-18.0pt">-<span style='font:7.0pt "Times New Roman"'>       
+  </span>Usu due to inferior MI (occlusion of right coronary artery)</p>
+  <p class="MsoNormal" style="margin-left:36.0pt;text-indent:-18.0pt">-<span style='font:7.0pt "Times New Roman"'>       
+  </span>This is the only case in which you would give fluids!</p>
+  <p class="MsoNormal" style="margin-left:36.0pt;text-indent:-18.0pt">-<span style='font:7.0pt "Times New Roman"'>       
+  </span>And avoid drugs that decrease filling of the ventricle ie diuretics
+  and nitrates</p>
+  <p class="MsoNormal" style="margin-left:36.0pt;text-indent:-18.0pt">-<span style='font:7.0pt "Times New Roman"'>       
+  </span>Should be done by experts on CCU.</p>
+  <p class="MsoNormal"> </p>
+  </td>
+ </tr></table>
+<p class="MsoNormal"><u><span style="text-decoration:none"> </span></u></p>
+
+<p class="MsoNormal"><i><u>Fluids in chest pain?</u></i><i> You do NOT give
+fluids to patients with cardiac chest pain/ACS. If they are having a large
+infarct it could precipitate acute HF. Also they usu have a short history of
+symptoms and so are not fluid depleted. If hypotensive treat any arrhythmias
+and treat as cardiogenic shock (get an echo to rule out right infarct but
+otherwise do not give fluids!)</i></p>
+
+<p class="MsoNormal"> </p>
+
+<p class="MSBHeading2">Management of chronic HF</p>
+
+<p class="MsoNormal"> </p>
+
+<p class="MSBunderlinenormaltext">General factors:</p>
+
+<p class="MsoNormal" style="margin-left:36.0pt;text-indent:-18.0pt">-<span style='font:7.0pt "Times New Roman"'>       
+</span>Stop smoking</p>
+
+<p class="MsoNormal" style="margin-left:36.0pt;text-indent:-18.0pt">-<span style='font:7.0pt "Times New Roman"'>       
+</span>Decrease salt intake and fluid restrict (1.5l)</p>
+
+<p class="MsoNormal" style="margin-left:36.0pt;text-indent:-18.0pt">-<span style='font:7.0pt "Times New Roman"'>       
+</span>Moderate exercise</p>
+
+<p class="MsoNormal" style="margin-left:36.0pt;text-indent:-18.0pt">-<span style='font:7.0pt "Times New Roman"'>       
+</span>Avoid alcohol</p>
+
+<p class="MsoNormal" style="margin-left:36.0pt;text-indent:-18.0pt">-<span style='font:7.0pt "Times New Roman"'>       
+</span>Optimise weight and nutrition</p>
+
+<p class="MsoNormal" style="margin-left:36.0pt;text-indent:-18.0pt">-<span style='font:7.0pt "Times New Roman"'>       
+</span>Vaccinations – flu and pneumococcal</p>
+
+<p class="MsoNormal" style="margin-left:36.0pt;text-indent:-18.0pt">-<span style='font:7.0pt "Times New Roman"'>       
+</span>Treat cause eg valve disease, arrhythmia</p>
+
+<p class="MsoNormal" style="margin-left:36.0pt;text-indent:-18.0pt">-<span style='font:7.0pt "Times New Roman"'>       
+</span>Treat exacerbating factors eg anaemia, thyrotoxicosis, stop NSAIDs,
+verapamil (-ve inotrope).</p>
+
+<p class="MsoNormal"> </p>
+
+<p class="MSBunderlinenormaltext">Drugs:</p>
+
+<p class="MsoNormal" style="margin-left:36.0pt;text-indent:-18.0pt">-<span style='font:7.0pt "Times New Roman"'>       
+</span>Furosemide – loop diuretic; initially works as a venodilator to decrease
+preload <span style="font-family:Wingdings">à</span> early symptom relief.
+Diuresis is a secondary effect <span style="font-family:Wingdings">à</span> &#8595;IV
+volume.</p>
+
+<p class="MsoNormal" style="margin-left:36.0pt;text-indent:-18.0pt">-<span style='font:7.0pt "Times New Roman"'>       
+</span>ACEi – improves symptoms and prolongs life. Give to ALL patients with
+HF; If cough give ARB</p>
+
+<p class="MsoNormal" style="margin-left:36.0pt;text-indent:-18.0pt">-<span style='font:7.0pt "Times New Roman"'>       
+</span>Spironolactone – aldosterone antagonist; K-sparing diuretic. Give to
+NYHA III-IV.</p>
+
+<p class="MsoNormal" style="margin-left:36.0pt;text-indent:-18.0pt">-<span style='font:7.0pt "Times New Roman"'>       
+</span>Beta blockers – eg carvedilol; bisoprolol; decrease myocardial O2 demand
+and increase ventricular filling; inhibit &#8593;sympathetic activity seen in
+HF; decrease mortality in HF; start low and go slow. Give to ALL patients but
+NOT in acute setting – can be fatal! </p>
+
+<p class="MsoNormal" style="margin-left:36.0pt;text-indent:-18.0pt">-<span style='font:7.0pt "Times New Roman"'>       
+</span>Nitrates – venodilators; decrease preload</p>
+
+<p class="MsoNormal" style="margin-left:36.0pt;text-indent:-18.0pt">-<span style='font:7.0pt "Times New Roman"'>       
+</span>Digoxin – esp if AF</p>
+
+<p class="MsoNormal" style="margin-left:36.0pt;text-indent:-18.0pt">-<span style='font:7.0pt "Times New Roman"'>       
+</span>Vasodilators – hydralazine or nitrates (isorbide dinitrate) are options,
+esp if cannot take ACEi/ARB</p>
+
+<p class="MsoNormal"> </p>
+
+<table class="MsoNormalTable" border="1" cellspacing="0" cellpadding="0" style="background:#CC99FF;border-collapse:collapse;border:none"><tr>
+<td width="770" valign="top" style="width:462.1pt;border:solid windowtext 1.0pt;
+  padding:0cm 5.4pt 0cm 5.4pt">
+  <p class="MsoNormal"><u>Drugs to avoid in HF</u>:</p>
+  <p class="MsoNormal"> </p>
+  <p class="MsoNormal" style="margin-left:36.0pt;text-indent:-18.0pt">-<span style='font:7.0pt "Times New Roman"'>       
+  </span>CCBs = -vely inotropic</p>
+  <p class="MsoNormal" style="margin-left:36.0pt;text-indent:-18.0pt">-<span style='font:7.0pt "Times New Roman"'>       
+  </span>Antiarrthymics (except amiodarone) = -vely inotropic</p>
+  <p class="MsoNormal" style="margin-left:36.0pt;text-indent:-18.0pt">-<span style='font:7.0pt "Times New Roman"'>       
+  </span>NSAIDs – affect renal function; can &#8593; fluid retention</p>
+  <p class="MsoNormal" style="margin-left:36.0pt;text-indent:-18.0pt">-<span style='font:7.0pt "Times New Roman"'>       
+  </span>Steroids - can &#8593; fluid retention</p>
+  </td>
+ </tr></table>
+<p class="MsoNormal"> </p>
+
+<p class="MsoNormal"> </p>
+
+<table class="MsoNormalTable" border="1" cellspacing="0" cellpadding="0" style="background:#D9D9D9;border-collapse:collapse;border:none"><tr>
+<td width="770" valign="top" style="width:462.1pt;border:solid windowtext 1.0pt;
+  padding:0cm 5.4pt 0cm 5.4pt">
+  <p class="MSBemphasis1x"><u>Advanced Treatments</u></p>
+  <p class="MsoNormal"> </p>
+  <p class="MsoNormal" style="margin-left:36.0pt;text-indent:-18.0pt"><span style="font-family:Wingdings">Ø<span style='font:7.0pt "Times New Roman"'> 
+  </span></span>Biventricular pacing/cardiac resynchronisation therapy (CRT)</p>
+  <p class="MsoNormal" style="margin-left:36.0pt;text-indent:-18.0pt"><span style="font-family:Wingdings">Ø<span style='font:7.0pt "Times New Roman"'> 
+  </span></span>Implantable Cardiac Defibrillator (ICD)</p>
+  <p class="MsoNormal" style="margin-left:36.0pt;text-indent:-18.0pt"><span style="font-family:Wingdings">Ø<span style='font:7.0pt "Times New Roman"'> 
+  </span></span>Ventricular assist device (VAD)</p>
+  <p class="MsoNormal" style="margin-left:36.0pt;text-indent:-18.0pt"><span style="font-family:Wingdings">Ø<span style='font:7.0pt "Times New Roman"'> 
+  </span></span>Cardiac transplant </p>
+  <p class="MsoNormal"> </p>
+  <p class="MSBunderlinenormaltext">Biventricular pacing/CRT</p>
+  <p class="MsoNormal"> </p>
+  <p class="MsoNormal" style="margin-left:36.0pt;text-indent:-18.0pt">-<span style='font:7.0pt "Times New Roman"'>       
+  </span>Aka cardiac resynchronisation therapy</p>
+  <p class="MsoNormal" style="margin-left:36.0pt;text-indent:-18.0pt">-<span style='font:7.0pt "Times New Roman"'>       
+  </span>Pacing leads placed in RA, RV and LV (via coronary sinus)</p>
+  <p class="MsoNormal" style="margin-left:36.0pt;text-indent:-18.0pt">-<span style='font:7.0pt "Times New Roman"'>       
+  </span>Most useful in patients with evidence of abnormal intraventricular
+  conduction ie LBBB, in which the slow cell-to-cell conduction seen in LBBB
+  results in asynchronous contraction of the ventricles</p>
+  <p class="MsoNormal" style="margin-left:36.0pt;text-indent:-18.0pt">-<span style='font:7.0pt "Times New Roman"'>       
+  </span>Improves symptoms and prognosis</p>
+  <p class="MsoNormal"><u><span style="text-decoration:none"> </span></u></p>
+  <p class="MsoNormal"><u>Implantable cardioverter defibrillator</u></p>
+  <p class="MsoNormal"> </p>
+  <p class="MsoNormal" style="margin-left:36.0pt;text-indent:-18.0pt">-<span style='font:7.0pt "Times New Roman"'>       
+  </span>Machine detects tachyarrhythmia</p>
+  <p class="MsoNormal" style="margin-left:36.0pt;text-indent:-18.0pt">-<span style='font:7.0pt "Times New Roman"'>       
+  </span>If VT or VF <span style="font-family:Wingdings">à</span> delivers a
+  shock</p>
+  <p class="MsoNormal" style="margin-left:36.0pt;text-indent:-18.0pt">-<span style='font:7.0pt "Times New Roman"'>       
+  </span>Improves survival</p>
+  <p class="MsoNormal" style="margin-left:36.0pt;text-indent:-18.0pt">-<span style='font:7.0pt "Times New Roman"'>       
+  </span>…but not symptoms</p>
+  <p class="MsoNormal"> </p>
+  <p class="MsoNormal">Can combine CRT and ICD</p>
+  <p class="MsoNormal"> </p>
+  <p class="MsoNormal"><u>Heart transplant</u></p>
+  <p class="MsoNormal"> </p>
+  <p class="MsoNormal" style="margin-left:36.0pt;text-indent:-18.0pt">-<span style='font:7.0pt "Times New Roman"'>       
+  </span>Mortality 10-15% at 1 year</p>
+  <p class="MsoNormal" style="margin-left:36.0pt;text-indent:-18.0pt">-<span style='font:7.0pt "Times New Roman"'>       
+  </span>Mean survival ~10 years</p>
+  <p class="MsoNormal"> </p>
+  <p class="MsoNormal"><u>Ventricular Assist Devices</u></p>
+  <p class="MsoNormal"> </p>
+  <p class="MsoNormal" style="margin-left:36.0pt;text-indent:-18.0pt">-<span style='font:7.0pt "Times New Roman"'>       
+  </span>Very expensive</p>
+  <p class="MsoNormal" style="margin-left:36.0pt;text-indent:-18.0pt">-<span style='font:7.0pt "Times New Roman"'>       
+  </span>Done as a bridge to transplant</p>
+  <p class="MsoNormal" style="margin-left:36.0pt;text-indent:-18.0pt">-<span style='font:7.0pt "Times New Roman"'>       
+  </span>Mechanical circulatory device that augments the function of the heart</p>
+  <p class="MsoNormal"> </p>
+  <p class="MsoNormal"><u>The Future?</u></p>
+  <p class="MsoNormal"> </p>
+  <p class="MsoNormal" style="margin-left:36.0pt;text-indent:-18.0pt">-<span style='font:7.0pt "Times New Roman"'>       
+  </span>Xenotransplant</p>
+  <p class="MsoNormal" style="margin-left:36.0pt;text-indent:-18.0pt">-<span style='font:7.0pt "Times New Roman"'>       
+  </span>Artificial transplant</p>
+  <p class="MsoNormal" style="margin-left:36.0pt;text-indent:-18.0pt">-<span style='font:7.0pt "Times New Roman"'>       
+  </span>Stem cells</p>
+  <p class="MsoNormal"> </p>
+  <p class="MsoNormal"> </p>
+  </td>
+ </tr></table>
+<p class="MsoNormal"> </p>
+
+<p class="MsoNormal"> </p>
+
+<p class="MsoNormal"> </p>
+
+<table class="MsoNormalTable" border="1" cellspacing="0" cellpadding="0" style="background:#CC99FF;border-collapse:collapse;border:none"><tr>
+<td width="770" valign="top" style="width:462.1pt;border:solid windowtext 1.0pt;
+  padding:0cm 5.4pt 0cm 5.4pt">
+  <p class="MsoNormal"><u>NYHA Classification of Chronic HF</u></p>
+  <p class="MsoNormal"> </p>
+  <p class="MsoNormal">I – evidence of HF present but no dysnoea on ordinary
+  activities</p>
+  <p class="MsoNormal">II – dyspnoea on ordinary activities.</p>
+  <p class="MsoNormal">III – dyspnoea on less than ordinary activity. Only
+  comfortable at rest</p>
+  <p class="MsoNormal">IV – severe limitation. Dyspnoea at rest</p>
+  <p class="MsoNormal"> </p>
+  <p class="MsoNormal">Can also think of it in terms of limitation: none (I),
+  mild (II), moderate (II), severe (IV)</p>
+  <p class="MsoNormal"> </p>
+  </td>
+ </tr></table>
+<p class="MsoNormal"><b><u><span style="text-decoration:none"> </span></u></b></p>
+
+<p class="MSBHeading1">Extra Notes:</p>
+
+<table class="MsoNormalTable" border="1" cellspacing="0" cellpadding="0" style="background:#D9D9D9;border-collapse:collapse;border:none"><tr>
+<td width="770" valign="top" style="width:462.1pt;border:solid windowtext 1.0pt;
+  padding:0cm 5.4pt 0cm 5.4pt">
+  <p class="MSBsub-heading">Terminology <i><u><span style="font-weight:normal;
+  text-decoration:none">[1]</span></u></i></p>
+  <p class="MsoNormal"> </p>
+  <p class="MSBemphasis1x"><u>Systolic vs diastolic failure</u></p>
+  <p class="MsoNormal"> </p>
+  <p class="MsoNormal"><u>Systolic failure </u></p>
+  <p class="MsoNormal" style="margin-left:36.0pt;text-indent:-18.0pt">-<span style='font:7.0pt "Times New Roman"'>       
+  </span>Inability of ventricle to contract normally <span style="font-family:
+  Wingdings">à</span> &#8595; CO</p>
+  <p class="MsoNormal" style="margin-left:36.0pt;text-indent:-18.0pt">-<span style='font:7.0pt "Times New Roman"'>       
+  </span>Aka LV dysfunction - ejection fraction (EF) (&lt;40%)</p>
+  <p class="MsoNormal" style="margin-left:36.0pt;text-indent:-18.0pt">-<span style='font:7.0pt "Times New Roman"'>       
+  </span>Causes include IHD (MI), cardiomyopathy</p>
+  <p class="MsoNormal"> </p>
+  <p class="MsoNormal"><u>Diastolic failure </u></p>
+  <p class="MsoNormal" style="margin-left:36.0pt;text-indent:-18.0pt">-<span style='font:7.0pt "Times New Roman"'>       
+  </span>Inability of ventricle to relax <span style="font-family:Wingdings">à</span>
+  poor filling + &#8593;filling pressures</p>
+  <p class="MsoNormal" style="margin-left:36.0pt;text-indent:-18.0pt">-<span style='font:7.0pt "Times New Roman"'>       
+  </span>EF is maintained ie &gt;50% (aka preserved LV function)</p>
+  <p class="MsoNormal" style="margin-left:36.0pt;text-indent:-18.0pt">-<span style='font:7.0pt "Times New Roman"'>       
+  </span>Causes: restrictive pericarditis, tamponade, hypertension</p>
+  <p class="MsoNormal"> </p>
+  <p class="MsoNormal"><i>*Systolic and diastolic failure usu co-exist!</i></p>
+  <p class="MsoNormal"> </p>
+  <p class="MSBemphasis1x"><u>LHF vs RHF</u></p>
+  <p class="MsoNormal"> </p>
+  <p class="MsoNormal" style="margin-left:36.0pt;text-indent:-18.0pt">-<span style='font:7.0pt "Times New Roman"'>       
+  </span>Can occur separately or together <i>(= congestive cardiac failure
+  (CCF)</i>)</p>
+  <p class="MsoNormal"> </p>
+  <p class="MsoNormal"><u>LVF </u></p>
+  <p class="MsoNormal" style="margin-left:36.0pt;text-indent:-18.0pt">-<span style='font:7.0pt "Times New Roman"'>       
+  </span>s/s: dyspnoea, poor exercise tolerance, fatigue, orthopnoea,
+  paroxysmal nocturnal dyspnoea (<i>due to reabsoprtion of peripheral oedema
+  when lying flat overloading intravascular volume</i>), nocturnal cough ± pink
+  frothy sputum, wheeze (cardiac ‘asthma’), nocturia, cold peripheries, weight
+  loss (cahexia – due to decreased gut perfusion and gut oedema <span style="font-family:Wingdings">à</span> decreased absorption), muscle wasting.</p>
+  <p class="MsoNormal"> </p>
+  <p class="MsoNormal"><u>RVF</u></p>
+  <p class="MsoNormal" style="margin-left:36.0pt;text-indent:-18.0pt">-<span style='font:7.0pt "Times New Roman"'>       
+  </span>Causes: LVF, pulmonary stenosis, lung disease (cor pulmonale)</p>
+  <p class="MsoNormal" style="margin-left:36.0pt;text-indent:-18.0pt">-<span style='font:7.0pt "Times New Roman"'>       
+  </span>Peripheral oedema (up to waist), raised JVP, ascites, nausea,
+  anorexia, facial engorgement, epistaxis.</p>
+  <p class="MsoNormal"> </p>
+  <p class="MsoNormal"><i>*the most common cause of right heart failure is left
+  heart failure!</i></p>
+  <p class="MsoNormal"> </p>
+  <p class="MsoNormal"><b>Acute vs Chronic HF</b></p>
+  <p class="MsoNormal"> </p>
+  <p class="MsoNormal" style="margin-left:21.0pt;text-indent:-18.0pt"><span style='font-family:"Times New Roman","serif"'>-<span style='font:7.0pt "Times New Roman"'>       
+  </span></span>Acute HF = acute pulmonary oedema</p>
+  <p class="MsoNormal" style="margin-left:57.0pt;text-indent:-18.0pt"><span style="font-family:Symbol;color:#7030A0">·<span style='font:7.0pt "Times New Roman"'>       
+  </span></span><u>Either new onset or decompensation of chronic</u></p>
+  <p class="MsoNormal" style="margin-left:57.0pt;text-indent:-18.0pt"><span style="font-family:Symbol;color:#7030A0">·<span style='font:7.0pt "Times New Roman"'>       
+  </span></span>With or without signs of peripheral hypoperfusion</p>
+  <p class="MsoNormal" style="margin-left:57.0pt;text-indent:-18.0pt"><span style="font-family:Symbol;color:#7030A0">·<span style='font:7.0pt "Times New Roman"'>       
+  </span></span>Other causes of acute pulmonary oedema eg ARF, ARDS</p>
+  <p class="MsoNormal" style="margin-left:36.0pt"> </p>
+  <p class="MsoNormal" style="margin-left:21.0pt;text-indent:-18.0pt"><span style='font-family:"Times New Roman","serif"'>-<span style='font:7.0pt "Times New Roman"'>       
+  </span></span>Chronic HF is slowly progressive</p>
+  <p class="MsoNormal" style="margin-left:57.0pt;text-indent:-18.0pt"><span style="font-family:Symbol;color:#7030A0">·<span style='font:7.0pt "Times New Roman"'>       
+  </span></span>Venous congestion is common but arterial pressure (ie BP) is
+  maintained until late</p>
+  <p class="MsoNormal"> </p>
+  <p class="MsoNormal"><i>*patients with HF can have &#8593;, &#8595; or normal
+  BP</i></p>
+  <p class="MsoNormal"><i>*If BP &lt;90 </i><i><span style="font-family:Wingdings">à</span></i><i>
+  cardiogenic shock!</i></p>
+  <p class="MsoNormal"> </p>
+  <p class="MsoNormal"><b>Low output vs High output</b></p>
+  <p class="MsoNormal"> </p>
+  <p class="MsoNormal" style="margin-left:21.0pt;text-indent:-18.0pt"><span style='font-family:"Times New Roman","serif"'>-<span style='font:7.0pt "Times New Roman"'>       
+  </span></span>Low – CO falls and fails to increase with exertion</p>
+  <p class="MsoNormal" style="margin-left:57.0pt;text-indent:-18.0pt"><span style="font-family:Symbol;color:#7030A0">·<span style='font:7.0pt "Times New Roman"'>       
+  </span></span>Pump failure – can be due to systolic or diastolic HF; bradycardia,
+  -ve inotropes (eg CCBs)</p>
+  <p class="MsoNormal" style="margin-left:57.0pt;text-indent:-18.0pt"><span style="font-family:Symbol;color:#7030A0">·<span style='font:7.0pt "Times New Roman"'>       
+  </span></span>Excessive preload (fluid overload eg NSAID, IV fluids running
+  too fast)</p>
+  <p class="MsoNormal" style="margin-left:57.0pt;text-indent:-18.0pt"><span style="font-family:Symbol;color:#7030A0">·<span style='font:7.0pt "Times New Roman"'>       
+  </span></span>Excessive afterload – HTN, aortic stenosis</p>
+  <p class="MsoNormal" style="margin-left:36.0pt"> </p>
+  <p class="MsoNormal" style="margin-left:21.0pt;text-indent:-18.0pt"><span style='font-family:"Times New Roman","serif"'>-<span style='font:7.0pt "Times New Roman"'>       
+  </span></span>High output</p>
+  <p class="MsoNormal" style="margin-left:57.0pt;text-indent:-18.0pt"><span style="font-family:Symbol;color:#7030A0">·<span style='font:7.0pt "Times New Roman"'>       
+  </span></span>RARE</p>
+  <p class="MsoNormal" style="margin-left:57.0pt;text-indent:-18.0pt"><span style="font-family:Symbol;color:#7030A0">·<span style='font:7.0pt "Times New Roman"'>       
+  </span></span>Normal CO or even increased but demand is increased</p>
+  <p class="MsoNormal" style="margin-left:57.0pt;text-indent:-18.0pt"><span style="font-family:Symbol;color:#7030A0">·<span style='font:7.0pt "Times New Roman"'>       
+  </span></span>Failure occurs when heart fails to meet demand</p>
+  <p class="MsoNormal" style="margin-left:57.0pt;text-indent:-18.0pt"><span style="font-family:Symbol;color:#7030A0">·<span style='font:7.0pt "Times New Roman"'>       
+  </span></span>Can occur in a normal heart but occurs earlier if existing
+  heart disease</p>
+  <p class="MsoNormal" style="margin-left:57.0pt;text-indent:-18.0pt"><span style="font-family:Symbol;color:#7030A0">·<span style='font:7.0pt "Times New Roman"'>       
+  </span></span>Causes: anaemia, thyrotoxicosis, pregnancy, paget’s disease</p>
+  <p class="MsoNormal" style="margin-left:57.0pt;text-indent:-18.0pt"><span style="font-family:Symbol;color:#7030A0">·<span style='font:7.0pt "Times New Roman"'>       
+  </span></span><span style="font-family:Wingdings">à</span> RHF then LHF</p>
+  <p class="MsoNormal"><u><span style="text-decoration:none"> </span></u></p>
+  </td>
+ </tr></table>
+<p class="MsoNormal"> </p>
+
+<p class="MSBHeading2">Pathophysiology of HF</p>
+
+<p class="MsoNormal"> </p>
+
+<p class="MsoNormal">BP = CO x TPR</p>
+
+<p class="MsoNormal"> </p>
+
+<p class="MsoNormal" style="margin-left:36.0pt;text-indent:-18.0pt">-<span style='font:7.0pt "Times New Roman"'>       
+</span>&#8595;CO <span style="font-family:Wingdings">à</span> &#8595;BP
+detected by baroreceptors.</p>
+
+<p class="MsoNormal" style="margin-left:72.0pt;text-indent:-18.0pt"><span style="font-family:Wingdings">è<span style='font:7.0pt "Times New Roman"'> </span></span>&#8593;sympathetic
+drive <span style="font-family:Wingdings">à</span> &#8593;HR and &#8593;TPR
+(vasoconstriction)</p>
+
+<p class="MsoNormal" style="margin-left:72.0pt;text-indent:-18.0pt"><span style="font-family:Wingdings">è<span style='font:7.0pt "Times New Roman"'> </span></span>Neurohormonal
+response – R-A-A system</p>
+
+<p class="MsoNormal"> </p>
+
+<p class="MSBemphasis1x"><u>Preload</u></p>
+
+<p class="MsoNormal"> </p>
+
+<p class="MsoNormal" style="margin-left:36.0pt;text-indent:-18.0pt">-<span style='font:7.0pt "Times New Roman"'>       
+</span>‘the filling pressure of the heart’</p>
+
+<p class="MsoNormal" style="margin-left:36.0pt;text-indent:-18.0pt">-<span style='font:7.0pt "Times New Roman"'>       
+</span>The pressure exerted on the cardiac myocytes in response to diastolic
+filling. This tension in the ventricular wall ‘primes’ the heart pump.</p>
+
+<p class="MsoNormal"> </p>
+
+<p class="MSBemphasis1x"><u>Afterload</u></p>
+
+<p class="MsoNormal"> </p>
+
+<p class="MsoNormal" style="margin-left:36.0pt;text-indent:-18.0pt">-<span style='font:7.0pt "Times New Roman"'>       
+</span>The resistance against which the heart has to pump </p>
+
+<p class="MsoNormal"> </p>
+
+<p class="MsoNormal"><u>Local compensatory changes in myocardium</u></p>
+
+<p class="MsoNormal"> </p>
+
+<p class="MsoNormal" style="margin-left:36.0pt;text-indent:-18.0pt">-<span style='font:7.0pt "Times New Roman"'>       
+</span>Dilatation</p>
+
+<p class="MsoNormal" style="margin-left:72.0pt;text-indent:-18.0pt"><span style='font-family:"Courier New"'>o<span style='font:7.0pt "Times New Roman"'>  
+</span></span>&#8593;preload <span style="font-family:Wingdings">à</span>
+dilatation</p>
+
+<p class="MsoNormal" style="margin-left:72.0pt;text-indent:-18.0pt"><span style='font-family:"Courier New"'>o<span style='font:7.0pt "Times New Roman"'>  
+</span></span>Preload increases due to increased venous pressure</p>
+
+<p class="MsoNormal" style="margin-left:72.0pt;text-indent:-18.0pt"><span style='font-family:"Courier New"'>o<span style='font:7.0pt "Times New Roman"'>  
+</span></span>Right heart output must equal left heart output, therefore if
+left ventricle is failing (eg due to MI) it cannot cope with the volumes
+ejected from the right heart. It compensates for this by dilatation.</p>
+
+<p class="MsoNormal" style="margin-left:72.0pt;text-indent:-18.0pt"><span style='font-family:"Courier New"'>o<span style='font:7.0pt "Times New Roman"'>  
+</span></span>Dilatation <span style="font-family:Wingdings">à</span>
+&#8593;end diastolic volume</p>
+
+<p class="MsoNormal" style="margin-left:72.0pt;text-indent:-18.0pt"><span style='font-family:"Courier New"'>o<span style='font:7.0pt "Times New Roman"'>  
+</span></span>This initially &#8593; contraction due to Starling’s law</p>
+
+<p class="MsoNormal" style="margin-left:72.0pt;text-indent:-18.0pt"><span style='font-family:"Courier New"'>o<span style='font:7.0pt "Times New Roman"'>  
+</span></span>Dilatation maintains SV but at the expense of increasing filling
+pressure (preload)</p>
+
+<p class="MsoNormal" style="margin-left:72.0pt"> </p>
+
+<p class="MsoNormal" style="margin-left:36.0pt;text-indent:-18.0pt">-<span style='font:7.0pt "Times New Roman"'>       
+</span>Hypertrophy</p>
+
+<p class="MsoNormal" style="margin-left:72.0pt;text-indent:-18.0pt"><span style='font-family:"Courier New"'>o<span style='font:7.0pt "Times New Roman"'>  
+</span></span>Myocytes respond to increased pressure by hypertrophy</p>
+
+<p class="MsoNormal" style="margin-left:72.0pt;text-indent:-18.0pt"><span style='font-family:"Courier New"'>o<span style='font:7.0pt "Times New Roman"'>  
+</span></span>Initially beneficial because allows increased force of
+contraction</p>
+
+<p class="MsoNormal" style="margin-left:72.0pt;text-indent:-18.0pt"><span style='font-family:"Courier New"'>o<span style='font:7.0pt "Times New Roman"'>  
+</span></span>As it continues to grow <span style="font-family:Wingdings">à</span>
+outgrows muscle supply <span style="font-family:Wingdings">à</span>
+&#8595;efficiency</p>
+
+<p class="MsoNormal" style="margin-left:72.0pt;text-indent:-18.0pt"><span style='font-family:"Courier New"'>o<span style='font:7.0pt "Times New Roman"'>  
+</span></span>NB angiotensin II is a cardiac growth factor</p>
+
+<p class="MsoNormal"> </p>
+
+<p class="MsoNormal"><u>Starling’s law of the heart</u></p>
+
+<p class="MsoNormal" style="margin-left:36.0pt;text-indent:-18.0pt">-<span style='font:7.0pt "Times New Roman"'>       
+</span>As end diastolic volume increases, stroke volume also increases up to a
+point</p>
+
+<p class="MsoNormal" style="margin-left:36.0pt;text-indent:-18.0pt">-<span style='font:7.0pt "Times New Roman"'>       
+</span>This is due to the Frank-Starling curve which says that as stretch of a
+myocyte increases the forces of contraction generated by the myocyte also
+increases (up to a point).</p>
+
+<p class="MsoNormal"><img width="458" height="228" id="Object 2" src="Heart%20Failure_files/image002.gif"></p>
+
+<p class="MsoNormal"> </p>
+
+<p class="MsoNormal"> </p>
+
+<p class="MsoNormal"><u>Neurohormonal Changes in HF</u></p>
+
+<p class="MsoNormal"> </p>
+
+<p class="MsoNormal" style="margin-left:36.0pt;text-indent:-18.0pt">1)<span style='font:7.0pt "Times New Roman"'>     </span>Increased
+sympathetic activity</p>
+
+<p class="MsoNormal" style="margin-left:36.0pt"> </p>
+
+<p class="MsoNormal" style="margin-left:36.0pt;text-indent:-18.0pt">2)<span style='font:7.0pt "Times New Roman"'>     </span>Renin-angiotensin-aldosterone
+system</p>
+
+<p class="MsoNormal"> </p>
+
+<p class="MsoNormal" style="margin-left:36.0pt;text-indent:-18.0pt">-<span style='font:7.0pt "Times New Roman"'>       
+</span>&#8595;BP <span style="font-family:Wingdings">à</span> &#8595;renal
+perfusion <span style="font-family:Wingdings">à</span> rennin secreted from
+juxtaglomerular apparatus</p>
+
+<p class="MsoNormal" style="margin-left:36.0pt;text-indent:-18.0pt">-<span style='font:7.0pt "Times New Roman"'>       
+</span>Converts angiotensinogen (from liver) to angiotensin I</p>
+
+<p class="MsoNormal" style="margin-left:36.0pt;text-indent:-18.0pt">-<span style='font:7.0pt "Times New Roman"'>       
+</span>In lungs, ACE converts ang I <span style="font-family:Wingdings">à</span>
+ang II</p>
+
+<p class="MsoNormal" style="margin-left:36.0pt;text-indent:-18.0pt">-<span style='font:7.0pt "Times New Roman"'>       
+</span>Angiotensin II <span style="font-family:Wingdings">à</span>
+vasoconstriction</p>
+
+<p class="MsoNormal" style="margin-left:36.0pt;text-indent:-18.0pt">-<span style='font:7.0pt "Times New Roman"'>       
+</span>Also stimulates adrenal cortex to produce aldosterone</p>
+
+<p class="MsoNormal" style="margin-left:36.0pt;text-indent:-18.0pt">-<span style='font:7.0pt "Times New Roman"'>       
+</span>Aldosterone &#8593;Na+H2O re-absorption in kidneys</p>
+
+<p class="MsoNormal"> </p>
+
+<p class="MsoNormal" style="margin-left:36.0pt;text-indent:-18.0pt">3)<span style='font:7.0pt "Times New Roman"'>     </span>Natriuretic
+peptides (ANP &amp; BNP)</p>
+
+<p class="MsoNormal"> </p>
+
+<p class="MsoNormal" style="margin-left:36.0pt;text-indent:-18.0pt">-<span style='font:7.0pt "Times New Roman"'>       
+</span>One of the few beneficial compensatory mechanisms in HF</p>
+
+<p class="MsoNormal" style="margin-left:36.0pt;text-indent:-18.0pt">-<span style='font:7.0pt "Times New Roman"'>       
+</span>Released by the atrium (ANP) and ventricle (BNP) in response to stretch</p>
+
+<p class="MsoNormal" style="margin-left:36.0pt;text-indent:-18.0pt">-<span style='font:7.0pt "Times New Roman"'>       
+</span>Decrease Na +H2O re-absorption in kidney</p>
+
+<p class="MsoNormal" style="margin-left:36.0pt;text-indent:-18.0pt">-<span style='font:7.0pt "Times New Roman"'>       
+</span>&#8593;GFR</p>
+
+<p class="MsoNormal" style="margin-left:36.0pt;text-indent:-18.0pt">-<span style='font:7.0pt "Times New Roman"'>       
+</span>Also decrease preload by relaxing smooth muscle.</p>
+
+<p class="MsoNormal" style="margin-left:36.0pt;text-indent:-18.0pt">-<span style='font:7.0pt "Times New Roman"'>       
+</span>ANP partly inhibits RAA</p>
+
+<p class="MsoNormal"> </p>
+
+<p class="MsoNormal"> </p>
+
+<p class="MsoNormal">BNP – ‘B-type natriuretic peptide’ – originally called
+‘brain’ because it was first isolated from pig brain. Now known to be secreted
+by the ventricles in response to stretch! BNP levels are closely related to LV
+pressure. BNP is used in the diagnosis of HF, to distinguish it from other
+causes of dyspnoea.</p>
+
+<p class="MsoNormal"> </p>
+
+<p class="MsoNormal" style="margin-left:36.0pt;text-indent:-18.0pt">4)<span style='font:7.0pt "Times New Roman"'>     </span>Increased
+ADH</p>
+
+<p class="MsoNormal"><span style="font-size:12.0pt"> </span></p>
+
+<table class="MsoNormalTable" border="1" cellspacing="0" cellpadding="0" style="border-collapse:collapse;border:none"><tr>
+<td width="770" valign="top" style="width:462.1pt;border:solid windowtext 1.0pt;
+  background:#F2DBDB;padding:0cm 5.4pt 0cm 5.4pt">
+  <p class="MSBHeading2">Guidelines and further Reading:</p>
+  <p class="MsoNormal"><span style="font-size:12.0pt"> </span></p>
+  <p class="MSBnormaltextCxSpFirst"><span style='font-family:"Times New Roman","serif"'>-<span style='font:7.0pt "Times New Roman"'>       
+  </span></span>NICE guidelines 108. Chronic Heart Failure. 2010 <a href="http://www.nice.org.uk/guidance/index.jsp?action=byID&amp;o=13099">http://www.nice.org.uk/guidance/index.jsp?action=byID&amp;o=13099</a>
+  </p>
+  <p class="MSBnormaltextCxSpMiddle"><span style='font-family:"Times New Roman","serif"'>-<span style='font:7.0pt "Times New Roman"'>       
+  </span></span>SIGN guideline 95. Management of Chronic Heart Failure. 2007. <a href="http://www.sign.ac.uk/pdf/sign95.pdf">http://www.sign.ac.uk/pdf/sign95.pdf</a>
+  </p>
+  <p class="MSBnormaltextCxSpLast" style="margin-left:21.0pt;text-indent:-18.0pt"><span style='font-family:"Times New Roman","serif"'>-<span style='font:7.0pt "Times New Roman"'>       
+  </span></span>Oxford Handbook of Clinical Medicine. 8<sup>th</sup> edition.
+  Pages <i>128-131</i></p>
+  <p class="MsoNormal"><span style="font-size:12.0pt"> </span></p>
+  </td>
+ </tr></table>
+<p class="MsoNormal"><span style="font-size:12.0pt"> </span></p>
+
+<p class="MsoNormal"><i> </i></p>
+
+<p class="MsoNormal"><span style="font-size:12.0pt"> </span></p>
+
+<table class="MsoNormalTable" border="1" cellspacing="0" cellpadding="0" style="border-collapse:collapse;border:none"><tr>
+<td width="770" valign="top" style="width:462.1pt;border:solid windowtext 1.0pt;
+  background:#F2DBDB;padding:0cm 5.4pt 0cm 5.4pt">
+  <p class="MSBHeading2">References</p>
+  <p class="MsoNormal"><span style="font-size:12.0pt"> </span></p>
+  <p class="MSBnormaltext" style="margin-left:21.0pt;text-indent:-18.0pt"><span style='font-family:"Times New Roman","serif"'>-<span style='font:7.0pt "Times New Roman"'>       
+  </span></span>1. Oxford Handbook of Clinical Medicine. 8<sup>th</sup>
+  edition. Pages <i>128-131</i></p>
+  <p class="MsoNormal"><span style="font-size:12.0pt"> </span></p>
+  </td>
+ </tr></table>
+<p class="MsoNormal"><span style="font-size:12.0pt"> </span></p>
+
+<p class="MsoNormal"><i> </i></p>
+
+<p class="MsoNormal"> </p>
+
+</div>
+				
+				</div>
+				<div id="sidebar" class="span-6 last">
+					<p>Sidebar</p>
+			  </div>
+		  </div>
+		</div>
+			
+		<div style="line-height:10px;">&nbsp;</div>
+		<div id="footer" class="container">
+				This is the 'sticky' footer
+		</div>
+	</body>
+</html>
