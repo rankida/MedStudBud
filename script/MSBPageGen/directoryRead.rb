@@ -1,6 +1,7 @@
 
 Dir.foreach('/Users/rankida/Projects/MedStudBud/public/Notes') do |f|
-   if File.directory?(f) || Dir.exist?(f)
+  
+  if File.directory?(f) || Dir.exist?(f)
     puts '[] ' + f
   else
     puts ' `-> ' + f
