@@ -9,27 +9,28 @@ class IndexFileCreator
     @root_dir = root_dir
   end
 
-  def gen template
-    r = []
-    Dir.foreach(@root_dir) do |f|
+  def gen template, dir_path = @root_dir
+    results = []
+    Dir.foreach(dir_path) do |f|
       link = f
       
       if f == '.' || f == '..' || f == "index.html"
         next
-      elsif File.directory?(@root_dir + '/' + f)
+      elsif File.directory?(dir_path + '/' + f)
         link = CGI.escape(f) + '/'
+        gen template, File.join(dir_path, f)
       end
       
-      r.push({
+      results.push({
         "link" => link,
         "link_text" => f})
     end
     
     resultingText = Mustache.render(template, 
-                        :content => r,
+                        :content => results,
                         :style => "",
-                        :title => "Index listing of " + File.basename(@root_dir))
-    File.open(@root_dir + '/index.html', 'w') {|f| f.write(resultingText)}
+                        :title => "Index listing of " + File.basename(dir_path))
+    File.open(dir_path + '/index.html', 'w') {|f| f.write(resultingText)}
   end
 
 end
