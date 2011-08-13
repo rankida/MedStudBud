@@ -6,7 +6,7 @@ require 'ParseWordHtml'
 src = '/Users/rankida/Dropbox/David & Al/MedStudyBuddy.com/Content/MSB folder hierarchy'
 dest = '/Users/rankida/Projects/MedStudBud/public/Notes'
 exclude = ["^\\.", ".doc"] # The first element is needed so that '.' and '..' are ignored
-template = 'template.mustache'
+template = 'note.mustache'
 
 # Load the chosen mustache template and load it into the transform class
 mustacheTemp = File.open(template) { |f| f.read };
