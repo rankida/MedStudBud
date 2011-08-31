@@ -1,0 +1,1052 @@
+<!DOCTYPE html>
+<html>
+  <head>
+	  <title>MedStudyBuddy | Title</title>
+		<!--[if lt IE 9]>
+			<script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+		<![endif]-->
+		<link href="/stylesheets/blueprint/screen.css" media="screen" rel="stylesheet" type="text/css" />
+		<link href="/stylesheets/blueprint/print.css" media="print" rel="stylesheet" type="text/css" />
+		<!--[if lt IE8]>
+			<link href="/stylesheets/blueprint/ie.css" media="screen" rel="stylesheet" type="text/css" />
+		<![endif]-->
+		<link href="/stylesheets/notes.css" media="screen" rel="stylesheet" type="text/css" />
+		<link href="/stylesheets/sticky-footer.css" media="screen" rel="stylesheet" type="text/css" />
+		<link rel="shortcut icon" href="/favicon.ico" />
+		<link rel="shortcut icon" href="/images/favicon.ico" />
+		<style>
+<!--
+ /* Font Definitions */
+ @font-face
+	{font-family:Wingdings;
+	panose-1:5 0 0 0 0 0 0 0 0 0;}
+@font-face
+	{font-family:SimSun;
+	panose-1:2 1 6 0 3 1 1 1 1 1;}
+@font-face
+	{font-family:"Cambria Math";
+	panose-1:2 4 5 3 5 4 6 3 2 4;}
+@font-face
+	{font-family:Calibri;
+	panose-1:2 15 5 2 2 2 4 3 2 4;}
+@font-face
+	{font-family:Candara;
+	panose-1:2 14 5 2 3 3 3 2 2 4;}
+@font-face
+	{font-family:"\@SimSun";
+	panose-1:2 1 6 0 3 1 1 1 1 1;}
+ /* Style Definitions */
+ p.MsoNormal, li.MsoNormal, div.MsoNormal
+	{margin-top:0cm;
+	margin-right:0cm;
+	margin-bottom:10.0pt;
+	margin-left:0cm;
+	line-height:115%;
+	font-size:11.0pt;
+	font-family:"Calibri","sans-serif";}
+a:link, span.MsoHyperlink
+	{color:blue;
+	text-decoration:underline;}
+a:visited, span.MsoHyperlinkFollowed
+	{color:purple;
+	text-decoration:underline;}
+p
+	{margin-top:7.5pt;
+	margin-right:0cm;
+	margin-bottom:7.5pt;
+	margin-left:0cm;
+	line-height:115%;
+	font-size:11.0pt;
+	font-family:"Calibri","sans-serif";}
+p.MsoListParagraph, li.MsoListParagraph, div.MsoListParagraph
+	{margin-top:0cm;
+	margin-right:0cm;
+	margin-bottom:0cm;
+	margin-left:36.0pt;
+	margin-bottom:.0001pt;
+	line-height:normal;
+	font-size:11.0pt;
+	font-family:"Arial","sans-serif";}
+p.MsoListParagraphCxSpFirst, li.MsoListParagraphCxSpFirst, div.MsoListParagraphCxSpFirst
+	{margin-top:0cm;
+	margin-right:0cm;
+	margin-bottom:0cm;
+	margin-left:36.0pt;
+	margin-bottom:.0001pt;
+	line-height:normal;
+	font-size:11.0pt;
+	font-family:"Arial","sans-serif";}
+p.MsoListParagraphCxSpMiddle, li.MsoListParagraphCxSpMiddle, div.MsoListParagraphCxSpMiddle
+	{margin-top:0cm;
+	margin-right:0cm;
+	margin-bottom:0cm;
+	margin-left:36.0pt;
+	margin-bottom:.0001pt;
+	line-height:normal;
+	font-size:11.0pt;
+	font-family:"Arial","sans-serif";}
+p.MsoListParagraphCxSpLast, li.MsoListParagraphCxSpLast, div.MsoListParagraphCxSpLast
+	{margin-top:0cm;
+	margin-right:0cm;
+	margin-bottom:0cm;
+	margin-left:36.0pt;
+	margin-bottom:.0001pt;
+	line-height:normal;
+	font-size:11.0pt;
+	font-family:"Arial","sans-serif";}
+p.MSBHeading1, li.MSBHeading1, div.MSBHeading1
+	{mso-style-name:"MSB Heading 1";
+	mso-style-link:"MSB Heading 1 Char";
+	margin:0cm;
+	margin-bottom:.0001pt;
+	line-height:normal;
+	font-size:20.0pt;
+	font-family:"Candara","sans-serif";
+	color:#660066;
+	font-weight:bold;
+	text-decoration:underline;}
+span.MSBHeading1Char
+	{mso-style-name:"MSB Heading 1 Char";
+	mso-style-link:"MSB Heading 1";
+	font-family:"Candara","sans-serif";
+	color:#660066;
+	font-weight:bold;
+	text-decoration:underline;}
+p.MSBHeading2, li.MSBHeading2, div.MSBHeading2
+	{mso-style-name:"MSB Heading 2";
+	mso-style-link:"MSB Heading 2 Char";
+	margin:0cm;
+	margin-bottom:.0001pt;
+	line-height:normal;
+	font-size:16.0pt;
+	font-family:"Candara","sans-serif";
+	color:#2E002E;
+	font-weight:bold;}
+span.MSBHeading2Char
+	{mso-style-name:"MSB Heading 2 Char";
+	mso-style-link:"MSB Heading 2";
+	font-family:"Candara","sans-serif";
+	color:#2E002E;
+	font-weight:bold;}
+p.MSBnormaltext, li.MSBnormaltext, div.MSBnormaltext
+	{mso-style-name:"MSB normal text";
+	mso-style-link:"MSB normal text Char";
+	margin-top:0cm;
+	margin-right:0cm;
+	margin-bottom:0cm;
+	margin-left:21.0pt;
+	margin-bottom:.0001pt;
+	text-indent:-18.0pt;
+	line-height:normal;
+	font-size:11.0pt;
+	font-family:"Arial","sans-serif";}
+p.MSBnormaltextCxSpFirst, li.MSBnormaltextCxSpFirst, div.MSBnormaltextCxSpFirst
+	{mso-style-name:"MSB normal textCxSpFirst";
+	mso-style-link:"MSB normal text Char";
+	margin-top:0cm;
+	margin-right:0cm;
+	margin-bottom:0cm;
+	margin-left:21.0pt;
+	margin-bottom:.0001pt;
+	text-indent:-18.0pt;
+	line-height:normal;
+	font-size:11.0pt;
+	font-family:"Arial","sans-serif";}
+p.MSBnormaltextCxSpMiddle, li.MSBnormaltextCxSpMiddle, div.MSBnormaltextCxSpMiddle
+	{mso-style-name:"MSB normal textCxSpMiddle";
+	mso-style-link:"MSB normal text Char";
+	margin-top:0cm;
+	margin-right:0cm;
+	margin-bottom:0cm;
+	margin-left:21.0pt;
+	margin-bottom:.0001pt;
+	text-indent:-18.0pt;
+	line-height:normal;
+	font-size:11.0pt;
+	font-family:"Arial","sans-serif";}
+p.MSBnormaltextCxSpLast, li.MSBnormaltextCxSpLast, div.MSBnormaltextCxSpLast
+	{mso-style-name:"MSB normal textCxSpLast";
+	mso-style-link:"MSB normal text Char";
+	margin-top:0cm;
+	margin-right:0cm;
+	margin-bottom:0cm;
+	margin-left:21.0pt;
+	margin-bottom:.0001pt;
+	text-indent:-18.0pt;
+	line-height:normal;
+	font-size:11.0pt;
+	font-family:"Arial","sans-serif";}
+span.MSBnormaltextChar
+	{mso-style-name:"MSB normal text Char";
+	mso-style-link:"MSB normal text";
+	font-family:"Arial","sans-serif";}
+p.MSBsub-heading, li.MSBsub-heading, div.MSBsub-heading
+	{mso-style-name:"MSB sub-heading";
+	mso-style-link:"MSB sub-heading Char";
+	margin:0cm;
+	margin-bottom:.0001pt;
+	line-height:normal;
+	font-size:13.0pt;
+	font-family:"Calibri","sans-serif";
+	font-weight:bold;
+	text-decoration:underline;}
+span.MSBsub-headingChar
+	{mso-style-name:"MSB sub-heading Char";
+	mso-style-link:"MSB sub-heading";
+	font-weight:bold;
+	text-decoration:underline;}
+p.MSBreferenceHeading, li.MSBreferenceHeading, div.MSBreferenceHeading
+	{mso-style-name:"MSB reference Heading";
+	mso-style-link:"MSB reference Heading Char";
+	margin:0cm;
+	margin-bottom:.0001pt;
+	line-height:normal;
+	font-size:10.0pt;
+	font-family:"Arial","sans-serif";
+	font-weight:bold;
+	text-decoration:underline;}
+span.MSBreferenceHeadingChar
+	{mso-style-name:"MSB reference Heading Char";
+	mso-style-link:"MSB reference Heading";
+	font-family:"Arial","sans-serif";
+	font-weight:bold;
+	text-decoration:underline;}
+p.MSBunderlinearrowbullet, li.MSBunderlinearrowbullet, div.MSBunderlinearrowbullet
+	{mso-style-name:"MSB underline + arrow bullet";
+	mso-style-link:"MSB underline + arrow bullet Char";
+	margin-top:0cm;
+	margin-right:0cm;
+	margin-bottom:0cm;
+	margin-left:36.0pt;
+	margin-bottom:.0001pt;
+	text-indent:-18.0pt;
+	line-height:normal;
+	font-size:11.0pt;
+	font-family:"Arial","sans-serif";
+	text-decoration:underline;}
+p.MSBunderlinearrowbulletCxSpFirst, li.MSBunderlinearrowbulletCxSpFirst, div.MSBunderlinearrowbulletCxSpFirst
+	{mso-style-name:"MSB underline + arrow bulletCxSpFirst";
+	mso-style-link:"MSB underline + arrow bullet Char";
+	margin-top:0cm;
+	margin-right:0cm;
+	margin-bottom:0cm;
+	margin-left:36.0pt;
+	margin-bottom:.0001pt;
+	text-indent:-18.0pt;
+	line-height:normal;
+	font-size:11.0pt;
+	font-family:"Arial","sans-serif";
+	text-decoration:underline;}
+p.MSBunderlinearrowbulletCxSpMiddle, li.MSBunderlinearrowbulletCxSpMiddle, div.MSBunderlinearrowbulletCxSpMiddle
+	{mso-style-name:"MSB underline + arrow bulletCxSpMiddle";
+	mso-style-link:"MSB underline + arrow bullet Char";
+	margin-top:0cm;
+	margin-right:0cm;
+	margin-bottom:0cm;
+	margin-left:36.0pt;
+	margin-bottom:.0001pt;
+	text-indent:-18.0pt;
+	line-height:normal;
+	font-size:11.0pt;
+	font-family:"Arial","sans-serif";
+	text-decoration:underline;}
+p.MSBunderlinearrowbulletCxSpLast, li.MSBunderlinearrowbulletCxSpLast, div.MSBunderlinearrowbulletCxSpLast
+	{mso-style-name:"MSB underline + arrow bulletCxSpLast";
+	mso-style-link:"MSB underline + arrow bullet Char";
+	margin-top:0cm;
+	margin-right:0cm;
+	margin-bottom:0cm;
+	margin-left:36.0pt;
+	margin-bottom:.0001pt;
+	text-indent:-18.0pt;
+	line-height:normal;
+	font-size:11.0pt;
+	font-family:"Arial","sans-serif";
+	text-decoration:underline;}
+span.MSBunderlinearrowbulletChar
+	{mso-style-name:"MSB underline + arrow bullet Char";
+	mso-style-link:"MSB underline + arrow bullet";
+	font-family:"Arial","sans-serif";
+	text-decoration:underline;}
+p.MSBemphasis1x, li.MSBemphasis1x, div.MSBemphasis1x
+	{mso-style-name:"MSB emphasis 1x";
+	mso-style-link:"MSB emphasis 1x Char";
+	margin:0cm;
+	margin-bottom:.0001pt;
+	line-height:normal;
+	font-size:11.0pt;
+	font-family:"Arial","sans-serif";
+	font-weight:bold;
+	font-style:italic;
+	text-decoration:underline;}
+p.MSBemphasis1xCxSpFirst, li.MSBemphasis1xCxSpFirst, div.MSBemphasis1xCxSpFirst
+	{mso-style-name:"MSB emphasis 1xCxSpFirst";
+	mso-style-link:"MSB emphasis 1x Char";
+	margin:0cm;
+	margin-bottom:.0001pt;
+	line-height:normal;
+	font-size:11.0pt;
+	font-family:"Arial","sans-serif";
+	font-weight:bold;
+	font-style:italic;
+	text-decoration:underline;}
+p.MSBemphasis1xCxSpMiddle, li.MSBemphasis1xCxSpMiddle, div.MSBemphasis1xCxSpMiddle
+	{mso-style-name:"MSB emphasis 1xCxSpMiddle";
+	mso-style-link:"MSB emphasis 1x Char";
+	margin:0cm;
+	margin-bottom:.0001pt;
+	line-height:normal;
+	font-size:11.0pt;
+	font-family:"Arial","sans-serif";
+	font-weight:bold;
+	font-style:italic;
+	text-decoration:underline;}
+p.MSBemphasis1xCxSpLast, li.MSBemphasis1xCxSpLast, div.MSBemphasis1xCxSpLast
+	{mso-style-name:"MSB emphasis 1xCxSpLast";
+	mso-style-link:"MSB emphasis 1x Char";
+	margin:0cm;
+	margin-bottom:.0001pt;
+	line-height:normal;
+	font-size:11.0pt;
+	font-family:"Arial","sans-serif";
+	font-weight:bold;
+	font-style:italic;
+	text-decoration:underline;}
+span.MSBemphasis1xChar
+	{mso-style-name:"MSB emphasis 1x Char";
+	mso-style-link:"MSB emphasis 1x";
+	font-family:"Arial","sans-serif";
+	font-weight:bold;
+	font-style:italic;
+	text-decoration:underline;}
+p.MSBemphasis2x, li.MSBemphasis2x, div.MSBemphasis2x
+	{mso-style-name:"MSB emphasis 2x";
+	mso-style-link:"MSB emphasis 2x Char";
+	margin:0cm;
+	margin-bottom:.0001pt;
+	line-height:normal;
+	font-size:11.0pt;
+	font-family:"Arial","sans-serif";
+	color:#CC66FF;
+	font-weight:bold;
+	font-style:italic;}
+p.MSBemphasis2xCxSpFirst, li.MSBemphasis2xCxSpFirst, div.MSBemphasis2xCxSpFirst
+	{mso-style-name:"MSB emphasis 2xCxSpFirst";
+	mso-style-link:"MSB emphasis 2x Char";
+	margin:0cm;
+	margin-bottom:.0001pt;
+	line-height:normal;
+	font-size:11.0pt;
+	font-family:"Arial","sans-serif";
+	color:#CC66FF;
+	font-weight:bold;
+	font-style:italic;}
+p.MSBemphasis2xCxSpMiddle, li.MSBemphasis2xCxSpMiddle, div.MSBemphasis2xCxSpMiddle
+	{mso-style-name:"MSB emphasis 2xCxSpMiddle";
+	mso-style-link:"MSB emphasis 2x Char";
+	margin:0cm;
+	margin-bottom:.0001pt;
+	line-height:normal;
+	font-size:11.0pt;
+	font-family:"Arial","sans-serif";
+	color:#CC66FF;
+	font-weight:bold;
+	font-style:italic;}
+p.MSBemphasis2xCxSpLast, li.MSBemphasis2xCxSpLast, div.MSBemphasis2xCxSpLast
+	{mso-style-name:"MSB emphasis 2xCxSpLast";
+	mso-style-link:"MSB emphasis 2x Char";
+	margin:0cm;
+	margin-bottom:.0001pt;
+	line-height:normal;
+	font-size:11.0pt;
+	font-family:"Arial","sans-serif";
+	color:#CC66FF;
+	font-weight:bold;
+	font-style:italic;}
+span.MSBemphasis2xChar
+	{mso-style-name:"MSB emphasis 2x Char";
+	mso-style-link:"MSB emphasis 2x";
+	font-family:"Arial","sans-serif";
+	color:#CC66FF;
+	font-weight:bold;
+	font-style:italic;}
+p.MSBnormaltextnolist, li.MSBnormaltextnolist, div.MSBnormaltextnolist
+	{mso-style-name:"MSB normal text \(no list\)";
+	mso-style-link:"MSB normal text \(no list\) Char";
+	margin-top:0cm;
+	margin-right:0cm;
+	margin-bottom:0cm;
+	margin-left:3.1pt;
+	margin-bottom:.0001pt;
+	line-height:normal;
+	font-size:11.0pt;
+	font-family:"Arial","sans-serif";}
+p.MSBnormaltextnolistCxSpFirst, li.MSBnormaltextnolistCxSpFirst, div.MSBnormaltextnolistCxSpFirst
+	{mso-style-name:"MSB normal text \(no list\)CxSpFirst";
+	mso-style-link:"MSB normal text \(no list\) Char";
+	margin-top:0cm;
+	margin-right:0cm;
+	margin-bottom:0cm;
+	margin-left:3.1pt;
+	margin-bottom:.0001pt;
+	line-height:normal;
+	font-size:11.0pt;
+	font-family:"Arial","sans-serif";}
+p.MSBnormaltextnolistCxSpMiddle, li.MSBnormaltextnolistCxSpMiddle, div.MSBnormaltextnolistCxSpMiddle
+	{mso-style-name:"MSB normal text \(no list\)CxSpMiddle";
+	mso-style-link:"MSB normal text \(no list\) Char";
+	margin-top:0cm;
+	margin-right:0cm;
+	margin-bottom:0cm;
+	margin-left:3.1pt;
+	margin-bottom:.0001pt;
+	line-height:normal;
+	font-size:11.0pt;
+	font-family:"Arial","sans-serif";}
+p.MSBnormaltextnolistCxSpLast, li.MSBnormaltextnolistCxSpLast, div.MSBnormaltextnolistCxSpLast
+	{mso-style-name:"MSB normal text \(no list\)CxSpLast";
+	mso-style-link:"MSB normal text \(no list\) Char";
+	margin-top:0cm;
+	margin-right:0cm;
+	margin-bottom:0cm;
+	margin-left:3.1pt;
+	margin-bottom:.0001pt;
+	line-height:normal;
+	font-size:11.0pt;
+	font-family:"Arial","sans-serif";}
+span.MSBnormaltextnolistChar
+	{mso-style-name:"MSB normal text \(no list\) Char";
+	mso-style-link:"MSB normal text \(no list\)";
+	font-family:"Arial","sans-serif";}
+p.MSBboldnormaltext, li.MSBboldnormaltext, div.MSBboldnormaltext
+	{mso-style-name:"MSB bold normal text";
+	mso-style-link:"MSB bold normal text Char";
+	margin:0cm;
+	margin-bottom:.0001pt;
+	line-height:normal;
+	font-size:11.0pt;
+	font-family:"Arial","sans-serif";
+	font-weight:bold;}
+p.MSBboldnormaltextCxSpFirst, li.MSBboldnormaltextCxSpFirst, div.MSBboldnormaltextCxSpFirst
+	{mso-style-name:"MSB bold normal textCxSpFirst";
+	mso-style-link:"MSB bold normal text Char";
+	margin:0cm;
+	margin-bottom:.0001pt;
+	line-height:normal;
+	font-size:11.0pt;
+	font-family:"Arial","sans-serif";
+	font-weight:bold;}
+p.MSBboldnormaltextCxSpMiddle, li.MSBboldnormaltextCxSpMiddle, div.MSBboldnormaltextCxSpMiddle
+	{mso-style-name:"MSB bold normal textCxSpMiddle";
+	mso-style-link:"MSB bold normal text Char";
+	margin:0cm;
+	margin-bottom:.0001pt;
+	line-height:normal;
+	font-size:11.0pt;
+	font-family:"Arial","sans-serif";
+	font-weight:bold;}
+p.MSBboldnormaltextCxSpLast, li.MSBboldnormaltextCxSpLast, div.MSBboldnormaltextCxSpLast
+	{mso-style-name:"MSB bold normal textCxSpLast";
+	mso-style-link:"MSB bold normal text Char";
+	margin:0cm;
+	margin-bottom:.0001pt;
+	line-height:normal;
+	font-size:11.0pt;
+	font-family:"Arial","sans-serif";
+	font-weight:bold;}
+span.MSBboldnormaltextChar
+	{mso-style-name:"MSB bold normal text Char";
+	mso-style-link:"MSB bold normal text";
+	font-family:"Arial","sans-serif";
+	font-weight:bold;}
+p.MSBunderlinenormaltext, li.MSBunderlinenormaltext, div.MSBunderlinenormaltext
+	{mso-style-name:"MSB underline normal text";
+	mso-style-link:"MSB underline normal text Char";
+	margin:0cm;
+	margin-bottom:.0001pt;
+	line-height:normal;
+	font-size:11.0pt;
+	font-family:"Arial","sans-serif";
+	text-decoration:underline;}
+p.MSBunderlinenormaltextCxSpFirst, li.MSBunderlinenormaltextCxSpFirst, div.MSBunderlinenormaltextCxSpFirst
+	{mso-style-name:"MSB underline normal textCxSpFirst";
+	mso-style-link:"MSB underline normal text Char";
+	margin:0cm;
+	margin-bottom:.0001pt;
+	line-height:normal;
+	font-size:11.0pt;
+	font-family:"Arial","sans-serif";
+	text-decoration:underline;}
+p.MSBunderlinenormaltextCxSpMiddle, li.MSBunderlinenormaltextCxSpMiddle, div.MSBunderlinenormaltextCxSpMiddle
+	{mso-style-name:"MSB underline normal textCxSpMiddle";
+	mso-style-link:"MSB underline normal text Char";
+	margin:0cm;
+	margin-bottom:.0001pt;
+	line-height:normal;
+	font-size:11.0pt;
+	font-family:"Arial","sans-serif";
+	text-decoration:underline;}
+p.MSBunderlinenormaltextCxSpLast, li.MSBunderlinenormaltextCxSpLast, div.MSBunderlinenormaltextCxSpLast
+	{mso-style-name:"MSB underline normal textCxSpLast";
+	mso-style-link:"MSB underline normal text Char";
+	margin:0cm;
+	margin-bottom:.0001pt;
+	line-height:normal;
+	font-size:11.0pt;
+	font-family:"Arial","sans-serif";
+	text-decoration:underline;}
+span.MSBunderlinenormaltextChar
+	{mso-style-name:"MSB underline normal text Char";
+	mso-style-link:"MSB underline normal text";
+	font-family:"Arial","sans-serif";
+	text-decoration:underline;}
+p.MSBitalicsnormaltext, li.MSBitalicsnormaltext, div.MSBitalicsnormaltext
+	{mso-style-name:"MSB italics normal text";
+	mso-style-link:"MSB italics normal text Char";
+	margin:0cm;
+	margin-bottom:.0001pt;
+	line-height:normal;
+	font-size:11.0pt;
+	font-family:"Arial","sans-serif";
+	font-style:italic;}
+p.MSBitalicsnormaltextCxSpFirst, li.MSBitalicsnormaltextCxSpFirst, div.MSBitalicsnormaltextCxSpFirst
+	{mso-style-name:"MSB italics normal textCxSpFirst";
+	mso-style-link:"MSB italics normal text Char";
+	margin:0cm;
+	margin-bottom:.0001pt;
+	line-height:normal;
+	font-size:11.0pt;
+	font-family:"Arial","sans-serif";
+	font-style:italic;}
+p.MSBitalicsnormaltextCxSpMiddle, li.MSBitalicsnormaltextCxSpMiddle, div.MSBitalicsnormaltextCxSpMiddle
+	{mso-style-name:"MSB italics normal textCxSpMiddle";
+	mso-style-link:"MSB italics normal text Char";
+	margin:0cm;
+	margin-bottom:.0001pt;
+	line-height:normal;
+	font-size:11.0pt;
+	font-family:"Arial","sans-serif";
+	font-style:italic;}
+p.MSBitalicsnormaltextCxSpLast, li.MSBitalicsnormaltextCxSpLast, div.MSBitalicsnormaltextCxSpLast
+	{mso-style-name:"MSB italics normal textCxSpLast";
+	mso-style-link:"MSB italics normal text Char";
+	margin:0cm;
+	margin-bottom:.0001pt;
+	line-height:normal;
+	font-size:11.0pt;
+	font-family:"Arial","sans-serif";
+	font-style:italic;}
+span.MSBitalicsnormaltextChar
+	{mso-style-name:"MSB italics normal text Char";
+	mso-style-link:"MSB italics normal text";
+	font-family:"Arial","sans-serif";
+	font-style:italic;}
+p.MSBReference, li.MSBReference, div.MSBReference
+	{mso-style-name:"MSB Reference";
+	mso-style-link:"MSB Reference Char";
+	margin:0cm;
+	margin-bottom:.0001pt;
+	line-height:normal;
+	font-size:10.0pt;
+	font-family:"Arial","sans-serif";}
+p.MSBReferenceCxSpFirst, li.MSBReferenceCxSpFirst, div.MSBReferenceCxSpFirst
+	{mso-style-name:"MSB ReferenceCxSpFirst";
+	mso-style-link:"MSB Reference Char";
+	margin:0cm;
+	margin-bottom:.0001pt;
+	line-height:normal;
+	font-size:10.0pt;
+	font-family:"Arial","sans-serif";}
+p.MSBReferenceCxSpMiddle, li.MSBReferenceCxSpMiddle, div.MSBReferenceCxSpMiddle
+	{mso-style-name:"MSB ReferenceCxSpMiddle";
+	mso-style-link:"MSB Reference Char";
+	margin:0cm;
+	margin-bottom:.0001pt;
+	line-height:normal;
+	font-size:10.0pt;
+	font-family:"Arial","sans-serif";}
+p.MSBReferenceCxSpLast, li.MSBReferenceCxSpLast, div.MSBReferenceCxSpLast
+	{mso-style-name:"MSB ReferenceCxSpLast";
+	mso-style-link:"MSB Reference Char";
+	margin:0cm;
+	margin-bottom:.0001pt;
+	line-height:normal;
+	font-size:10.0pt;
+	font-family:"Arial","sans-serif";}
+span.MSBReferenceChar
+	{mso-style-name:"MSB Reference Char";
+	mso-style-link:"MSB Reference";
+	font-family:"Arial","sans-serif";}
+p.MSBboldunderlinednormaltext, li.MSBboldunderlinednormaltext, div.MSBboldunderlinednormaltext
+	{mso-style-name:"MSB bold underlined normal text";
+	mso-style-link:"MSB bold underlined normal text Char";
+	margin:0cm;
+	margin-bottom:.0001pt;
+	line-height:normal;
+	font-size:11.0pt;
+	font-family:"Arial","sans-serif";
+	font-weight:bold;
+	text-decoration:underline;}
+p.MSBboldunderlinednormaltextCxSpFirst, li.MSBboldunderlinednormaltextCxSpFirst, div.MSBboldunderlinednormaltextCxSpFirst
+	{mso-style-name:"MSB bold underlined normal textCxSpFirst";
+	mso-style-link:"MSB bold underlined normal text Char";
+	margin:0cm;
+	margin-bottom:.0001pt;
+	line-height:normal;
+	font-size:11.0pt;
+	font-family:"Arial","sans-serif";
+	font-weight:bold;
+	text-decoration:underline;}
+p.MSBboldunderlinednormaltextCxSpMiddle, li.MSBboldunderlinednormaltextCxSpMiddle, div.MSBboldunderlinednormaltextCxSpMiddle
+	{mso-style-name:"MSB bold underlined normal textCxSpMiddle";
+	mso-style-link:"MSB bold underlined normal text Char";
+	margin:0cm;
+	margin-bottom:.0001pt;
+	line-height:normal;
+	font-size:11.0pt;
+	font-family:"Arial","sans-serif";
+	font-weight:bold;
+	text-decoration:underline;}
+p.MSBboldunderlinednormaltextCxSpLast, li.MSBboldunderlinednormaltextCxSpLast, div.MSBboldunderlinednormaltextCxSpLast
+	{mso-style-name:"MSB bold underlined normal textCxSpLast";
+	mso-style-link:"MSB bold underlined normal text Char";
+	margin:0cm;
+	margin-bottom:.0001pt;
+	line-height:normal;
+	font-size:11.0pt;
+	font-family:"Arial","sans-serif";
+	font-weight:bold;
+	text-decoration:underline;}
+span.MSBboldunderlinednormaltextChar
+	{mso-style-name:"MSB bold underlined normal text Char";
+	mso-style-link:"MSB bold underlined normal text";
+	font-family:"Arial","sans-serif";
+	font-weight:bold;
+	text-decoration:underline;}
+.MsoChpDefault
+	{font-size:11.0pt;}
+.MsoPapDefault
+	{margin-bottom:10.0pt;
+	line-height:115%;}
+@page WordSection1
+	{size:595.3pt 841.9pt;
+	margin:72.0pt 90.0pt 72.0pt 90.0pt;}
+div.WordSection1
+	{page:WordSection1;}
+ /* List Definitions */
+ ol
+	{margin-bottom:0cm;}
+ul
+	{margin-bottom:0cm;}
+-->
+</style>
+  </head>
+  <body>
+	  <div id="wrap">
+			<div id="main" class="container">
+		  	<div id="header">
+					<div style="float:left;">
+						<img src="/images/MSBLogo.png">
+					</div>
+					<img src="/images/MSBText.png">
+				</div>
+				<div id="content" class="span-16 append-1 prepend-1">					
+					<div class="WordSection1">
+
+<p class="MSBHeading1"><u>Irritable Bowell Syndrome</u></p>
+
+<p class="MsoNormal" style="margin-bottom:0cm;margin-bottom:.0001pt"><span style='font-family:"Arial","sans-serif"'> </span></p>
+
+<p class="MsoNormal" style="margin-top:0cm;margin-right:0cm;margin-bottom:0cm;
+margin-left:21.0pt;margin-bottom:.0001pt;text-indent:-18.0pt"><span style='font-family:"Times New Roman","serif"'>-<span style='font:7.0pt "Times New Roman"'>       
+</span></span><span style='font-family:"Arial","sans-serif"'>functional bowel
+disease - no organic cause is found</span></p>
+
+<p class="MsoNormal" style="margin-top:0cm;margin-right:0cm;margin-bottom:0cm;
+margin-left:3.0pt;margin-bottom:.0001pt"><span style='font-family:"Arial","sans-serif"'> </span></p>
+
+<p class="MsoNormal" style="margin-top:0cm;margin-right:0cm;margin-bottom:0cm;
+margin-left:21.0pt;margin-bottom:.0001pt;text-indent:-18.0pt"><span style='font-family:"Times New Roman","serif"'>-<span style='font:7.0pt "Times New Roman"'>       
+</span></span><span style='font-family:"Arial","sans-serif"'>symptoms are
+chronic and include:  </span></p>
+
+<p class="MsoNormal" style="margin-top:0cm;margin-right:0cm;margin-bottom:0cm;
+margin-left:93.0pt;margin-bottom:.0001pt;text-indent:-18.0pt"><span style="font-family:Wingdings">§<span style='font:7.0pt "Times New Roman"'> 
+</span></span><b><span style='font-family:"Arial","sans-serif"'>Abdominal pain</span></b></p>
+
+<p class="MsoNormal" style="margin-top:0cm;margin-right:0cm;margin-bottom:0cm;
+margin-left:93.0pt;margin-bottom:.0001pt;text-indent:-18.0pt"><span style="font-family:Wingdings">§<span style='font:7.0pt "Times New Roman"'> 
+</span></span><b><span style='font-family:"Arial","sans-serif"'>Bloating</span></b></p>
+
+<p class="MsoNormal" style="margin-top:0cm;margin-right:0cm;margin-bottom:0cm;
+margin-left:93.0pt;margin-bottom:.0001pt;text-indent:-18.0pt"><span style="font-family:Wingdings">§<span style='font:7.0pt "Times New Roman"'> 
+</span></span><b><span style='font-family:"Arial","sans-serif"'>Change in bowel
+habit</span></b></p>
+
+<p class="MsoNormal" style="margin-top:0cm;margin-right:0cm;margin-bottom:0cm;
+margin-left:75.0pt;margin-bottom:.0001pt"><span style='font-family:"Arial","sans-serif"'> </span></p>
+
+<p class="MsoNormal" style="margin-top:0cm;margin-right:0cm;margin-bottom:0cm;
+margin-left:21.0pt;margin-bottom:.0001pt;text-indent:-18.0pt"><span style='font-family:"Times New Roman","serif"'>-<span style='font:7.0pt "Times New Roman"'>       
+</span></span><span style='font-family:"Arial","sans-serif"'>symptoms often
+relieved by defecation</span></p>
+
+<p class="MsoNormal" style="margin-top:0cm;margin-right:0cm;margin-bottom:0cm;
+margin-left:21.0pt;margin-bottom:.0001pt;text-indent:-18.0pt"><span style='font-family:"Times New Roman","serif"'>-<span style='font:7.0pt "Times New Roman"'>       
+</span></span><span style='font-family:"Arial","sans-serif"'>bowel symptoms
+vary</span></p>
+
+<p class="MsoNormal" style="margin-top:0cm;margin-right:0cm;margin-bottom:0cm;
+margin-left:57.0pt;margin-bottom:.0001pt;text-indent:-18.0pt"><span style="font-family:Symbol;color:#7030A0">·<span style='font:7.0pt "Times New Roman"'>       
+</span></span><span style='font-family:"Arial","sans-serif"'>IBS-<b>D</b> =
+Diarrhoea</span></p>
+
+<p class="MsoNormal" style="margin-top:0cm;margin-right:0cm;margin-bottom:0cm;
+margin-left:57.0pt;margin-bottom:.0001pt;text-indent:-18.0pt"><span style="font-family:Symbol;color:#7030A0">·<span style='font:7.0pt "Times New Roman"'>       
+</span></span><span style='font-family:"Arial","sans-serif"'>IBS-<b>C</b> =
+Constipation</span></p>
+
+<p class="MsoNormal" style="margin-top:0cm;margin-right:0cm;margin-bottom:0cm;
+margin-left:57.0pt;margin-bottom:.0001pt;text-indent:-18.0pt"><span style="font-family:Symbol;color:#7030A0">·<span style='font:7.0pt "Times New Roman"'>       
+</span></span><span style='font-family:"Arial","sans-serif"'>IBS-<b>A</b> =
+Alternates </span></p>
+
+<p class="MsoNormal" style="margin-bottom:0cm;margin-bottom:.0001pt"><span style='font-family:"Arial","sans-serif"'> </span></p>
+
+<p class="MSBboldunderlinednormaltext">Pathophysiology:</p>
+
+<p class="MsoNormal" style="margin-bottom:0cm;margin-bottom:.0001pt"><span style='font-family:"Arial","sans-serif"'> </span></p>
+
+<p class="MsoNormal" style="margin-top:0cm;margin-right:0cm;margin-bottom:0cm;
+margin-left:21.0pt;margin-bottom:.0001pt;text-indent:-18.0pt"><span style='font-family:"Times New Roman","serif"'>-<span style='font:7.0pt "Times New Roman"'>       
+</span></span><span style='font-family:"Arial","sans-serif"'>Unknown cause –
+thought to be due to abnormality in the brain-gut axis, ie hypersensitive gut
+response to psychological stimuli.</span></p>
+
+<p class="MsoNormal" style="margin-top:0cm;margin-right:0cm;margin-bottom:0cm;
+margin-left:21.0pt;margin-bottom:.0001pt;text-indent:-18.0pt"><span style='font-family:"Times New Roman","serif"'>-<span style='font:7.0pt "Times New Roman"'>       
+</span></span><span style='font-family:"Arial","sans-serif"'>Other theories
+include abnormalities in gut flora or gut immune system.</span></p>
+
+<p class="MsoNormal" style="margin-top:0cm;margin-right:0cm;margin-bottom:0cm;
+margin-left:21.0pt;margin-bottom:.0001pt;text-indent:-18.0pt"><span style='font-family:"Times New Roman","serif"'>-<span style='font:7.0pt "Times New Roman"'>       
+</span></span><span style='font-family:"Arial","sans-serif"'>IBS does not
+progress onto other conditions.</span></p>
+
+<p class="MsoNormal" style="margin-top:0cm;margin-right:0cm;margin-bottom:0cm;
+margin-left:21.0pt;margin-bottom:.0001pt;text-indent:-18.0pt"><span style='font-family:"Times New Roman","serif"'>-<span style='font:7.0pt "Times New Roman"'>       
+</span></span><span style='font-family:"Arial","sans-serif"'>IBS often occurs
+in patients with other symptoms including lethargy, nausea, backache, headache,
+and bladder symptoms and these may support diagnosis.</span></p>
+
+<p class="MsoNormal" style="margin-top:0cm;margin-right:0cm;margin-bottom:0cm;
+margin-left:21.0pt;margin-bottom:.0001pt"><span style='font-family:"Arial","sans-serif"'> </span></p>
+
+<table class="MsoTableGrid" border="1" cellspacing="0" cellpadding="0" style="background:yellow;border-collapse:collapse;border:none"><tr>
+<td width="710" valign="top" style="width:426.1pt;border:solid windowtext 1.0pt;
+  padding:0cm 5.4pt 0cm 5.4pt">
+  <p class="MSBsub-heading">Red-flag Symptoms</p>
+  <p class="MsoNormal" style="margin-top:0cm;margin-right:0cm;margin-bottom:0cm;
+  margin-left:3.0pt;margin-bottom:.0001pt;line-height:normal"><span style='font-family:"Arial","sans-serif"'> </span></p>
+  <p class="MsoNormal" style="margin-top:0cm;margin-right:0cm;margin-bottom:0cm;
+  margin-left:3.0pt;margin-bottom:.0001pt;line-height:normal"><span style='font-family:"Arial","sans-serif"'>Investigate further and refer if
+  necessary any:</span></p>
+  <p class="MsoNormal" style="margin-top:0cm;margin-right:0cm;margin-bottom:0cm;
+  margin-left:3.0pt;margin-bottom:.0001pt;line-height:normal"><span style='font-family:"Arial","sans-serif"'> </span></p>
+  <p class="MsoNormal" style="margin-top:0cm;margin-right:0cm;margin-bottom:0cm;
+  margin-left:21.0pt;margin-bottom:.0001pt;text-indent:-18.0pt;line-height:
+  normal"><span style="font-family:Wingdings">Ø<span style='font:7.0pt "Times New Roman"'> 
+  </span></span><span style='font-family:"Arial","sans-serif"'>Unexplained weight-loss</span></p>
+  <p class="MsoNormal" style="margin-top:0cm;margin-right:0cm;margin-bottom:0cm;
+  margin-left:21.0pt;margin-bottom:.0001pt;text-indent:-18.0pt;line-height:
+  normal"><span style="font-family:Wingdings">Ø<span style='font:7.0pt "Times New Roman"'> 
+  </span></span><span style='font-family:"Arial","sans-serif"'>PR bleeding</span></p>
+  <p class="MsoNormal" style="margin-top:0cm;margin-right:0cm;margin-bottom:0cm;
+  margin-left:21.0pt;margin-bottom:.0001pt;text-indent:-18.0pt;line-height:
+  normal"><span style="font-family:Wingdings">Ø<span style='font:7.0pt "Times New Roman"'> 
+  </span></span><span style='font-family:"Arial","sans-serif"'>FH of bowel or
+  ovarian cancer</span></p>
+  <p class="MsoNormal" style="margin-top:0cm;margin-right:0cm;margin-bottom:0cm;
+  margin-left:21.0pt;margin-bottom:.0001pt;text-indent:-18.0pt;line-height:
+  normal"><span style="font-family:Wingdings">Ø<span style='font:7.0pt "Times New Roman"'> 
+  </span></span><span style='font-family:"Arial","sans-serif"'>Age &gt;60 (esp
+  if change in bowel habit for &gt;6 weeks)</span></p>
+  <p class="MsoNormal" style="margin-top:0cm;margin-right:0cm;margin-bottom:0cm;
+  margin-left:21.0pt;margin-bottom:.0001pt;text-indent:-18.0pt;line-height:
+  normal"><span style="font-family:Wingdings">Ø<span style='font:7.0pt "Times New Roman"'> 
+  </span></span><span style='font-family:"Arial","sans-serif"'>Anaemia</span></p>
+  <p class="MsoNormal" style="margin-top:0cm;margin-right:0cm;margin-bottom:0cm;
+  margin-left:21.0pt;margin-bottom:.0001pt;text-indent:-18.0pt;line-height:
+  normal"><span style="font-family:Wingdings">Ø<span style='font:7.0pt "Times New Roman"'> 
+  </span></span><span style='font-family:"Arial","sans-serif"'>Rectal/abdominal
+  masses</span></p>
+  <p class="MsoNormal" style="margin-bottom:0cm;margin-bottom:.0001pt;line-height:
+  normal"><span style='font-family:"Arial","sans-serif"'> </span></p>
+  </td>
+ </tr></table>
+<p class="MsoNormal" style="margin-bottom:0cm;margin-bottom:.0001pt"><span style='font-family:"Arial","sans-serif"'> </span></p>
+
+<p class="MsoNormal" style="margin-top:0cm;margin-right:0cm;margin-bottom:0cm;
+margin-left:3.0pt;margin-bottom:.0001pt"><span style='font-family:"Arial","sans-serif"'> </span></p>
+
+<p class="MsoNormal" style="margin-bottom:0cm;margin-bottom:.0001pt"><b><span style='font-family:"Arial","sans-serif"'>Investigations</span></b></p>
+
+<p class="MsoNormal" style="margin-bottom:0cm;margin-bottom:.0001pt"><span style='font-family:"Arial","sans-serif"'> </span></p>
+
+<p class="MsoNormal" style="margin-top:0cm;margin-right:0cm;margin-bottom:0cm;
+margin-left:21.0pt;margin-bottom:.0001pt;text-indent:-18.0pt"><span style='font-family:"Times New Roman","serif"'>-<span style='font:7.0pt "Times New Roman"'>       
+</span></span><span style='font-family:"Arial","sans-serif"'>GI and Rectal
+Examination</span></p>
+
+<p class="MsoNormal" style="margin-top:0cm;margin-right:0cm;margin-bottom:0cm;
+margin-left:21.0pt;margin-bottom:.0001pt;text-indent:-18.0pt"><span style='font-family:"Times New Roman","serif"'>-<span style='font:7.0pt "Times New Roman"'>       
+</span></span><span style='font-family:"Arial","sans-serif"'>FBC</span></p>
+
+<p class="MsoNormal" style="margin-top:0cm;margin-right:0cm;margin-bottom:0cm;
+margin-left:21.0pt;margin-bottom:.0001pt;text-indent:-18.0pt"><span style='font-family:"Times New Roman","serif"'>-<span style='font:7.0pt "Times New Roman"'>       
+</span></span><span style='font-family:"Arial","sans-serif"'>CRP</span></p>
+
+<p class="MsoNormal" style="margin-top:0cm;margin-right:0cm;margin-bottom:0cm;
+margin-left:21.0pt;margin-bottom:.0001pt;text-indent:-18.0pt"><span style='font-family:"Times New Roman","serif"'>-<span style='font:7.0pt "Times New Roman"'>       
+</span></span><span style='font-family:"Arial","sans-serif"'>Screen for coeliac’s
+(anti-tissue transglutaminase antibody)</span></p>
+
+<p class="MsoNormal" style="margin-bottom:0cm;margin-bottom:.0001pt"><span style='font-family:"Arial","sans-serif"'> </span></p>
+
+<p class="MsoNormal" style="margin-top:0cm;margin-right:0cm;margin-bottom:0cm;
+margin-left:21.0pt;margin-bottom:.0001pt;text-indent:-18.0pt"><span style='font-family:"Times New Roman","serif"'>-<span style='font:7.0pt "Times New Roman"'>       
+</span></span><span style='font-family:"Arial","sans-serif"'>If these tests are
+negative, there are no red flags, and history is consistent with IBS it is NOT
+necessary to investigate further.</span></p>
+
+<p class="MsoNormal" style="margin-bottom:0cm;margin-bottom:.0001pt"><span style='font-family:"Arial","sans-serif"'> </span></p>
+
+<p class="MsoNormal" style="margin-top:0cm;margin-right:0cm;margin-bottom:0cm;
+margin-left:21.0pt;margin-bottom:.0001pt;text-indent:-18.0pt"><span style='font-family:"Times New Roman","serif"'>-<span style='font:7.0pt "Times New Roman"'>       
+</span></span><span style='font-family:"Arial","sans-serif"'>Clinical
+Alogirthms, such as Rome II can be used to help make a positive diagnosis of
+IBS however commonly in practice it is simply a diagnosis of exclusion.</span></p>
+
+<p class="MsoNormal" style="margin-bottom:0cm;margin-bottom:.0001pt"><span style='font-family:"Arial","sans-serif"'> </span></p>
+
+<p class="MsoNormal" style="margin-bottom:0cm;margin-bottom:.0001pt"><b><u><span style='font-family:"Arial","sans-serif"'>Management</span></u></b></p>
+
+<p class="MsoNormal" style="margin-bottom:0cm;margin-bottom:.0001pt"><span style='font-family:"Arial","sans-serif"'> </span></p>
+
+<p class="MsoNormal" style="margin-top:0cm;margin-right:0cm;margin-bottom:0cm;
+margin-left:21.0pt;margin-bottom:.0001pt;text-indent:-18.0pt"><span style='font-family:"Times New Roman","serif"'>-<span style='font:7.0pt "Times New Roman"'>       
+</span></span><span style='font-family:"Arial","sans-serif"'>General lifestyle
+guidance – exercise, stress management, diet and symptom-targeted management.</span></p>
+
+<p class="MsoNormal" style="margin-bottom:0cm;margin-bottom:.0001pt"><span style='font-family:"Arial","sans-serif"'> </span></p>
+
+<p class="MsoNormal" style="margin-top:0cm;margin-right:0cm;margin-bottom:0cm;
+margin-left:21.0pt;margin-bottom:.0001pt;text-indent:-18.0pt"><span style='font-family:"Times New Roman","serif"'>-<span style='font:7.0pt "Times New Roman"'>       
+</span></span><span style='font-family:"Arial","sans-serif"'>Review fibre
+intake</span></p>
+
+<p class="MsoNormal" style="margin-top:0cm;margin-right:0cm;margin-bottom:0cm;
+margin-left:21.0pt;margin-bottom:.0001pt;text-indent:-18.0pt"><span style='font-family:"Times New Roman","serif"'>-<span style='font:7.0pt "Times New Roman"'>       
+</span></span><span style='font-family:"Arial","sans-serif"'>Prescribe
+laxatives or anti-motility agents (loperamide) as required and get patient to
+adjust dose depending on symptoms/stool consistency.</span></p>
+
+<p class="MsoNormal" style="margin-bottom:0cm;margin-bottom:.0001pt"><span style='font-family:"Arial","sans-serif"'> </span></p>
+
+<p class="MsoNormal" style="margin-top:0cm;margin-right:0cm;margin-bottom:0cm;
+margin-left:21.0pt;margin-bottom:.0001pt;text-indent:-18.0pt"><span style='font-family:"Times New Roman","serif"'>-<span style='font:7.0pt "Times New Roman"'>       
+</span></span><span style='font-family:"Arial","sans-serif"'>If symptoms are
+still not controlled consider 2<sup>nd</sup> line therapy</span></p>
+
+<p class="MsoNormal" style="margin-top:0cm;margin-right:0cm;margin-bottom:0cm;
+margin-left:57.0pt;margin-bottom:.0001pt;text-indent:-18.0pt"><span style="font-family:Symbol;color:#7030A0">·<span style='font:7.0pt "Times New Roman"'>       
+</span></span><span style='font-family:"Arial","sans-serif"'>low dose
+Tri-cyclic Antidepressants (used for their analgesic effects)</span></p>
+
+<p class="MsoNormal" style="margin-top:0cm;margin-right:0cm;margin-bottom:0cm;
+margin-left:57.0pt;margin-bottom:.0001pt;text-indent:-18.0pt"><span style="font-family:Symbol;color:#7030A0">·<span style='font:7.0pt "Times New Roman"'>       
+</span></span><span style='font-family:"Arial","sans-serif"'>if no response  -
+try Selective Serotonin Re-uptake Inhibitors</span></p>
+
+<p class="MsoNormal" style="margin-bottom:0cm;margin-bottom:.0001pt"><span style='font-family:"Arial","sans-serif"'> </span></p>
+
+<p class="MsoNormal" style="margin-top:0cm;margin-right:0cm;margin-bottom:0cm;
+margin-left:21.0pt;margin-bottom:.0001pt;text-indent:-18.0pt;text-autospace:
+none"><span style='font-family:"Times New Roman","serif"'>-<span style='font:7.0pt "Times New Roman"'>       
+</span></span><span style='font-family:"Arial","sans-serif"'>For people whose
+symptoms do not respond to pharmacological treatments after 12 months consider
+referring for:</span></p>
+
+<p class="MsoNormal" style="margin-top:0cm;margin-right:0cm;margin-bottom:0cm;
+margin-left:57.0pt;margin-bottom:.0001pt;text-indent:-18.0pt;text-autospace:
+none"><span style="font-family:Symbol;color:#7030A0">·<span style='font:7.0pt "Times New Roman"'>       
+</span></span><span style='font-family:"Arial","sans-serif"'>cognitive
+behavioural therapy (CBT)</span></p>
+
+<p class="MsoNormal" style="margin-top:0cm;margin-right:0cm;margin-bottom:0cm;
+margin-left:57.0pt;margin-bottom:.0001pt;text-indent:-18.0pt;text-autospace:
+none"><span style="font-family:Symbol;color:#7030A0">·<span style='font:7.0pt "Times New Roman"'>       
+</span></span><span style='font-family:"Arial","sans-serif"'>hypnotherapy</span></p>
+
+<p class="MsoNormal" style="margin-top:0cm;margin-right:0cm;margin-bottom:0cm;
+margin-left:57.0pt;margin-bottom:.0001pt;text-indent:-18.0pt"><span style="font-family:Symbol;color:#7030A0">·<span style='font:7.0pt "Times New Roman"'>       
+</span></span><span style='font-family:"Arial","sans-serif"'>psychological
+therapy.</span></p>
+
+<p class="MsoNormal" style="margin-top:0cm;margin-right:0cm;margin-bottom:0cm;
+margin-left:57.0pt;margin-bottom:.0001pt"><span style='font-family:"Arial","sans-serif"'> </span></p>
+
+<table class="MsoTableGrid" border="1" cellspacing="0" cellpadding="0" style="background:#CC99FF;border-collapse:collapse;border:none"><tr>
+<td width="710" valign="top" style="width:426.1pt;border:solid windowtext 1.0pt;
+  padding:0cm 5.4pt 0cm 5.4pt">
+  <p class="MSBsub-heading">Differential Diagnosis</p>
+  <p class="MsoNormal" style="margin-bottom:0cm;margin-bottom:.0001pt;line-height:
+  normal"><span style='font-family:"Arial","sans-serif"'> </span></p>
+  <p class="MsoNormal" style="margin-top:0cm;margin-right:0cm;margin-bottom:0cm;
+  margin-left:21.0pt;margin-bottom:.0001pt;text-indent:-18.0pt;line-height:
+  normal"><span style='font-family:"Times New Roman","serif"'>-<span style='font:7.0pt "Times New Roman"'>       
+  </span></span><span style='font-family:"Arial","sans-serif"'>Inflammatory
+  Bowel Disease (IBD)</span></p>
+  <p class="MsoNormal" style="margin-top:0cm;margin-right:0cm;margin-bottom:0cm;
+  margin-left:57.0pt;margin-bottom:.0001pt;text-indent:-18.0pt;line-height:
+  normal"><span style="font-family:Symbol;color:#7030A0">·<span style='font:7.0pt "Times New Roman"'>       
+  </span></span><span style='font-family:"Arial","sans-serif"'>Crohn’s disease</span></p>
+  <p class="MsoNormal" style="margin-top:0cm;margin-right:0cm;margin-bottom:0cm;
+  margin-left:57.0pt;margin-bottom:.0001pt;text-indent:-18.0pt;line-height:
+  normal"><span style="font-family:Symbol;color:#7030A0">·<span style='font:7.0pt "Times New Roman"'>       
+  </span></span><span style='font-family:"Arial","sans-serif"'>Ulcerative
+  colitis</span></p>
+  <p class="MsoNormal" style="margin-top:0cm;margin-right:0cm;margin-bottom:0cm;
+  margin-left:21.0pt;margin-bottom:.0001pt;text-indent:-18.0pt;line-height:
+  normal"><span style='font-family:"Times New Roman","serif"'>-<span style='font:7.0pt "Times New Roman"'>       
+  </span></span><span style='font-family:"Arial","sans-serif"'>Coeliac’s
+  disease</span></p>
+  <p class="MsoNormal" style="margin-top:0cm;margin-right:0cm;margin-bottom:0cm;
+  margin-left:21.0pt;margin-bottom:.0001pt;text-indent:-18.0pt;line-height:
+  normal"><span style='font-family:"Times New Roman","serif"'>-<span style='font:7.0pt "Times New Roman"'>       
+  </span></span><span style='font-family:"Arial","sans-serif"'>Infection (eg
+  giardiasis parasite)</span></p>
+  <p class="MsoNormal" style="margin-top:0cm;margin-right:0cm;margin-bottom:0cm;
+  margin-left:21.0pt;margin-bottom:.0001pt;text-indent:-18.0pt;line-height:
+  normal"><span style='font-family:"Times New Roman","serif"'>-<span style='font:7.0pt "Times New Roman"'>       
+  </span></span><span style='font-family:"Arial","sans-serif"'>Hypersensitivity
+  (eg egg)</span></p>
+  <p class="MsoNormal" style="margin-top:0cm;margin-right:0cm;margin-bottom:0cm;
+  margin-left:21.0pt;margin-bottom:.0001pt;text-indent:-18.0pt;line-height:
+  normal"><span style='font-family:"Times New Roman","serif"'>-<span style='font:7.0pt "Times New Roman"'>       
+  </span></span><span style='font-family:"Arial","sans-serif"'>Lactose intolerance
+  (alactasia – absence of lactase enzyme)</span></p>
+  <p class="MsoNormal" style="margin-top:0cm;margin-right:0cm;margin-bottom:0cm;
+  margin-left:21.0pt;margin-bottom:.0001pt;text-indent:-18.0pt;line-height:
+  normal"><span style='font-family:"Times New Roman","serif"'>-<span style='font:7.0pt "Times New Roman"'>       
+  </span></span><span style='font-family:"Arial","sans-serif"'>Radiation
+  colitis (posr-radiotherapy)</span></p>
+  <p class="MsoNormal" style="margin-bottom:0cm;margin-bottom:.0001pt;line-height:
+  normal"><span style='font-family:"Arial","sans-serif"'> </span></p>
+  </td>
+ </tr></table>
+<p class="MsoNormal" style="margin-bottom:0cm;margin-bottom:.0001pt"><span style='font-family:"Arial","sans-serif"'> </span></p>
+
+<p class="MsoNormal" style="margin-bottom:0cm;margin-bottom:.0001pt"><span style='font-family:"Arial","sans-serif"'> </span></p>
+
+<table class="MsoTableGrid" border="1" cellspacing="0" cellpadding="0" style="background:yellow;border-collapse:collapse;border:none"><tr>
+<td width="710" valign="top" style="width:426.1pt;border:solid windowtext 1.0pt;
+  padding:0cm 5.4pt 0cm 5.4pt">
+  <p class="MSBsub-heading">Differentiating IBS from IBD</p>
+  <p class="MsoNormal" style="margin-bottom:0cm;margin-bottom:.0001pt;line-height:
+  normal"><span style='font-family:"Arial","sans-serif"'> </span></p>
+  <p class="MsoNormal" style="margin-bottom:0cm;margin-bottom:.0001pt;line-height:
+  normal"><span style='font-family:"Arial","sans-serif"'>The following features
+  support the diagnosis of IBS:</span></p>
+  <p class="MsoNormal" style="margin-bottom:0cm;margin-bottom:.0001pt;line-height:
+  normal"><span style='font-family:"Arial","sans-serif"'> </span></p>
+  <p class="MsoNormal" style="margin-top:0cm;margin-right:0cm;margin-bottom:0cm;
+  margin-left:21.0pt;margin-bottom:.0001pt;text-indent:-18.0pt;line-height:
+  normal"><span style='font-family:"Times New Roman","serif"'>-<span style='font:7.0pt "Times New Roman"'>       
+  </span></span><span style='font-family:"Arial","sans-serif"'>Pain is relieved
+  by defaecation</span></p>
+  <p class="MsoNormal" style="margin-top:0cm;margin-right:0cm;margin-bottom:0cm;
+  margin-left:21.0pt;margin-bottom:.0001pt;text-indent:-18.0pt;line-height:
+  normal"><span style='font-family:"Times New Roman","serif"'>-<span style='font:7.0pt "Times New Roman"'>       
+  </span></span><span style='font-family:"Arial","sans-serif"'>No blood/mucus</span></p>
+  <p class="MsoNormal" style="margin-top:0cm;margin-right:0cm;margin-bottom:0cm;
+  margin-left:21.0pt;margin-bottom:.0001pt;text-indent:-18.0pt;line-height:
+  normal"><span style='font-family:"Times New Roman","serif"'>-<span style='font:7.0pt "Times New Roman"'>       
+  </span></span><span style='font-family:"Arial","sans-serif"'>No nocturnal symptoms</span></p>
+  <p class="MsoNormal" style="margin-top:0cm;margin-right:0cm;margin-bottom:0cm;
+  margin-left:21.0pt;margin-bottom:.0001pt;text-indent:-18.0pt;line-height:
+  normal"><span style='font-family:"Times New Roman","serif"'>-<span style='font:7.0pt "Times New Roman"'>       
+  </span></span><span style='font-family:"Arial","sans-serif"'>Absence of signs
+  of auto-immune disease (uveitis, erythema nodusum, joint pain, finger
+  clubbing)</span></p>
+  <p class="MsoNormal" style="margin-top:0cm;margin-right:0cm;margin-bottom:0cm;
+  margin-left:21.0pt;margin-bottom:.0001pt;text-indent:-18.0pt;line-height:
+  normal"><span style='font-family:"Times New Roman","serif"'>-<span style='font:7.0pt "Times New Roman"'>       
+  </span></span><span style='font-family:"Arial","sans-serif"'>No clinical or
+  laboratory findings.</span></p>
+  <p class="MSBsub-heading"><span style="text-decoration:none"> </span></p>
+  </td>
+ </tr></table>
+<p class="MSBsub-heading"><span style="text-decoration:none"> </span></p>
+
+<p class="MsoNormal" style="margin-bottom:0cm;margin-bottom:.0001pt"><span style='font-family:"Arial","sans-serif"'> </span></p>
+
+<p class="MsoNormal" style="margin-bottom:0cm;margin-bottom:.0001pt"><span style='font-family:"Arial","sans-serif"'> </span></p>
+
+<table class="MsoTableGrid" border="1" cellspacing="0" cellpadding="0" style="background:#E5B8B7;border-collapse:collapse;border:none"><tr>
+<td width="710" valign="top" style="width:426.1pt;border:solid windowtext 1.0pt;
+  padding:0cm 5.4pt 0cm 5.4pt">
+  <p class="MsoNormal" style="margin-bottom:0cm;margin-bottom:.0001pt;line-height:
+  normal"><span style='font-family:"Arial","sans-serif"'> </span></p>
+  <p class="MsoNormal" style="margin-bottom:0cm;margin-bottom:.0001pt;line-height:
+  normal"><span style='font-family:"Arial","sans-serif"'>It is important to
+  remember that just because we cannot find a medical cause for the symptoms in
+  patients with IBS, it does not mean that their symptoms do not exist – the
+  patient is genuinely running to the toilet dozens of times a day! For some
+  patients it can be worth exploring the possible role of psychological
+  triggers to their symptoms, however again it is crucial to convey that just
+  because their symptoms may be coming from their head, you are NOT saying they
+  are all in their head! If a patient thinks you have accused them of making it
+  up or being unsympathetic, then you will have damaged that doctor-patient
+  relationship beyond repair. If appropriate, reassure the patient that nothing
+  serious is going on (patients often fear the worst!) then help them identify
+  triggers in their life (stress, work, relationships) that they can address. After
+  all treating the cause is always better than simply chasing symptoms.</span></p>
+  <p class="MsoNormal" style="margin-bottom:0cm;margin-bottom:.0001pt;line-height:
+  normal"><span style='font-family:"Arial","sans-serif"'> </span></p>
+  </td>
+ </tr></table>
+<p class="MsoNormal" style="margin-bottom:0cm;margin-bottom:.0001pt"><span style='font-family:"Arial","sans-serif"'> </span></p>
+
+<p class="MsoNormal"> </p>
+
+<table class="MsoNormalTable" border="0" cellspacing="0" cellpadding="0" style="border-collapse:collapse"><tr>
+<td width="770" valign="top" style="width:462.1pt;border:solid windowtext 1.0pt;
+  background:#F2DBDB;padding:0cm 5.4pt 0cm 5.4pt">
+  <p class="MSBHeading2">Guidelines and further Reading:</p>
+  <p class="MsoNormal"><span style="font-size:12.0pt;line-height:115%"> </span></p>
+  <p class="MsoNormal" style="margin-left:21.0pt;text-indent:-18.0pt"><span style='font-family:"Times New Roman","serif"'>-<span style='font:7.0pt "Times New Roman"'>       
+  </span></span><span style="font-size:12.0pt;line-height:115%">NICE guidline
+  CG061. Irritable bowel syndrome. 2008.  <a href="http://www.nice.org.uk/CG061">http://www.nice.org.uk/CG061</a>
+  </span></p>
+  </td>
+ </tr></table>
+<p class="MsoNormal"><span style="font-size:12.0pt;line-height:115%"> </span><i> </i></p>
+
+<p class="MsoNormal" style="margin-bottom:0cm;margin-bottom:.0001pt"><span style='font-family:"Arial","sans-serif"'> </span></p>
+
+</div>
+				
+				</div>
+				<div id="sidebar" class="span-6 last">
+					<p>Sidebar</p>
+			  </div>
+		  </div>
+		</div>
+			
+		<div style="line-height:10px;">&nbsp;</div>
+		<div id="footer" class="container">
+				This is the 'sticky' footer
+		</div>
+	</body>
+</html>

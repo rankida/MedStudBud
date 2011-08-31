@@ -1,0 +1,887 @@
+<!DOCTYPE html>
+<html>
+  <head>
+	  <title>MedStudyBuddy | Title</title>
+		<!--[if lt IE 9]>
+			<script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+		<![endif]-->
+		<link href="/stylesheets/blueprint/screen.css" media="screen" rel="stylesheet" type="text/css" />
+		<link href="/stylesheets/blueprint/print.css" media="print" rel="stylesheet" type="text/css" />
+		<!--[if lt IE8]>
+			<link href="/stylesheets/blueprint/ie.css" media="screen" rel="stylesheet" type="text/css" />
+		<![endif]-->
+		<link href="/stylesheets/notes.css" media="screen" rel="stylesheet" type="text/css" />
+		<link href="/stylesheets/sticky-footer.css" media="screen" rel="stylesheet" type="text/css" />
+		<link rel="shortcut icon" href="/favicon.ico" />
+		<link rel="shortcut icon" href="/images/favicon.ico" />
+		<style>
+<!--
+ /* Font Definitions */
+ @font-face
+	{font-family:Wingdings;
+	panose-1:5 0 0 0 0 0 0 0 0 0;}
+@font-face
+	{font-family:"Cambria Math";
+	panose-1:2 4 5 3 5 4 6 3 2 4;}
+@font-face
+	{font-family:Calibri;
+	panose-1:2 15 5 2 2 2 4 3 2 4;}
+@font-face
+	{font-family:Candara;
+	panose-1:2 14 5 2 3 3 3 2 2 4;}
+ /* Style Definitions */
+ p.MsoNormal, li.MsoNormal, div.MsoNormal
+	{margin-top:0cm;
+	margin-right:0cm;
+	margin-bottom:10.0pt;
+	margin-left:0cm;
+	line-height:115%;
+	font-size:11.0pt;
+	font-family:"Calibri","sans-serif";}
+a:link, span.MsoHyperlink
+	{color:blue;
+	text-decoration:underline;}
+a:visited, span.MsoHyperlinkFollowed
+	{color:purple;
+	text-decoration:underline;}
+p.MsoListParagraph, li.MsoListParagraph, div.MsoListParagraph
+	{margin-top:0cm;
+	margin-right:0cm;
+	margin-bottom:0cm;
+	margin-left:36.0pt;
+	margin-bottom:.0001pt;
+	font-size:11.0pt;
+	font-family:"Arial","sans-serif";}
+p.MsoListParagraphCxSpFirst, li.MsoListParagraphCxSpFirst, div.MsoListParagraphCxSpFirst
+	{margin-top:0cm;
+	margin-right:0cm;
+	margin-bottom:0cm;
+	margin-left:36.0pt;
+	margin-bottom:.0001pt;
+	font-size:11.0pt;
+	font-family:"Arial","sans-serif";}
+p.MsoListParagraphCxSpMiddle, li.MsoListParagraphCxSpMiddle, div.MsoListParagraphCxSpMiddle
+	{margin-top:0cm;
+	margin-right:0cm;
+	margin-bottom:0cm;
+	margin-left:36.0pt;
+	margin-bottom:.0001pt;
+	font-size:11.0pt;
+	font-family:"Arial","sans-serif";}
+p.MsoListParagraphCxSpLast, li.MsoListParagraphCxSpLast, div.MsoListParagraphCxSpLast
+	{margin-top:0cm;
+	margin-right:0cm;
+	margin-bottom:0cm;
+	margin-left:36.0pt;
+	margin-bottom:.0001pt;
+	font-size:11.0pt;
+	font-family:"Arial","sans-serif";}
+p.MSBHeading1, li.MSBHeading1, div.MSBHeading1
+	{mso-style-name:"MSB Heading 1";
+	mso-style-link:"MSB Heading 1 Char";
+	margin:0cm;
+	margin-bottom:.0001pt;
+	font-size:20.0pt;
+	font-family:"Candara","sans-serif";
+	color:#660066;
+	font-weight:bold;
+	text-decoration:underline;}
+span.MSBHeading1Char
+	{mso-style-name:"MSB Heading 1 Char";
+	mso-style-link:"MSB Heading 1";
+	font-family:"Candara","sans-serif";
+	color:#660066;
+	font-weight:bold;
+	text-decoration:underline;}
+p.MSBHeading2, li.MSBHeading2, div.MSBHeading2
+	{mso-style-name:"MSB Heading 2";
+	mso-style-link:"MSB Heading 2 Char";
+	margin:0cm;
+	margin-bottom:.0001pt;
+	font-size:16.0pt;
+	font-family:"Candara","sans-serif";
+	color:#2E002E;
+	font-weight:bold;}
+span.MSBHeading2Char
+	{mso-style-name:"MSB Heading 2 Char";
+	mso-style-link:"MSB Heading 2";
+	font-family:"Candara","sans-serif";
+	color:#2E002E;
+	font-weight:bold;}
+p.MSBsub-heading, li.MSBsub-heading, div.MSBsub-heading
+	{mso-style-name:"MSB sub-heading";
+	mso-style-link:"MSB sub-heading Char";
+	margin:0cm;
+	margin-bottom:.0001pt;
+	font-size:13.0pt;
+	font-family:"Calibri","sans-serif";
+	font-weight:bold;
+	text-decoration:underline;}
+span.MSBsub-headingChar
+	{mso-style-name:"MSB sub-heading Char";
+	mso-style-link:"MSB sub-heading";
+	font-weight:bold;
+	text-decoration:underline;}
+p.MSBnormaltext, li.MSBnormaltext, div.MSBnormaltext
+	{mso-style-name:"MSB normal text";
+	mso-style-link:"MSB normal text Char";
+	margin-top:0cm;
+	margin-right:0cm;
+	margin-bottom:0cm;
+	margin-left:21.0pt;
+	margin-bottom:.0001pt;
+	text-indent:-18.0pt;
+	font-size:11.0pt;
+	font-family:"Arial","sans-serif";}
+p.MSBnormaltextCxSpFirst, li.MSBnormaltextCxSpFirst, div.MSBnormaltextCxSpFirst
+	{mso-style-name:"MSB normal textCxSpFirst";
+	mso-style-link:"MSB normal text Char";
+	margin-top:0cm;
+	margin-right:0cm;
+	margin-bottom:0cm;
+	margin-left:21.0pt;
+	margin-bottom:.0001pt;
+	text-indent:-18.0pt;
+	font-size:11.0pt;
+	font-family:"Arial","sans-serif";}
+p.MSBnormaltextCxSpMiddle, li.MSBnormaltextCxSpMiddle, div.MSBnormaltextCxSpMiddle
+	{mso-style-name:"MSB normal textCxSpMiddle";
+	mso-style-link:"MSB normal text Char";
+	margin-top:0cm;
+	margin-right:0cm;
+	margin-bottom:0cm;
+	margin-left:21.0pt;
+	margin-bottom:.0001pt;
+	text-indent:-18.0pt;
+	font-size:11.0pt;
+	font-family:"Arial","sans-serif";}
+p.MSBnormaltextCxSpLast, li.MSBnormaltextCxSpLast, div.MSBnormaltextCxSpLast
+	{mso-style-name:"MSB normal textCxSpLast";
+	mso-style-link:"MSB normal text Char";
+	margin-top:0cm;
+	margin-right:0cm;
+	margin-bottom:0cm;
+	margin-left:21.0pt;
+	margin-bottom:.0001pt;
+	text-indent:-18.0pt;
+	font-size:11.0pt;
+	font-family:"Arial","sans-serif";}
+span.MSBnormaltextChar
+	{mso-style-name:"MSB normal text Char";
+	mso-style-link:"MSB normal text";
+	font-family:"Arial","sans-serif";}
+p.MSBitalicsnormaltext, li.MSBitalicsnormaltext, div.MSBitalicsnormaltext
+	{mso-style-name:"MSB italics normal text";
+	mso-style-link:"MSB italics normal text Char";
+	margin:0cm;
+	margin-bottom:.0001pt;
+	font-size:11.0pt;
+	font-family:"Arial","sans-serif";
+	font-style:italic;}
+p.MSBitalicsnormaltextCxSpFirst, li.MSBitalicsnormaltextCxSpFirst, div.MSBitalicsnormaltextCxSpFirst
+	{mso-style-name:"MSB italics normal textCxSpFirst";
+	mso-style-link:"MSB italics normal text Char";
+	margin:0cm;
+	margin-bottom:.0001pt;
+	font-size:11.0pt;
+	font-family:"Arial","sans-serif";
+	font-style:italic;}
+p.MSBitalicsnormaltextCxSpMiddle, li.MSBitalicsnormaltextCxSpMiddle, div.MSBitalicsnormaltextCxSpMiddle
+	{mso-style-name:"MSB italics normal textCxSpMiddle";
+	mso-style-link:"MSB italics normal text Char";
+	margin:0cm;
+	margin-bottom:.0001pt;
+	font-size:11.0pt;
+	font-family:"Arial","sans-serif";
+	font-style:italic;}
+p.MSBitalicsnormaltextCxSpLast, li.MSBitalicsnormaltextCxSpLast, div.MSBitalicsnormaltextCxSpLast
+	{mso-style-name:"MSB italics normal textCxSpLast";
+	mso-style-link:"MSB italics normal text Char";
+	margin:0cm;
+	margin-bottom:.0001pt;
+	font-size:11.0pt;
+	font-family:"Arial","sans-serif";
+	font-style:italic;}
+span.MSBitalicsnormaltextChar
+	{mso-style-name:"MSB italics normal text Char";
+	mso-style-link:"MSB italics normal text";
+	font-family:"Arial","sans-serif";
+	font-style:italic;}
+p.MSBReference, li.MSBReference, div.MSBReference
+	{mso-style-name:"MSB Reference";
+	mso-style-link:"MSB Reference Char";
+	margin:0cm;
+	margin-bottom:.0001pt;
+	font-size:10.0pt;
+	font-family:"Arial","sans-serif";}
+p.MSBReferenceCxSpFirst, li.MSBReferenceCxSpFirst, div.MSBReferenceCxSpFirst
+	{mso-style-name:"MSB ReferenceCxSpFirst";
+	mso-style-link:"MSB Reference Char";
+	margin:0cm;
+	margin-bottom:.0001pt;
+	font-size:10.0pt;
+	font-family:"Arial","sans-serif";}
+p.MSBReferenceCxSpMiddle, li.MSBReferenceCxSpMiddle, div.MSBReferenceCxSpMiddle
+	{mso-style-name:"MSB ReferenceCxSpMiddle";
+	mso-style-link:"MSB Reference Char";
+	margin:0cm;
+	margin-bottom:.0001pt;
+	font-size:10.0pt;
+	font-family:"Arial","sans-serif";}
+p.MSBReferenceCxSpLast, li.MSBReferenceCxSpLast, div.MSBReferenceCxSpLast
+	{mso-style-name:"MSB ReferenceCxSpLast";
+	mso-style-link:"MSB Reference Char";
+	margin:0cm;
+	margin-bottom:.0001pt;
+	font-size:10.0pt;
+	font-family:"Arial","sans-serif";}
+span.MSBReferenceChar
+	{mso-style-name:"MSB Reference Char";
+	mso-style-link:"MSB Reference";
+	font-family:"Arial","sans-serif";}
+p.MSBreferenceHeading, li.MSBreferenceHeading, div.MSBreferenceHeading
+	{mso-style-name:"MSB reference Heading";
+	mso-style-link:"MSB reference Heading Char";
+	margin:0cm;
+	margin-bottom:.0001pt;
+	font-size:10.0pt;
+	font-family:"Arial","sans-serif";
+	font-weight:bold;
+	text-decoration:underline;}
+span.MSBreferenceHeadingChar
+	{mso-style-name:"MSB reference Heading Char";
+	mso-style-link:"MSB reference Heading";
+	font-family:"Arial","sans-serif";
+	font-weight:bold;
+	text-decoration:underline;}
+p.MSBunderlinearrowbullet, li.MSBunderlinearrowbullet, div.MSBunderlinearrowbullet
+	{mso-style-name:"MSB underline + arrow bullet";
+	mso-style-link:"MSB underline + arrow bullet Char";
+	margin-top:0cm;
+	margin-right:0cm;
+	margin-bottom:0cm;
+	margin-left:36.0pt;
+	margin-bottom:.0001pt;
+	text-indent:-18.0pt;
+	font-size:11.0pt;
+	font-family:"Arial","sans-serif";
+	text-decoration:underline;}
+p.MSBunderlinearrowbulletCxSpFirst, li.MSBunderlinearrowbulletCxSpFirst, div.MSBunderlinearrowbulletCxSpFirst
+	{mso-style-name:"MSB underline + arrow bulletCxSpFirst";
+	mso-style-link:"MSB underline + arrow bullet Char";
+	margin-top:0cm;
+	margin-right:0cm;
+	margin-bottom:0cm;
+	margin-left:36.0pt;
+	margin-bottom:.0001pt;
+	text-indent:-18.0pt;
+	font-size:11.0pt;
+	font-family:"Arial","sans-serif";
+	text-decoration:underline;}
+p.MSBunderlinearrowbulletCxSpMiddle, li.MSBunderlinearrowbulletCxSpMiddle, div.MSBunderlinearrowbulletCxSpMiddle
+	{mso-style-name:"MSB underline + arrow bulletCxSpMiddle";
+	mso-style-link:"MSB underline + arrow bullet Char";
+	margin-top:0cm;
+	margin-right:0cm;
+	margin-bottom:0cm;
+	margin-left:36.0pt;
+	margin-bottom:.0001pt;
+	text-indent:-18.0pt;
+	font-size:11.0pt;
+	font-family:"Arial","sans-serif";
+	text-decoration:underline;}
+p.MSBunderlinearrowbulletCxSpLast, li.MSBunderlinearrowbulletCxSpLast, div.MSBunderlinearrowbulletCxSpLast
+	{mso-style-name:"MSB underline + arrow bulletCxSpLast";
+	mso-style-link:"MSB underline + arrow bullet Char";
+	margin-top:0cm;
+	margin-right:0cm;
+	margin-bottom:0cm;
+	margin-left:36.0pt;
+	margin-bottom:.0001pt;
+	text-indent:-18.0pt;
+	font-size:11.0pt;
+	font-family:"Arial","sans-serif";
+	text-decoration:underline;}
+span.MSBunderlinearrowbulletChar
+	{mso-style-name:"MSB underline + arrow bullet Char";
+	mso-style-link:"MSB underline + arrow bullet";
+	font-family:"Arial","sans-serif";
+	text-decoration:underline;}
+p.MSBnormaltextnolist, li.MSBnormaltextnolist, div.MSBnormaltextnolist
+	{mso-style-name:"MSB normal text \(no list\)";
+	mso-style-link:"MSB normal text \(no list\) Char";
+	margin-top:0cm;
+	margin-right:0cm;
+	margin-bottom:0cm;
+	margin-left:3.1pt;
+	margin-bottom:.0001pt;
+	font-size:11.0pt;
+	font-family:"Arial","sans-serif";}
+p.MSBnormaltextnolistCxSpFirst, li.MSBnormaltextnolistCxSpFirst, div.MSBnormaltextnolistCxSpFirst
+	{mso-style-name:"MSB normal text \(no list\)CxSpFirst";
+	mso-style-link:"MSB normal text \(no list\) Char";
+	margin-top:0cm;
+	margin-right:0cm;
+	margin-bottom:0cm;
+	margin-left:3.1pt;
+	margin-bottom:.0001pt;
+	font-size:11.0pt;
+	font-family:"Arial","sans-serif";}
+p.MSBnormaltextnolistCxSpMiddle, li.MSBnormaltextnolistCxSpMiddle, div.MSBnormaltextnolistCxSpMiddle
+	{mso-style-name:"MSB normal text \(no list\)CxSpMiddle";
+	mso-style-link:"MSB normal text \(no list\) Char";
+	margin-top:0cm;
+	margin-right:0cm;
+	margin-bottom:0cm;
+	margin-left:3.1pt;
+	margin-bottom:.0001pt;
+	font-size:11.0pt;
+	font-family:"Arial","sans-serif";}
+p.MSBnormaltextnolistCxSpLast, li.MSBnormaltextnolistCxSpLast, div.MSBnormaltextnolistCxSpLast
+	{mso-style-name:"MSB normal text \(no list\)CxSpLast";
+	mso-style-link:"MSB normal text \(no list\) Char";
+	margin-top:0cm;
+	margin-right:0cm;
+	margin-bottom:0cm;
+	margin-left:3.1pt;
+	margin-bottom:.0001pt;
+	font-size:11.0pt;
+	font-family:"Arial","sans-serif";}
+span.MSBnormaltextnolistChar
+	{mso-style-name:"MSB normal text \(no list\) Char";
+	mso-style-link:"MSB normal text \(no list\)";
+	font-family:"Arial","sans-serif";}
+p.MSBboldnormaltext, li.MSBboldnormaltext, div.MSBboldnormaltext
+	{mso-style-name:"MSB bold normal text";
+	mso-style-link:"MSB bold normal text Char";
+	margin:0cm;
+	margin-bottom:.0001pt;
+	font-size:11.0pt;
+	font-family:"Arial","sans-serif";
+	font-weight:bold;}
+p.MSBboldnormaltextCxSpFirst, li.MSBboldnormaltextCxSpFirst, div.MSBboldnormaltextCxSpFirst
+	{mso-style-name:"MSB bold normal textCxSpFirst";
+	mso-style-link:"MSB bold normal text Char";
+	margin:0cm;
+	margin-bottom:.0001pt;
+	font-size:11.0pt;
+	font-family:"Arial","sans-serif";
+	font-weight:bold;}
+p.MSBboldnormaltextCxSpMiddle, li.MSBboldnormaltextCxSpMiddle, div.MSBboldnormaltextCxSpMiddle
+	{mso-style-name:"MSB bold normal textCxSpMiddle";
+	mso-style-link:"MSB bold normal text Char";
+	margin:0cm;
+	margin-bottom:.0001pt;
+	font-size:11.0pt;
+	font-family:"Arial","sans-serif";
+	font-weight:bold;}
+p.MSBboldnormaltextCxSpLast, li.MSBboldnormaltextCxSpLast, div.MSBboldnormaltextCxSpLast
+	{mso-style-name:"MSB bold normal textCxSpLast";
+	mso-style-link:"MSB bold normal text Char";
+	margin:0cm;
+	margin-bottom:.0001pt;
+	font-size:11.0pt;
+	font-family:"Arial","sans-serif";
+	font-weight:bold;}
+span.MSBboldnormaltextChar
+	{mso-style-name:"MSB bold normal text Char";
+	mso-style-link:"MSB bold normal text";
+	font-family:"Arial","sans-serif";
+	font-weight:bold;}
+p.MSBunderlinenormaltext, li.MSBunderlinenormaltext, div.MSBunderlinenormaltext
+	{mso-style-name:"MSB underline normal text";
+	mso-style-link:"MSB underline normal text Char";
+	margin:0cm;
+	margin-bottom:.0001pt;
+	font-size:11.0pt;
+	font-family:"Arial","sans-serif";
+	text-decoration:underline;}
+p.MSBunderlinenormaltextCxSpFirst, li.MSBunderlinenormaltextCxSpFirst, div.MSBunderlinenormaltextCxSpFirst
+	{mso-style-name:"MSB underline normal textCxSpFirst";
+	mso-style-link:"MSB underline normal text Char";
+	margin:0cm;
+	margin-bottom:.0001pt;
+	font-size:11.0pt;
+	font-family:"Arial","sans-serif";
+	text-decoration:underline;}
+p.MSBunderlinenormaltextCxSpMiddle, li.MSBunderlinenormaltextCxSpMiddle, div.MSBunderlinenormaltextCxSpMiddle
+	{mso-style-name:"MSB underline normal textCxSpMiddle";
+	mso-style-link:"MSB underline normal text Char";
+	margin:0cm;
+	margin-bottom:.0001pt;
+	font-size:11.0pt;
+	font-family:"Arial","sans-serif";
+	text-decoration:underline;}
+p.MSBunderlinenormaltextCxSpLast, li.MSBunderlinenormaltextCxSpLast, div.MSBunderlinenormaltextCxSpLast
+	{mso-style-name:"MSB underline normal textCxSpLast";
+	mso-style-link:"MSB underline normal text Char";
+	margin:0cm;
+	margin-bottom:.0001pt;
+	font-size:11.0pt;
+	font-family:"Arial","sans-serif";
+	text-decoration:underline;}
+span.MSBunderlinenormaltextChar
+	{mso-style-name:"MSB underline normal text Char";
+	mso-style-link:"MSB underline normal text";
+	font-family:"Arial","sans-serif";
+	text-decoration:underline;}
+p.MSBemphasis1x, li.MSBemphasis1x, div.MSBemphasis1x
+	{mso-style-name:"MSB emphasis 1x";
+	mso-style-link:"MSB emphasis 1x Char";
+	margin:0cm;
+	margin-bottom:.0001pt;
+	font-size:11.0pt;
+	font-family:"Arial","sans-serif";
+	font-weight:bold;
+	font-style:italic;
+	text-decoration:underline;}
+p.MSBemphasis1xCxSpFirst, li.MSBemphasis1xCxSpFirst, div.MSBemphasis1xCxSpFirst
+	{mso-style-name:"MSB emphasis 1xCxSpFirst";
+	mso-style-link:"MSB emphasis 1x Char";
+	margin:0cm;
+	margin-bottom:.0001pt;
+	font-size:11.0pt;
+	font-family:"Arial","sans-serif";
+	font-weight:bold;
+	font-style:italic;
+	text-decoration:underline;}
+p.MSBemphasis1xCxSpMiddle, li.MSBemphasis1xCxSpMiddle, div.MSBemphasis1xCxSpMiddle
+	{mso-style-name:"MSB emphasis 1xCxSpMiddle";
+	mso-style-link:"MSB emphasis 1x Char";
+	margin:0cm;
+	margin-bottom:.0001pt;
+	font-size:11.0pt;
+	font-family:"Arial","sans-serif";
+	font-weight:bold;
+	font-style:italic;
+	text-decoration:underline;}
+p.MSBemphasis1xCxSpLast, li.MSBemphasis1xCxSpLast, div.MSBemphasis1xCxSpLast
+	{mso-style-name:"MSB emphasis 1xCxSpLast";
+	mso-style-link:"MSB emphasis 1x Char";
+	margin:0cm;
+	margin-bottom:.0001pt;
+	font-size:11.0pt;
+	font-family:"Arial","sans-serif";
+	font-weight:bold;
+	font-style:italic;
+	text-decoration:underline;}
+span.MSBemphasis1xChar
+	{mso-style-name:"MSB emphasis 1x Char";
+	mso-style-link:"MSB emphasis 1x";
+	font-family:"Arial","sans-serif";
+	font-weight:bold;
+	font-style:italic;
+	text-decoration:underline;}
+p.MSBemphasis2x, li.MSBemphasis2x, div.MSBemphasis2x
+	{mso-style-name:"MSB emphasis 2x";
+	mso-style-link:"MSB emphasis 2x Char";
+	margin:0cm;
+	margin-bottom:.0001pt;
+	font-size:11.0pt;
+	font-family:"Arial","sans-serif";
+	color:#CC66FF;
+	font-weight:bold;
+	font-style:italic;}
+p.MSBemphasis2xCxSpFirst, li.MSBemphasis2xCxSpFirst, div.MSBemphasis2xCxSpFirst
+	{mso-style-name:"MSB emphasis 2xCxSpFirst";
+	mso-style-link:"MSB emphasis 2x Char";
+	margin:0cm;
+	margin-bottom:.0001pt;
+	font-size:11.0pt;
+	font-family:"Arial","sans-serif";
+	color:#CC66FF;
+	font-weight:bold;
+	font-style:italic;}
+p.MSBemphasis2xCxSpMiddle, li.MSBemphasis2xCxSpMiddle, div.MSBemphasis2xCxSpMiddle
+	{mso-style-name:"MSB emphasis 2xCxSpMiddle";
+	mso-style-link:"MSB emphasis 2x Char";
+	margin:0cm;
+	margin-bottom:.0001pt;
+	font-size:11.0pt;
+	font-family:"Arial","sans-serif";
+	color:#CC66FF;
+	font-weight:bold;
+	font-style:italic;}
+p.MSBemphasis2xCxSpLast, li.MSBemphasis2xCxSpLast, div.MSBemphasis2xCxSpLast
+	{mso-style-name:"MSB emphasis 2xCxSpLast";
+	mso-style-link:"MSB emphasis 2x Char";
+	margin:0cm;
+	margin-bottom:.0001pt;
+	font-size:11.0pt;
+	font-family:"Arial","sans-serif";
+	color:#CC66FF;
+	font-weight:bold;
+	font-style:italic;}
+span.MSBemphasis2xChar
+	{mso-style-name:"MSB emphasis 2x Char";
+	mso-style-link:"MSB emphasis 2x";
+	font-family:"Arial","sans-serif";
+	color:#CC66FF;
+	font-weight:bold;
+	font-style:italic;}
+p.MSBboldunderlinednormaltext, li.MSBboldunderlinednormaltext, div.MSBboldunderlinednormaltext
+	{mso-style-name:"MSB bold underlined normal text";
+	mso-style-link:"MSB bold underlined normal text Char";
+	margin:0cm;
+	margin-bottom:.0001pt;
+	font-size:11.0pt;
+	font-family:"Arial","sans-serif";
+	font-weight:bold;
+	text-decoration:underline;}
+p.MSBboldunderlinednormaltextCxSpFirst, li.MSBboldunderlinednormaltextCxSpFirst, div.MSBboldunderlinednormaltextCxSpFirst
+	{mso-style-name:"MSB bold underlined normal textCxSpFirst";
+	mso-style-link:"MSB bold underlined normal text Char";
+	margin:0cm;
+	margin-bottom:.0001pt;
+	font-size:11.0pt;
+	font-family:"Arial","sans-serif";
+	font-weight:bold;
+	text-decoration:underline;}
+p.MSBboldunderlinednormaltextCxSpMiddle, li.MSBboldunderlinednormaltextCxSpMiddle, div.MSBboldunderlinednormaltextCxSpMiddle
+	{mso-style-name:"MSB bold underlined normal textCxSpMiddle";
+	mso-style-link:"MSB bold underlined normal text Char";
+	margin:0cm;
+	margin-bottom:.0001pt;
+	font-size:11.0pt;
+	font-family:"Arial","sans-serif";
+	font-weight:bold;
+	text-decoration:underline;}
+p.MSBboldunderlinednormaltextCxSpLast, li.MSBboldunderlinednormaltextCxSpLast, div.MSBboldunderlinednormaltextCxSpLast
+	{mso-style-name:"MSB bold underlined normal textCxSpLast";
+	mso-style-link:"MSB bold underlined normal text Char";
+	margin:0cm;
+	margin-bottom:.0001pt;
+	font-size:11.0pt;
+	font-family:"Arial","sans-serif";
+	font-weight:bold;
+	text-decoration:underline;}
+span.MSBboldunderlinednormaltextChar
+	{mso-style-name:"MSB bold underlined normal text Char";
+	mso-style-link:"MSB bold underlined normal text";
+	font-family:"Arial","sans-serif";
+	font-weight:bold;
+	text-decoration:underline;}
+.MsoChpDefault
+	{font-size:11.0pt;}
+.MsoPapDefault
+	{margin-bottom:10.0pt;
+	line-height:115%;}
+@page WordSection1
+	{size:612.0pt 792.0pt;
+	margin:72.0pt 90.0pt 72.0pt 90.0pt;}
+div.WordSection1
+	{page:WordSection1;}
+ /* List Definitions */
+ ol
+	{margin-bottom:0cm;}
+ul
+	{margin-bottom:0cm;}
+-->
+</style>
+  </head>
+  <body>
+	  <div id="wrap">
+			<div id="main" class="container">
+		  	<div id="header">
+					<div style="float:left;">
+						<img src="/images/MSBLogo.png">
+					</div>
+					<img src="/images/MSBText.png">
+				</div>
+				<div id="content" class="span-16 append-1 prepend-1">					
+					<div class="WordSection1">
+
+<p class="MSBHeading1"><u>Managing Acutely Disturbed patients</u></p>
+
+<p class="MSBHeading1"><u><span style="text-decoration:none"> </span></u></p>
+
+<p class="MSBnormaltextCxSpFirst" style="margin-left:23.4pt">-<span style='font:7.0pt "Times New Roman"'>       
+</span>It is important to remember that most acutely confused patients who
+become disruptive do NOT have a mental illness</p>
+
+<p class="MSBnormaltextCxSpMiddle" style="margin-left:23.4pt">-<span style='font:7.0pt "Times New Roman"'>       
+</span>Mental disturbance is often a sign of acute physical illness, which can
+be serious eg head-injury</p>
+
+<p class="MSBnormaltextCxSpMiddle" style="margin-left:23.4pt">-<span style='font:7.0pt "Times New Roman"'>       
+</span>Some disruptive patients are not unwell, and once physical illness has
+been excluded the police should be contacted via appropriate channels</p>
+
+<p class="MSBnormaltextCxSpLast"> </p>
+
+<p class="MSBHeading2">When asked to see a disturbed patient as an FY1?</p>
+
+<p class="MSBnormaltextnolist"> </p>
+
+<p class="MSBitalicsnormaltext">You are the FY1 on nights. You are called to see
+an agitated patient ‘who is strangling a nurse’. What do you do?</p>
+
+<p class="MSBnormaltextCxSpFirst" style="text-indent:0cm"> </p>
+
+<p class="MSBnormaltextCxSpMiddle" style="text-indent:0cm">1) Safety – make sure
+all patients and staff are safe.</p>
+
+<p class="MSBnormaltextCxSpMiddle" style="text-indent:0cm">2) Calm the patient (sedate
+if necessary)</p>
+
+<p class="MSBnormaltextCxSpMiddle" style="text-indent:0cm">3) Investigate and
+treat the cause.</p>
+
+<p class="MSBnormaltextCxSpLast"> </p>
+
+<p class="MSBemphasis1x" style="margin-left:21.0pt;text-indent:-18.0pt"><span style="text-decoration:none">1)<span style='font:7.0pt "Times New Roman"'>    
+</span></span>Safety</p>
+
+<p class="MSBnormaltext" style="text-indent:0cm"><u><span style="text-decoration:
+ none"> </span></u></p>
+
+<p class="MSBemphasis1x" style="margin-left:21.0pt;text-indent:-18.0pt"><span style="text-decoration:none">2)<span style='font:7.0pt "Times New Roman"'>    
+</span></span>Calm the patient</p>
+
+<p class="MSBnormaltextCxSpFirst"> </p>
+
+<p class="MSBnormaltextCxSpMiddle"><span style='font-family:"Times New Roman","serif"'>-<span style='font:7.0pt "Times New Roman"'>       
+</span></span>Talk to the patient in a calm tone</p>
+
+<p class="MSBnormaltextCxSpMiddle"><span style='font-family:"Times New Roman","serif"'>-<span style='font:7.0pt "Times New Roman"'>       
+</span></span>Manage in a quiet well-lit room with familiar staff</p>
+
+<p class="MSBnormaltextCxSpMiddle"><span style='font-family:"Times New Roman","serif"'>-<span style='font:7.0pt "Times New Roman"'>       
+</span></span>If the patients is a risk to self or others <span style="font-family:Wingdings">à</span> Emergency sedation!</p>
+
+<p class="MSBnormaltextCxSpMiddle" style="margin-left:57.0pt"><span style="font-family:Symbol;color:#7030A0">·<span style='font:7.0pt "Times New Roman"'>       
+</span></span>But this should always be discussed with a senior prior to
+prescribing.</p>
+
+<p class="MSBnormaltextCxSpMiddle"> </p>
+
+<p class="MSBnormaltextCxSpMiddle">2 main options:</p>
+
+<p class="MSBnormaltextCxSpLast"> </p>
+
+<p class="MSBunderlinearrowbullet"><span style="font-family:Wingdings;text-decoration:
+none">Ø<span style='font:7.0pt "Times New Roman"'>  </span></span>Haloperidol</p>
+
+<p class="MSBnormaltextCxSpFirst" style="margin-left:93.0pt"><span style="font-family:Wingdings">§<span style='font:7.0pt "Times New Roman"'> 
+</span></span>Best avoided in elderly</p>
+
+<p class="MSBnormaltextCxSpMiddle" style="margin-left:93.0pt"><span style="font-family:Wingdings">§<span style='font:7.0pt "Times New Roman"'> 
+</span></span>Do not give to patients with Parkinson’s, lewy body dementia,
+Cardiac disorders or who have a history of seizures</p>
+
+<p class="MSBnormaltextCxSpMiddle" style="margin-left:93.0pt"><span style="font-family:Wingdings">§<span style='font:7.0pt "Times New Roman"'> 
+</span></span>Does 0.5mg O/IM (max 3mg)</p>
+
+<p class="MSBnormaltextCxSpLast"> </p>
+
+<p class="MSBunderlinearrowbullet"><span style="font-family:Wingdings;text-decoration:
+none">Ø<span style='font:7.0pt "Times New Roman"'>  </span></span>Lorazepam</p>
+
+<p class="MSBnormaltextCxSpFirst" style="margin-left:93.0pt"><span style="font-family:Wingdings">§<span style='font:7.0pt "Times New Roman"'> 
+</span></span>Contraindicated in respiratory failure  (respiratory suppression)</p>
+
+<p class="MSBnormaltextCxSpMiddle" style="margin-left:93.0pt"><span style="font-family:Wingdings">§<span style='font:7.0pt "Times New Roman"'> 
+</span></span>Dose 0.5mg IV/O/IM</p>
+
+<p class="MSBnormaltextCxSpMiddle" style="margin-left:93.0pt"><span style="font-family:Wingdings">§<span style='font:7.0pt "Times New Roman"'> 
+</span></span>Max 4mg if young and healthy</p>
+
+<p class="MSBnormaltextCxSpMiddle" style="margin-left:0cm;text-indent:0cm"> </p>
+
+<p class="MSBnormaltextCxSpMiddle"><span style='font-family:"Times New Roman","serif"'>-<span style='font:7.0pt "Times New Roman"'>       
+</span></span>Use oral first line</p>
+
+<p class="MSBnormaltextCxSpMiddle" style="margin-left:57.0pt"><span style="font-family:Symbol;color:#7030A0">·<span style='font:7.0pt "Times New Roman"'>       
+</span></span>It is very uncommon (and unpleasant) that you would have to give
+IM sedation while the patient is being restrained. Talk to the patient calmly
+and most will accept to take oral medication.</p>
+
+<p class="MSBnormaltextCxSpMiddle"><span style='font-family:"Times New Roman","serif"'>-<span style='font:7.0pt "Times New Roman"'>       
+</span></span>Start low and go slow – remember you can always give more but you
+cannot take back!</p>
+
+<p class="MSBnormaltextCxSpMiddle"><span style='font-family:"Times New Roman","serif"'>-<span style='font:7.0pt "Times New Roman"'>       
+</span></span>If you do give too much <span style="font-family:Wingdings">à</span>
+Flumazenil (antedote)</p>
+
+<p class="MSBnormaltextCxSpMiddle"><span style='font-family:"Times New Roman","serif"'>-<span style='font:7.0pt "Times New Roman"'>       
+</span></span>Wait 30 mins between doses to monitor effect</p>
+
+<p class="MSBnormaltextCxSpMiddle"><span style='font-family:"Times New Roman","serif"'>-<span style='font:7.0pt "Times New Roman"'>       
+</span></span>Remember to ask the nurses (and document) that the patient will
+need to be closely monitored for respiratory suppression.</p>
+
+<p class="MSBnormaltextCxSpLast"> </p>
+
+<p class="MSBemphasis1x" style="margin-left:21.0pt;text-indent:-18.0pt"><span style="text-decoration:none">3)<span style='font:7.0pt "Times New Roman"'>    
+</span></span>Investigate and treat the cause</p>
+
+<p class="MSBnormaltextCxSpFirst"> </p>
+
+<p class="MSBnormaltextCxSpMiddle"><span style='font-family:"Times New Roman","serif"'>-<span style='font:7.0pt "Times New Roman"'>       
+</span></span>Check obs (HR, RR, temp, sats)</p>
+
+<p class="MSBnormaltextCxSpMiddle"> </p>
+
+<p class="MSBnormaltextCxSpMiddle"><u>Exclude possible causes of delirium</u>:</p>
+
+<p class="MSBnormaltextCxSpLast"> </p>
+
+<p class="MSBemphasis2x" style="margin-left:36.0pt;text-indent:-18.0pt"><span style="font-family:Wingdings;font-weight:normal;font-style:normal">è<span style='font:7.0pt "Times New Roman"'> </span></span>Hypoglycaemia, hypoxia,
+shock and sepsis</p>
+
+<p class="MSBnormaltextCxSpFirst"> </p>
+
+<p class="MSBnormaltextCxSpMiddle"><span style='font-family:"Times New Roman","serif"'>-<span style='font:7.0pt "Times New Roman"'>       
+</span></span>Infection</p>
+
+<p class="MSBnormaltextCxSpMiddle" style="margin-left:57.0pt"><span style="font-family:Symbol;color:#7030A0">·<span style='font:7.0pt "Times New Roman"'>       
+</span></span>Full history and examination, CXR, urine MSSU, </p>
+
+<p class="MSBnormaltextCxSpMiddle"><span style='font-family:"Times New Roman","serif"'>-<span style='font:7.0pt "Times New Roman"'>       
+</span></span>Space-occupying lesion</p>
+
+<p class="MSBnormaltextCxSpMiddle" style="margin-left:57.0pt"><span style="font-family:Symbol;color:#7030A0">·<span style='font:7.0pt "Times New Roman"'>       
+</span></span>Full neuro exam and cranial nerves</p>
+
+<p class="MSBnormaltextCxSpMiddle" style="margin-left:57.0pt"><span style="font-family:Symbol;color:#7030A0">·<span style='font:7.0pt "Times New Roman"'>       
+</span></span>?CT head</p>
+
+<p class="MSBnormaltextCxSpMiddle" style="margin-left:57.0pt"><span style="font-family:Symbol;color:#7030A0">·<span style='font:7.0pt "Times New Roman"'>       
+</span></span>Ask about Trauma</p>
+
+<p class="MSBnormaltextCxSpMiddle" style="margin-left:57.0pt"><span style="font-family:Symbol;color:#7030A0">·<span style='font:7.0pt "Times New Roman"'>       
+</span></span>Check anticoagulation</p>
+
+<p class="MSBnormaltextCxSpMiddle" style="margin-left:57.0pt"><span style="font-family:Symbol;color:#7030A0">·<span style='font:7.0pt "Times New Roman"'>       
+</span></span>If any suspicion of head injury – call for senior immediately</p>
+
+<p class="MSBnormaltextCxSpMiddle"><span style='font-family:"Times New Roman","serif"'>-<span style='font:7.0pt "Times New Roman"'>       
+</span></span>BM</p>
+
+<p class="MSBnormaltextCxSpMiddle" style="margin-left:57.0pt"><span style="font-family:Symbol;color:#7030A0">·<span style='font:7.0pt "Times New Roman"'>       
+</span></span>Hypoglycaemia – never forget it</p>
+
+<p class="MSBnormaltextCxSpMiddle"><span style='font-family:"Times New Roman","serif"'>-<span style='font:7.0pt "Times New Roman"'>       
+</span></span>Send off bloods</p>
+
+<p class="MSBnormaltextCxSpMiddle" style="margin-left:57.0pt"><span style="font-family:Symbol;color:#7030A0">·<span style='font:7.0pt "Times New Roman"'>       
+</span></span>U+Es – dehydration, uraemia, metabolic disturbance</p>
+
+<p class="MSBnormaltextCxSpMiddle" style="margin-left:57.0pt"><span style="font-family:Symbol;color:#7030A0">·<span style='font:7.0pt "Times New Roman"'>       
+</span></span>LFTs</p>
+
+<p class="MSBnormaltextCxSpMiddle" style="margin-left:57.0pt"><span style="font-family:Symbol;color:#7030A0">·<span style='font:7.0pt "Times New Roman"'>       
+</span></span>FBC, CRP – infection?</p>
+
+<p class="MSBnormaltextCxSpMiddle"><span style='font-family:"Times New Roman","serif"'>-<span style='font:7.0pt "Times New Roman"'>       
+</span></span>Alcohol withdrawal (DTs)</p>
+
+<p class="MSBnormaltextCxSpMiddle" style="margin-left:57.0pt"><span style="font-family:Symbol;color:#7030A0">·<span style='font:7.0pt "Times New Roman"'>       
+</span></span>very common cause but need to rule out more serious causes first</p>
+
+<p class="MSBnormaltextCxSpMiddle"><span style='font-family:"Times New Roman","serif"'>-<span style='font:7.0pt "Times New Roman"'>       
+</span></span>Check the kardex</p>
+
+<p class="MSBnormaltextCxSpMiddle" style="margin-left:57.0pt"><span style="font-family:Symbol;color:#7030A0">·<span style='font:7.0pt "Times New Roman"'>       
+</span></span>New drugs started/stopped?</p>
+
+<p class="MSBnormaltextCxSpMiddle" style="margin-left:57.0pt"><span style="font-family:Symbol;color:#7030A0">·<span style='font:7.0pt "Times New Roman"'>       
+</span></span>anti</p>
+
+<p class="MSBnormaltextCxSpMiddle"> </p>
+
+<p class="MSBnormaltextCxSpLast"> </p>
+
+<p class="MSBHeading2">Prescribing Night Sedation</p>
+
+<p class="MSBHeading2"> </p>
+
+<p class="MSBitalicsnormaltext">As an FY1 you will commonly be asked to prescribe
+night sedation for patients. However it is a tricky area with important things
+to watch out for.</p>
+
+<p class="MSBnormaltextCxSpFirst" style="text-indent:0cm"> </p>
+
+<p class="MSBnormaltextCxSpMiddle"><span style='font-family:"Times New Roman","serif"'>-<span style='font:7.0pt "Times New Roman"'>       
+</span></span>If the patient is on regular night sedation in the community you
+can continue the prescription PRN (if appropriate)</p>
+
+<p class="MSBnormaltextCxSpMiddle"><span style='font-family:"Times New Roman","serif"'>-<span style='font:7.0pt "Times New Roman"'>       
+</span></span>If the patient does not regularly take night sedation you should
+try to avoid prescribing it wherever possible. </p>
+
+<p class="MSBnormaltextCxSpMiddle"><span style='font-family:"Times New Roman","serif"'>-<span style='font:7.0pt "Times New Roman"'>       
+</span></span>Look for and treat possible modifiable causes – i.e. control
+pain, treat depression, alter drugs (eg move SSRI earlier in the day)</p>
+
+<p class="MSBnormaltextCxSpLast"><span style='font-family:"Times New Roman","serif"'>-<span style='font:7.0pt "Times New Roman"'>       
+</span></span>If it is necessary to prescribe discuss pros (better sleep) and
+cons (possible dependence) of night sedation with patient – explain it is only
+a short term temporary fix</p>
+
+<p class="MSBnormaltextnolistCxSpFirst"> </p>
+
+<p class="MSBnormaltextnolistCxSpLast">For night sedation you want to prescribe a
+short acting benzodiazepine in the once only section:</p>
+
+<p class="MSBnormaltext"> </p>
+
+<p class="MSBnormaltextnolistCxSpFirst" style="margin-left:54.0pt;text-indent:
+-18.0pt"><span style="font-family:Wingdings">è<span style='font:7.0pt "Times New Roman"'>
+</span></span>Temazepam oral 10-20mg nocte (short acting)</p>
+
+<p class="MSBnormaltextnolistCxSpMiddle" style="margin-left:21.1pt"> </p>
+
+<p class="MSBnormaltextnolistCxSpMiddle">If any concerns as to the patient eg
+elderly, low body weight, hepatic impairment, drug/alcohol use, prescribe a
+smaller dose – 5mg temazepam</p>
+
+<p class="MSBnormaltextnolistCxSpMiddle"> </p>
+
+<p class="MSBnormaltextnolistCxSpMiddle"><u>Note</u>:</p>
+
+<p class="MSBnormaltextnolistCxSpLast"> </p>
+
+<p class="MSBnormaltextCxSpFirst"><span style='font-family:"Times New Roman","serif"'>-<span style='font:7.0pt "Times New Roman"'>       
+</span></span>Never prescribe sedation to patients with head injury – need to
+be able to assess their GCS.</p>
+
+<p class="MSBnormaltextCxSpMiddle"><span style='font-family:"Times New Roman","serif"'>-<span style='font:7.0pt "Times New Roman"'>       
+</span></span>Never prescribe benzodiazepines in patients with severe
+respiratory disease – benzodiazepines are GABA agonists <span style="font-family:
+Wingdings">à</span> respiratory depression</p>
+
+<p class="MSBnormaltextCxSpMiddle"><span style='font-family:"Times New Roman","serif"'>-<span style='font:7.0pt "Times New Roman"'>       
+</span></span>Never prescribe if severe hepatic impairment</p>
+
+<p class="MSBnormaltextCxSpMiddle"><span style='font-family:"Times New Roman","serif"'>-<span style='font:7.0pt "Times New Roman"'>       
+</span></span>Caution in the elderly</p>
+
+<p class="MSBnormaltextCxSpMiddle"><span style='font-family:"Times New Roman","serif"'>-<span style='font:7.0pt "Times New Roman"'>       
+</span></span>Caution if co-prescribed other CNS depressants (eg opiates)</p>
+
+<p class="MSBnormaltextCxSpMiddle"><span style='font-family:"Times New Roman","serif"'>-<span style='font:7.0pt "Times New Roman"'>       
+</span></span>Patients should never be discharged home on their night sedation
+(and there have been medico-legal cases over patients who became dependant on
+their night sedation)</p>
+
+<p class="MSBnormaltextCxSpLast"><span style='font-family:"Times New Roman","serif"'>-<span style='font:7.0pt "Times New Roman"'>       
+</span></span>Abrupt withdrawal of benzodiazepines after prolonged use can
+cause confusion, seizures, psychosis.</p>
+
+</div>
+				
+				</div>
+				<div id="sidebar" class="span-6 last">
+					<p>Sidebar</p>
+			  </div>
+		  </div>
+		</div>
+			
+		<div style="line-height:10px;">&nbsp;</div>
+		<div id="footer" class="container">
+				This is the 'sticky' footer
+		</div>
+	</body>
+</html>

@@ -1,0 +1,1042 @@
+<!DOCTYPE html>
+<html>
+  <head>
+	  <title>MedStudyBuddy | Title</title>
+		<!--[if lt IE 9]>
+			<script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+		<![endif]-->
+		<link href="/stylesheets/blueprint/screen.css" media="screen" rel="stylesheet" type="text/css" />
+		<link href="/stylesheets/blueprint/print.css" media="print" rel="stylesheet" type="text/css" />
+		<!--[if lt IE8]>
+			<link href="/stylesheets/blueprint/ie.css" media="screen" rel="stylesheet" type="text/css" />
+		<![endif]-->
+		<link href="/stylesheets/notes.css" media="screen" rel="stylesheet" type="text/css" />
+		<link href="/stylesheets/sticky-footer.css" media="screen" rel="stylesheet" type="text/css" />
+		<link rel="shortcut icon" href="/favicon.ico" />
+		<link rel="shortcut icon" href="/images/favicon.ico" />
+		<style>
+<!--
+ /* Font Definitions */
+ @font-face
+	{font-family:Wingdings;
+	panose-1:5 0 0 0 0 0 0 0 0 0;}
+@font-face
+	{font-family:"Cambria Math";
+	panose-1:2 4 5 3 5 4 6 3 2 4;}
+@font-face
+	{font-family:Calibri;
+	panose-1:2 15 5 2 2 2 4 3 2 4;}
+@font-face
+	{font-family:Candara;
+	panose-1:2 14 5 2 3 3 3 2 2 4;}
+ /* Style Definitions */
+ p.MsoNormal, li.MsoNormal, div.MsoNormal
+	{margin-top:0cm;
+	margin-right:0cm;
+	margin-bottom:10.0pt;
+	margin-left:0cm;
+	line-height:115%;
+	font-size:11.0pt;
+	font-family:"Calibri","sans-serif";}
+h1
+	{mso-style-link:"Heading 1 Char";
+	margin-right:0cm;
+	margin-left:0cm;
+	background:white;
+	font-size:14.0pt;
+	font-family:"Arial","sans-serif";
+	color:#009900;
+	font-weight:bold;}
+h2
+	{mso-style-link:"Heading 2 Char";
+	margin-right:0cm;
+	margin-left:0cm;
+	font-size:12.0pt;
+	font-family:"Arial","sans-serif";
+	color:#009900;
+	font-weight:bold;}
+p.MsoHeader, li.MsoHeader, div.MsoHeader
+	{mso-style-link:"Header Char";
+	margin:0cm;
+	margin-bottom:.0001pt;
+	font-size:11.0pt;
+	font-family:"Calibri","sans-serif";}
+p.MsoFooter, li.MsoFooter, div.MsoFooter
+	{mso-style-link:"Footer Char";
+	margin:0cm;
+	margin-bottom:.0001pt;
+	font-size:11.0pt;
+	font-family:"Calibri","sans-serif";}
+a:link, span.MsoHyperlink
+	{color:blue;
+	text-decoration:underline;}
+a:visited, span.MsoHyperlinkFollowed
+	{color:purple;
+	text-decoration:underline;}
+p
+	{margin-right:0cm;
+	margin-left:0cm;
+	font-size:12.0pt;
+	font-family:"Times New Roman","serif";}
+p.MsoListParagraph, li.MsoListParagraph, div.MsoListParagraph
+	{margin-top:0cm;
+	margin-right:0cm;
+	margin-bottom:0cm;
+	margin-left:36.0pt;
+	margin-bottom:.0001pt;
+	font-size:11.0pt;
+	font-family:"Arial","sans-serif";}
+p.MsoListParagraphCxSpFirst, li.MsoListParagraphCxSpFirst, div.MsoListParagraphCxSpFirst
+	{margin-top:0cm;
+	margin-right:0cm;
+	margin-bottom:0cm;
+	margin-left:36.0pt;
+	margin-bottom:.0001pt;
+	font-size:11.0pt;
+	font-family:"Arial","sans-serif";}
+p.MsoListParagraphCxSpMiddle, li.MsoListParagraphCxSpMiddle, div.MsoListParagraphCxSpMiddle
+	{margin-top:0cm;
+	margin-right:0cm;
+	margin-bottom:0cm;
+	margin-left:36.0pt;
+	margin-bottom:.0001pt;
+	font-size:11.0pt;
+	font-family:"Arial","sans-serif";}
+p.MsoListParagraphCxSpLast, li.MsoListParagraphCxSpLast, div.MsoListParagraphCxSpLast
+	{margin-top:0cm;
+	margin-right:0cm;
+	margin-bottom:0cm;
+	margin-left:36.0pt;
+	margin-bottom:.0001pt;
+	font-size:11.0pt;
+	font-family:"Arial","sans-serif";}
+span.HeaderChar
+	{mso-style-name:"Header Char";
+	mso-style-link:Header;}
+span.FooterChar
+	{mso-style-name:"Footer Char";
+	mso-style-link:Footer;}
+span.Heading1Char
+	{mso-style-name:"Heading 1 Char";
+	mso-style-link:"Heading 1";
+	font-family:"Arial","sans-serif";
+	color:#009900;
+	background:white;
+	font-weight:bold;}
+span.Heading2Char
+	{mso-style-name:"Heading 2 Char";
+	mso-style-link:"Heading 2";
+	font-family:"Arial","sans-serif";
+	color:#009900;
+	font-weight:bold;}
+p.MSBHeading1, li.MSBHeading1, div.MSBHeading1
+	{mso-style-name:"MSB Heading 1";
+	mso-style-link:"MSB Heading 1 Char";
+	margin:0cm;
+	margin-bottom:.0001pt;
+	font-size:20.0pt;
+	font-family:"Candara","sans-serif";
+	color:#660066;
+	font-weight:bold;
+	text-decoration:underline;}
+span.MSBHeading1Char
+	{mso-style-name:"MSB Heading 1 Char";
+	mso-style-link:"MSB Heading 1";
+	font-family:"Candara","sans-serif";
+	color:#660066;
+	font-weight:bold;
+	text-decoration:underline;}
+p.MSBHeading2, li.MSBHeading2, div.MSBHeading2
+	{mso-style-name:"MSB Heading 2";
+	mso-style-link:"MSB Heading 2 Char";
+	margin:0cm;
+	margin-bottom:.0001pt;
+	font-size:16.0pt;
+	font-family:"Candara","sans-serif";
+	color:#2E002E;
+	font-weight:bold;}
+span.MSBHeading2Char
+	{mso-style-name:"MSB Heading 2 Char";
+	mso-style-link:"MSB Heading 2";
+	font-family:"Candara","sans-serif";
+	color:#2E002E;
+	font-weight:bold;}
+p.MSBnormaltext, li.MSBnormaltext, div.MSBnormaltext
+	{mso-style-name:"MSB normal text";
+	mso-style-link:"MSB normal text Char";
+	margin-top:0cm;
+	margin-right:0cm;
+	margin-bottom:0cm;
+	margin-left:21.0pt;
+	margin-bottom:.0001pt;
+	text-indent:-18.0pt;
+	font-size:11.0pt;
+	font-family:"Arial","sans-serif";}
+p.MSBnormaltextCxSpFirst, li.MSBnormaltextCxSpFirst, div.MSBnormaltextCxSpFirst
+	{mso-style-name:"MSB normal textCxSpFirst";
+	mso-style-link:"MSB normal text Char";
+	margin-top:0cm;
+	margin-right:0cm;
+	margin-bottom:0cm;
+	margin-left:21.0pt;
+	margin-bottom:.0001pt;
+	text-indent:-18.0pt;
+	font-size:11.0pt;
+	font-family:"Arial","sans-serif";}
+p.MSBnormaltextCxSpMiddle, li.MSBnormaltextCxSpMiddle, div.MSBnormaltextCxSpMiddle
+	{mso-style-name:"MSB normal textCxSpMiddle";
+	mso-style-link:"MSB normal text Char";
+	margin-top:0cm;
+	margin-right:0cm;
+	margin-bottom:0cm;
+	margin-left:21.0pt;
+	margin-bottom:.0001pt;
+	text-indent:-18.0pt;
+	font-size:11.0pt;
+	font-family:"Arial","sans-serif";}
+p.MSBnormaltextCxSpLast, li.MSBnormaltextCxSpLast, div.MSBnormaltextCxSpLast
+	{mso-style-name:"MSB normal textCxSpLast";
+	mso-style-link:"MSB normal text Char";
+	margin-top:0cm;
+	margin-right:0cm;
+	margin-bottom:0cm;
+	margin-left:21.0pt;
+	margin-bottom:.0001pt;
+	text-indent:-18.0pt;
+	font-size:11.0pt;
+	font-family:"Arial","sans-serif";}
+span.MSBnormaltextChar
+	{mso-style-name:"MSB normal text Char";
+	mso-style-link:"MSB normal text";
+	font-family:"Arial","sans-serif";}
+p.MSBsub-heading, li.MSBsub-heading, div.MSBsub-heading
+	{mso-style-name:"MSB sub-heading";
+	mso-style-link:"MSB sub-heading Char";
+	margin:0cm;
+	margin-bottom:.0001pt;
+	font-size:13.0pt;
+	font-family:"Calibri","sans-serif";
+	font-weight:bold;
+	text-decoration:underline;}
+span.MSBsub-headingChar
+	{mso-style-name:"MSB sub-heading Char";
+	mso-style-link:"MSB sub-heading";
+	font-weight:bold;
+	text-decoration:underline;}
+p.MSBreferenceHeading, li.MSBreferenceHeading, div.MSBreferenceHeading
+	{mso-style-name:"MSB reference Heading";
+	mso-style-link:"MSB reference Heading Char";
+	margin:0cm;
+	margin-bottom:.0001pt;
+	font-size:10.0pt;
+	font-family:"Arial","sans-serif";
+	font-weight:bold;
+	text-decoration:underline;}
+span.MSBreferenceHeadingChar
+	{mso-style-name:"MSB reference Heading Char";
+	mso-style-link:"MSB reference Heading";
+	font-family:"Arial","sans-serif";
+	font-weight:bold;
+	text-decoration:underline;}
+p.MSBunderlinearrowbullet, li.MSBunderlinearrowbullet, div.MSBunderlinearrowbullet
+	{mso-style-name:"MSB underline + arrow bullet";
+	mso-style-link:"MSB underline + arrow bullet Char";
+	margin-top:0cm;
+	margin-right:0cm;
+	margin-bottom:0cm;
+	margin-left:36.0pt;
+	margin-bottom:.0001pt;
+	text-indent:-18.0pt;
+	font-size:11.0pt;
+	font-family:"Arial","sans-serif";
+	text-decoration:underline;}
+p.MSBunderlinearrowbulletCxSpFirst, li.MSBunderlinearrowbulletCxSpFirst, div.MSBunderlinearrowbulletCxSpFirst
+	{mso-style-name:"MSB underline + arrow bulletCxSpFirst";
+	mso-style-link:"MSB underline + arrow bullet Char";
+	margin-top:0cm;
+	margin-right:0cm;
+	margin-bottom:0cm;
+	margin-left:36.0pt;
+	margin-bottom:.0001pt;
+	text-indent:-18.0pt;
+	font-size:11.0pt;
+	font-family:"Arial","sans-serif";
+	text-decoration:underline;}
+p.MSBunderlinearrowbulletCxSpMiddle, li.MSBunderlinearrowbulletCxSpMiddle, div.MSBunderlinearrowbulletCxSpMiddle
+	{mso-style-name:"MSB underline + arrow bulletCxSpMiddle";
+	mso-style-link:"MSB underline + arrow bullet Char";
+	margin-top:0cm;
+	margin-right:0cm;
+	margin-bottom:0cm;
+	margin-left:36.0pt;
+	margin-bottom:.0001pt;
+	text-indent:-18.0pt;
+	font-size:11.0pt;
+	font-family:"Arial","sans-serif";
+	text-decoration:underline;}
+p.MSBunderlinearrowbulletCxSpLast, li.MSBunderlinearrowbulletCxSpLast, div.MSBunderlinearrowbulletCxSpLast
+	{mso-style-name:"MSB underline + arrow bulletCxSpLast";
+	mso-style-link:"MSB underline + arrow bullet Char";
+	margin-top:0cm;
+	margin-right:0cm;
+	margin-bottom:0cm;
+	margin-left:36.0pt;
+	margin-bottom:.0001pt;
+	text-indent:-18.0pt;
+	font-size:11.0pt;
+	font-family:"Arial","sans-serif";
+	text-decoration:underline;}
+span.MSBunderlinearrowbulletChar
+	{mso-style-name:"MSB underline + arrow bullet Char";
+	mso-style-link:"MSB underline + arrow bullet";
+	font-family:"Arial","sans-serif";
+	text-decoration:underline;}
+p.MSBemphasis1x, li.MSBemphasis1x, div.MSBemphasis1x
+	{mso-style-name:"MSB emphasis 1x";
+	mso-style-link:"MSB emphasis 1x Char";
+	margin:0cm;
+	margin-bottom:.0001pt;
+	font-size:11.0pt;
+	font-family:"Arial","sans-serif";
+	font-weight:bold;
+	font-style:italic;
+	text-decoration:underline;}
+p.MSBemphasis1xCxSpFirst, li.MSBemphasis1xCxSpFirst, div.MSBemphasis1xCxSpFirst
+	{mso-style-name:"MSB emphasis 1xCxSpFirst";
+	mso-style-link:"MSB emphasis 1x Char";
+	margin:0cm;
+	margin-bottom:.0001pt;
+	font-size:11.0pt;
+	font-family:"Arial","sans-serif";
+	font-weight:bold;
+	font-style:italic;
+	text-decoration:underline;}
+p.MSBemphasis1xCxSpMiddle, li.MSBemphasis1xCxSpMiddle, div.MSBemphasis1xCxSpMiddle
+	{mso-style-name:"MSB emphasis 1xCxSpMiddle";
+	mso-style-link:"MSB emphasis 1x Char";
+	margin:0cm;
+	margin-bottom:.0001pt;
+	font-size:11.0pt;
+	font-family:"Arial","sans-serif";
+	font-weight:bold;
+	font-style:italic;
+	text-decoration:underline;}
+p.MSBemphasis1xCxSpLast, li.MSBemphasis1xCxSpLast, div.MSBemphasis1xCxSpLast
+	{mso-style-name:"MSB emphasis 1xCxSpLast";
+	mso-style-link:"MSB emphasis 1x Char";
+	margin:0cm;
+	margin-bottom:.0001pt;
+	font-size:11.0pt;
+	font-family:"Arial","sans-serif";
+	font-weight:bold;
+	font-style:italic;
+	text-decoration:underline;}
+span.MSBemphasis1xChar
+	{mso-style-name:"MSB emphasis 1x Char";
+	mso-style-link:"MSB emphasis 1x";
+	font-family:"Arial","sans-serif";
+	font-weight:bold;
+	font-style:italic;
+	text-decoration:underline;}
+p.MSBemphasis2x, li.MSBemphasis2x, div.MSBemphasis2x
+	{mso-style-name:"MSB emphasis 2x";
+	mso-style-link:"MSB emphasis 2x Char";
+	margin:0cm;
+	margin-bottom:.0001pt;
+	font-size:11.0pt;
+	font-family:"Arial","sans-serif";
+	color:#CC66FF;
+	font-weight:bold;
+	font-style:italic;}
+p.MSBemphasis2xCxSpFirst, li.MSBemphasis2xCxSpFirst, div.MSBemphasis2xCxSpFirst
+	{mso-style-name:"MSB emphasis 2xCxSpFirst";
+	mso-style-link:"MSB emphasis 2x Char";
+	margin:0cm;
+	margin-bottom:.0001pt;
+	font-size:11.0pt;
+	font-family:"Arial","sans-serif";
+	color:#CC66FF;
+	font-weight:bold;
+	font-style:italic;}
+p.MSBemphasis2xCxSpMiddle, li.MSBemphasis2xCxSpMiddle, div.MSBemphasis2xCxSpMiddle
+	{mso-style-name:"MSB emphasis 2xCxSpMiddle";
+	mso-style-link:"MSB emphasis 2x Char";
+	margin:0cm;
+	margin-bottom:.0001pt;
+	font-size:11.0pt;
+	font-family:"Arial","sans-serif";
+	color:#CC66FF;
+	font-weight:bold;
+	font-style:italic;}
+p.MSBemphasis2xCxSpLast, li.MSBemphasis2xCxSpLast, div.MSBemphasis2xCxSpLast
+	{mso-style-name:"MSB emphasis 2xCxSpLast";
+	mso-style-link:"MSB emphasis 2x Char";
+	margin:0cm;
+	margin-bottom:.0001pt;
+	font-size:11.0pt;
+	font-family:"Arial","sans-serif";
+	color:#CC66FF;
+	font-weight:bold;
+	font-style:italic;}
+span.MSBemphasis2xChar
+	{mso-style-name:"MSB emphasis 2x Char";
+	mso-style-link:"MSB emphasis 2x";
+	font-family:"Arial","sans-serif";
+	color:#CC66FF;
+	font-weight:bold;
+	font-style:italic;}
+p.MSBnormaltextnolist, li.MSBnormaltextnolist, div.MSBnormaltextnolist
+	{mso-style-name:"MSB normal text \(no list\)";
+	mso-style-link:"MSB normal text \(no list\) Char";
+	margin-top:0cm;
+	margin-right:0cm;
+	margin-bottom:0cm;
+	margin-left:3.1pt;
+	margin-bottom:.0001pt;
+	font-size:11.0pt;
+	font-family:"Arial","sans-serif";}
+p.MSBnormaltextnolistCxSpFirst, li.MSBnormaltextnolistCxSpFirst, div.MSBnormaltextnolistCxSpFirst
+	{mso-style-name:"MSB normal text \(no list\)CxSpFirst";
+	mso-style-link:"MSB normal text \(no list\) Char";
+	margin-top:0cm;
+	margin-right:0cm;
+	margin-bottom:0cm;
+	margin-left:3.1pt;
+	margin-bottom:.0001pt;
+	font-size:11.0pt;
+	font-family:"Arial","sans-serif";}
+p.MSBnormaltextnolistCxSpMiddle, li.MSBnormaltextnolistCxSpMiddle, div.MSBnormaltextnolistCxSpMiddle
+	{mso-style-name:"MSB normal text \(no list\)CxSpMiddle";
+	mso-style-link:"MSB normal text \(no list\) Char";
+	margin-top:0cm;
+	margin-right:0cm;
+	margin-bottom:0cm;
+	margin-left:3.1pt;
+	margin-bottom:.0001pt;
+	font-size:11.0pt;
+	font-family:"Arial","sans-serif";}
+p.MSBnormaltextnolistCxSpLast, li.MSBnormaltextnolistCxSpLast, div.MSBnormaltextnolistCxSpLast
+	{mso-style-name:"MSB normal text \(no list\)CxSpLast";
+	mso-style-link:"MSB normal text \(no list\) Char";
+	margin-top:0cm;
+	margin-right:0cm;
+	margin-bottom:0cm;
+	margin-left:3.1pt;
+	margin-bottom:.0001pt;
+	font-size:11.0pt;
+	font-family:"Arial","sans-serif";}
+span.MSBnormaltextnolistChar
+	{mso-style-name:"MSB normal text \(no list\) Char";
+	mso-style-link:"MSB normal text \(no list\)";
+	font-family:"Arial","sans-serif";}
+p.MSBboldnormaltext, li.MSBboldnormaltext, div.MSBboldnormaltext
+	{mso-style-name:"MSB bold normal text";
+	mso-style-link:"MSB bold normal text Char";
+	margin:0cm;
+	margin-bottom:.0001pt;
+	font-size:11.0pt;
+	font-family:"Arial","sans-serif";
+	font-weight:bold;}
+p.MSBboldnormaltextCxSpFirst, li.MSBboldnormaltextCxSpFirst, div.MSBboldnormaltextCxSpFirst
+	{mso-style-name:"MSB bold normal textCxSpFirst";
+	mso-style-link:"MSB bold normal text Char";
+	margin:0cm;
+	margin-bottom:.0001pt;
+	font-size:11.0pt;
+	font-family:"Arial","sans-serif";
+	font-weight:bold;}
+p.MSBboldnormaltextCxSpMiddle, li.MSBboldnormaltextCxSpMiddle, div.MSBboldnormaltextCxSpMiddle
+	{mso-style-name:"MSB bold normal textCxSpMiddle";
+	mso-style-link:"MSB bold normal text Char";
+	margin:0cm;
+	margin-bottom:.0001pt;
+	font-size:11.0pt;
+	font-family:"Arial","sans-serif";
+	font-weight:bold;}
+p.MSBboldnormaltextCxSpLast, li.MSBboldnormaltextCxSpLast, div.MSBboldnormaltextCxSpLast
+	{mso-style-name:"MSB bold normal textCxSpLast";
+	mso-style-link:"MSB bold normal text Char";
+	margin:0cm;
+	margin-bottom:.0001pt;
+	font-size:11.0pt;
+	font-family:"Arial","sans-serif";
+	font-weight:bold;}
+span.MSBboldnormaltextChar
+	{mso-style-name:"MSB bold normal text Char";
+	mso-style-link:"MSB bold normal text";
+	font-family:"Arial","sans-serif";
+	font-weight:bold;}
+p.MSBunderlinenormaltext, li.MSBunderlinenormaltext, div.MSBunderlinenormaltext
+	{mso-style-name:"MSB underline normal text";
+	mso-style-link:"MSB underline normal text Char";
+	margin:0cm;
+	margin-bottom:.0001pt;
+	font-size:11.0pt;
+	font-family:"Arial","sans-serif";
+	text-decoration:underline;}
+p.MSBunderlinenormaltextCxSpFirst, li.MSBunderlinenormaltextCxSpFirst, div.MSBunderlinenormaltextCxSpFirst
+	{mso-style-name:"MSB underline normal textCxSpFirst";
+	mso-style-link:"MSB underline normal text Char";
+	margin:0cm;
+	margin-bottom:.0001pt;
+	font-size:11.0pt;
+	font-family:"Arial","sans-serif";
+	text-decoration:underline;}
+p.MSBunderlinenormaltextCxSpMiddle, li.MSBunderlinenormaltextCxSpMiddle, div.MSBunderlinenormaltextCxSpMiddle
+	{mso-style-name:"MSB underline normal textCxSpMiddle";
+	mso-style-link:"MSB underline normal text Char";
+	margin:0cm;
+	margin-bottom:.0001pt;
+	font-size:11.0pt;
+	font-family:"Arial","sans-serif";
+	text-decoration:underline;}
+p.MSBunderlinenormaltextCxSpLast, li.MSBunderlinenormaltextCxSpLast, div.MSBunderlinenormaltextCxSpLast
+	{mso-style-name:"MSB underline normal textCxSpLast";
+	mso-style-link:"MSB underline normal text Char";
+	margin:0cm;
+	margin-bottom:.0001pt;
+	font-size:11.0pt;
+	font-family:"Arial","sans-serif";
+	text-decoration:underline;}
+span.MSBunderlinenormaltextChar
+	{mso-style-name:"MSB underline normal text Char";
+	mso-style-link:"MSB underline normal text";
+	font-family:"Arial","sans-serif";
+	text-decoration:underline;}
+p.MSBitalicsnormaltext, li.MSBitalicsnormaltext, div.MSBitalicsnormaltext
+	{mso-style-name:"MSB italics normal text";
+	mso-style-link:"MSB italics normal text Char";
+	margin:0cm;
+	margin-bottom:.0001pt;
+	font-size:11.0pt;
+	font-family:"Arial","sans-serif";
+	font-style:italic;}
+p.MSBitalicsnormaltextCxSpFirst, li.MSBitalicsnormaltextCxSpFirst, div.MSBitalicsnormaltextCxSpFirst
+	{mso-style-name:"MSB italics normal textCxSpFirst";
+	mso-style-link:"MSB italics normal text Char";
+	margin:0cm;
+	margin-bottom:.0001pt;
+	font-size:11.0pt;
+	font-family:"Arial","sans-serif";
+	font-style:italic;}
+p.MSBitalicsnormaltextCxSpMiddle, li.MSBitalicsnormaltextCxSpMiddle, div.MSBitalicsnormaltextCxSpMiddle
+	{mso-style-name:"MSB italics normal textCxSpMiddle";
+	mso-style-link:"MSB italics normal text Char";
+	margin:0cm;
+	margin-bottom:.0001pt;
+	font-size:11.0pt;
+	font-family:"Arial","sans-serif";
+	font-style:italic;}
+p.MSBitalicsnormaltextCxSpLast, li.MSBitalicsnormaltextCxSpLast, div.MSBitalicsnormaltextCxSpLast
+	{mso-style-name:"MSB italics normal textCxSpLast";
+	mso-style-link:"MSB italics normal text Char";
+	margin:0cm;
+	margin-bottom:.0001pt;
+	font-size:11.0pt;
+	font-family:"Arial","sans-serif";
+	font-style:italic;}
+span.MSBitalicsnormaltextChar
+	{mso-style-name:"MSB italics normal text Char";
+	mso-style-link:"MSB italics normal text";
+	font-family:"Arial","sans-serif";
+	font-style:italic;}
+p.MSBReference, li.MSBReference, div.MSBReference
+	{mso-style-name:"MSB Reference";
+	mso-style-link:"MSB Reference Char";
+	margin:0cm;
+	margin-bottom:.0001pt;
+	font-size:10.0pt;
+	font-family:"Arial","sans-serif";}
+p.MSBReferenceCxSpFirst, li.MSBReferenceCxSpFirst, div.MSBReferenceCxSpFirst
+	{mso-style-name:"MSB ReferenceCxSpFirst";
+	mso-style-link:"MSB Reference Char";
+	margin:0cm;
+	margin-bottom:.0001pt;
+	font-size:10.0pt;
+	font-family:"Arial","sans-serif";}
+p.MSBReferenceCxSpMiddle, li.MSBReferenceCxSpMiddle, div.MSBReferenceCxSpMiddle
+	{mso-style-name:"MSB ReferenceCxSpMiddle";
+	mso-style-link:"MSB Reference Char";
+	margin:0cm;
+	margin-bottom:.0001pt;
+	font-size:10.0pt;
+	font-family:"Arial","sans-serif";}
+p.MSBReferenceCxSpLast, li.MSBReferenceCxSpLast, div.MSBReferenceCxSpLast
+	{mso-style-name:"MSB ReferenceCxSpLast";
+	mso-style-link:"MSB Reference Char";
+	margin:0cm;
+	margin-bottom:.0001pt;
+	font-size:10.0pt;
+	font-family:"Arial","sans-serif";}
+span.MSBReferenceChar
+	{mso-style-name:"MSB Reference Char";
+	mso-style-link:"MSB Reference";
+	font-family:"Arial","sans-serif";}
+p.MSBboldunderlinednormaltext, li.MSBboldunderlinednormaltext, div.MSBboldunderlinednormaltext
+	{mso-style-name:"MSB bold underlined normal text";
+	mso-style-link:"MSB bold underlined normal text Char";
+	margin:0cm;
+	margin-bottom:.0001pt;
+	font-size:11.0pt;
+	font-family:"Arial","sans-serif";
+	font-weight:bold;
+	text-decoration:underline;}
+p.MSBboldunderlinednormaltextCxSpFirst, li.MSBboldunderlinednormaltextCxSpFirst, div.MSBboldunderlinednormaltextCxSpFirst
+	{mso-style-name:"MSB bold underlined normal textCxSpFirst";
+	mso-style-link:"MSB bold underlined normal text Char";
+	margin:0cm;
+	margin-bottom:.0001pt;
+	font-size:11.0pt;
+	font-family:"Arial","sans-serif";
+	font-weight:bold;
+	text-decoration:underline;}
+p.MSBboldunderlinednormaltextCxSpMiddle, li.MSBboldunderlinednormaltextCxSpMiddle, div.MSBboldunderlinednormaltextCxSpMiddle
+	{mso-style-name:"MSB bold underlined normal textCxSpMiddle";
+	mso-style-link:"MSB bold underlined normal text Char";
+	margin:0cm;
+	margin-bottom:.0001pt;
+	font-size:11.0pt;
+	font-family:"Arial","sans-serif";
+	font-weight:bold;
+	text-decoration:underline;}
+p.MSBboldunderlinednormaltextCxSpLast, li.MSBboldunderlinednormaltextCxSpLast, div.MSBboldunderlinednormaltextCxSpLast
+	{mso-style-name:"MSB bold underlined normal textCxSpLast";
+	mso-style-link:"MSB bold underlined normal text Char";
+	margin:0cm;
+	margin-bottom:.0001pt;
+	font-size:11.0pt;
+	font-family:"Arial","sans-serif";
+	font-weight:bold;
+	text-decoration:underline;}
+span.MSBboldunderlinednormaltextChar
+	{mso-style-name:"MSB bold underlined normal text Char";
+	mso-style-link:"MSB bold underlined normal text";
+	font-family:"Arial","sans-serif";
+	font-weight:bold;
+	text-decoration:underline;}
+.MsoChpDefault
+	{font-size:11.0pt;}
+.MsoPapDefault
+	{margin-bottom:10.0pt;
+	line-height:115%;}
+ /* Page Definitions */
+ @page WordSection1
+	{size:595.3pt 841.9pt;
+	margin:72.0pt 72.0pt 72.0pt 72.0pt;}
+div.WordSection1
+	{page:WordSection1;}
+ /* List Definitions */
+ ol
+	{margin-bottom:0cm;}
+ul
+	{margin-bottom:0cm;}
+-->
+</style>
+  </head>
+  <body>
+	  <div id="wrap">
+			<div id="main" class="container">
+		  	<div id="header">
+					<div style="float:left;">
+						<img src="/images/MSBLogo.png">
+					</div>
+					<img src="/images/MSBText.png">
+				</div>
+				<div id="content" class="span-16 append-1 prepend-1">					
+					<div class="WordSection1">
+
+<p class="MSBHeading1"><u>Management of Constipation</u></p>
+
+<p class="MsoNormal" style="margin-bottom:0cm;margin-bottom:.0001pt;line-height:
+normal"><span style='font-family:"Arial","sans-serif"'> </span></p>
+
+<p class="MsoNormal" style="margin-bottom:0cm;margin-bottom:.0001pt;line-height:
+normal"><span style='font-family:"Arial","sans-serif"'>NB: Laxatives are
+contraindicated in obstruction. Need to exclude obstruction before prescribing.</span></p>
+
+<p class="MSBboldunderlinednormaltextCxSpFirst"><span style="text-decoration:
+ none"> </span></p>
+
+<p class="MSBboldunderlinednormaltextCxSpLast" style="margin-left:25.1pt;
+text-indent:-18.0pt"><span style="text-decoration:none">1)<span style='font:7.0pt "Times New Roman"'>     </span></span>Look
+for cause</p>
+
+<p class="MsoNormal" style="margin-bottom:0cm;margin-bottom:.0001pt;line-height:
+normal"><span style='font-family:"Arial","sans-serif"'> </span></p>
+
+<p class="MsoNormal" style="margin-top:0cm;margin-right:0cm;margin-bottom:0cm;
+margin-left:21.0pt;margin-bottom:.0001pt;text-indent:-18.0pt;line-height:normal"><span style='font-family:"Arial","sans-serif"'>-<span style='font:7.0pt "Times New Roman"'>       
+</span></span><span style='font-family:"Arial","sans-serif"'>Mechanical
+obstruction</span></p>
+
+<p class="MsoNormal" style="margin-top:0cm;margin-right:0cm;margin-bottom:0cm;
+margin-left:21.0pt;margin-bottom:.0001pt;text-indent:-18.0pt;line-height:normal"><span style='font-family:"Arial","sans-serif"'>-<span style='font:7.0pt "Times New Roman"'>       
+</span></span><span style='font-family:"Arial","sans-serif"'>Hypothyroidism</span></p>
+
+<p class="MsoNormal" style="margin-top:0cm;margin-right:0cm;margin-bottom:0cm;
+margin-left:21.0pt;margin-bottom:.0001pt;text-indent:-18.0pt;line-height:normal"><span style='font-family:"Arial","sans-serif"'>-<span style='font:7.0pt "Times New Roman"'>       
+</span></span><span style='font-family:"Arial","sans-serif"'>Hypocalcaemia</span></p>
+
+<p class="MsoNormal" style="margin-top:0cm;margin-right:0cm;margin-bottom:0cm;
+margin-left:21.0pt;margin-bottom:.0001pt;text-indent:-18.0pt;line-height:normal"><span style='font-family:"Arial","sans-serif"'>-<span style='font:7.0pt "Times New Roman"'>       
+</span></span><span style='font-family:"Arial","sans-serif"'>Immobility</span></p>
+
+<p class="MsoNormal" style="margin-top:0cm;margin-right:0cm;margin-bottom:0cm;
+margin-left:21.0pt;margin-bottom:.0001pt;text-indent:-18.0pt;line-height:normal"><span style='font-family:"Arial","sans-serif"'>-<span style='font:7.0pt "Times New Roman"'>       
+</span></span><span style='font-family:"Arial","sans-serif"'>Dehydration</span></p>
+
+<p class="MsoNormal" style="margin-top:0cm;margin-right:0cm;margin-bottom:0cm;
+margin-left:21.0pt;margin-bottom:.0001pt;text-indent:-18.0pt;line-height:normal"><span style='font-family:"Arial","sans-serif"'>-<span style='font:7.0pt "Times New Roman"'>       
+</span></span><span style='font-family:"Arial","sans-serif"'>Drugs esp opiates
+(incl cocodamol). Also verapamil, ondansetron.</span></p>
+
+<p class="MsoNormal" style="margin-top:0cm;margin-right:0cm;margin-bottom:0cm;
+margin-left:21.0pt;margin-bottom:.0001pt;text-indent:-18.0pt;line-height:normal"><span style='font-family:"Arial","sans-serif"'>-<span style='font:7.0pt "Times New Roman"'>       
+</span></span><span style='font-family:"Arial","sans-serif"'>Stop iron and
+calcium supplements</span></p>
+
+<p class="MsoNormal" style="margin-bottom:0cm;margin-bottom:.0001pt;line-height:
+normal"><span style='font-family:"Arial","sans-serif"'> </span></p>
+
+<p class="MSBboldunderlinednormaltext" style="margin-left:25.1pt;text-indent:
+-18.0pt"><span style="text-decoration:none">2)<span style='font:7.0pt "Times New Roman"'>    
+</span></span>Investigate</p>
+
+<p class="MsoNormal" style="margin-bottom:0cm;margin-bottom:.0001pt;line-height:
+normal"><span style='font-family:"Arial","sans-serif"'> </span></p>
+
+<p class="MsoNormal" style="margin-top:0cm;margin-right:0cm;margin-bottom:0cm;
+margin-left:21.0pt;margin-bottom:.0001pt;text-indent:-18.0pt;line-height:normal"><span style='font-family:"Arial","sans-serif"'>-<span style='font:7.0pt "Times New Roman"'>       
+</span></span><b><span style='font-family:"Arial","sans-serif"'>PR!</span></b></p>
+
+<p class="MsoNormal" style="margin-top:0cm;margin-right:0cm;margin-bottom:0cm;
+margin-left:21.0pt;margin-bottom:.0001pt;text-indent:-18.0pt;line-height:normal"><span style='font-family:"Arial","sans-serif"'>-<span style='font:7.0pt "Times New Roman"'>       
+</span></span><span style='font-family:"Arial","sans-serif"'>Check U+Es</span></p>
+
+<p class="MsoNormal" style="margin-top:0cm;margin-right:0cm;margin-bottom:0cm;
+margin-left:21.0pt;margin-bottom:.0001pt;text-indent:-18.0pt;line-height:normal"><span style='font-family:"Arial","sans-serif"'>-<span style='font:7.0pt "Times New Roman"'>       
+</span></span><span style='font-family:"Arial","sans-serif"'>Calcium</span></p>
+
+<p class="MsoNormal" style="margin-top:0cm;margin-right:0cm;margin-bottom:0cm;
+margin-left:21.0pt;margin-bottom:.0001pt;text-indent:-18.0pt;line-height:normal"><span style='font-family:"Arial","sans-serif"'>-<span style='font:7.0pt "Times New Roman"'>       
+</span></span><span style='font-family:"Arial","sans-serif"'>TFTs</span></p>
+
+<p class="MsoNormal" style="margin-top:0cm;margin-right:0cm;margin-bottom:0cm;
+margin-left:21.0pt;margin-bottom:.0001pt;text-indent:-18.0pt;line-height:normal"><span style='font-family:"Arial","sans-serif"'>-<span style='font:7.0pt "Times New Roman"'>       
+</span></span><span style='font-family:"Arial","sans-serif"'>Glucose</span></p>
+
+<p class="MsoNormal" style="margin-top:0cm;margin-right:0cm;margin-bottom:0cm;
+margin-left:21.0pt;margin-bottom:.0001pt;text-indent:-18.0pt;line-height:normal"><span style='font-family:"Arial","sans-serif"'>-<span style='font:7.0pt "Times New Roman"'>       
+</span></span><span style='font-family:"Arial","sans-serif"'>AXR if 
+?obstruction</span></p>
+
+<p class="MsoNormal" style="margin-top:0cm;margin-right:0cm;margin-bottom:0cm;
+margin-left:21.0pt;margin-bottom:.0001pt;line-height:normal"><span style='font-family:"Arial","sans-serif"'> </span></p>
+
+<p class="MSBboldunderlinednormaltext" style="margin-left:25.1pt;text-indent:
+-18.0pt"><span style="text-decoration:none">3)<span style='font:7.0pt "Times New Roman"'>    
+</span></span>Management</p>
+
+<p class="MsoNormal" style="margin-bottom:0cm;margin-bottom:.0001pt;line-height:
+normal"><span style='font-family:"Arial","sans-serif"'> </span></p>
+
+<p class="MsoNormal" style="margin-bottom:0cm;margin-bottom:.0001pt;line-height:
+normal"><span style='font-family:"Arial","sans-serif"'>Depends on PR findings:</span></p>
+
+<p class="MsoNormal" style="margin-top:0cm;margin-right:0cm;margin-bottom:0cm;
+margin-left:21.0pt;margin-bottom:.0001pt;text-indent:-18.0pt;line-height:normal"><span style="font-family:Wingdings">Ø<span style='font:7.0pt "Times New Roman"'> 
+</span></span><span style='font-family:"Arial","sans-serif"'>Hard faeces –
+faecal softener eg lactulose</span></p>
+
+<p class="MsoNormal" style="margin-top:0cm;margin-right:0cm;margin-bottom:0cm;
+margin-left:21.0pt;margin-bottom:.0001pt;text-indent:-18.0pt;line-height:normal"><span style="font-family:Wingdings">Ø<span style='font:7.0pt "Times New Roman"'> 
+</span></span><span style='font-family:"Arial","sans-serif"'>Soft faeces –
+stimulant eg senna</span></p>
+
+<p class="MsoNormal" style="margin-top:0cm;margin-right:0cm;margin-bottom:0cm;
+margin-left:21.0pt;margin-bottom:.0001pt;text-indent:-18.0pt;line-height:normal"><span style="font-family:Wingdings">Ø<span style='font:7.0pt "Times New Roman"'> 
+</span></span><span style='font-family:"Arial","sans-serif"'>Impaction – glycerol
+suppository then enema eg phosphate enema</span></p>
+
+<p class="MsoNormal" style="margin-top:0cm;margin-right:0cm;margin-bottom:0cm;
+margin-left:21.0pt;margin-bottom:.0001pt;text-indent:-18.0pt;line-height:normal"><span style="font-family:Wingdings">Ø<span style='font:7.0pt "Times New Roman"'> 
+</span></span><span style='font-family:"Arial","sans-serif"'>Empty rectum – AXR
+?obstruction</span></p>
+
+<p class="MsoNormal" style="margin-bottom:0cm;margin-bottom:.0001pt;line-height:
+normal"><span style='font-family:"Arial","sans-serif"'> </span></p>
+
+<p class="MSBsub-heading">Management of…</p>
+
+<p class="MsoNormal" style="margin-bottom:0cm;margin-bottom:.0001pt;line-height:
+normal"><span style='font-family:"Arial","sans-serif"'> </span></p>
+
+<p class="MsoNormal" style="margin-top:0cm;margin-right:0cm;margin-bottom:0cm;
+margin-left:21.0pt;margin-bottom:.0001pt;text-indent:-18.0pt;line-height:normal"><span style='font-family:"Times New Roman","serif"'>-<span style='font:7.0pt "Times New Roman"'>       
+</span></span><span style='font-family:"Arial","sans-serif"'>Acute constipation</span></p>
+
+<p class="MsoNormal" style="margin-top:0cm;margin-right:0cm;margin-bottom:0cm;
+margin-left:57.0pt;margin-bottom:.0001pt;text-indent:-18.0pt;line-height:normal"><span style="font-family:Symbol;color:#7030A0">·<span style='font:7.0pt "Times New Roman"'>       
+</span></span><span style='font-family:"Arial","sans-serif"'>Senna 2-4 tabs
+nocte</span></p>
+
+<p class="MsoNormal" style="margin-bottom:0cm;margin-bottom:.0001pt;line-height:
+normal"><span style='font-family:"Arial","sans-serif"'> </span></p>
+
+<p class="MsoNormal" style="margin-bottom:0cm;margin-bottom:.0001pt;line-height:
+normal"><span style='font-family:"Arial","sans-serif"'>Chronic constipation</span></p>
+
+<p class="MsoNormal" style="margin-top:0cm;margin-right:0cm;margin-bottom:0cm;
+margin-left:39.0pt;margin-bottom:.0001pt;text-indent:-18.0pt;line-height:normal"><span style="font-family:Wingdings">Ø<span style='font:7.0pt "Times New Roman"'> </span></span><span style='font-family:"Arial","sans-serif"'>Increase fluid</span></p>
+
+<p class="MsoNormal" style="margin-top:0cm;margin-right:0cm;margin-bottom:0cm;
+margin-left:39.0pt;margin-bottom:.0001pt;text-indent:-18.0pt;line-height:normal"><span style="font-family:Wingdings">Ø<span style='font:7.0pt "Times New Roman"'> </span></span><span style='font-family:"Arial","sans-serif"'>Exercise</span></p>
+
+<p class="MsoNormal" style="margin-top:0cm;margin-right:0cm;margin-bottom:0cm;
+margin-left:21.0pt;margin-bottom:.0001pt;text-indent:-18.0pt;line-height:normal"><span style='font-family:"Times New Roman","serif"'>-<span style='font:7.0pt "Times New Roman"'>       
+</span></span><span style='font-family:"Arial","sans-serif"'>High fibre</span></p>
+
+<p class="MsoNormal" style="margin-top:0cm;margin-right:0cm;margin-bottom:0cm;
+margin-left:57.0pt;margin-bottom:.0001pt;text-indent:-18.0pt;line-height:normal"><span style="font-family:Symbol;color:#7030A0">·<span style='font:7.0pt "Times New Roman"'>       
+</span></span><span style='font-family:"Arial","sans-serif"'>Fybogel (ispaghula
+husk) 1 sachet BD + good fluid intake</span></p>
+
+<p class="MsoNormal" style="margin-top:0cm;margin-right:0cm;margin-bottom:0cm;
+margin-left:57.0pt;margin-bottom:.0001pt;text-indent:-18.0pt;line-height:normal"><span style="font-family:Symbol;color:#7030A0">·<span style='font:7.0pt "Times New Roman"'>       
+</span></span><span style='font-family:"Arial","sans-serif"'>If ineffective
+add:</span></p>
+
+<p class="MsoNormal" style="margin-top:0cm;margin-right:0cm;margin-bottom:0cm;
+margin-left:93.0pt;margin-bottom:.0001pt;text-indent:-18.0pt;line-height:normal"><span style="font-family:Wingdings">§<span style='font:7.0pt "Times New Roman"'> 
+</span></span><span style='font-family:"Arial","sans-serif"'>Senna 2-4 tabs
+nocte (short term only)</span></p>
+
+<p class="MsoNormal" style="margin-top:0cm;margin-right:0cm;margin-bottom:0cm;
+margin-left:93.0pt;margin-bottom:.0001pt;text-indent:-18.0pt;line-height:normal"><span style="font-family:Wingdings">§<span style='font:7.0pt "Times New Roman"'> 
+</span></span><span style='font-family:"Arial","sans-serif"'>Or lactulose 15ml
+BD</span></p>
+
+<p class="MsoNormal" style="margin-top:0cm;margin-right:0cm;margin-bottom:0cm;
+margin-left:93.0pt;margin-bottom:.0001pt;text-indent:-18.0pt;line-height:normal"><span style="font-family:Wingdings">§<span style='font:7.0pt "Times New Roman"'> 
+</span></span><span style='font-family:"Arial","sans-serif"'>Or movicol 1-3
+sachet</span></p>
+
+<p class="MsoNormal" style="margin-bottom:0cm;margin-bottom:.0001pt;line-height:
+normal"><span style='font-family:"Arial","sans-serif"'> </span></p>
+
+<p class="MsoNormal" style="margin-top:0cm;margin-right:0cm;margin-bottom:0cm;
+margin-left:21.0pt;margin-bottom:.0001pt;text-indent:-18.0pt;line-height:normal"><span style='font-family:"Times New Roman","serif"'>-<span style='font:7.0pt "Times New Roman"'>       
+</span></span><span style='font-family:"Arial","sans-serif"'>Can use all 3 if
+not effective. Movicol tends to be the most potent.</span></p>
+
+<p class="MsoNormal" style="margin-bottom:0cm;margin-bottom:.0001pt;line-height:
+normal"><span style='font-family:"Arial","sans-serif"'> </span></p>
+
+<p class="MsoNormal" style="margin-top:0cm;margin-right:0cm;margin-bottom:0cm;
+margin-left:21.0pt;margin-bottom:.0001pt;text-indent:-18.0pt;line-height:normal"><span style='font-family:"Times New Roman","serif"'>-<span style='font:7.0pt "Times New Roman"'>       
+</span></span><span style='font-family:"Arial","sans-serif"'>Opiod induced
+constipation</span></p>
+
+<p class="MsoNormal" style="margin-top:0cm;margin-right:0cm;margin-bottom:0cm;
+margin-left:57.0pt;margin-bottom:.0001pt;text-indent:-18.0pt;line-height:normal"><span style="font-family:Symbol;color:#7030A0">·<span style='font:7.0pt "Times New Roman"'>       
+</span></span><span style='font-family:"Arial","sans-serif"'>Senna + lactulose </span></p>
+
+<p class="MsoNormal" style="margin-bottom:0cm;margin-bottom:.0001pt;line-height:
+normal"><span style='font-family:"Arial","sans-serif"'> </span></p>
+
+<p class="MsoNormal" style="margin-bottom:0cm;margin-bottom:.0001pt;line-height:
+normal"><span style='font-family:"Arial","sans-serif"'> </span></p>
+
+<p class="MSBHeading1"><u>Pharmacology of Laxatives </u></p>
+
+<p class="MsoNormal" style="margin-bottom:0cm;margin-bottom:.0001pt"><span style='line-height:115%;font-family:"Arial","sans-serif"'> </span></p>
+
+<p class="MsoNormal" style="margin-bottom:0cm;margin-bottom:.0001pt"><span style='line-height:115%;font-family:"Arial","sans-serif"'>Aka Purgatives –
+accelerate the passage of food through the intestine</span></p>
+
+<p class="MsoNormal" style="margin-bottom:0cm;margin-bottom:.0001pt"><span style='line-height:115%;font-family:"Arial","sans-serif"'> </span></p>
+
+<p class="MsoNormal" style="margin-bottom:0cm;margin-bottom:.0001pt"><span style='line-height:115%;font-family:"Arial","sans-serif"'>Purgatives include…</span></p>
+
+<p class="MsoNormal" style="margin-bottom:0cm;margin-bottom:.0001pt"><span style='line-height:115%;font-family:"Arial","sans-serif"'> </span></p>
+
+<p class="MsoListParagraph" style="margin-left:19.8pt;text-indent:-18.0pt"><span style='font-family:"Calibri","sans-serif"'>-<span style='font:7.0pt "Times New Roman"'>       
+</span></span>Laxatives, faecal softeners, stimulant purgatives</p>
+
+<p class="MsoNormal" style="margin-bottom:0cm;margin-bottom:.0001pt"><span style='line-height:115%;font-family:"Arial","sans-serif"'> </span></p>
+
+<p class="MSBsub-heading">Bulk &amp; Osmotic Laxatives</p>
+
+<p class="MsoNormal" style="margin-bottom:0cm;margin-bottom:.0001pt"><span style='line-height:115%;font-family:"Arial","sans-serif"'> </span></p>
+
+<p class="MsoNormal" style="margin-bottom:0cm;margin-bottom:.0001pt"><u><span style='line-height:115%;font-family:"Arial","sans-serif"'>Bulk laxatives </span></u></p>
+
+<p class="MsoNormal" style="margin-bottom:0cm;margin-bottom:.0001pt"><span style='line-height:115%;font-family:"Arial","sans-serif"'> </span></p>
+
+<p class="MsoListParagraphCxSpFirst" style="margin-left:19.8pt;text-indent:-18.0pt"><span style='font-family:"Calibri","sans-serif"'>-<span style='font:7.0pt "Times New Roman"'>       
+</span></span>Polysaccharide polymers that are not broken down so therefore add
+bulk to faeces</p>
+
+<p class="MsoListParagraphCxSpMiddle" style="margin-left:19.8pt;text-indent:-18.0pt"><span style='font-family:"Calibri","sans-serif"'>-<span style='font:7.0pt "Times New Roman"'>       
+</span></span>Promote peristalsis and increase faecal consistency</p>
+
+<p class="MsoListParagraphCxSpMiddle" style="margin-left:19.8pt;text-indent:-18.0pt"><span style='font-family:"Calibri","sans-serif"'>-<span style='font:7.0pt "Times New Roman"'>       
+</span></span>Eg Methylcellulose, agar, bran, ispaghula husk (fybogel)</p>
+
+<p class="MsoListParagraphCxSpMiddle" style="margin-left:19.8pt;text-indent:-18.0pt"><span style='font-family:"Calibri","sans-serif"'>-<span style='font:7.0pt "Times New Roman"'>       
+</span></span>May take several days to work but no major side-effects</p>
+
+<p class="MsoListParagraphCxSpLast" style="margin-left:19.8pt;text-indent:-18.0pt"><span style='font-family:"Calibri","sans-serif"'>-<span style='font:7.0pt "Times New Roman"'>       
+</span></span>Can also just recommend Branflakes/wheatabix!</p>
+
+<p class="MsoNormal" style="margin-bottom:0cm;margin-bottom:.0001pt"><span style='line-height:115%;font-family:"Arial","sans-serif"'> </span></p>
+
+<p class="MsoNormal" style="margin-bottom:0cm;margin-bottom:.0001pt"><u><span style='line-height:115%;font-family:"Arial","sans-serif"'>Osmotic Laxatives</span></u></p>
+
+<p class="MsoNormal" style="margin-bottom:0cm;margin-bottom:.0001pt"><span style='line-height:115%;font-family:"Arial","sans-serif"'> </span></p>
+
+<p class="MsoListParagraphCxSpFirst" style="margin-left:19.8pt;text-indent:-18.0pt"><span style='font-family:"Calibri","sans-serif"'>-<span style='font:7.0pt "Times New Roman"'>       
+</span></span>Eg <b>lactulose</b>; saline purgatives.</p>
+
+<p class="MsoListParagraphCxSpMiddle" style="margin-left:19.8pt;text-indent:-18.0pt"><span style='font-family:"Calibri","sans-serif"'>-<span style='font:7.0pt "Times New Roman"'>       
+</span></span>Lactulose is a semi-synthetic combination of fructose and
+galactose that is poorly absorbed, and so draws fluid into the abdominal lumen
+to soften faeces. </p>
+
+<p class="MsoListParagraphCxSpMiddle" style="margin-left:19.8pt;text-indent:-18.0pt"><span style='font-family:"Calibri","sans-serif"'>-<span style='font:7.0pt "Times New Roman"'>       
+</span></span>It takes 2-3 days to work. </p>
+
+<p class="MsoListParagraphCxSpLast" style="margin-left:19.8pt;text-indent:-18.0pt"><span style='font-family:"Calibri","sans-serif"'>-<span style='font:7.0pt "Times New Roman"'>       
+</span></span>Works as a faecal softener</p>
+
+<p class="MsoNormal" style="margin-top:0cm;margin-right:0cm;margin-bottom:0cm;
+margin-left:19.8pt;margin-bottom:.0001pt;text-indent:-18.0pt;line-height:normal">-<span style='font:7.0pt "Times New Roman"'>       
+</span><span style='font-family:"Arial","sans-serif"'>Esp good in hepatic
+encaphalopahty – reduces growth of ammonia producing bacteria</span></p>
+
+<p class="MsoListParagraphCxSpFirst" style="margin-left:19.8pt;text-indent:-18.0pt"><span style='font-family:"Calibri","sans-serif"'>-<span style='font:7.0pt "Times New Roman"'>       
+</span></span>Given as a thick sticky liquid – tastes horrible</p>
+
+<p class="MsoListParagraphCxSpMiddle" style="margin-left:19.8pt;text-indent:-18.0pt"><span style='font-family:"Calibri","sans-serif"'>-<span style='font:7.0pt "Times New Roman"'>       
+</span></span>s/e – flatulence; cramps; diarrhoea and electrolyte disturbance;
+tolerance can develop.</p>
+
+<p class="MsoListParagraphCxSpMiddle" style="margin-left:19.8pt"> </p>
+
+<p class="MsoListParagraphCxSpMiddle" style="margin-left:19.8pt;text-indent:-18.0pt"><span style='font-family:"Calibri","sans-serif"'>-<span style='font:7.0pt "Times New Roman"'>       
+</span></span>Salt purgatives consist of poorly-absorbable salts (magnesium
+sulphate and magnesium hydroxide) that therefore draw increased volumes of
+fluid into the gut lumen. This increases transfer through the small intestine,
+and leads to increased volumes entering the colon &#8594; purgation.</p>
+
+<p class="MsoListParagraphCxSpLast" style="margin-left:19.8pt;text-indent:-18.0pt"><span style='font-family:"Calibri","sans-serif"'>-<span style='font:7.0pt "Times New Roman"'>       
+</span></span>Abdominal cramps can occur; salt doses are too small to have
+adverse systemic effects but should still be avoided in children and patients
+with renal failure. </p>
+
+<p class="MsoNormal" style="margin-top:0cm;margin-right:0cm;margin-bottom:0cm;
+margin-left:1.8pt;margin-bottom:.0001pt"><span style='line-height:115%;
+font-family:"Arial","sans-serif"'> </span></p>
+
+<p class="MSBsub-heading">Faecal softeners</p>
+
+<p class="MsoNormal" style="margin-top:0cm;margin-right:0cm;margin-bottom:0cm;
+margin-left:1.8pt;margin-bottom:.0001pt"><span style='line-height:115%;
+font-family:"Arial","sans-serif"'> </span></p>
+
+<p class="MsoListParagraphCxSpFirst" style="margin-left:19.8pt;text-indent:-18.0pt"><span style='font-family:"Calibri","sans-serif"'>-<span style='font:7.0pt "Times New Roman"'>       
+</span></span>Docusate sodium – surface active compound that acts like a
+detergent in the GIT to produce softer faeces</p>
+
+<p class="MsoListParagraphCxSpMiddle" style="margin-left:19.8pt;text-indent:-18.0pt"><span style='font-family:"Calibri","sans-serif"'>-<span style='font:7.0pt "Times New Roman"'>       
+</span></span>Also has a weak stimulant effect</p>
+
+<p class="MsoListParagraphCxSpLast" style="margin-left:19.8pt;text-indent:-18.0pt"><span style='font-family:"Calibri","sans-serif"'>-<span style='font:7.0pt "Times New Roman"'>       
+</span></span>Also liquid paraffin (although this is seldom used now).</p>
+
+<p class="MsoNormal" style="margin-bottom:0cm;margin-bottom:.0001pt"><span style='line-height:115%;font-family:"Arial","sans-serif"'> </span></p>
+
+<p class="MSBsub-heading">Stimulant Laxatives</p>
+
+<p class="MsoNormal" style="margin-bottom:0cm;margin-bottom:.0001pt"><span style='line-height:115%;font-family:"Arial","sans-serif"'> </span></p>
+
+<p class="MsoListParagraphCxSpFirst" style="margin-left:19.8pt;text-indent:-18.0pt"><span style='font-family:"Calibri","sans-serif"'>-<span style='font:7.0pt "Times New Roman"'>       
+</span></span>Act mainly by increasing electrolyte and hence water secretion by
+the muscosa</p>
+
+<p class="MsoListParagraphCxSpMiddle" style="margin-left:19.8pt;text-indent:-18.0pt"><span style='font-family:"Calibri","sans-serif"'>-<span style='font:7.0pt "Times New Roman"'>       
+</span></span>also increase peristalsis - ?by stimulating enteric nerves</p>
+
+<p class="MsoListParagraphCxSpLast" style="margin-left:19.8pt;text-indent:-18.0pt"><span style='font-family:"Calibri","sans-serif"'>-<span style='font:7.0pt "Times New Roman"'>       
+</span></span>s/e abdominal cramping</p>
+
+<p class="MsoNormal" style="margin-top:0cm;margin-right:0cm;margin-bottom:0cm;
+margin-left:21.0pt;margin-bottom:.0001pt;text-indent:-18.0pt;line-height:normal"><span style='font-family:"Times New Roman","serif"'>-<span style='font:7.0pt "Times New Roman"'>       
+</span></span><span style='font-family:"Arial","sans-serif"'>May produe atony
+with long term use</span></p>
+
+<p class="MsoListParagraphCxSpFirst" style="margin-left:57.0pt;text-indent:-18.0pt"><span style="font-family:Symbol;color:#7030A0">·<span style='font:7.0pt "Times New Roman"'>       
+</span></span>‘tolerance’ can develop whereby the patient develops atonic colon
+in absences of laxative and therefore becomes ‘dependent’</p>
+
+<p class="MsoListParagraphCxSpMiddle" style="margin-left:21.0pt;text-indent:-18.0pt"><span style='font-family:"Times New Roman","serif"'>-<span style='font:7.0pt "Times New Roman"'>       
+</span></span>Stimulant laxatives should not be given if ?obstruction!</p>
+
+<p class="MsoListParagraphCxSpLast" style="margin-left:19.8pt;text-indent:-18.0pt"><span style='font-family:"Calibri","sans-serif"'>-<span style='font:7.0pt "Times New Roman"'>       
+</span></span>Also avoid in active colitis.</p>
+
+<p class="MsoNormal" style="margin-bottom:0cm;margin-bottom:.0001pt"><span style='line-height:115%;font-family:"Arial","sans-serif"'> </span></p>
+
+<p class="MsoNormal" style="margin-bottom:0cm;margin-bottom:.0001pt"><span style='line-height:115%;font-family:"Arial","sans-serif"'>Bisacodyl – acts very
+rapidly if given by suppository</span></p>
+
+<p class="MsoNormal" style="margin-bottom:0cm;margin-bottom:.0001pt"><span style='line-height:115%;font-family:"Arial","sans-serif"'> </span></p>
+
+<p class="MsoNormal" style="margin-bottom:0cm;margin-bottom:.0001pt"><b><span style='line-height:115%;font-family:"Arial","sans-serif"'>Senna</span></b><span style='line-height:115%;font-family:"Arial","sans-serif"'> – anthroquinone
+laxative; active component of drug directly stimulates the myenteric plexus to
+increase peristalsis and thus defaecation.</span></p>
+
+<p class="MsoNormal" style="margin-bottom:0cm;margin-bottom:.0001pt"><span style='line-height:115%;font-family:"Arial","sans-serif"'> </span></p>
+
+<p class="MsoNormal" style="margin-bottom:0cm;margin-bottom:.0001pt"><i><u><span style='line-height:115%;font-family:"Arial","sans-serif"'>Also:</span></u></i></p>
+
+<p class="MsoNormal" style="margin-bottom:0cm;margin-bottom:.0001pt"><span style='line-height:115%;font-family:"Arial","sans-serif"'> </span></p>
+
+<p class="MsoNormal" style="margin-bottom:0cm;margin-bottom:.0001pt"><span style='line-height:115%;font-family:"Arial","sans-serif"'>Domperidone and
+Metoclopramide – increase gastric emptying – it increases LES tone whilst
+relaxing the pylorus and stimulating duodenal peristalsis. Mechanism of action
+is unknown. Useful in chronic reflux disease and in disorders of gastric
+emptying. They do not cause purgation (laxative effect) overall. </span></p>
+
+<p class="MsoNormal" style="margin-bottom:0cm;margin-bottom:.0001pt"><span style='line-height:115%;font-family:"Arial","sans-serif"'> </span></p>
+
+<p class="MsoNormal" style="margin-bottom:0cm;margin-bottom:.0001pt;line-height:
+normal"><span style='font-family:"Arial","sans-serif"'> </span></p>
+
+<p class="MsoNormal" style="margin-bottom:0cm;margin-bottom:.0001pt;line-height:
+normal"><span style='font-family:"Arial","sans-serif"'> </span></p>
+
+<p class="MsoNormal" style="margin-bottom:0cm;margin-bottom:.0001pt;line-height:
+normal"><span style='font-family:"Arial","sans-serif"'> </span></p>
+
+<p class="MsoNormal" style="margin-bottom:0cm;margin-bottom:.0001pt;line-height:
+normal"><span style='font-family:"Arial","sans-serif"'> </span></p>
+
+<p class="MsoNormal" style="margin-bottom:0cm;margin-bottom:.0001pt;line-height:
+normal"><span style='font-family:"Arial","sans-serif"'> </span></p>
+
+</div>
+				
+				</div>
+				<div id="sidebar" class="span-6 last">
+					<p>Sidebar</p>
+			  </div>
+		  </div>
+		</div>
+			
+		<div style="line-height:10px;">&nbsp;</div>
+		<div id="footer" class="container">
+				This is the 'sticky' footer
+		</div>
+	</body>
+</html>

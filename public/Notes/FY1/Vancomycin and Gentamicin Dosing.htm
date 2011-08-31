@@ -1,0 +1,1492 @@
+<!DOCTYPE html>
+<html>
+  <head>
+	  <title>MedStudyBuddy | Title</title>
+		<!--[if lt IE 9]>
+			<script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+		<![endif]-->
+		<link href="/stylesheets/blueprint/screen.css" media="screen" rel="stylesheet" type="text/css" />
+		<link href="/stylesheets/blueprint/print.css" media="print" rel="stylesheet" type="text/css" />
+		<!--[if lt IE8]>
+			<link href="/stylesheets/blueprint/ie.css" media="screen" rel="stylesheet" type="text/css" />
+		<![endif]-->
+		<link href="/stylesheets/notes.css" media="screen" rel="stylesheet" type="text/css" />
+		<link href="/stylesheets/sticky-footer.css" media="screen" rel="stylesheet" type="text/css" />
+		<link rel="shortcut icon" href="/favicon.ico" />
+		<link rel="shortcut icon" href="/images/favicon.ico" />
+		<style>
+<!--
+ /* Font Definitions */
+ @font-face
+	{font-family:Wingdings;
+	panose-1:5 0 0 0 0 0 0 0 0 0;}
+@font-face
+	{font-family:"Cambria Math";
+	panose-1:2 4 5 3 5 4 6 3 2 4;}
+@font-face
+	{font-family:Calibri;
+	panose-1:2 15 5 2 2 2 4 3 2 4;}
+@font-face
+	{font-family:Candara;
+	panose-1:2 14 5 2 3 3 3 2 2 4;}
+@font-face
+	{font-family:Tahoma;
+	panose-1:2 11 6 4 3 5 4 4 2 4;}
+ /* Style Definitions */
+ p.MsoNormal, li.MsoNormal, div.MsoNormal
+	{margin-top:0cm;
+	margin-right:0cm;
+	margin-bottom:10.0pt;
+	margin-left:0cm;
+	line-height:115%;
+	font-size:11.0pt;
+	font-family:"Calibri","sans-serif";}
+h1
+	{mso-style-link:"Heading 1 Char";
+	margin-top:24.0pt;
+	margin-right:0cm;
+	margin-bottom:10.0pt;
+	margin-left:0cm;
+	line-height:115%;
+	page-break-after:avoid;
+	font-size:14.0pt;
+	font-family:"Cambria","serif";
+	color:#365F91;}
+h2
+	{mso-style-link:"Heading 2 Char";
+	margin-top:10.0pt;
+	margin-right:0cm;
+	margin-bottom:10.0pt;
+	margin-left:0cm;
+	line-height:115%;
+	page-break-after:avoid;
+	font-size:13.0pt;
+	font-family:"Cambria","serif";
+	color:#4F81BD;}
+p.MsoSubtitle, li.MsoSubtitle, div.MsoSubtitle
+	{mso-style-link:"Subtitle Char";
+	margin-top:0cm;
+	margin-right:0cm;
+	margin-bottom:10.0pt;
+	margin-left:0cm;
+	line-height:115%;
+	font-size:12.0pt;
+	font-family:"Cambria","serif";
+	color:#4F81BD;
+	letter-spacing:.75pt;
+	font-style:italic;}
+p.MsoAcetate, li.MsoAcetate, div.MsoAcetate
+	{mso-style-link:"Balloon Text Char";
+	margin-top:0cm;
+	margin-right:0cm;
+	margin-bottom:10.0pt;
+	margin-left:0cm;
+	line-height:115%;
+	font-size:8.0pt;
+	font-family:"Tahoma","sans-serif";}
+p.MsoListParagraph, li.MsoListParagraph, div.MsoListParagraph
+	{margin-top:0cm;
+	margin-right:0cm;
+	margin-bottom:0cm;
+	margin-left:36.0pt;
+	margin-bottom:.0001pt;
+	font-size:11.0pt;
+	font-family:"Arial","sans-serif";}
+p.MsoListParagraphCxSpFirst, li.MsoListParagraphCxSpFirst, div.MsoListParagraphCxSpFirst
+	{margin-top:0cm;
+	margin-right:0cm;
+	margin-bottom:0cm;
+	margin-left:36.0pt;
+	margin-bottom:.0001pt;
+	font-size:11.0pt;
+	font-family:"Arial","sans-serif";}
+p.MsoListParagraphCxSpMiddle, li.MsoListParagraphCxSpMiddle, div.MsoListParagraphCxSpMiddle
+	{margin-top:0cm;
+	margin-right:0cm;
+	margin-bottom:0cm;
+	margin-left:36.0pt;
+	margin-bottom:.0001pt;
+	font-size:11.0pt;
+	font-family:"Arial","sans-serif";}
+p.MsoListParagraphCxSpLast, li.MsoListParagraphCxSpLast, div.MsoListParagraphCxSpLast
+	{margin-top:0cm;
+	margin-right:0cm;
+	margin-bottom:0cm;
+	margin-left:36.0pt;
+	margin-bottom:.0001pt;
+	font-size:11.0pt;
+	font-family:"Arial","sans-serif";}
+span.MsoSubtleEmphasis
+	{color:gray;
+	font-style:italic;}
+span.MsoIntenseEmphasis
+	{color:#4F81BD;
+	font-weight:bold;
+	font-style:italic;}
+span.Heading1Char
+	{mso-style-name:"Heading 1 Char";
+	mso-style-link:"Heading 1";
+	font-family:"Cambria","serif";
+	color:#365F91;
+	font-weight:bold;}
+span.Heading2Char
+	{mso-style-name:"Heading 2 Char";
+	mso-style-link:"Heading 2";
+	font-family:"Cambria","serif";
+	color:#4F81BD;
+	font-weight:bold;}
+span.SubtitleChar
+	{mso-style-name:"Subtitle Char";
+	mso-style-link:Subtitle;
+	font-family:"Cambria","serif";
+	color:#4F81BD;
+	letter-spacing:.75pt;
+	font-style:italic;}
+p.MSBHeading1, li.MSBHeading1, div.MSBHeading1
+	{mso-style-name:"MSB Heading 1";
+	mso-style-link:"MSB Heading 1 Char";
+	margin:0cm;
+	margin-bottom:.0001pt;
+	font-size:20.0pt;
+	font-family:"Candara","sans-serif";
+	color:#660066;
+	font-weight:bold;
+	text-decoration:underline;}
+p.MSBHeading2, li.MSBHeading2, div.MSBHeading2
+	{mso-style-name:"MSB Heading 2";
+	mso-style-link:"MSB Heading 2 Char";
+	margin:0cm;
+	margin-bottom:.0001pt;
+	font-size:16.0pt;
+	font-family:"Candara","sans-serif";
+	color:#2E002E;
+	font-weight:bold;}
+span.MSBHeading1Char
+	{mso-style-name:"MSB Heading 1 Char";
+	mso-style-link:"MSB Heading 1";
+	font-family:"Candara","sans-serif";
+	color:#660066;
+	font-weight:bold;
+	text-decoration:underline;}
+p.MSBsub-heading, li.MSBsub-heading, div.MSBsub-heading
+	{mso-style-name:"MSB sub-heading";
+	mso-style-link:"MSB sub-heading Char";
+	margin:0cm;
+	margin-bottom:.0001pt;
+	font-size:13.0pt;
+	font-family:"Calibri","sans-serif";
+	font-weight:bold;
+	text-decoration:underline;}
+span.MSBHeading2Char
+	{mso-style-name:"MSB Heading 2 Char";
+	mso-style-link:"MSB Heading 2";
+	font-family:"Candara","sans-serif";
+	color:#2E002E;
+	font-weight:bold;}
+p.MSBnormaltext, li.MSBnormaltext, div.MSBnormaltext
+	{mso-style-name:"MSB normal text";
+	mso-style-link:"MSB normal text Char";
+	margin-top:0cm;
+	margin-right:0cm;
+	margin-bottom:0cm;
+	margin-left:21.0pt;
+	margin-bottom:.0001pt;
+	text-indent:-18.0pt;
+	font-size:11.0pt;
+	font-family:"Arial","sans-serif";}
+p.MSBnormaltextCxSpFirst, li.MSBnormaltextCxSpFirst, div.MSBnormaltextCxSpFirst
+	{mso-style-name:"MSB normal textCxSpFirst";
+	mso-style-link:"MSB normal text Char";
+	margin-top:0cm;
+	margin-right:0cm;
+	margin-bottom:0cm;
+	margin-left:21.0pt;
+	margin-bottom:.0001pt;
+	text-indent:-18.0pt;
+	font-size:11.0pt;
+	font-family:"Arial","sans-serif";}
+p.MSBnormaltextCxSpMiddle, li.MSBnormaltextCxSpMiddle, div.MSBnormaltextCxSpMiddle
+	{mso-style-name:"MSB normal textCxSpMiddle";
+	mso-style-link:"MSB normal text Char";
+	margin-top:0cm;
+	margin-right:0cm;
+	margin-bottom:0cm;
+	margin-left:21.0pt;
+	margin-bottom:.0001pt;
+	text-indent:-18.0pt;
+	font-size:11.0pt;
+	font-family:"Arial","sans-serif";}
+p.MSBnormaltextCxSpLast, li.MSBnormaltextCxSpLast, div.MSBnormaltextCxSpLast
+	{mso-style-name:"MSB normal textCxSpLast";
+	mso-style-link:"MSB normal text Char";
+	margin-top:0cm;
+	margin-right:0cm;
+	margin-bottom:0cm;
+	margin-left:21.0pt;
+	margin-bottom:.0001pt;
+	text-indent:-18.0pt;
+	font-size:11.0pt;
+	font-family:"Arial","sans-serif";}
+span.MSBsub-headingChar
+	{mso-style-name:"MSB sub-heading Char";
+	mso-style-link:"MSB sub-heading";
+	font-weight:bold;
+	text-decoration:underline;}
+span.MSBnormaltextChar
+	{mso-style-name:"MSB normal text Char";
+	mso-style-link:"MSB normal text";
+	font-family:"Arial","sans-serif";}
+p.MSBsub-headingitalics, li.MSBsub-headingitalics, div.MSBsub-headingitalics
+	{mso-style-name:"MSB sub-heading \(italics\)";
+	mso-style-link:"MSB sub-heading \(italics\) Char";
+	margin:0cm;
+	margin-bottom:.0001pt;
+	font-size:13.0pt;
+	font-family:"Calibri","sans-serif";
+	font-weight:bold;
+	font-style:italic;
+	text-decoration:underline;}
+span.MSBsub-headingitalicsChar
+	{mso-style-name:"MSB sub-heading \(italics\) Char";
+	mso-style-link:"MSB sub-heading \(italics\)";
+	font-weight:bold;
+	font-style:italic;
+	text-decoration:underline;}
+p.MSBitalicsnormaltext, li.MSBitalicsnormaltext, div.MSBitalicsnormaltext
+	{mso-style-name:"MSB italics normal text";
+	mso-style-link:"MSB italics normal text Char";
+	margin:0cm;
+	margin-bottom:.0001pt;
+	font-size:11.0pt;
+	font-family:"Arial","sans-serif";
+	font-style:italic;}
+p.MSBitalicsnormaltextCxSpFirst, li.MSBitalicsnormaltextCxSpFirst, div.MSBitalicsnormaltextCxSpFirst
+	{mso-style-name:"MSB italics normal textCxSpFirst";
+	mso-style-link:"MSB italics normal text Char";
+	margin:0cm;
+	margin-bottom:.0001pt;
+	font-size:11.0pt;
+	font-family:"Arial","sans-serif";
+	font-style:italic;}
+p.MSBitalicsnormaltextCxSpMiddle, li.MSBitalicsnormaltextCxSpMiddle, div.MSBitalicsnormaltextCxSpMiddle
+	{mso-style-name:"MSB italics normal textCxSpMiddle";
+	mso-style-link:"MSB italics normal text Char";
+	margin:0cm;
+	margin-bottom:.0001pt;
+	font-size:11.0pt;
+	font-family:"Arial","sans-serif";
+	font-style:italic;}
+p.MSBitalicsnormaltextCxSpLast, li.MSBitalicsnormaltextCxSpLast, div.MSBitalicsnormaltextCxSpLast
+	{mso-style-name:"MSB italics normal textCxSpLast";
+	mso-style-link:"MSB italics normal text Char";
+	margin:0cm;
+	margin-bottom:.0001pt;
+	font-size:11.0pt;
+	font-family:"Arial","sans-serif";
+	font-style:italic;}
+p.MSBReference, li.MSBReference, div.MSBReference
+	{mso-style-name:"MSB Reference";
+	mso-style-link:"MSB Reference Char";
+	margin:0cm;
+	margin-bottom:.0001pt;
+	font-size:10.0pt;
+	font-family:"Arial","sans-serif";}
+p.MSBReferenceCxSpFirst, li.MSBReferenceCxSpFirst, div.MSBReferenceCxSpFirst
+	{mso-style-name:"MSB ReferenceCxSpFirst";
+	mso-style-link:"MSB Reference Char";
+	margin:0cm;
+	margin-bottom:.0001pt;
+	font-size:10.0pt;
+	font-family:"Arial","sans-serif";}
+p.MSBReferenceCxSpMiddle, li.MSBReferenceCxSpMiddle, div.MSBReferenceCxSpMiddle
+	{mso-style-name:"MSB ReferenceCxSpMiddle";
+	mso-style-link:"MSB Reference Char";
+	margin:0cm;
+	margin-bottom:.0001pt;
+	font-size:10.0pt;
+	font-family:"Arial","sans-serif";}
+p.MSBReferenceCxSpLast, li.MSBReferenceCxSpLast, div.MSBReferenceCxSpLast
+	{mso-style-name:"MSB ReferenceCxSpLast";
+	mso-style-link:"MSB Reference Char";
+	margin:0cm;
+	margin-bottom:.0001pt;
+	font-size:10.0pt;
+	font-family:"Arial","sans-serif";}
+span.MSBitalicsnormaltextChar
+	{mso-style-name:"MSB italics normal text Char";
+	mso-style-link:"MSB italics normal text";
+	font-family:"Arial","sans-serif";
+	font-style:italic;}
+span.MSBReferenceChar
+	{mso-style-name:"MSB Reference Char";
+	mso-style-link:"MSB Reference";
+	font-family:"Arial","sans-serif";}
+p.MSBreferenceHeading, li.MSBreferenceHeading, div.MSBreferenceHeading
+	{mso-style-name:"MSB reference Heading";
+	mso-style-link:"MSB reference Heading Char";
+	margin:0cm;
+	margin-bottom:.0001pt;
+	font-size:10.0pt;
+	font-family:"Arial","sans-serif";
+	font-weight:bold;
+	text-decoration:underline;}
+span.MSBreferenceHeadingChar
+	{mso-style-name:"MSB reference Heading Char";
+	mso-style-link:"MSB reference Heading";
+	font-family:"Arial","sans-serif";
+	font-weight:bold;
+	text-decoration:underline;}
+p.MSBunderlinearrowbullet, li.MSBunderlinearrowbullet, div.MSBunderlinearrowbullet
+	{mso-style-name:"MSB underline + arrow bullet";
+	mso-style-link:"MSB underline + arrow bullet Char";
+	margin-top:0cm;
+	margin-right:0cm;
+	margin-bottom:0cm;
+	margin-left:36.0pt;
+	margin-bottom:.0001pt;
+	text-indent:-18.0pt;
+	font-size:11.0pt;
+	font-family:"Arial","sans-serif";
+	text-decoration:underline;}
+p.MSBunderlinearrowbulletCxSpFirst, li.MSBunderlinearrowbulletCxSpFirst, div.MSBunderlinearrowbulletCxSpFirst
+	{mso-style-name:"MSB underline + arrow bulletCxSpFirst";
+	mso-style-link:"MSB underline + arrow bullet Char";
+	margin-top:0cm;
+	margin-right:0cm;
+	margin-bottom:0cm;
+	margin-left:36.0pt;
+	margin-bottom:.0001pt;
+	text-indent:-18.0pt;
+	font-size:11.0pt;
+	font-family:"Arial","sans-serif";
+	text-decoration:underline;}
+p.MSBunderlinearrowbulletCxSpMiddle, li.MSBunderlinearrowbulletCxSpMiddle, div.MSBunderlinearrowbulletCxSpMiddle
+	{mso-style-name:"MSB underline + arrow bulletCxSpMiddle";
+	mso-style-link:"MSB underline + arrow bullet Char";
+	margin-top:0cm;
+	margin-right:0cm;
+	margin-bottom:0cm;
+	margin-left:36.0pt;
+	margin-bottom:.0001pt;
+	text-indent:-18.0pt;
+	font-size:11.0pt;
+	font-family:"Arial","sans-serif";
+	text-decoration:underline;}
+p.MSBunderlinearrowbulletCxSpLast, li.MSBunderlinearrowbulletCxSpLast, div.MSBunderlinearrowbulletCxSpLast
+	{mso-style-name:"MSB underline + arrow bulletCxSpLast";
+	mso-style-link:"MSB underline + arrow bullet Char";
+	margin-top:0cm;
+	margin-right:0cm;
+	margin-bottom:0cm;
+	margin-left:36.0pt;
+	margin-bottom:.0001pt;
+	text-indent:-18.0pt;
+	font-size:11.0pt;
+	font-family:"Arial","sans-serif";
+	text-decoration:underline;}
+span.MSBunderlinearrowbulletChar
+	{mso-style-name:"MSB underline + arrow bullet Char";
+	mso-style-link:"MSB underline + arrow bullet";
+	font-family:"Arial","sans-serif";
+	text-decoration:underline;}
+span.BalloonTextChar
+	{mso-style-name:"Balloon Text Char";
+	mso-style-link:"Balloon Text";
+	font-family:"Tahoma","sans-serif";}
+p.MSBnormaltextnolist, li.MSBnormaltextnolist, div.MSBnormaltextnolist
+	{mso-style-name:"MSB normal text \(no list\)";
+	mso-style-link:"MSB normal text \(no list\) Char";
+	margin-top:0cm;
+	margin-right:0cm;
+	margin-bottom:0cm;
+	margin-left:3.1pt;
+	margin-bottom:.0001pt;
+	font-size:11.0pt;
+	font-family:"Arial","sans-serif";}
+p.MSBnormaltextnolistCxSpFirst, li.MSBnormaltextnolistCxSpFirst, div.MSBnormaltextnolistCxSpFirst
+	{mso-style-name:"MSB normal text \(no list\)CxSpFirst";
+	mso-style-link:"MSB normal text \(no list\) Char";
+	margin-top:0cm;
+	margin-right:0cm;
+	margin-bottom:0cm;
+	margin-left:3.1pt;
+	margin-bottom:.0001pt;
+	font-size:11.0pt;
+	font-family:"Arial","sans-serif";}
+p.MSBnormaltextnolistCxSpMiddle, li.MSBnormaltextnolistCxSpMiddle, div.MSBnormaltextnolistCxSpMiddle
+	{mso-style-name:"MSB normal text \(no list\)CxSpMiddle";
+	mso-style-link:"MSB normal text \(no list\) Char";
+	margin-top:0cm;
+	margin-right:0cm;
+	margin-bottom:0cm;
+	margin-left:3.1pt;
+	margin-bottom:.0001pt;
+	font-size:11.0pt;
+	font-family:"Arial","sans-serif";}
+p.MSBnormaltextnolistCxSpLast, li.MSBnormaltextnolistCxSpLast, div.MSBnormaltextnolistCxSpLast
+	{mso-style-name:"MSB normal text \(no list\)CxSpLast";
+	mso-style-link:"MSB normal text \(no list\) Char";
+	margin-top:0cm;
+	margin-right:0cm;
+	margin-bottom:0cm;
+	margin-left:3.1pt;
+	margin-bottom:.0001pt;
+	font-size:11.0pt;
+	font-family:"Arial","sans-serif";}
+p.MSBboldnormaltext, li.MSBboldnormaltext, div.MSBboldnormaltext
+	{mso-style-name:"MSB bold normal text";
+	mso-style-link:"MSB bold normal text Char";
+	margin:0cm;
+	margin-bottom:.0001pt;
+	font-size:11.0pt;
+	font-family:"Arial","sans-serif";
+	font-weight:bold;}
+p.MSBboldnormaltextCxSpFirst, li.MSBboldnormaltextCxSpFirst, div.MSBboldnormaltextCxSpFirst
+	{mso-style-name:"MSB bold normal textCxSpFirst";
+	mso-style-link:"MSB bold normal text Char";
+	margin:0cm;
+	margin-bottom:.0001pt;
+	font-size:11.0pt;
+	font-family:"Arial","sans-serif";
+	font-weight:bold;}
+p.MSBboldnormaltextCxSpMiddle, li.MSBboldnormaltextCxSpMiddle, div.MSBboldnormaltextCxSpMiddle
+	{mso-style-name:"MSB bold normal textCxSpMiddle";
+	mso-style-link:"MSB bold normal text Char";
+	margin:0cm;
+	margin-bottom:.0001pt;
+	font-size:11.0pt;
+	font-family:"Arial","sans-serif";
+	font-weight:bold;}
+p.MSBboldnormaltextCxSpLast, li.MSBboldnormaltextCxSpLast, div.MSBboldnormaltextCxSpLast
+	{mso-style-name:"MSB bold normal textCxSpLast";
+	mso-style-link:"MSB bold normal text Char";
+	margin:0cm;
+	margin-bottom:.0001pt;
+	font-size:11.0pt;
+	font-family:"Arial","sans-serif";
+	font-weight:bold;}
+span.MSBnormaltextnolistChar
+	{mso-style-name:"MSB normal text \(no list\) Char";
+	mso-style-link:"MSB normal text \(no list\)";
+	font-family:"Arial","sans-serif";}
+p.MSBunderlinenormaltext, li.MSBunderlinenormaltext, div.MSBunderlinenormaltext
+	{mso-style-name:"MSB underline normal text";
+	mso-style-link:"MSB underline normal text Char";
+	margin:0cm;
+	margin-bottom:.0001pt;
+	font-size:11.0pt;
+	font-family:"Arial","sans-serif";
+	text-decoration:underline;}
+p.MSBunderlinenormaltextCxSpFirst, li.MSBunderlinenormaltextCxSpFirst, div.MSBunderlinenormaltextCxSpFirst
+	{mso-style-name:"MSB underline normal textCxSpFirst";
+	mso-style-link:"MSB underline normal text Char";
+	margin:0cm;
+	margin-bottom:.0001pt;
+	font-size:11.0pt;
+	font-family:"Arial","sans-serif";
+	text-decoration:underline;}
+p.MSBunderlinenormaltextCxSpMiddle, li.MSBunderlinenormaltextCxSpMiddle, div.MSBunderlinenormaltextCxSpMiddle
+	{mso-style-name:"MSB underline normal textCxSpMiddle";
+	mso-style-link:"MSB underline normal text Char";
+	margin:0cm;
+	margin-bottom:.0001pt;
+	font-size:11.0pt;
+	font-family:"Arial","sans-serif";
+	text-decoration:underline;}
+p.MSBunderlinenormaltextCxSpLast, li.MSBunderlinenormaltextCxSpLast, div.MSBunderlinenormaltextCxSpLast
+	{mso-style-name:"MSB underline normal textCxSpLast";
+	mso-style-link:"MSB underline normal text Char";
+	margin:0cm;
+	margin-bottom:.0001pt;
+	font-size:11.0pt;
+	font-family:"Arial","sans-serif";
+	text-decoration:underline;}
+span.MSBboldnormaltextChar
+	{mso-style-name:"MSB bold normal text Char";
+	mso-style-link:"MSB bold normal text";
+	font-family:"Arial","sans-serif";
+	font-weight:bold;}
+p.MSBemphasis1x, li.MSBemphasis1x, div.MSBemphasis1x
+	{mso-style-name:"MSB emphasis 1x";
+	mso-style-link:"MSB emphasis 1x Char";
+	margin:0cm;
+	margin-bottom:.0001pt;
+	font-size:11.0pt;
+	font-family:"Arial","sans-serif";
+	font-weight:bold;
+	font-style:italic;
+	text-decoration:underline;}
+p.MSBemphasis1xCxSpFirst, li.MSBemphasis1xCxSpFirst, div.MSBemphasis1xCxSpFirst
+	{mso-style-name:"MSB emphasis 1xCxSpFirst";
+	mso-style-link:"MSB emphasis 1x Char";
+	margin:0cm;
+	margin-bottom:.0001pt;
+	font-size:11.0pt;
+	font-family:"Arial","sans-serif";
+	font-weight:bold;
+	font-style:italic;
+	text-decoration:underline;}
+p.MSBemphasis1xCxSpMiddle, li.MSBemphasis1xCxSpMiddle, div.MSBemphasis1xCxSpMiddle
+	{mso-style-name:"MSB emphasis 1xCxSpMiddle";
+	mso-style-link:"MSB emphasis 1x Char";
+	margin:0cm;
+	margin-bottom:.0001pt;
+	font-size:11.0pt;
+	font-family:"Arial","sans-serif";
+	font-weight:bold;
+	font-style:italic;
+	text-decoration:underline;}
+p.MSBemphasis1xCxSpLast, li.MSBemphasis1xCxSpLast, div.MSBemphasis1xCxSpLast
+	{mso-style-name:"MSB emphasis 1xCxSpLast";
+	mso-style-link:"MSB emphasis 1x Char";
+	margin:0cm;
+	margin-bottom:.0001pt;
+	font-size:11.0pt;
+	font-family:"Arial","sans-serif";
+	font-weight:bold;
+	font-style:italic;
+	text-decoration:underline;}
+span.MSBunderlinenormaltextChar
+	{mso-style-name:"MSB underline normal text Char";
+	mso-style-link:"MSB underline normal text";
+	font-family:"Arial","sans-serif";
+	text-decoration:underline;}
+p.MSBemphasis2x, li.MSBemphasis2x, div.MSBemphasis2x
+	{mso-style-name:"MSB emphasis 2x";
+	mso-style-link:"MSB emphasis 2x Char";
+	margin:0cm;
+	margin-bottom:.0001pt;
+	font-size:11.0pt;
+	font-family:"Arial","sans-serif";
+	color:#CC66FF;
+	font-weight:bold;
+	font-style:italic;}
+p.MSBemphasis2xCxSpFirst, li.MSBemphasis2xCxSpFirst, div.MSBemphasis2xCxSpFirst
+	{mso-style-name:"MSB emphasis 2xCxSpFirst";
+	mso-style-link:"MSB emphasis 2x Char";
+	margin:0cm;
+	margin-bottom:.0001pt;
+	font-size:11.0pt;
+	font-family:"Arial","sans-serif";
+	color:#CC66FF;
+	font-weight:bold;
+	font-style:italic;}
+p.MSBemphasis2xCxSpMiddle, li.MSBemphasis2xCxSpMiddle, div.MSBemphasis2xCxSpMiddle
+	{mso-style-name:"MSB emphasis 2xCxSpMiddle";
+	mso-style-link:"MSB emphasis 2x Char";
+	margin:0cm;
+	margin-bottom:.0001pt;
+	font-size:11.0pt;
+	font-family:"Arial","sans-serif";
+	color:#CC66FF;
+	font-weight:bold;
+	font-style:italic;}
+p.MSBemphasis2xCxSpLast, li.MSBemphasis2xCxSpLast, div.MSBemphasis2xCxSpLast
+	{mso-style-name:"MSB emphasis 2xCxSpLast";
+	mso-style-link:"MSB emphasis 2x Char";
+	margin:0cm;
+	margin-bottom:.0001pt;
+	font-size:11.0pt;
+	font-family:"Arial","sans-serif";
+	color:#CC66FF;
+	font-weight:bold;
+	font-style:italic;}
+span.MSBemphasis1xChar
+	{mso-style-name:"MSB emphasis 1x Char";
+	mso-style-link:"MSB emphasis 1x";
+	font-family:"Arial","sans-serif";
+	font-weight:bold;
+	font-style:italic;
+	text-decoration:underline;}
+p.Referenceheading, li.Referenceheading, div.Referenceheading
+	{mso-style-name:"Reference heading";
+	mso-style-link:"Reference heading Char";
+	margin:0cm;
+	margin-bottom:.0001pt;
+	font-size:10.0pt;
+	font-family:"Arial","sans-serif";
+	font-weight:bold;
+	text-decoration:underline;}
+span.MSBemphasis2xChar
+	{mso-style-name:"MSB emphasis 2x Char";
+	mso-style-link:"MSB emphasis 2x";
+	font-family:"Arial","sans-serif";
+	color:#CC66FF;
+	font-weight:bold;
+	font-style:italic;}
+span.ReferenceheadingChar
+	{mso-style-name:"Reference heading Char";
+	mso-style-link:"Reference heading";
+	font-family:"Arial","sans-serif";
+	font-weight:bold;
+	text-decoration:underline;}
+p.Style1, li.Style1, div.Style1
+	{mso-style-name:Style1;
+	mso-style-link:"Style1 Char";
+	margin-top:0cm;
+	margin-right:0cm;
+	margin-bottom:0cm;
+	margin-left:3.1pt;
+	margin-bottom:.0001pt;
+	font-size:11.0pt;
+	font-family:"Arial","sans-serif";
+	font-style:italic;}
+p.Style1CxSpFirst, li.Style1CxSpFirst, div.Style1CxSpFirst
+	{mso-style-name:Style1CxSpFirst;
+	mso-style-link:"Style1 Char";
+	margin-top:0cm;
+	margin-right:0cm;
+	margin-bottom:0cm;
+	margin-left:3.1pt;
+	margin-bottom:.0001pt;
+	font-size:11.0pt;
+	font-family:"Arial","sans-serif";
+	font-style:italic;}
+p.Style1CxSpMiddle, li.Style1CxSpMiddle, div.Style1CxSpMiddle
+	{mso-style-name:Style1CxSpMiddle;
+	mso-style-link:"Style1 Char";
+	margin-top:0cm;
+	margin-right:0cm;
+	margin-bottom:0cm;
+	margin-left:3.1pt;
+	margin-bottom:.0001pt;
+	font-size:11.0pt;
+	font-family:"Arial","sans-serif";
+	font-style:italic;}
+p.Style1CxSpLast, li.Style1CxSpLast, div.Style1CxSpLast
+	{mso-style-name:Style1CxSpLast;
+	mso-style-link:"Style1 Char";
+	margin-top:0cm;
+	margin-right:0cm;
+	margin-bottom:0cm;
+	margin-left:3.1pt;
+	margin-bottom:.0001pt;
+	font-size:11.0pt;
+	font-family:"Arial","sans-serif";
+	font-style:italic;}
+span.Style1Char
+	{mso-style-name:"Style1 Char";
+	mso-style-link:Style1;
+	font-family:"Arial","sans-serif";
+	font-style:italic;}
+p.MSBboldunderlinednormaltext, li.MSBboldunderlinednormaltext, div.MSBboldunderlinednormaltext
+	{mso-style-name:"MSB bold underlined normal text";
+	mso-style-link:"MSB bold underlined normal text Char";
+	margin:0cm;
+	margin-bottom:.0001pt;
+	font-size:11.0pt;
+	font-family:"Arial","sans-serif";
+	font-weight:bold;
+	text-decoration:underline;}
+p.MSBboldunderlinednormaltextCxSpFirst, li.MSBboldunderlinednormaltextCxSpFirst, div.MSBboldunderlinednormaltextCxSpFirst
+	{mso-style-name:"MSB bold underlined normal textCxSpFirst";
+	mso-style-link:"MSB bold underlined normal text Char";
+	margin:0cm;
+	margin-bottom:.0001pt;
+	font-size:11.0pt;
+	font-family:"Arial","sans-serif";
+	font-weight:bold;
+	text-decoration:underline;}
+p.MSBboldunderlinednormaltextCxSpMiddle, li.MSBboldunderlinednormaltextCxSpMiddle, div.MSBboldunderlinednormaltextCxSpMiddle
+	{mso-style-name:"MSB bold underlined normal textCxSpMiddle";
+	mso-style-link:"MSB bold underlined normal text Char";
+	margin:0cm;
+	margin-bottom:.0001pt;
+	font-size:11.0pt;
+	font-family:"Arial","sans-serif";
+	font-weight:bold;
+	text-decoration:underline;}
+p.MSBboldunderlinednormaltextCxSpLast, li.MSBboldunderlinednormaltextCxSpLast, div.MSBboldunderlinednormaltextCxSpLast
+	{mso-style-name:"MSB bold underlined normal textCxSpLast";
+	mso-style-link:"MSB bold underlined normal text Char";
+	margin:0cm;
+	margin-bottom:.0001pt;
+	font-size:11.0pt;
+	font-family:"Arial","sans-serif";
+	font-weight:bold;
+	text-decoration:underline;}
+span.MSBboldunderlinednormaltextChar
+	{mso-style-name:"MSB bold underlined normal text Char";
+	mso-style-link:"MSB bold underlined normal text";
+	font-family:"Arial","sans-serif";
+	font-weight:bold;
+	text-decoration:underline;}
+.MsoPapDefault
+	{margin-bottom:10.0pt;
+	line-height:115%;}
+@page WordSection1
+	{size:595.3pt 841.9pt;
+	margin:72.0pt 72.0pt 72.0pt 72.0pt;}
+div.WordSection1
+	{page:WordSection1;}
+ /* List Definitions */
+ ol
+	{margin-bottom:0cm;}
+ul
+	{margin-bottom:0cm;}
+-->
+</style>
+  </head>
+  <body>
+	  <div id="wrap">
+			<div id="main" class="container">
+		  	<div id="header">
+					<div style="float:left;">
+						<img src="/images/MSBLogo.png">
+					</div>
+					<img src="/images/MSBText.png">
+				</div>
+				<div id="content" class="span-16 append-1 prepend-1">					
+					<div class="WordSection1">
+
+<p class="MSBHeading1"><u>Gentamicin and Vancomycin</u></p>
+
+<p class="MSBHeading1"><u><span style="text-decoration:none"> </span></u></p>
+
+<p class="MsoListParagraphCxSpFirst" style="margin-left:20.4pt;text-indent:-18.0pt">-<span style='font:7.0pt "Times New Roman"'>       
+</span>Important antibiotics</p>
+
+<p class="MsoListParagraphCxSpMiddle" style="margin-left:20.4pt;text-indent:-18.0pt">-<span style='font:7.0pt "Times New Roman"'>       
+</span>Increasingly used due to new prescribing protocols, which have removed
+antibiotics more prone to causing C. difficile infection and replaced them with
+Vanc and Gent</p>
+
+<p class="MsoListParagraphCxSpMiddle" style="margin-left:20.4pt;text-indent:-18.0pt">-<span style='font:7.0pt "Times New Roman"'>       
+</span>However <span class="MSBemphasis2xChar">require careful dose calculation</span>
+(based on weight and creatinine clearance)</p>
+
+<p class="MsoListParagraphCxSpLast" style="margin-left:20.4pt;text-indent:-18.0pt">-<span style='font:7.0pt "Times New Roman"'>       
+</span>Also need <span class="MSBemphasis2xChar">regular drug monitoring</span></p>
+
+<p class="MsoNormal"> </p>
+
+<table class="MSBtable2" border="1" cellspacing="0" cellpadding="0" style="background:
+ #CC99FF;border-collapse:collapse;border:none"><tr>
+<td width="770" valign="top" style="width:462.1pt;border:solid windowtext 1.0pt;
+  padding:0cm 5.4pt 0cm 5.4pt">
+  <p class="MSBemphasis1x">The 4Cs of C. difficile</p>
+  <p class="MsoNormal" style="margin-bottom:0cm;margin-bottom:.0001pt;line-height:
+  normal"> </p>
+  <p class="MsoNormal" style="margin-bottom:0cm;margin-bottom:.0001pt;line-height:
+  normal">The antibiotics most prone to leading to C diff are </p>
+  <p class="MsoNormal" style="margin-bottom:0cm;margin-bottom:.0001pt;line-height:
+  normal"> </p>
+  <p class="MsoNormal" style="margin-bottom:0cm;margin-bottom:.0001pt;line-height:
+  normal">= Cephalosporins, Co-amoxyclav, Clindamycin, Ciprofloxacin (all
+  quinolones).</p>
+  <p class="MsoNormal" style="margin-bottom:0cm;margin-bottom:.0001pt;line-height:
+  normal"> </p>
+  </td>
+ </tr></table>
+<p class="MsoNormal"> </p>
+
+<p class="MsoListParagraphCxSpFirst" style="margin-left:20.4pt;text-indent:-18.0pt">-<span style='font:7.0pt "Times New Roman"'>       
+</span>Be careful - mistakes in calculating the dose can lead to serious
+consequences</p>
+
+<p class="MsoListParagraphCxSpMiddle" style="margin-left:57.0pt;text-indent:-18.0pt"><span style="font-family:Symbol;color:#7030A0">·<span style='font:7.0pt "Times New Roman"'>       
+</span></span>Treatment failure</p>
+
+<p class="MsoListParagraphCxSpMiddle" style="margin-left:57.0pt;text-indent:-18.0pt"><span style="font-family:Symbol;color:#7030A0">·<span style='font:7.0pt "Times New Roman"'>       
+</span></span>Toxicity</p>
+
+<p class="MsoListParagraphCxSpLast" style="margin-left:57.0pt"> </p>
+
+<table class="MsoTableGrid" border="1" cellspacing="0" cellpadding="0" style="background:yellow;border-collapse:collapse;border:none"><tr>
+<td width="770" valign="top" style="width:462.1pt;border:solid windowtext 1.0pt;
+  padding:0cm 5.4pt 0cm 5.4pt">
+  <p class="MsoNormal" style="margin-bottom:0cm;margin-bottom:.0001pt;line-height:
+  normal"><b><span style='font-family:"Arial","sans-serif"'>This document is
+  only a guide to help you understand the rationale behind these very important
+  (and potentially dangerous) antibiotics. Follow local hospital policies when
+  actually prescribing any antibiotic.</span></b></p>
+  </td>
+ </tr></table>
+<p class="MsoNormal"> </p>
+
+<p class="MSBHeading2">Gentamicin</p>
+
+<p class="MSBHeading2"> </p>
+
+<p class="MsoListParagraphCxSpFirst" style="margin-left:20.4pt;text-indent:-18.0pt">-<span style='font:7.0pt "Times New Roman"'>       
+</span>Effective against Gram negative bacteria eg E. coli</p>
+
+<p class="MsoListParagraphCxSpMiddle" style="margin-left:20.4pt;text-indent:-18.0pt">-<span style='font:7.0pt "Times New Roman"'>       
+</span>Renally excreted, therefore elimination depends on renal function</p>
+
+<p class="MsoListParagraphCxSpMiddle" style="margin-left:20.4pt;text-indent:-18.0pt">-<span style='font:7.0pt "Times New Roman"'>       
+</span>Side-effects:</p>
+
+<p class="MsoListParagraphCxSpMiddle" style="margin-left:57.0pt;text-indent:-18.0pt"><span style="font-family:Symbol;color:#7030A0">·<span style='font:7.0pt "Times New Roman"'>       
+</span></span>Nephrotoxic – damages kidneys</p>
+
+<p class="MsoListParagraphCxSpMiddle" style="margin-left:57.0pt;text-indent:-18.0pt"><span style="font-family:Symbol;color:#7030A0">·<span style='font:7.0pt "Times New Roman"'>       
+</span></span>Ototoxic – damages hearing and balance (esp if prolonged use
+&gt;10 days). </p>
+
+<p class="MsoListParagraphCxSpMiddle" style="margin-left:93.0pt;text-indent:-18.0pt"><span style="font-family:Wingdings">§<span style='font:7.0pt "Times New Roman"'> 
+</span></span>s/s:  tinnitus, dizziness, hearing loss, nausea</p>
+
+<p class="MsoListParagraphCxSpMiddle" style="margin-left:93.0pt;text-indent:-18.0pt"><span style="font-family:Wingdings">§<span style='font:7.0pt "Times New Roman"'> 
+</span></span>If &gt;3 days – speak to Mirco. Warn pt about signs of
+ototoxicity</p>
+
+<p class="MsoListParagraphCxSpLast" style="margin-left:93.0pt;text-indent:-18.0pt"><span style="font-family:Wingdings">§<span style='font:7.0pt "Times New Roman"'> 
+</span></span>If &gt;7days – need formal audiology assessment</p>
+
+<p class="MsoNormal"> </p>
+
+<p class="MSBemphasis1x">General Principles:</p>
+
+<p class="MsoNormal"> </p>
+
+<p class="MsoListParagraphCxSpFirst" style="margin-left:21.0pt;text-indent:-18.0pt">1.<span style='font:7.0pt "Times New Roman"'>     </span>Does this
+patient need IV antibiotics?</p>
+
+<p class="MsoListParagraphCxSpMiddle" style="margin-left:21.0pt;text-indent:-18.0pt">2.<span style='font:7.0pt "Times New Roman"'>     </span>Calculate
+Initial dose</p>
+
+<p class="MsoListParagraphCxSpMiddle" style="margin-left:57.0pt;text-indent:-18.0pt"><span style="font-family:Symbol;color:#7030A0">·<span style='font:7.0pt "Times New Roman"'>       
+</span></span>To do this log onto NHS staffnet and use the online calculator</p>
+
+<p class="MsoListParagraphCxSpMiddle" style="margin-left:21.0pt;text-indent:-18.0pt">3.<span style='font:7.0pt "Times New Roman"'>     </span>Measure
+concentration at 6-14 hours after the START of the infusion</p>
+
+<p class="MsoListParagraphCxSpMiddle" style="margin-left:21.0pt;text-indent:-18.0pt">4.<span style='font:7.0pt "Times New Roman"'>     </span>Adjust
+dose based on the normogram graph </p>
+
+<p class="MsoListParagraphCxSpMiddle" style="margin-left:21.0pt;text-indent:-18.0pt">5.<span style='font:7.0pt "Times New Roman"'>     </span>Monitor
+U+Es</p>
+
+<p class="MsoListParagraphCxSpMiddle" style="margin-left:21.0pt;text-indent:-18.0pt">6.<span style='font:7.0pt "Times New Roman"'>     </span>Does this
+patient still need IV gentamycin</p>
+
+<p class="MsoListParagraphCxSpLast" style="margin-left:21.0pt;text-indent:-18.0pt">7.<span style='font:7.0pt "Times New Roman"'>     </span>Repeat</p>
+
+<p class="MsoNormal"> </p>
+
+<p class="MSBemphasis1x">Calculating the initial dose (calculator)</p>
+
+<p class="MsoNormal"> </p>
+
+<p class="MsoListParagraphCxSpFirst" style="margin-left:20.4pt;text-indent:-18.0pt">-<span style='font:7.0pt "Times New Roman"'>       
+</span>Use the NHS intranet calculator</p>
+
+<p class="MsoListParagraphCxSpMiddle" style="margin-left:20.4pt;text-indent:-18.0pt">-<span style='font:7.0pt "Times New Roman"'>       
+</span>Enter the patient’s weight, height and creatinine level</p>
+
+<p class="MsoListParagraphCxSpMiddle" style="margin-left:20.4pt;text-indent:-18.0pt">-<span style='font:7.0pt "Times New Roman"'>       
+</span>Do NOT use any other online calculators</p>
+
+<p class="MsoListParagraphCxSpLast" style="margin-left:20.4pt;text-indent:-18.0pt">-<span style='font:7.0pt "Times New Roman"'>       
+</span>Do NOT use eGFR</p>
+
+<p class="MSBitalicsnormaltextCxSpFirst"><span style='font-family:"Calibri","sans-serif";
+font-style:normal'> </span></p>
+
+<table class="MsoTableGrid" border="1" cellspacing="0" cellpadding="0" style="border-collapse:collapse;border:none"><tr>
+<td width="770" valign="top" style="width:462.1pt;border:solid windowtext 1.0pt;
+  background:#D9D9D9;padding:0cm 5.4pt 0cm 5.4pt">
+  <p class="MSBitalicsnormaltextCxSpMiddle">Alternatively….</p>
+  <p class="MSBitalicsnormaltextCxSpLast"> </p>
+  <p class="MSBemphasis1x">Calculating the initial dose (manually)</p>
+  <p class="MsoNormal" style="margin-bottom:0cm;margin-bottom:.0001pt;line-height:
+  normal"> </p>
+  <p class="MsoListParagraph" style="text-indent:-18.0pt">1)<span style='font:7.0pt "Times New Roman"'>     </span>First
+  work out the patient’s Creatinine Clearance (CrCl) using the formula below:</p>
+  <p class="MsoNormal" style="margin-bottom:0cm;margin-bottom:.0001pt;line-height:
+  normal"> </p>
+  <div align="center">
+  <table class="MsoTableGrid" border="1" cellspacing="0" cellpadding="0" style="border-collapse:collapse;border:none"><tr style="height:37.85pt">
+<td width="706" valign="top" style="width:423.65pt;border:solid windowtext 1.0pt;
+    background:#CC99FF;padding:0cm 5.4pt 0cm 5.4pt;height:37.85pt">
+    <p class="MsoNormal" align="center" style="margin-bottom:0cm;margin-bottom:
+    .0001pt;text-align:center;line-height:normal"> </p>
+    <p class="MsoNormal" style="margin-bottom:0cm;margin-bottom:.0001pt;
+    line-height:normal">Cr/Cl = ([140- age (years) x weight (kg)] / serum
+    creartinine) x 1.23 (male) or 1.04 (female)</p>
+    <p class="MsoNormal" style="margin-bottom:0cm;margin-bottom:.0001pt;
+    line-height:normal"> </p>
+    </td>
+   </tr></table>
+</div>
+  <p class="MsoNormal" style="margin-bottom:0cm;margin-bottom:.0001pt;line-height:
+  normal"> </p>
+  <p class="MsoListParagraphCxSpFirst" style="margin-left:21.0pt;text-indent:
+  -18.0pt"><span style='font-family:"Times New Roman","serif"'>-<span style='font:7.0pt "Times New Roman"'>       
+  </span></span>If the pt is overweight, compare their Actual body weight (ABW)
+  to the maximum body weight (MBW) for their height</p>
+  <p class="MsoListParagraphCxSpMiddle" style="margin-left:57.0pt;text-indent:
+  -18.0pt"><span style="font-family:Symbol;color:#7030A0">·<span style='font:7.0pt "Times New Roman"'>       
+  </span></span>The corresponding MBW for a patient’s height can be found in a
+  table in the handbook</p>
+  <p class="MsoListParagraphCxSpMiddle" style="margin-left:57.0pt;text-indent:
+  -18.0pt"><span style="font-family:Symbol;color:#7030A0">·<span style='font:7.0pt "Times New Roman"'>       
+  </span></span><span style="font-family:Wingdings">à</span> <b>Use whichever
+  one is higher</b></p>
+  <p class="MsoListParagraphCxSpMiddle" style="margin-left:57.0pt;text-indent:
+  -18.0pt"><span style="font-family:Symbol;color:#7030A0">·<span style='font:7.0pt "Times New Roman"'>       
+  </span></span><i>This is because in this equation body weight is being used
+  as a marker for lean body mass (ie muscle) which is what produces creatinine.</i></p>
+  <p class="MsoListParagraphCxSpMiddle" style="margin-left:56.4pt"><i> </i></p>
+  <p class="MsoListParagraphCxSpMiddle" style="margin-left:20.4pt;text-indent:
+  -18.0pt">-<span style='font:7.0pt "Times New Roman"'>       
+  </span>If their serum creatinine is very low i.e. &lt;60 umol/L, use 60 in
+  the calculation</p>
+  <p class="MsoListParagraphCxSpLast" style="margin-left:20.4pt;text-indent:-18.0pt">-<span style='font:7.0pt "Times New Roman"'>       
+  </span>Be aware this equation can overestimate renal function in elderly or
+  malnourished patients</p>
+  <p class="MsoNormal" style="margin-bottom:0cm;margin-bottom:.0001pt;line-height:
+  normal"> </p>
+  <div align="center">
+  <table class="MSBtable2" border="1" cellspacing="0" cellpadding="0" style="border-collapse:
+   collapse;border:none"><tr style="height:36.7pt">
+<td width="710" valign="top" style="width:426.05pt;border:solid windowtext 1.0pt;
+    background:yellow;padding:0cm 5.4pt 0cm 5.4pt;height:36.7pt">
+    <p class="MsoNormal" align="center" style="margin-bottom:0cm;margin-bottom:
+    .0001pt;text-align:center;line-height:normal">*DO NOT USE eGFR because the
+    units for eGFR and CrCl are different – CrCl is normalised to surface area</p>
+    <p class="MsoNormal" style="margin-bottom:0cm;margin-bottom:.0001pt;
+    line-height:normal"> </p>
+    </td>
+   </tr></table>
+</div>
+  <p class="MsoNormal" style="margin-top:0cm;margin-right:0cm;margin-bottom:0cm;
+  margin-left:2.4pt;margin-bottom:.0001pt;line-height:normal"> </p>
+  <p class="MSBitalicsnormaltextCxSpFirst">The online calculator automatically
+  does all of this for you!</p>
+  <p class="MSBitalicsnormaltextCxSpLast"> </p>
+  <p class="MsoListParagraphCxSpFirst" style="text-indent:-18.0pt">2)<span style='font:7.0pt "Times New Roman"'>     </span>Once you
+  have worked out the CrCl, use the dosing table in the handbook to work out an
+  appropriate initial dose based on the pt’s CrCl and their ACTUAL body weight</p>
+  <p class="MsoListParagraphCxSpMiddle" style="margin-left:20.4pt"> </p>
+  <p class="MsoListParagraphCxSpMiddle" style="margin-left:20.4pt;text-indent:
+  -18.0pt">-<span style='font:7.0pt "Times New Roman"'>       
+  </span>The actual body weight is used here because the volume of distribution
+  that a drug dilutes into when administered into a patient includes their fat
+  stores, not just their lean body mass. Therefore an obese patient will need a
+  higher than a normal weight individual who has the same creatinine clearance.</p>
+  <p class="MsoListParagraphCxSpLast" style="margin-left:20.4pt;text-indent:-18.0pt">-<span style='font:7.0pt "Times New Roman"'>       
+  </span>The table also gives the dosing interval. This is either 24 or 48
+  hourly so be careful to prescribe it clearly on the kardex so the nurses
+  know. (Cross out the days on which the patient is not to get a dose!)</p>
+  <p class="MsoNormal" style="margin-bottom:0cm;margin-bottom:.0001pt;line-height:
+  normal"> </p>
+  <p class="MSBitalicsnormaltext"><span style='font-family:"Calibri","sans-serif";
+  font-style:normal'> </span></p>
+  </td>
+ </tr></table>
+<p class="MsoNormal" style="margin-left:2.4pt"> </p>
+
+<p class="MsoNormal"><span class="MSBemphasis1xChar"><span style="font-weight:normal">Notes</span></span>:</p>
+
+<p class="MsoListParagraphCxSpFirst" style="margin-left:20.4pt;text-indent:-18.0pt">-<span style='font:7.0pt "Times New Roman"'>       
+</span>Using the online calculator is the safest method</p>
+
+<p class="MsoListParagraphCxSpLast" style="margin-left:20.4pt;text-indent:-18.0pt">-<span style='font:7.0pt "Times New Roman"'>       
+</span>However it is often a good idea to first quickly work out the patient’s
+dose by hand in order to gain a rough estimate of what the dose should be. That
+way you will be able to detect if you enter any incorrect information and the
+calculator produces a spurious result.</p>
+
+<p class="MSBemphasis1xCxSpFirst"><span style="text-decoration:none"> </span></p>
+
+<p class="MSBemphasis1xCxSpLast">Prescribing Initial Dose of Gentamycin</p>
+
+<p class="MsoListParagraphCxSpFirst" style="margin-left:20.4pt"> </p>
+
+<p class="MsoListParagraphCxSpMiddle" style="margin-left:20.4pt;text-indent:-18.0pt">-<span style='font:7.0pt "Times New Roman"'>       
+</span>Write up initial dose in regular section of kardex</p>
+
+<p class="MsoListParagraphCxSpMiddle" style="margin-left:20.4pt;text-indent:-18.0pt">-<span style='font:7.0pt "Times New Roman"'>       
+</span>If 48 hourly dosing, make sure to write clearly ‘Additional
+Instructions: 48 HOURLY’ and cross out the boxes for the days on which they are
+not due to get it</p>
+
+<p class="MsoListParagraphCxSpLast" style="margin-left:20.4pt;text-indent:-18.0pt">-<span style='font:7.0pt "Times New Roman"'>       
+</span>The recommended dose should be given by IV infusion over 30-60 minutes.</p>
+
+<p class="MsoNormal"><span style='font-family:"Arial","sans-serif"'> </span></p>
+
+<p class="MsoNormal"><span style='font-family:"Arial","sans-serif"'>You can also
+write in the Additional instructions section:</span></p>
+
+<p class="MsoListParagraphCxSpFirst" style="margin-left:20.4pt;text-indent:-18.0pt">-<span style='font:7.0pt "Times New Roman"'>       
+</span>“Max 3 days. Monitor levels and U+Es”</p>
+
+<p class="MsoListParagraphCxSpLast" style="margin-left:20.4pt"> </p>
+
+<p class="MSBsub-heading">Monitoring Gentamicin concentrations</p>
+
+<p class="MsoListParagraphCxSpFirst" style="margin-left:20.4pt"> </p>
+
+<p class="MsoListParagraphCxSpMiddle" style="margin-left:20.4pt;text-indent:-18.0pt">-<span style='font:7.0pt "Times New Roman"'>       
+</span>CONCENTRATIONS ARE MEANINGLESS UNLESS YOU HAVE AN ACCURATE TIME FOR BOTH
+WHEN THE DOSE WAS GIVEN AND WHEN THE BLOOD SAMPLE WAS TAKEN</p>
+
+<p class="MsoListParagraphCxSpMiddle" style="margin-left:20.4pt;text-indent:-18.0pt">-<span style='font:7.0pt "Times New Roman"'>       
+</span>Take a sample <b>6-14 hours after the start of the first infusion</b></p>
+
+<p class="MsoListParagraphCxSpMiddle" style="margin-left:20.4pt;text-indent:-18.0pt">-<span style='font:7.0pt "Times New Roman"'>       
+</span>Then routinely, 6-14 hours after a dose every 2-3 days </p>
+
+<p class="MsoListParagraphCxSpMiddle" style="margin-left:20.4pt;text-indent:-18.0pt">-<span style='font:7.0pt "Times New Roman"'>       
+</span>Monitor conc more commonly if unstable renal function</p>
+
+<p class="MsoListParagraphCxSpMiddle" style="margin-left:20.4pt;text-indent:-18.0pt">-<span style='font:7.0pt "Times New Roman"'>       
+</span>Need daily U+Es – if renal function changes the dose needs to change</p>
+
+<p class="MsoListParagraphCxSpMiddle" style="margin-left:20.4pt;text-indent:-18.0pt">-<span style='font:7.0pt "Times New Roman"'>       
+</span>If &gt;3 days - must speak to Micro</p>
+
+<p class="MsoListParagraphCxSpMiddle" style="margin-left:20.4pt;text-indent:-18.0pt">-<span style='font:7.0pt "Times New Roman"'>       
+</span>If &gt;7 days – need formal audiology testing. Warn patient to look out
+for signs of ototoxicity – tinnitus, deafness, nauseas</p>
+
+<p class="MsoListParagraphCxSpMiddle" style="margin-left:20.4pt;text-indent:-18.0pt">-<span style='font:7.0pt "Times New Roman"'>       
+</span>Record the time of the sample accurately on the blood form and on the
+sheet at the end of the patient’s bed</p>
+
+<p class="MsoListParagraphCxSpMiddle" style="margin-left:21.0pt;text-indent:-18.0pt"><span style='font-family:"Times New Roman","serif"'>-<span style='font:7.0pt "Times New Roman"'>       
+</span></span>When the lab returns the concentration, plot it on the graph</p>
+
+<p class="MsoListParagraphCxSpMiddle" style="margin-left:57.0pt;text-indent:-18.0pt"><span style="font-family:Symbol;color:#7030A0">·<span style='font:7.0pt "Times New Roman"'>       
+</span></span>If the level is below the first line – give the same dose again</p>
+
+<p class="MsoListParagraphCxSpMiddle" style="margin-left:57.0pt;text-indent:-18.0pt"><span style="font-family:Symbol;color:#7030A0">·<span style='font:7.0pt "Times New Roman"'>       
+</span></span>If the level is between the 2 lines – give the same dose but at
+48 hours</p>
+
+<p class="MsoListParagraphCxSpLast" style="margin-left:57.0pt;text-indent:-18.0pt"><span style="font-family:Symbol;color:#7030A0">·<span style='font:7.0pt "Times New Roman"'>       
+</span></span>If the level is above the top line – withhold the dose completely
+and remeasure the concentration the next day (check the patient’s renal
+function hasn’t changed!)</p>
+
+<p class="MsoNormal"> </p>
+
+<p class="MsoNormal"><i><span style='font-family:"Arial","sans-serif"'>Note: this
+graph does not detect under-dosing. If the patient is failing to respond to
+treatment speak to Microbiology or pharmacy. Remember to check the patient’s
+renal function, if it has improved recently then they will be clearing the drug
+faster and will therefore need their dose increased!</span></i></p>
+
+<table class="MSBtable3" border="1" cellspacing="0" cellpadding="0" style="border-collapse:
+ collapse;border:none"><tr>
+<td width="770" valign="top" style="width:462.1pt;border:solid windowtext 1.0pt;
+  background:#EEECE1;padding:0cm 5.4pt 0cm 5.4pt">
+  <p class="MsoNormal" style="margin-bottom:0cm;margin-bottom:.0001pt;line-height:
+  normal"><u>Rationale for Gentamycin monitoring</u></p>
+  <p class="MsoNormal" style="margin-bottom:0cm;margin-bottom:.0001pt;line-height:
+  normal"> </p>
+  <p class="MsoNormal" style="margin-bottom:0cm;margin-bottom:.0001pt;line-height:
+  normal">For genatmycin you want high peaks and low troughs. This is because
+  the side-effects are linked to the trough levels. So when you measure a
+  genatmicin level at 6-14 hours post dose, you are wanting it to be under the
+  line to ensure the patient is not at risk of side-effects. </p>
+  <p class="MsoNormal" style="margin-bottom:0cm;margin-bottom:.0001pt;line-height:
+  normal">The killing power of gentamicin depends on a high peak. Unlike
+  vancomycin though, gentamycin is still effective despite low troughs because
+  it has something called ‘post-antibiotic effect’ meaning that gentamicin
+  still kills bacteria even when its serum concentration levels have fallen
+  considerably as long as the initial peak was high enough to allow good
+  penetrance.</p>
+  <p class="MsoNormal" style="margin-bottom:0cm;margin-bottom:.0001pt;line-height:
+  normal"> </p>
+  </td>
+ </tr></table>
+<p class="MsoNormal"> </p>
+
+<p class="MSBemphasis1x">Stopping Gentamicin</p>
+
+<p class="MsoListParagraphCxSpFirst" style="margin-left:20.4pt"> </p>
+
+<p class="MsoListParagraphCxSpMiddle" style="margin-left:20.4pt;text-indent:-18.0pt">-<span style='font:7.0pt "Times New Roman"'>       
+</span>Ideally patients should never receive more than 3 days of empirical
+gentamicin</p>
+
+<p class="MsoListParagraphCxSpMiddle" style="margin-left:20.4pt;text-indent:-18.0pt">-<span style='font:7.0pt "Times New Roman"'>       
+</span>After 3 days, ask yourself does the patient still need Gent?</p>
+
+<p class="MsoListParagraphCxSpMiddle" style="margin-left:20.4pt;text-indent:-18.0pt">-<span style='font:7.0pt "Times New Roman"'>       
+</span>Check culture results?</p>
+
+<p class="MsoListParagraphCxSpLast" style="margin-left:20.4pt;text-indent:-18.0pt">-<span style='font:7.0pt "Times New Roman"'>       
+</span>Switch to oral alternative?</p>
+
+<p class="MsoNormal"> </p>
+
+<p class="MSBHeading1"><u>Vancomycin</u></p>
+
+<p class="MsoNormal"> </p>
+
+<p class="MsoNormal"><span style='font-family:"Arial","sans-serif"'>Vancomycin
+can be given either by </span></p>
+
+<p class="MsoListParagraphCxSpFirst" style="margin-left:54.0pt;text-indent:-18.0pt">1)<span style='font:7.0pt "Times New Roman"'>     </span>Continuous
+infusion</p>
+
+<p class="MsoListParagraphCxSpLast" style="margin-left:54.0pt;text-indent:-18.0pt">2)<span style='font:7.0pt "Times New Roman"'>     </span>Pulsed
+infusion</p>
+
+<p class="MsoNormal"> </p>
+
+<table class="MsoTableGrid" border="1" cellspacing="0" cellpadding="0" style="border-collapse:collapse;border:none">
+<tr>
+<td width="385" valign="top" style="width:231.05pt;border:solid windowtext 1.0pt;
+  background:#CC99FF;padding:0cm 5.4pt 0cm 5.4pt">
+  <p class="MsoNormal" align="center" style="margin-bottom:0cm;margin-bottom:.0001pt;
+  text-align:center;line-height:normal"><b>Continuous infusions</b></p>
+  <p class="MsoNormal" style="margin-bottom:0cm;margin-bottom:.0001pt;line-height:
+  normal"> </p>
+  </td>
+  <td width="385" valign="top" style="width:231.05pt;border:solid windowtext 1.0pt;
+  border-left:none;background:#CC99FF;padding:0cm 5.4pt 0cm 5.4pt">
+  <p class="MsoNormal" align="center" style="margin-bottom:0cm;margin-bottom:.0001pt;
+  text-align:center;line-height:normal"><b>Pulsed Infusions</b></p>
+  <p class="MsoNormal" style="margin-bottom:0cm;margin-bottom:.0001pt;line-height:
+  normal"> </p>
+  </td>
+ </tr>
+<tr>
+<td width="385" valign="top" style="width:231.05pt;border:solid windowtext 1.0pt;
+  border-top:none;background:#CC99FF;padding:0cm 5.4pt 0cm 5.4pt">
+  <p class="MsoListParagraphCxSpFirst" style="margin-left:20.4pt;text-indent:
+  -18.0pt">-<span style='font:7.0pt "Times New Roman"'>       
+  </span>More effective</p>
+  <p class="MsoListParagraphCxSpMiddle" style="margin-left:20.4pt;text-indent:
+  -18.0pt">-<span style='font:7.0pt "Times New Roman"'>       
+  </span>Constant steady state concentration</p>
+  <p class="MsoListParagraphCxSpMiddle" style="margin-left:20.4pt;text-indent:
+  -18.0pt">-<span style='font:7.0pt "Times New Roman"'>       
+  </span>They are preferred where practical, </p>
+  <p class="MsoListParagraphCxSpMiddle" style="margin-left:20.4pt;text-indent:
+  -18.0pt">-<span style='font:7.0pt "Times New Roman"'>       
+  </span>especially for patients with deep-seated infections eg pneumonia,
+  endocarditis, bone and joint infections</p>
+  <p class="MsoListParagraphCxSpMiddle" style="margin-left:20.4pt"> </p>
+  </td>
+  <td width="385" valign="top" style="width:231.05pt;border-top:none;border-left:
+  none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+  background:#CC99FF;padding:0cm 5.4pt 0cm 5.4pt">
+  <p class="MsoListParagraphCxSpMiddle" style="margin-left:20.4pt;text-indent:
+  -18.0pt">-<span style='font:7.0pt "Times New Roman"'>       
+  </span>More commonly used</p>
+  <p class="MsoListParagraphCxSpMiddle" style="margin-left:20.4pt;text-indent:
+  -18.0pt">-<span style='font:7.0pt "Times New Roman"'>       
+  </span>More practical for the patient</p>
+  <p class="MsoListParagraphCxSpLast" style="margin-left:20.4pt;text-indent:-18.0pt">-<span style='font:7.0pt "Times New Roman"'>       
+  </span>Allow one IV pump to be used for numerous patients</p>
+  <p class="MsoNormal" style="margin-bottom:0cm;margin-bottom:.0001pt;line-height:
+  normal"> </p>
+  </td>
+ </tr>
+</table>
+<p class="MsoNormal"> </p>
+
+<p class="MsoNormal"><span style='font-family:"Arial","sans-serif"'>Always check
+with the nursing staff prior to prescribing to ensure they have enough IV pumps
+and they are a familiar with the type of administration.</span></p>
+
+<p class="MSBHeading2">Vancomycin - Pulsed infusion</p>
+
+<p class="MsoNormal"> </p>
+
+<p class="MSBemphasis1x">Loading infusion </p>
+
+<p class="MsoNormal"> </p>
+
+<p class="MsoListParagraph" style="margin-left:20.4pt;text-indent:-18.0pt">-<span style='font:7.0pt "Times New Roman"'>       
+</span>Vancomycin requires a loading dose.</p>
+
+<p class="MSBemphasis2x" style="margin-left:20.4pt;text-indent:-18.0pt"><span style="font-weight:normal;font-style:normal">-<span style='font:7.0pt "Times New Roman"'>       
+</span></span>Loading doses are calculated based on the patient’s weight alone</p>
+
+<p class="MsoNormal"> </p>
+
+<table class="MSBtable4" border="1" cellspacing="0" cellpadding="0" style="border-collapse:
+ collapse;border:none"><tr>
+<td width="770" valign="top" style="width:462.1pt;border:solid #7030A0 1.0pt;
+  background:#F2DBDB;padding:0cm 5.4pt 0cm 5.4pt">
+  <p class="MsoNormal" style="margin-bottom:0cm;margin-bottom:.0001pt;line-height:
+  normal"><i><u>Understanding Loading Doses </u></i></p>
+  <p class="MsoNormal" style="margin-bottom:0cm;margin-bottom:.0001pt;line-height:
+  normal"><i>Imagine the patient is a bath tub full of water, and you want to
+  instantly achieve a set concentration in the water. The amount of drug to add
+  depends on how much water there is i.e. the patient’s weight.</i></p>
+  </td>
+ </tr></table>
+<p class="MsoNormal"> </p>
+
+<p class="MsoListParagraph" style="margin-left:20.4pt;text-indent:-18.0pt">-<span style='font:7.0pt "Times New Roman"'>       
+</span>Using the table in the handbook, plot the patient’s Actual body weight
+to work out the loading dose and the duration of the infusion.</p>
+
+<p class="MsoNormal"> </p>
+
+<p class="MsoListParagraphCxSpFirst" style="margin-left:21.0pt;text-indent:-18.0pt"><span style='font-family:"Times New Roman","serif"'>-<span style='font:7.0pt "Times New Roman"'>       
+</span></span>Prescribe the loading dose in the once only section of the
+kardex.</p>
+
+<p class="MsoListParagraphCxSpLast" style="margin-left:57.0pt;text-indent:-18.0pt"><span style="font-family:Symbol;color:#7030A0">·<span style='font:7.0pt "Times New Roman"'>       
+</span></span>Make sure to write how long the infusion should take ‘Infuse over
+90 mins’</p>
+
+<p class="MsoNormal"> </p>
+
+<table class="MSBtable2" border="1" cellspacing="0" cellpadding="0" style="border-collapse:
+ collapse;border:none"><tr>
+<td width="770" valign="top" style="width:462.1pt;border:solid windowtext 1.0pt;
+  background:yellow;padding:0cm 5.4pt 0cm 5.4pt">
+  <p class="MsoNormal" style="margin-bottom:0cm;margin-bottom:.0001pt;line-height:
+  normal">NOTE: </p>
+  <p class="MsoListParagraphCxSpFirst" style="margin-left:21.0pt;text-indent:
+  -18.0pt"><span style='font-family:"Times New Roman","serif"'>-<span style='font:7.0pt "Times New Roman"'>       
+  </span></span>If vancomycin is given too fast <span style="font-family:Wingdings">à</span>
+  RED MAN SYNDROME</p>
+  <p class="MsoListParagraphCxSpLast" style="margin-left:57.0pt;text-indent:-18.0pt"><span style="font-family:Symbol;color:#7030A0">·<span style='font:7.0pt "Times New Roman"'>       
+  </span></span>Histamine release <span style="font-family:Wingdings">à</span>
+  flushing, tachycardia, can progress to arrest</p>
+  <p class="MsoNormal" style="margin-bottom:0cm;margin-bottom:.0001pt;line-height:
+  normal"> </p>
+  </td>
+ </tr></table>
+<p class="MsoNormal"> </p>
+
+<p class="MSBemphasis1x">Pulsed Infusion – Maintenance Dose</p>
+
+<p class="MsoNormal"> </p>
+
+<p class="MsoListParagraph" style="margin-left:20.4pt;text-indent:-18.0pt">-<span style='font:7.0pt "Times New Roman"'>       
+</span>Depends on CrCl alone</p>
+
+<p class="MsoNormal"><i> </i></p>
+
+<table class="MSBtable4" border="1" cellspacing="0" cellpadding="0" style="border-collapse:
+ collapse;border:none"><tr>
+<td width="770" valign="top" style="width:462.1pt;border:solid #7030A0 1.0pt;
+  background:#F2DBDB;padding:0cm 5.4pt 0cm 5.4pt">
+  <p class="MsoNormal" style="margin-bottom:0cm;margin-bottom:.0001pt;line-height:
+  normal"><i><u>Understanding Maintenance Doses</u></i></p>
+  <p class="MsoNormal" style="margin-bottom:0cm;margin-bottom:.0001pt;line-height:
+  normal"><i>Again, imagine the patient is a bath tub full of water and you
+  have managed to reach a set concentration in the water after your loading
+  dose. Now imagine that the plug is open and water is leaking out. The tap is
+  also running though, so the total volume of water remains the same. The maintenance
+  dose is the amount you need to keep adding to make up for the drug that you
+  are losing down the plughole (the kidneys).</i></p>
+  <p class="MsoNormal" style="margin-bottom:0cm;margin-bottom:.0001pt;line-height:
+  normal"><i>The patient’s renal function determines how fast water is leaving
+  through the plug hole. The maintenance dose is the rate at which you need to
+  keep giving the drug to maintain the concentration.</i></p>
+  <p class="MsoNormal" style="margin-bottom:0cm;margin-bottom:.0001pt;line-height:
+  normal"><i> </i></p>
+  </td>
+ </tr></table>
+<p class="MsoListParagraphCxSpFirst" style="margin-left:20.4pt"> </p>
+
+<p class="MsoListParagraphCxSpMiddle" style="margin-left:20.4pt;text-indent:-18.0pt">-<span style='font:7.0pt "Times New Roman"'>       
+</span>Use the online calculator to work out the maintenance dose</p>
+
+<p class="MsoListParagraphCxSpMiddle" style="margin-left:20.4pt;text-indent:-18.0pt">-<span style='font:7.0pt "Times New Roman"'>       
+</span>Or work out the patient’s creatinine clearance by hand and use the table
+in the handbook to find the correct dose</p>
+
+<p class="MsoListParagraphCxSpLast" style="margin-left:20.4pt;text-indent:-18.0pt">-<span style='font:7.0pt "Times New Roman"'>       
+</span>Dosing can be at 12, 24 or 48 hours after the loading dose depending on
+renal function</p>
+
+<p class="MsoNormal"> </p>
+
+<p class="MSBemphasis1x">Monitoring pulsed infusion</p>
+
+<p class="MsoNormal"> </p>
+
+<p class="MsoListParagraphCxSpFirst" style="margin-left:21.0pt;text-indent:-18.0pt"><span style='font-family:"Times New Roman","serif"'>-<span style='font:7.0pt "Times New Roman"'>       
+</span></span>Take a trough sample</p>
+
+<p class="MsoListParagraphCxSpMiddle" style="margin-left:57.0pt;text-indent:-18.0pt"><span style="font-family:Symbol;color:#7030A0">·<span style='font:7.0pt "Times New Roman"'>       
+</span></span>ie take a blood sample just before the patient is due their next
+dose </p>
+
+<p class="MsoListParagraphCxSpMiddle" style="margin-left:20.4pt;text-indent:-18.0pt">-<span style='font:7.0pt "Times New Roman"'>       
+</span>Repeat trough sample every 2-3 days if stable</p>
+
+<p class="MsoListParagraphCxSpMiddle" style="margin-left:20.4pt;text-indent:-18.0pt">-<span style='font:7.0pt "Times New Roman"'>       
+</span>Check U+Es daily</p>
+
+<p class="MsoListParagraphCxSpLast" style="margin-left:20.4pt;text-indent:-18.0pt">-<span style='font:7.0pt "Times New Roman"'>       
+</span>Record the time of the last dose and sample accurately</p>
+
+<p class="MsoNormal" align="center" style="text-align:center"><b><span style='font-family:"Arial","sans-serif"'> </span></b></p>
+
+<p class="MsoNormal" align="center" style="text-align:center"><b><span style='font-family:"Arial","sans-serif"'>Target trough concentration: 10-20mg/L</span></b></p>
+
+<p class="MsoNormal"><span style='font-family:"Arial","sans-serif"'>(for MRSA and
+certain infections (eg bone and soft tissue), the target concentration is at
+the higher end of this range 15-20mg/L)</span></p>
+
+<p class="MsoNormal"><span style='font-family:"Arial","sans-serif"'>When the
+sample comes back, if trough concentration….</span></p>
+
+<p class="MsoListParagraphCxSpFirst" style="margin-left:57.0pt;text-indent:-18.0pt"><span style="font-family:Symbol;color:#7030A0">·<span style='font:7.0pt "Times New Roman"'>       
+</span></span>&lt;10 <span style="font-family:Wingdings">à</span> increase dose
+(by 50% or seek advice)</p>
+
+<p class="MsoListParagraphCxSpMiddle" style="margin-left:57.0pt;text-indent:-18.0pt"><span style="font-family:Symbol;color:#7030A0">·<span style='font:7.0pt "Times New Roman"'>       
+</span></span>10-20 <span style="font-family:Wingdings">à</span> maintain
+present dose</p>
+
+<p class="MsoListParagraphCxSpLast" style="margin-left:57.0pt;text-indent:-18.0pt"><span style="font-family:Symbol;color:#7030A0">·<span style='font:7.0pt "Times New Roman"'>       
+</span></span>&gt;20 <span style="font-family:Wingdings">à</span> stop until
+&lt;20mg/L then seek advice</p>
+
+<p class="MsoNormal"> </p>
+
+<p class="MSBHeading2">Vancomycin continuous infusion</p>
+
+<p class="MsoNormal"> </p>
+
+<p class="MSBemphasis1x">Loading infusion </p>
+
+<p class="MsoNormal"> </p>
+
+<p class="MsoListParagraph" style="margin-left:21.0pt;text-indent:-18.0pt"><span style='font-family:"Times New Roman","serif"'>-<span style='font:7.0pt "Times New Roman"'>       
+</span></span>same as for pulsed.</p>
+
+<p class="MsoNormal"> </p>
+
+<p class="MSBemphasis1x">Continuous infusion - Maintenance Dose</p>
+
+<p class="MsoNormal"> </p>
+
+<p class="MsoListParagraphCxSpFirst" style="margin-left:20.4pt;text-indent:-18.0pt">-<span style='font:7.0pt "Times New Roman"'>       
+</span>Start immediately after loading dose infusion is given</p>
+
+<p class="MsoListParagraphCxSpMiddle" style="margin-left:20.4pt;text-indent:-18.0pt">-<span style='font:7.0pt "Times New Roman"'>       
+</span>Based on CrCl</p>
+
+<p class="MsoListParagraphCxSpMiddle" style="margin-left:20.4pt;text-indent:-18.0pt">-<span style='font:7.0pt "Times New Roman"'>       
+</span>Use online calculator</p>
+
+<p class="MsoListParagraphCxSpMiddle" style="margin-left:20.4pt;text-indent:-18.0pt">-<span style='font:7.0pt "Times New Roman"'>       
+</span>Or work out CrCl by hand and use the table in the handbook</p>
+
+<p class="MsoListParagraphCxSpLast" style="margin-left:20.4pt;text-indent:-18.0pt">-<span style='font:7.0pt "Times New Roman"'>       
+</span>Will also need to fill in an infusion chart for the nurses</p>
+
+<p class="MsoNormal"> </p>
+
+<p class="MSBemphasis1x">Monitoring Continuous Infusions</p>
+
+<p class="MsoNormal"> </p>
+
+<p class="MsoListParagraphCxSpFirst" style="margin-left:20.4pt;text-indent:-18.0pt">-<span style='font:7.0pt "Times New Roman"'>       
+</span>Take a sample 12-24 hours after starting continuous infusion</p>
+
+<p class="MsoListParagraphCxSpMiddle" style="margin-left:20.4pt;text-indent:-18.0pt">-<span style='font:7.0pt "Times New Roman"'>       
+</span>Then at any point every 2-3 days</p>
+
+<p class="MsoListParagraphCxSpLast" style="margin-left:20.4pt;text-indent:-18.0pt">-<span style='font:7.0pt "Times New Roman"'>       
+</span>NOTE TARGET CONC IS DIFFERENT</p>
+
+<p class="MsoNormal"> </p>
+
+<p class="MsoListParagraph" style="text-indent:-18.0pt"><span style="font-family:
+Wingdings">è<span style='font:7.0pt "Times New Roman"'> </span></span>Target
+concentration: 15-25mg/L</p>
+
+<p class="MsoNormal"> </p>
+
+<table class="MSBtable3" border="1" cellspacing="0" cellpadding="0" style="border-collapse:
+ collapse;border:none"><tr>
+<td width="770" valign="top" style="width:462.1pt;border:solid windowtext 1.0pt;
+  background:#EEECE1;padding:0cm 5.4pt 0cm 5.4pt">
+  <p class="MsoNormal" style="margin-bottom:0cm;margin-bottom:.0001pt;line-height:
+  normal"><u>Rationale for Vancomycin Monitoring</u></p>
+  <p class="MsoNormal" style="margin-bottom:0cm;margin-bottom:.0001pt;line-height:
+  normal"> </p>
+  <p class="MsoNormal" style="margin-bottom:0cm;margin-bottom:.0001pt;line-height:
+  normal">For vancomycin it is only the trough level that you are interested
+  in. This is because treatment failure depends on the trough level. For
+  vancomycin to work, you want the concentration to never fall below the MIC
+  (minimal inhibitory concentration) for the particular bacteria you are trying
+  to kill. So when you measure a Vancomycin level at 24-48 hours you want it
+  the level to be within the target range.</p>
+  <p class="MsoNormal" style="margin-bottom:0cm;margin-bottom:.0001pt;line-height:
+  normal"><u><span style="text-decoration:none"> </span></u></p>
+  </td>
+ </tr></table>
+<p class="MsoNormal"><u><span style="text-decoration:none"> </span></u></p>
+
+<table class="MsoTableGrid" border="1" cellspacing="0" cellpadding="0" style="border-collapse:collapse;border:none"><tr>
+<td width="770" valign="top" style="width:462.1pt;border:solid windowtext 1.0pt;
+  background:#CC99FF;padding:0cm 5.4pt 0cm 5.4pt">
+  <p class="MsoNormal" style="margin-bottom:0cm;margin-bottom:.0001pt;line-height:
+  normal"><span class="MSBHeading2Char"><span style="font-size:16.0pt">Main
+  learning points</span></span>:</p>
+  <p class="MsoNormal" style="margin-bottom:0cm;margin-bottom:.0001pt;line-height:
+  normal"> </p>
+  <p class="MsoListParagraphCxSpFirst" style="margin-left:20.4pt;text-indent:
+  -18.0pt">-<span style='font:7.0pt "Times New Roman"'>       
+  </span>Always ask does this patient need IV antibiotics?</p>
+  <p class="MsoListParagraphCxSpMiddle" style="margin-left:20.4pt;text-indent:
+  -18.0pt">-<span style='font:7.0pt "Times New Roman"'>       
+  </span>Monitor U+Es - if a patient’s renal function changes (either way)
+  their dose will need to be altered</p>
+  <p class="MsoListParagraphCxSpMiddle" style="margin-left:20.4pt;text-indent:
+  -18.0pt">-<span style='font:7.0pt "Times New Roman"'>       
+  </span>Drug concentrations cannot be interpretated without the exact time and
+  date of both the dose and when the sample was taken.</p>
+  <p class="MsoListParagraphCxSpLast" style="margin-left:20.4pt;text-indent:-18.0pt">-<span style='font:7.0pt "Times New Roman"'>       
+  </span>Be careful never to mix up the vancomycin and gentamicin dosing
+  calculator and tables – the doses are VERY different.</p>
+  <p class="MsoNormal" style="margin-bottom:0cm;margin-bottom:.0001pt;line-height:
+  normal"> </p>
+  </td>
+ </tr></table>
+<p class="MsoNormal"> </p>
+
+<p class="MSBHeading2">When prescribing any antibiotic you need to document</p>
+
+<p class="MsoNormal"> </p>
+
+<p class="MsoListParagraphCxSpFirst" style="margin-left:20.4pt;text-indent:-18.0pt">-<span style='font:7.0pt "Times New Roman"'>       
+</span>INDICATION</p>
+
+<p class="MsoListParagraphCxSpMiddle" style="margin-left:20.4pt;text-indent:-18.0pt">-<span style='font:7.0pt "Times New Roman"'>       
+</span>Intended duration of the course</p>
+
+<p class="MsoListParagraphCxSpMiddle" style="margin-left:20.4pt;text-indent:-18.0pt">-<span style='font:7.0pt "Times New Roman"'>       
+</span>If spoken to micro for advice (always write the name of the person you
+spoke to)</p>
+
+<p class="MsoListParagraphCxSpMiddle" style="margin-left:20.4pt;text-indent:-18.0pt">-<span style='font:7.0pt "Times New Roman"'>       
+</span>If deviated from policy and why</p>
+
+<p class="MsoListParagraphCxSpMiddle" style="margin-left:20.4pt;text-indent:-18.0pt">-<span style='font:7.0pt "Times New Roman"'>       
+</span>Dose calculation (for vanc and gent)</p>
+
+<p class="MsoListParagraphCxSpLast" style="margin-left:20.4pt;text-indent:-18.0pt">-<span style='font:7.0pt "Times New Roman"'>       
+</span>Severity score eg SIRS, CURB65</p>
+
+<p class="MsoNormal"> </p>
+
+<p class="MsoNormal"> </p>
+
+<p class="MsoNormal"> </p>
+
+</div>
+				
+				</div>
+				<div id="sidebar" class="span-6 last">
+					<p>Sidebar</p>
+			  </div>
+		  </div>
+		</div>
+			
+		<div style="line-height:10px;">&nbsp;</div>
+		<div id="footer" class="container">
+				This is the 'sticky' footer
+		</div>
+	</body>
+</html>
