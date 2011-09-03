@@ -1,0 +1,3239 @@
+<!DOCTYPE html>
+<html>
+  <head>
+	  <title>MedStudyBuddy | Title</title>
+		<!--[if lt IE 9]>
+			<script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+		<![endif]-->
+		<link href="/stylesheets/blueprint/screen.css" media="screen" rel="stylesheet" type="text/css" />
+		<link href="/stylesheets/blueprint/print.css" media="print" rel="stylesheet" type="text/css" />
+		<!--[if lt IE8]>
+			<link href="/stylesheets/blueprint/ie.css" media="screen" rel="stylesheet" type="text/css" />
+		<![endif]-->
+		<link href="/stylesheets/notes.css" media="screen" rel="stylesheet" type="text/css" />
+		<link href="/stylesheets/sticky-footer.css" media="screen" rel="stylesheet" type="text/css" />
+		<link rel="shortcut icon" href="/favicon.ico" />
+		<link rel="shortcut icon" href="/images/favicon.ico" />
+		<style>
+<!--
+ /* Font Definitions */
+ @font-face
+	{font-family:Helvetica;
+	panose-1:2 11 6 4 2 2 2 2 2 4;}
+@font-face
+	{font-family:Wingdings;
+	panose-1:5 0 0 0 0 0 0 0 0 0;}
+@font-face
+	{font-family:SimSun;
+	panose-1:2 1 6 0 3 1 1 1 1 1;}
+@font-face
+	{font-family:"Cambria Math";
+	panose-1:2 4 5 3 5 4 6 3 2 4;}
+@font-face
+	{font-family:Calibri;
+	panose-1:2 15 5 2 2 2 4 3 2 4;}
+@font-face
+	{font-family:Candara;
+	panose-1:2 14 5 2 3 3 3 2 2 4;}
+@font-face
+	{font-family:"\@SimSun";
+	panose-1:2 1 6 0 3 1 1 1 1 1;}
+@font-face
+	{font-family:Verdana;
+	panose-1:2 11 6 4 3 5 4 4 2 4;}
+ /* Style Definitions */
+ p.MsoNormal, li.MsoNormal, div.MsoNormal
+	{margin-top:0cm;
+	margin-right:0cm;
+	margin-bottom:10.0pt;
+	margin-left:0cm;
+	line-height:115%;
+	font-size:11.0pt;
+	font-family:"Calibri","sans-serif";}
+p.MsoHeader, li.MsoHeader, div.MsoHeader
+	{mso-style-link:"Header Char";
+	margin:0cm;
+	margin-bottom:.0001pt;
+	font-size:11.0pt;
+	font-family:"Calibri","sans-serif";}
+p.MsoFooter, li.MsoFooter, div.MsoFooter
+	{mso-style-link:"Footer Char";
+	margin:0cm;
+	margin-bottom:.0001pt;
+	font-size:11.0pt;
+	font-family:"Calibri","sans-serif";}
+p.MsoListParagraph, li.MsoListParagraph, div.MsoListParagraph
+	{margin-top:0cm;
+	margin-right:0cm;
+	margin-bottom:0cm;
+	margin-left:36.0pt;
+	margin-bottom:.0001pt;
+	font-size:11.0pt;
+	font-family:"Arial","sans-serif";}
+p.MsoListParagraphCxSpFirst, li.MsoListParagraphCxSpFirst, div.MsoListParagraphCxSpFirst
+	{margin-top:0cm;
+	margin-right:0cm;
+	margin-bottom:0cm;
+	margin-left:36.0pt;
+	margin-bottom:.0001pt;
+	font-size:11.0pt;
+	font-family:"Arial","sans-serif";}
+p.MsoListParagraphCxSpMiddle, li.MsoListParagraphCxSpMiddle, div.MsoListParagraphCxSpMiddle
+	{margin-top:0cm;
+	margin-right:0cm;
+	margin-bottom:0cm;
+	margin-left:36.0pt;
+	margin-bottom:.0001pt;
+	font-size:11.0pt;
+	font-family:"Arial","sans-serif";}
+p.MsoListParagraphCxSpLast, li.MsoListParagraphCxSpLast, div.MsoListParagraphCxSpLast
+	{margin-top:0cm;
+	margin-right:0cm;
+	margin-bottom:0cm;
+	margin-left:36.0pt;
+	margin-bottom:.0001pt;
+	font-size:11.0pt;
+	font-family:"Arial","sans-serif";}
+span.HeaderChar
+	{mso-style-name:"Header Char";
+	mso-style-link:Header;}
+span.FooterChar
+	{mso-style-name:"Footer Char";
+	mso-style-link:Footer;}
+p.Default, li.Default, div.Default
+	{mso-style-name:Default;
+	margin:0cm;
+	margin-bottom:.0001pt;
+	text-autospace:none;
+	font-size:12.0pt;
+	font-family:"Helvetica","sans-serif";
+	color:black;}
+p.MSBHeading1, li.MSBHeading1, div.MSBHeading1
+	{mso-style-name:"MSB Heading 1";
+	mso-style-link:"MSB Heading 1 Char";
+	margin:0cm;
+	margin-bottom:.0001pt;
+	font-size:20.0pt;
+	font-family:"Candara","sans-serif";
+	color:#660066;
+	font-weight:bold;
+	text-decoration:underline;}
+span.MSBHeading1Char
+	{mso-style-name:"MSB Heading 1 Char";
+	mso-style-link:"MSB Heading 1";
+	font-family:"Candara","sans-serif";
+	color:#660066;
+	font-weight:bold;
+	text-decoration:underline;}
+p.MSBHeading2, li.MSBHeading2, div.MSBHeading2
+	{mso-style-name:"MSB Heading 2";
+	mso-style-link:"MSB Heading 2 Char";
+	margin:0cm;
+	margin-bottom:.0001pt;
+	font-size:16.0pt;
+	font-family:"Candara","sans-serif";
+	color:#2E002E;
+	font-weight:bold;}
+span.MSBHeading2Char
+	{mso-style-name:"MSB Heading 2 Char";
+	mso-style-link:"MSB Heading 2";
+	font-family:"Candara","sans-serif";
+	color:#2E002E;
+	font-weight:bold;}
+p.MSBnormaltext, li.MSBnormaltext, div.MSBnormaltext
+	{mso-style-name:"MSB normal text";
+	mso-style-link:"MSB normal text Char";
+	margin-top:0cm;
+	margin-right:0cm;
+	margin-bottom:0cm;
+	margin-left:21.0pt;
+	margin-bottom:.0001pt;
+	text-indent:-18.0pt;
+	font-size:11.0pt;
+	font-family:"Arial","sans-serif";}
+p.MSBnormaltextCxSpFirst, li.MSBnormaltextCxSpFirst, div.MSBnormaltextCxSpFirst
+	{mso-style-name:"MSB normal textCxSpFirst";
+	mso-style-link:"MSB normal text Char";
+	margin-top:0cm;
+	margin-right:0cm;
+	margin-bottom:0cm;
+	margin-left:21.0pt;
+	margin-bottom:.0001pt;
+	text-indent:-18.0pt;
+	font-size:11.0pt;
+	font-family:"Arial","sans-serif";}
+p.MSBnormaltextCxSpMiddle, li.MSBnormaltextCxSpMiddle, div.MSBnormaltextCxSpMiddle
+	{mso-style-name:"MSB normal textCxSpMiddle";
+	mso-style-link:"MSB normal text Char";
+	margin-top:0cm;
+	margin-right:0cm;
+	margin-bottom:0cm;
+	margin-left:21.0pt;
+	margin-bottom:.0001pt;
+	text-indent:-18.0pt;
+	font-size:11.0pt;
+	font-family:"Arial","sans-serif";}
+p.MSBnormaltextCxSpLast, li.MSBnormaltextCxSpLast, div.MSBnormaltextCxSpLast
+	{mso-style-name:"MSB normal textCxSpLast";
+	mso-style-link:"MSB normal text Char";
+	margin-top:0cm;
+	margin-right:0cm;
+	margin-bottom:0cm;
+	margin-left:21.0pt;
+	margin-bottom:.0001pt;
+	text-indent:-18.0pt;
+	font-size:11.0pt;
+	font-family:"Arial","sans-serif";}
+span.MSBnormaltextChar
+	{mso-style-name:"MSB normal text Char";
+	mso-style-link:"MSB normal text";
+	font-family:"Arial","sans-serif";}
+p.MSBsub-heading, li.MSBsub-heading, div.MSBsub-heading
+	{mso-style-name:"MSB sub-heading";
+	mso-style-link:"MSB sub-heading Char";
+	margin:0cm;
+	margin-bottom:.0001pt;
+	font-size:13.0pt;
+	font-family:"Calibri","sans-serif";
+	font-weight:bold;
+	text-decoration:underline;}
+span.MSBsub-headingChar
+	{mso-style-name:"MSB sub-heading Char";
+	mso-style-link:"MSB sub-heading";
+	font-weight:bold;
+	text-decoration:underline;}
+p.MSBreferenceHeading, li.MSBreferenceHeading, div.MSBreferenceHeading
+	{mso-style-name:"MSB reference Heading";
+	mso-style-link:"MSB reference Heading Char";
+	margin:0cm;
+	margin-bottom:.0001pt;
+	font-size:10.0pt;
+	font-family:"Arial","sans-serif";
+	font-weight:bold;
+	text-decoration:underline;}
+span.MSBreferenceHeadingChar
+	{mso-style-name:"MSB reference Heading Char";
+	mso-style-link:"MSB reference Heading";
+	font-family:"Arial","sans-serif";
+	font-weight:bold;
+	text-decoration:underline;}
+p.MSBunderlinearrowbullet, li.MSBunderlinearrowbullet, div.MSBunderlinearrowbullet
+	{mso-style-name:"MSB underline + arrow bullet";
+	mso-style-link:"MSB underline + arrow bullet Char";
+	margin-top:0cm;
+	margin-right:0cm;
+	margin-bottom:0cm;
+	margin-left:36.0pt;
+	margin-bottom:.0001pt;
+	text-indent:-18.0pt;
+	font-size:11.0pt;
+	font-family:"Arial","sans-serif";
+	text-decoration:underline;}
+p.MSBunderlinearrowbulletCxSpFirst, li.MSBunderlinearrowbulletCxSpFirst, div.MSBunderlinearrowbulletCxSpFirst
+	{mso-style-name:"MSB underline + arrow bulletCxSpFirst";
+	mso-style-link:"MSB underline + arrow bullet Char";
+	margin-top:0cm;
+	margin-right:0cm;
+	margin-bottom:0cm;
+	margin-left:36.0pt;
+	margin-bottom:.0001pt;
+	text-indent:-18.0pt;
+	font-size:11.0pt;
+	font-family:"Arial","sans-serif";
+	text-decoration:underline;}
+p.MSBunderlinearrowbulletCxSpMiddle, li.MSBunderlinearrowbulletCxSpMiddle, div.MSBunderlinearrowbulletCxSpMiddle
+	{mso-style-name:"MSB underline + arrow bulletCxSpMiddle";
+	mso-style-link:"MSB underline + arrow bullet Char";
+	margin-top:0cm;
+	margin-right:0cm;
+	margin-bottom:0cm;
+	margin-left:36.0pt;
+	margin-bottom:.0001pt;
+	text-indent:-18.0pt;
+	font-size:11.0pt;
+	font-family:"Arial","sans-serif";
+	text-decoration:underline;}
+p.MSBunderlinearrowbulletCxSpLast, li.MSBunderlinearrowbulletCxSpLast, div.MSBunderlinearrowbulletCxSpLast
+	{mso-style-name:"MSB underline + arrow bulletCxSpLast";
+	mso-style-link:"MSB underline + arrow bullet Char";
+	margin-top:0cm;
+	margin-right:0cm;
+	margin-bottom:0cm;
+	margin-left:36.0pt;
+	margin-bottom:.0001pt;
+	text-indent:-18.0pt;
+	font-size:11.0pt;
+	font-family:"Arial","sans-serif";
+	text-decoration:underline;}
+span.MSBunderlinearrowbulletChar
+	{mso-style-name:"MSB underline + arrow bullet Char";
+	mso-style-link:"MSB underline + arrow bullet";
+	font-family:"Arial","sans-serif";
+	text-decoration:underline;}
+p.MSBemphasis1x, li.MSBemphasis1x, div.MSBemphasis1x
+	{mso-style-name:"MSB emphasis 1x";
+	mso-style-link:"MSB emphasis 1x Char";
+	margin:0cm;
+	margin-bottom:.0001pt;
+	font-size:11.0pt;
+	font-family:"Arial","sans-serif";
+	font-weight:bold;
+	font-style:italic;
+	text-decoration:underline;}
+p.MSBemphasis1xCxSpFirst, li.MSBemphasis1xCxSpFirst, div.MSBemphasis1xCxSpFirst
+	{mso-style-name:"MSB emphasis 1xCxSpFirst";
+	mso-style-link:"MSB emphasis 1x Char";
+	margin:0cm;
+	margin-bottom:.0001pt;
+	font-size:11.0pt;
+	font-family:"Arial","sans-serif";
+	font-weight:bold;
+	font-style:italic;
+	text-decoration:underline;}
+p.MSBemphasis1xCxSpMiddle, li.MSBemphasis1xCxSpMiddle, div.MSBemphasis1xCxSpMiddle
+	{mso-style-name:"MSB emphasis 1xCxSpMiddle";
+	mso-style-link:"MSB emphasis 1x Char";
+	margin:0cm;
+	margin-bottom:.0001pt;
+	font-size:11.0pt;
+	font-family:"Arial","sans-serif";
+	font-weight:bold;
+	font-style:italic;
+	text-decoration:underline;}
+p.MSBemphasis1xCxSpLast, li.MSBemphasis1xCxSpLast, div.MSBemphasis1xCxSpLast
+	{mso-style-name:"MSB emphasis 1xCxSpLast";
+	mso-style-link:"MSB emphasis 1x Char";
+	margin:0cm;
+	margin-bottom:.0001pt;
+	font-size:11.0pt;
+	font-family:"Arial","sans-serif";
+	font-weight:bold;
+	font-style:italic;
+	text-decoration:underline;}
+span.MSBemphasis1xChar
+	{mso-style-name:"MSB emphasis 1x Char";
+	mso-style-link:"MSB emphasis 1x";
+	font-family:"Arial","sans-serif";
+	font-weight:bold;
+	font-style:italic;
+	text-decoration:underline;}
+p.MSBemphasis2x, li.MSBemphasis2x, div.MSBemphasis2x
+	{mso-style-name:"MSB emphasis 2x";
+	mso-style-link:"MSB emphasis 2x Char";
+	margin:0cm;
+	margin-bottom:.0001pt;
+	font-size:11.0pt;
+	font-family:"Arial","sans-serif";
+	color:#CC66FF;
+	font-weight:bold;
+	font-style:italic;}
+p.MSBemphasis2xCxSpFirst, li.MSBemphasis2xCxSpFirst, div.MSBemphasis2xCxSpFirst
+	{mso-style-name:"MSB emphasis 2xCxSpFirst";
+	mso-style-link:"MSB emphasis 2x Char";
+	margin:0cm;
+	margin-bottom:.0001pt;
+	font-size:11.0pt;
+	font-family:"Arial","sans-serif";
+	color:#CC66FF;
+	font-weight:bold;
+	font-style:italic;}
+p.MSBemphasis2xCxSpMiddle, li.MSBemphasis2xCxSpMiddle, div.MSBemphasis2xCxSpMiddle
+	{mso-style-name:"MSB emphasis 2xCxSpMiddle";
+	mso-style-link:"MSB emphasis 2x Char";
+	margin:0cm;
+	margin-bottom:.0001pt;
+	font-size:11.0pt;
+	font-family:"Arial","sans-serif";
+	color:#CC66FF;
+	font-weight:bold;
+	font-style:italic;}
+p.MSBemphasis2xCxSpLast, li.MSBemphasis2xCxSpLast, div.MSBemphasis2xCxSpLast
+	{mso-style-name:"MSB emphasis 2xCxSpLast";
+	mso-style-link:"MSB emphasis 2x Char";
+	margin:0cm;
+	margin-bottom:.0001pt;
+	font-size:11.0pt;
+	font-family:"Arial","sans-serif";
+	color:#CC66FF;
+	font-weight:bold;
+	font-style:italic;}
+span.MSBemphasis2xChar
+	{mso-style-name:"MSB emphasis 2x Char";
+	mso-style-link:"MSB emphasis 2x";
+	font-family:"Arial","sans-serif";
+	color:#CC66FF;
+	font-weight:bold;
+	font-style:italic;}
+p.MSBnormaltextnolist, li.MSBnormaltextnolist, div.MSBnormaltextnolist
+	{mso-style-name:"MSB normal text \(no list\)";
+	mso-style-link:"MSB normal text \(no list\) Char";
+	margin-top:0cm;
+	margin-right:0cm;
+	margin-bottom:0cm;
+	margin-left:3.1pt;
+	margin-bottom:.0001pt;
+	font-size:11.0pt;
+	font-family:"Arial","sans-serif";}
+p.MSBnormaltextnolistCxSpFirst, li.MSBnormaltextnolistCxSpFirst, div.MSBnormaltextnolistCxSpFirst
+	{mso-style-name:"MSB normal text \(no list\)CxSpFirst";
+	mso-style-link:"MSB normal text \(no list\) Char";
+	margin-top:0cm;
+	margin-right:0cm;
+	margin-bottom:0cm;
+	margin-left:3.1pt;
+	margin-bottom:.0001pt;
+	font-size:11.0pt;
+	font-family:"Arial","sans-serif";}
+p.MSBnormaltextnolistCxSpMiddle, li.MSBnormaltextnolistCxSpMiddle, div.MSBnormaltextnolistCxSpMiddle
+	{mso-style-name:"MSB normal text \(no list\)CxSpMiddle";
+	mso-style-link:"MSB normal text \(no list\) Char";
+	margin-top:0cm;
+	margin-right:0cm;
+	margin-bottom:0cm;
+	margin-left:3.1pt;
+	margin-bottom:.0001pt;
+	font-size:11.0pt;
+	font-family:"Arial","sans-serif";}
+p.MSBnormaltextnolistCxSpLast, li.MSBnormaltextnolistCxSpLast, div.MSBnormaltextnolistCxSpLast
+	{mso-style-name:"MSB normal text \(no list\)CxSpLast";
+	mso-style-link:"MSB normal text \(no list\) Char";
+	margin-top:0cm;
+	margin-right:0cm;
+	margin-bottom:0cm;
+	margin-left:3.1pt;
+	margin-bottom:.0001pt;
+	font-size:11.0pt;
+	font-family:"Arial","sans-serif";}
+span.MSBnormaltextnolistChar
+	{mso-style-name:"MSB normal text \(no list\) Char";
+	mso-style-link:"MSB normal text \(no list\)";
+	font-family:"Arial","sans-serif";}
+p.MSBboldnormaltext, li.MSBboldnormaltext, div.MSBboldnormaltext
+	{mso-style-name:"MSB bold normal text";
+	mso-style-link:"MSB bold normal text Char";
+	margin:0cm;
+	margin-bottom:.0001pt;
+	font-size:11.0pt;
+	font-family:"Arial","sans-serif";
+	font-weight:bold;}
+p.MSBboldnormaltextCxSpFirst, li.MSBboldnormaltextCxSpFirst, div.MSBboldnormaltextCxSpFirst
+	{mso-style-name:"MSB bold normal textCxSpFirst";
+	mso-style-link:"MSB bold normal text Char";
+	margin:0cm;
+	margin-bottom:.0001pt;
+	font-size:11.0pt;
+	font-family:"Arial","sans-serif";
+	font-weight:bold;}
+p.MSBboldnormaltextCxSpMiddle, li.MSBboldnormaltextCxSpMiddle, div.MSBboldnormaltextCxSpMiddle
+	{mso-style-name:"MSB bold normal textCxSpMiddle";
+	mso-style-link:"MSB bold normal text Char";
+	margin:0cm;
+	margin-bottom:.0001pt;
+	font-size:11.0pt;
+	font-family:"Arial","sans-serif";
+	font-weight:bold;}
+p.MSBboldnormaltextCxSpLast, li.MSBboldnormaltextCxSpLast, div.MSBboldnormaltextCxSpLast
+	{mso-style-name:"MSB bold normal textCxSpLast";
+	mso-style-link:"MSB bold normal text Char";
+	margin:0cm;
+	margin-bottom:.0001pt;
+	font-size:11.0pt;
+	font-family:"Arial","sans-serif";
+	font-weight:bold;}
+span.MSBboldnormaltextChar
+	{mso-style-name:"MSB bold normal text Char";
+	mso-style-link:"MSB bold normal text";
+	font-family:"Arial","sans-serif";
+	font-weight:bold;}
+p.MSBunderlinenormaltext, li.MSBunderlinenormaltext, div.MSBunderlinenormaltext
+	{mso-style-name:"MSB underline normal text";
+	mso-style-link:"MSB underline normal text Char";
+	margin:0cm;
+	margin-bottom:.0001pt;
+	font-size:11.0pt;
+	font-family:"Arial","sans-serif";
+	text-decoration:underline;}
+p.MSBunderlinenormaltextCxSpFirst, li.MSBunderlinenormaltextCxSpFirst, div.MSBunderlinenormaltextCxSpFirst
+	{mso-style-name:"MSB underline normal textCxSpFirst";
+	mso-style-link:"MSB underline normal text Char";
+	margin:0cm;
+	margin-bottom:.0001pt;
+	font-size:11.0pt;
+	font-family:"Arial","sans-serif";
+	text-decoration:underline;}
+p.MSBunderlinenormaltextCxSpMiddle, li.MSBunderlinenormaltextCxSpMiddle, div.MSBunderlinenormaltextCxSpMiddle
+	{mso-style-name:"MSB underline normal textCxSpMiddle";
+	mso-style-link:"MSB underline normal text Char";
+	margin:0cm;
+	margin-bottom:.0001pt;
+	font-size:11.0pt;
+	font-family:"Arial","sans-serif";
+	text-decoration:underline;}
+p.MSBunderlinenormaltextCxSpLast, li.MSBunderlinenormaltextCxSpLast, div.MSBunderlinenormaltextCxSpLast
+	{mso-style-name:"MSB underline normal textCxSpLast";
+	mso-style-link:"MSB underline normal text Char";
+	margin:0cm;
+	margin-bottom:.0001pt;
+	font-size:11.0pt;
+	font-family:"Arial","sans-serif";
+	text-decoration:underline;}
+span.MSBunderlinenormaltextChar
+	{mso-style-name:"MSB underline normal text Char";
+	mso-style-link:"MSB underline normal text";
+	font-family:"Arial","sans-serif";
+	text-decoration:underline;}
+p.MSBitalicsnormaltext, li.MSBitalicsnormaltext, div.MSBitalicsnormaltext
+	{mso-style-name:"MSB italics normal text";
+	mso-style-link:"MSB italics normal text Char";
+	margin:0cm;
+	margin-bottom:.0001pt;
+	font-size:11.0pt;
+	font-family:"Arial","sans-serif";
+	font-style:italic;}
+p.MSBitalicsnormaltextCxSpFirst, li.MSBitalicsnormaltextCxSpFirst, div.MSBitalicsnormaltextCxSpFirst
+	{mso-style-name:"MSB italics normal textCxSpFirst";
+	mso-style-link:"MSB italics normal text Char";
+	margin:0cm;
+	margin-bottom:.0001pt;
+	font-size:11.0pt;
+	font-family:"Arial","sans-serif";
+	font-style:italic;}
+p.MSBitalicsnormaltextCxSpMiddle, li.MSBitalicsnormaltextCxSpMiddle, div.MSBitalicsnormaltextCxSpMiddle
+	{mso-style-name:"MSB italics normal textCxSpMiddle";
+	mso-style-link:"MSB italics normal text Char";
+	margin:0cm;
+	margin-bottom:.0001pt;
+	font-size:11.0pt;
+	font-family:"Arial","sans-serif";
+	font-style:italic;}
+p.MSBitalicsnormaltextCxSpLast, li.MSBitalicsnormaltextCxSpLast, div.MSBitalicsnormaltextCxSpLast
+	{mso-style-name:"MSB italics normal textCxSpLast";
+	mso-style-link:"MSB italics normal text Char";
+	margin:0cm;
+	margin-bottom:.0001pt;
+	font-size:11.0pt;
+	font-family:"Arial","sans-serif";
+	font-style:italic;}
+span.MSBitalicsnormaltextChar
+	{mso-style-name:"MSB italics normal text Char";
+	mso-style-link:"MSB italics normal text";
+	font-family:"Arial","sans-serif";
+	font-style:italic;}
+p.MSBReference, li.MSBReference, div.MSBReference
+	{mso-style-name:"MSB Reference";
+	mso-style-link:"MSB Reference Char";
+	margin:0cm;
+	margin-bottom:.0001pt;
+	font-size:10.0pt;
+	font-family:"Arial","sans-serif";}
+p.MSBReferenceCxSpFirst, li.MSBReferenceCxSpFirst, div.MSBReferenceCxSpFirst
+	{mso-style-name:"MSB ReferenceCxSpFirst";
+	mso-style-link:"MSB Reference Char";
+	margin:0cm;
+	margin-bottom:.0001pt;
+	font-size:10.0pt;
+	font-family:"Arial","sans-serif";}
+p.MSBReferenceCxSpMiddle, li.MSBReferenceCxSpMiddle, div.MSBReferenceCxSpMiddle
+	{mso-style-name:"MSB ReferenceCxSpMiddle";
+	mso-style-link:"MSB Reference Char";
+	margin:0cm;
+	margin-bottom:.0001pt;
+	font-size:10.0pt;
+	font-family:"Arial","sans-serif";}
+p.MSBReferenceCxSpLast, li.MSBReferenceCxSpLast, div.MSBReferenceCxSpLast
+	{mso-style-name:"MSB ReferenceCxSpLast";
+	mso-style-link:"MSB Reference Char";
+	margin:0cm;
+	margin-bottom:.0001pt;
+	font-size:10.0pt;
+	font-family:"Arial","sans-serif";}
+span.MSBReferenceChar
+	{mso-style-name:"MSB Reference Char";
+	mso-style-link:"MSB Reference";
+	font-family:"Arial","sans-serif";}
+p.MSBboldunderlinednormaltext, li.MSBboldunderlinednormaltext, div.MSBboldunderlinednormaltext
+	{mso-style-name:"MSB bold underlined normal text";
+	mso-style-link:"MSB bold underlined normal text Char";
+	margin:0cm;
+	margin-bottom:.0001pt;
+	font-size:11.0pt;
+	font-family:"Arial","sans-serif";
+	font-weight:bold;
+	text-decoration:underline;}
+p.MSBboldunderlinednormaltextCxSpFirst, li.MSBboldunderlinednormaltextCxSpFirst, div.MSBboldunderlinednormaltextCxSpFirst
+	{mso-style-name:"MSB bold underlined normal textCxSpFirst";
+	mso-style-link:"MSB bold underlined normal text Char";
+	margin:0cm;
+	margin-bottom:.0001pt;
+	font-size:11.0pt;
+	font-family:"Arial","sans-serif";
+	font-weight:bold;
+	text-decoration:underline;}
+p.MSBboldunderlinednormaltextCxSpMiddle, li.MSBboldunderlinednormaltextCxSpMiddle, div.MSBboldunderlinednormaltextCxSpMiddle
+	{mso-style-name:"MSB bold underlined normal textCxSpMiddle";
+	mso-style-link:"MSB bold underlined normal text Char";
+	margin:0cm;
+	margin-bottom:.0001pt;
+	font-size:11.0pt;
+	font-family:"Arial","sans-serif";
+	font-weight:bold;
+	text-decoration:underline;}
+p.MSBboldunderlinednormaltextCxSpLast, li.MSBboldunderlinednormaltextCxSpLast, div.MSBboldunderlinednormaltextCxSpLast
+	{mso-style-name:"MSB bold underlined normal textCxSpLast";
+	mso-style-link:"MSB bold underlined normal text Char";
+	margin:0cm;
+	margin-bottom:.0001pt;
+	font-size:11.0pt;
+	font-family:"Arial","sans-serif";
+	font-weight:bold;
+	text-decoration:underline;}
+span.MSBboldunderlinednormaltextChar
+	{mso-style-name:"MSB bold underlined normal text Char";
+	mso-style-link:"MSB bold underlined normal text";
+	font-family:"Arial","sans-serif";
+	font-weight:bold;
+	text-decoration:underline;}
+.MsoPapDefault
+	{margin-bottom:10.0pt;
+	line-height:115%;}
+ /* Page Definitions */
+ @page WordSection1
+	{size:595.3pt 841.9pt;
+	margin:72.0pt 72.0pt 72.0pt 72.0pt;}
+div.WordSection1
+	{page:WordSection1;}
+ /* List Definitions */
+ ol
+	{margin-bottom:0cm;}
+ul
+	{margin-bottom:0cm;}
+-->
+</style>
+  </head>
+  <body>
+	  <div id="wrap">
+			<div id="main" class="container">
+		  	<div id="header">
+					<div style="float:left;">
+						<img src="/images/MSBLogo.png">
+					</div>
+					<img src="/images/MSBText.png">
+				</div>
+				<div id="content" class="span-16 append-1 prepend-1">					
+					<div class="WordSection1">
+
+<p class="MSBHeading1"><u>Liver Disease</u></p>
+
+<p class="MSBHeading1"><u><span style="text-decoration:none"> </span></u></p>
+
+<table class="MsoTableGrid" border="1" cellspacing="0" cellpadding="0" style="margin-left:3.75pt;background:yellow;border-collapse:collapse;
+ border:none"><tr>
+<td width="764" valign="top" style="width:458.35pt;border:solid black 1.0pt;
+  padding:0cm 5.4pt 0cm 5.4pt">
+<span style='font-size:11.0pt;font-family:"Arial","sans-serif"'><br clear="all" style="page-break-before:always"></span>
+  <p class="MsoNormal" style="margin-top:0cm;margin-right:0cm;margin-bottom:0cm;
+  margin-left:3.75pt;margin-bottom:.0001pt;line-height:normal"><b><u><span style='font-family:"Arial","sans-serif"'>Signs of Liver Disease</span></u></b></p>
+  <p class="MsoNormal" style="margin-top:0cm;margin-right:0cm;margin-bottom:0cm;
+  margin-left:3.75pt;margin-bottom:.0001pt;line-height:normal"><b><u><span style='font-family:"Arial","sans-serif"'><span style="text-decoration:none"> </span></span></u></b></p>
+  <p class="MsoNormal" style="margin-top:0cm;margin-right:0cm;margin-bottom:0cm;
+  margin-left:39.75pt;margin-bottom:.0001pt;text-indent:-18.0pt;line-height:
+  normal"><span style="font-family:Symbol">·<span style='font:7.0pt "Times New Roman"'>       
+  </span></span><span style='font-family:"Arial","sans-serif"'>Jaundice</span></p>
+  <p class="MsoNormal" style="margin-top:0cm;margin-right:0cm;margin-bottom:0cm;
+  margin-left:39.75pt;margin-bottom:.0001pt;text-indent:-18.0pt;line-height:
+  normal"><span style="font-family:Symbol">·<span style='font:7.0pt "Times New Roman"'>       
+  </span></span><span style='font-family:"Arial","sans-serif"'>Encephalopathy</span></p>
+  <p class="MsoNormal" style="margin-top:0cm;margin-right:0cm;margin-bottom:0cm;
+  margin-left:57.0pt;margin-bottom:.0001pt;text-indent:-18.0pt;line-height:
+  normal"><span style="font-family:Symbol;color:#7030A0">·<span style='font:7.0pt "Times New Roman"'>       
+  </span></span><span style='font-family:"Arial","sans-serif"'>Hepatic flap</span></p>
+  <p class="MsoNormal" style="margin-top:0cm;margin-right:0cm;margin-bottom:0cm;
+  margin-left:57.0pt;margin-bottom:.0001pt;text-indent:-18.0pt;line-height:
+  normal"><span style="font-family:Symbol;color:#7030A0">·<span style='font:7.0pt "Times New Roman"'>       
+  </span></span><span style='font-family:"Arial","sans-serif"'>Foetar hepaticus</span></p>
+  <p class="MsoNormal" style="margin-top:0cm;margin-right:0cm;margin-bottom:0cm;
+  margin-left:39.75pt;margin-bottom:.0001pt;text-indent:-18.0pt;line-height:
+  normal"><span style="font-family:Symbol">·<span style='font:7.0pt "Times New Roman"'>       
+  </span></span><span style='font-family:"Arial","sans-serif"'>Ascites – due to
+  decreased albumin</span></p>
+  <p class="MsoNormal" style="margin-top:0cm;margin-right:0cm;margin-bottom:0cm;
+  margin-left:39.75pt;margin-bottom:.0001pt;text-indent:-18.0pt;line-height:
+  normal"><span style="font-family:Symbol">·<span style='font:7.0pt "Times New Roman"'>       
+  </span></span><span style='font-family:"Arial","sans-serif"'>Peripheral
+  Oedema </span></p>
+  <p class="MsoNormal" style="margin-top:0cm;margin-right:0cm;margin-bottom:0cm;
+  margin-left:39.75pt;margin-bottom:.0001pt;text-indent:-18.0pt;line-height:
+  normal"><span style="font-family:Symbol">·<span style='font:7.0pt "Times New Roman"'>       
+  </span></span><span style='font-family:"Arial","sans-serif"'>Haemorrhage –
+  due to varices or coagulopathy</span></p>
+  <p class="MsoNormal" style="margin-top:0cm;margin-right:0cm;margin-bottom:0cm;
+  margin-left:39.75pt;margin-bottom:.0001pt;text-indent:-18.0pt;line-height:
+  normal"><span style="font-family:Symbol">·<span style='font:7.0pt "Times New Roman"'>       
+  </span></span><span style='font-family:"Arial","sans-serif"'>Purpura – due to
+  thrombocytopaenia/decreased clotting factors</span></p>
+  <p class="MsoNormal" style="margin-top:0cm;margin-right:0cm;margin-bottom:0cm;
+  margin-left:39.75pt;margin-bottom:.0001pt;text-indent:-18.0pt;line-height:
+  normal"><span style="font-family:Symbol">·<span style='font:7.0pt "Times New Roman"'>       
+  </span></span><span style='font-family:"Arial","sans-serif"'>Hepatomegaly –
+  seen in hepatitis. NB liver is small in cirrhosis</span></p>
+  <p class="MsoNormal" style="margin-top:0cm;margin-right:0cm;margin-bottom:0cm;
+  margin-left:39.75pt;margin-bottom:.0001pt;text-indent:-18.0pt;line-height:
+  normal"><span style="font-family:Symbol">·<span style='font:7.0pt "Times New Roman"'>       
+  </span></span><span style='font-family:"Arial","sans-serif"'>Splenomegaly –
+  due to back-up of pressure from portal hypertension</span></p>
+  <p class="MsoNormal" style="margin-top:0cm;margin-right:0cm;margin-bottom:0cm;
+  margin-left:39.75pt;margin-bottom:.0001pt;text-indent:-18.0pt;line-height:
+  normal"><span style="font-family:Symbol">·<span style='font:7.0pt "Times New Roman"'>       
+  </span></span><span style='font-family:"Arial","sans-serif"'>Spider naevi  -
+  &gt;5 above nipples (SVC distribution) implies chronic disease; occur due to
+  decreased oestrogen metabolism, seen on hands, chest (above diaphragm) and
+  back. Fill from centre out (unlike telangectasia).</span></p>
+  <p class="MsoNormal" style="margin-top:0cm;margin-right:0cm;margin-bottom:0cm;
+  margin-left:39.75pt;margin-bottom:.0001pt;text-indent:-18.0pt;line-height:
+  normal"><span style="font-family:Symbol">·<span style='font:7.0pt "Times New Roman"'>       
+  </span></span><span style='font-family:"Arial","sans-serif"'>Palmar erythema
+  – due to &#8595; oestrogen metabolism; indicative of hyper-dynamic
+  circulation (also seen in pregnancy, thyrotoxicosis, RA)</span></p>
+  <p class="MsoNormal" style="margin-top:0cm;margin-right:0cm;margin-bottom:0cm;
+  margin-left:39.75pt;margin-bottom:.0001pt;text-indent:-18.0pt;line-height:
+  normal"><span style="font-family:Symbol">·<span style='font:7.0pt "Times New Roman"'>       
+  </span></span><span style='font-family:"Arial","sans-serif"'>Loss of body
+  hair – due to &#8595; oestrogen metabolism</span></p>
+  <p class="MsoNormal" style="margin-top:0cm;margin-right:0cm;margin-bottom:0cm;
+  margin-left:39.75pt;margin-bottom:.0001pt;text-indent:-18.0pt;line-height:
+  normal"><span style="font-family:Symbol">·<span style='font:7.0pt "Times New Roman"'>       
+  </span></span><span style='font-family:"Arial","sans-serif"'>Leuconycia –
+  white marks on nails; due to hypoalbuminaemia</span></p>
+  <p class="MsoNormal" style="margin-top:0cm;margin-right:0cm;margin-bottom:0cm;
+  margin-left:39.75pt;margin-bottom:.0001pt;text-indent:-18.0pt;line-height:
+  normal"><span style="font-family:Symbol">·<span style='font:7.0pt "Times New Roman"'>       
+  </span></span><span style='font-family:"Arial","sans-serif"'>Gynacomastia –
+  due to oestrogen or spironolactone therapy</span></p>
+  <p class="MsoNormal" style="margin-top:0cm;margin-right:0cm;margin-bottom:0cm;
+  margin-left:39.75pt;margin-bottom:.0001pt;text-indent:-18.0pt;line-height:
+  normal"><span style="font-family:Symbol">·<span style='font:7.0pt "Times New Roman"'>       
+  </span></span><span style='font-family:"Arial","sans-serif"'>Clubbing – not
+  common</span></p>
+  <p class="MsoNormal" style="margin-top:0cm;margin-right:0cm;margin-bottom:0cm;
+  margin-left:39.75pt;margin-bottom:.0001pt;text-indent:-18.0pt;line-height:
+  normal"><span style="font-family:Symbol">·<span style='font:7.0pt "Times New Roman"'>       
+  </span></span><span style='font-family:"Arial","sans-serif"'>Dupuytren’s
+  contracture – seen in alcoholic cirrhosis</span></p>
+  <p class="MsoNormal" style="margin-top:0cm;margin-right:0cm;margin-bottom:0cm;
+  margin-left:39.75pt;margin-bottom:.0001pt;text-indent:-18.0pt;line-height:
+  normal"><span style="font-family:Symbol">·<span style='font:7.0pt "Times New Roman"'>       
+  </span></span><span style='font-family:"Arial","sans-serif"'>Xanthomas –
+  occur in PBC</span></p>
+  <p class="MsoNormal" style="margin-top:0cm;margin-right:0cm;margin-bottom:0cm;
+  margin-left:39.75pt;margin-bottom:.0001pt;text-indent:-18.0pt;line-height:
+  normal"><span style="font-family:Symbol">·<span style='font:7.0pt "Times New Roman"'>       
+  </span></span><span style='font-family:"Arial","sans-serif"'>Scratch marks –
+  due to itch from bile salts (cholestasis)</span></p>
+  <p class="MsoNormal" style="margin-top:0cm;margin-right:0cm;margin-bottom:0cm;
+  margin-left:39.75pt;margin-bottom:.0001pt;text-indent:-18.0pt;line-height:
+  normal"><span style="font-family:Symbol">·<span style='font:7.0pt "Times New Roman"'>       
+  </span></span><span style='font-family:"Arial","sans-serif"'>Testicular
+  atrophy - due to &#8595; oestrogen metabolism</span></p>
+  <p class="MsoNormal" style="margin-top:0cm;margin-right:0cm;margin-bottom:0cm;
+  margin-left:39.75pt;margin-bottom:.0001pt;text-indent:-18.0pt;line-height:
+  normal"><span style="font-family:Symbol">·<span style='font:7.0pt "Times New Roman"'>       
+  </span></span><span style='font-family:"Arial","sans-serif"'>Pale stools and
+  dark urine – if cholestatic. Stools rarely pale if intrahepatic cause</span></p>
+  <p class="MsoNormal" style="margin-top:0cm;margin-right:0cm;margin-bottom:0cm;
+  margin-left:39.75pt;margin-bottom:.0001pt;text-indent:-18.0pt;line-height:
+  normal"><span style="font-family:Symbol">·<span style='font:7.0pt "Times New Roman"'>       
+  </span></span><span style='font-family:"Arial","sans-serif"'>Caput medusa –
+  dilated veins around umbilicus</span></p>
+  <p class="MsoNormal" style="margin-bottom:0cm;margin-bottom:.0001pt;line-height:
+  normal"><b><u><span style='font-family:"Arial","sans-serif"'><span style="text-decoration:none"> </span></span></u></b></p>
+  </td>
+ </tr></table>
+<p class="MsoNormal" style="margin-left:3.75pt"><b><u><span style='font-family:
+"Arial","sans-serif"'><span style="text-decoration:none"> </span></span></u></b></p>
+
+<p class="MSBHeading1"><u>Acute Liver Disease</u></p>
+
+<p class="MSBHeading2"> </p>
+
+<p class="MsoNormal"><span style='font-family:"Arial","sans-serif"'>The most
+common causes of acute liver disease:</span></p>
+
+<p class="MsoListParagraphCxSpFirst" style="margin-left:21.0pt;text-indent:-18.0pt"><span style='font-family:"Times New Roman","serif"'>-<span style='font:7.0pt "Times New Roman"'>       
+</span></span>Acute viral hepatitis <i>(see specific causes of liver disease)</i></p>
+
+<p class="MsoListParagraphCxSpMiddle" style="margin-left:21.0pt;text-indent:-18.0pt"><span style='font-family:"Times New Roman","serif"'>-<span style='font:7.0pt "Times New Roman"'>       
+</span></span>Fulminant Hepatic Failure</p>
+
+<p class="MsoListParagraphCxSpLast" style="margin-left:21.0pt;text-indent:-18.0pt"><span style='font-family:"Times New Roman","serif"'>-<span style='font:7.0pt "Times New Roman"'>       
+</span></span>Acute-on-chronic liver disease – i.e. decompensation of Chronic
+Liver disease </p>
+
+<p class="MSBsub-heading"><span style="text-decoration:none"> </span></p>
+
+<p class="MSBsub-heading">Fulminant Hepatic Failure</p>
+
+<p class="MsoListParagraphCxSpFirst"><u><span style="text-decoration:none"> </span></u></p>
+
+<p class="MsoListParagraphCxSpMiddle" style="margin-left:37.8pt;text-indent:-18.0pt"><span style='font-family:"Calibri","sans-serif"'>-<span style='font:7.0pt "Times New Roman"'>       
+</span></span>Occurs in previously normal livers</p>
+
+<p class="MsoListParagraphCxSpMiddle" style="margin-left:37.8pt;text-indent:-18.0pt"><span style='font-family:"Calibri","sans-serif"'>-<span style='font:7.0pt "Times New Roman"'>       
+</span></span>Commonly following paracetemol overdose</p>
+
+<p class="MsoListParagraphCxSpMiddle" style="margin-left:37.8pt;text-indent:-18.0pt"><span style='font-family:"Calibri","sans-serif"'>-<span style='font:7.0pt "Times New Roman"'>       
+</span></span>Can occur after acute viral hepatitis (rare)</p>
+
+<p class="MsoListParagraphCxSpMiddle" style="margin-left:37.8pt;text-indent:-18.0pt"><span style='font-family:"Calibri","sans-serif"'>-<span style='font:7.0pt "Times New Roman"'>       
+</span></span>Patient is jaundiced and commonly develops coagulopathy.</p>
+
+<p class="MsoListParagraphCxSpMiddle" style="margin-left:37.8pt;text-indent:-18.0pt"><span style='font-family:"Calibri","sans-serif"'>-<span style='font:7.0pt "Times New Roman"'>       
+</span></span>At high risk of encephalopathy.</p>
+
+<p class="MsoListParagraphCxSpMiddle" style="margin-left:37.8pt;text-indent:-18.0pt"><span style='font-family:"Calibri","sans-serif"'>-<span style='font:7.0pt "Times New Roman"'>       
+</span></span>Can be hyper-acute onset &lt; 7 days, acute 1-6 weeks, sub acute
+&gt;6-8 weeks</p>
+
+<p class="MsoListParagraphCxSpMiddle" style="margin-left:37.8pt;text-indent:-18.0pt"><span style='font-family:"Calibri","sans-serif"'>-<span style='font:7.0pt "Times New Roman"'>       
+</span></span>Aim to PREVETN if paracetamol OD = N-acetyl cysteine</p>
+
+<p class="MsoListParagraphCxSpMiddle" style="margin-left:57.0pt;text-indent:-18.0pt"><span style="font-family:Symbol;color:#7030A0">·<span style='font:7.0pt "Times New Roman"'>       
+</span></span>Normally glutathione binds paracetemol. If OD, glutathionine
+stores are exhausted <span style="font-family:Wingdings">à</span> pararcetemol
+toxic to liver</p>
+
+<p class="MsoListParagraphCxSpMiddle" style="margin-left:37.8pt;text-indent:-18.0pt"><span style='font-family:"Calibri","sans-serif"'>-<span style='font:7.0pt "Times New Roman"'>       
+</span></span>TRANSPLANT is the main treatment once FHF is established</p>
+
+<p class="MsoListParagraphCxSpMiddle" style="margin-left:57.0pt;text-indent:-18.0pt"><span style="font-family:Symbol;color:#7030A0">·<span style='font:7.0pt "Times New Roman"'>       
+</span></span>If coagulopathy (INR&gt;2) or encephalopathy <span style="font-family:Wingdings">à</span> transplant!</p>
+
+<p class="MsoListParagraphCxSpMiddle" style="margin-left:37.8pt;text-indent:-18.0pt"><span style='font-family:"Calibri","sans-serif"'>-<span style='font:7.0pt "Times New Roman"'>       
+</span></span>Complication of FHF – cerebral oedema.</p>
+
+<p class="MsoListParagraphCxSpMiddle" style="margin-left:37.8pt;text-indent:-18.0pt"><span style='font-family:"Calibri","sans-serif"'>-<span style='font:7.0pt "Times New Roman"'>       
+</span></span>Patients with FHF awaiting transplant are very sick – keep in
+ITU.</p>
+
+<p class="MsoListParagraphCxSpLast" style="margin-left:37.8pt"> </p>
+
+<p class="MSBsub-heading">Acute on Chronic Liver Disease</p>
+
+<p class="MsoListParagraphCxSpFirst"><u><span style="text-decoration:none"> </span></u></p>
+
+<p class="MsoListParagraphCxSpMiddle" style="margin-left:37.8pt;text-indent:-18.0pt"><span style='font-family:"Calibri","sans-serif"'>-<span style='font:7.0pt "Times New Roman"'>       
+</span></span>Occurs in patients with chronic liver disease (i.e.
+decompensation)</p>
+
+<p class="MsoListParagraphCxSpMiddle" style="margin-left:37.8pt;text-indent:-18.0pt"><span style='font-family:"Calibri","sans-serif"'>-<span style='font:7.0pt "Times New Roman"'>       
+</span></span>Most have precipitating factors eg Bleed, Sepsis, Dehydration,
+biochemical abnormality due to diuretic sensitivity</p>
+
+<p class="MsoListParagraphCxSpLast" style="margin-left:37.8pt;text-indent:-18.0pt"><span style='font-family:"Calibri","sans-serif"'>-<span style='font:7.0pt "Times New Roman"'>       
+</span></span>Investigate &amp; treat precipitating cause eg Gastric tube – is
+there blood? Blood cultures? Ascites aspirate?</p>
+
+<p class="MsoNormal" style="margin-bottom:0cm;margin-bottom:.0001pt"><i><span style='font-family:"Arial","sans-serif"'> </span></i></p>
+
+<p class="MsoNormal" style="margin-bottom:0cm;margin-bottom:.0001pt"><i><span style='font-family:"Arial","sans-serif"'>[For investigations for acute liver
+disease see below]</span></i></p>
+
+<p class="MsoNormal" style="margin-bottom:0cm;margin-bottom:.0001pt"><i><span style='font-family:"Arial","sans-serif"'> </span></i></p>
+
+<p class="MSBHeading1"><u>Chronic Liver Disease</u></p>
+
+<p class="MSBHeading1"><u><span style="font-size:12.0pt"><span style="text-decoration:
+ none"> </span></span></u></p>
+
+<div style="border:solid windowtext 1.0pt;padding:1.0pt 4.0pt 1.0pt 4.0pt;
+background:yellow;margin-left:19.8pt;margin-right:0cm">
+
+<p class="MsoListParagraphCxSpFirst" style="margin-left:18.0pt;text-indent:-18.0pt;
+background:yellow;border:none;padding:0cm"><span style="font-family:Symbol">·<span style='font:7.0pt "Times New Roman"'>       
+</span></span>Non-alcoholic fatty liver disease/steatosis</p>
+
+<p class="MsoListParagraphCxSpMiddle" style="margin-left:18.0pt;text-indent:-18.0pt;
+background:yellow;border:none;padding:0cm"><span style="font-family:Symbol">·<span style='font:7.0pt "Times New Roman"'>       
+</span></span>Alcohol</p>
+
+<p class="MsoListParagraphCxSpMiddle" style="margin-left:18.0pt;text-indent:-18.0pt;
+background:yellow;border:none;padding:0cm"><span style="font-family:Symbol">·<span style='font:7.0pt "Times New Roman"'>       
+</span></span>Autoimmune (CAH; PBC)                                                       </p>
+
+<p class="MsoListParagraphCxSpMiddle" style="margin-left:18.0pt;text-indent:-18.0pt;
+background:yellow;border:none;padding:0cm"><span style="font-family:Symbol">·<span style='font:7.0pt "Times New Roman"'>       
+</span></span>Viral Hepatitis (B; C)<b>                                                               &gt;
+Cirrhosis!</b></p>
+
+<p class="MsoListParagraphCxSpMiddle" style="margin-left:18.0pt;text-indent:-18.0pt;
+background:yellow;border:none;padding:0cm"><span style="font-family:Symbol">·<span style='font:7.0pt "Times New Roman"'>       
+</span></span>Drugs</p>
+
+<p class="MsoListParagraphCxSpLast" style="margin-left:18.0pt;text-indent:-18.0pt;
+background:yellow;border:none;padding:0cm"><span style="font-family:Symbol">·<span style='font:7.0pt "Times New Roman"'>       
+</span></span>Hereditary (Heamochromatosis; Wilson’s) </p>
+
+</div>
+
+<p class="MSBboldunderlinednormaltext"><span style="text-decoration:none"> </span></p>
+
+<p class="MsoNormal"><span style='font-family:"Arial","sans-serif"'>Liver disease
+is chronic if &gt; 6months</span></p>
+
+<p class="MsoListParagraphCxSpFirst" style="margin-left:37.8pt;text-indent:-18.0pt"><span style='font-family:"Calibri","sans-serif"'>-<span style='font:7.0pt "Times New Roman"'>       
+</span></span>Needs to be &gt; 6monmths because it takes this long for LFTs to
+return to normal even after acute episode</p>
+
+<p class="MsoListParagraphCxSpLast" style="margin-left:37.8pt"> </p>
+
+<p class="MsoNormal"><span style='font-family:"Arial","sans-serif"'>Chronic Liver
+Disease has 2 clinical stages:</span></p>
+
+<p class="MsoListParagraphCxSpFirst" style="text-indent:-18.0pt">1)<span style='font:7.0pt "Times New Roman"'>     </span><span class="MSBboldnormaltextChar">Compensated</span> – LFTs are deranged but no signs
+and symptoms; even with the reduced functional volume the remaining healthy
+liver tissue is able to perform the necessary functions.</p>
+
+<p class="MsoListParagraphCxSpLast" style="text-indent:-18.0pt">2)<span style='font:7.0pt "Times New Roman"'>     </span><span class="MSBboldnormaltextChar">Decompensated</span> – liver disease is extensive
+enough to manifest signs and symptoms (jaundice, ascites, encephalopathy,
+coagulopathy)</p>
+
+<p class="MsoNormal"> </p>
+
+<table class="MsoTableGrid" border="1" cellspacing="0" cellpadding="0" style="background:#CC99FF;border-collapse:collapse;border:none"><tr>
+<td width="770" valign="top" style="width:462.1pt;border:solid black 1.0pt;
+  padding:0cm 5.4pt 0cm 5.4pt">
+  <p class="MSBsub-heading">Liver Cirrhosis</p>
+  <p class="MSBsub-heading"><span style="text-decoration:none"> </span></p>
+  <p class="MSBnormaltextnolistCxSpFirst">Liver cirrhosis is a final common
+  pathway that can result from any chronic or severe liver disease. Similarly
+  many patients with chronic liver disease (eg Alcoholic Liver disease) never
+  develop cirrhosis. It is not understood why some patients get it and others
+  do not. Cirrhosis is a pathological term that describes the scarred liver
+  tissue. Once cirrhosis has occurred it is irreversible.</p>
+  <p class="MSBnormaltextnolistCxSpMiddle"> </p>
+  <p class="MSBnormaltextnolistCxSpLast">Cirrhosis is characterised by:</p>
+  <p class="MsoListParagraphCxSpFirst" style="margin-left:37.8pt;text-indent:
+  -18.0pt"><span style='font-family:"Calibri","sans-serif"'>-<span style='font:7.0pt "Times New Roman"'>       
+  </span></span>Destruction of hepatocytes</p>
+  <p class="MsoListParagraphCxSpMiddle" style="margin-left:37.8pt;text-indent:
+  -18.0pt"><span style='font-family:"Calibri","sans-serif"'>-<span style='font:7.0pt "Times New Roman"'>       
+  </span></span><b><u>Fibrosis and nodular regeneration</u></b></p>
+  <p class="MsoListParagraphCxSpLast" style="margin-left:37.8pt"> </p>
+  <p class="MSBnormaltextnolist">There are 2 types of Cirrhosis:</p>
+  <p class="MsoListParagraphCxSpFirst" style="margin-left:54.0pt;text-indent:
+  -36.0pt">i)<span style='font:7.0pt "Times New Roman"'>                
+  </span>Micronodular – eg due to alcohol; often progressive cause</p>
+  <p class="MsoListParagraphCxSpLast" style="margin-left:54.0pt;text-indent:-36.0pt">ii)<span style='font:7.0pt "Times New Roman"'>               
+  </span>Macronodular – eg after acute hepatitis</p>
+  <p class="MsoNormal" style="margin-bottom:0cm;margin-bottom:.0001pt;line-height:
+  normal"> </p>
+  </td>
+ </tr></table>
+<p class="MsoListParagraph" style="margin-left:54.0pt"> </p>
+
+<p class="MSBHeading2">Decompensated Liver Disease</p>
+
+<p class="MSBsub-heading"><span style="text-decoration:none"> </span></p>
+
+<p class="MsoListParagraphCxSpFirst" style="text-indent:-18.0pt"><b>1)<span style='font:7.0pt "Times New Roman"'>     </span></b><b>Ascites</b></p>
+
+<p class="MsoListParagraphCxSpMiddle" style="text-indent:-18.0pt"><b>2)<span style='font:7.0pt "Times New Roman"'>     </span></b><b>Encephalopathy</b></p>
+
+<p class="MsoListParagraphCxSpMiddle" style="text-indent:-18.0pt"><b>3)<span style='font:7.0pt "Times New Roman"'>     </span></b><b>Varices</b></p>
+
+<p class="MsoListParagraphCxSpLast"><b> </b></p>
+
+<p class="MSBsub-heading" style="margin-left:36.0pt;text-indent:-18.0pt"><span style="text-decoration:none">1)<span style='font:7.0pt "Times New Roman"'>   
+</span></span>Ascites</p>
+
+<p class="MsoListParagraphCxSpFirst"><u><span style="text-decoration:none"> </span></u></p>
+
+<p class="MsoListParagraphCxSpMiddle" style="margin-left:37.8pt;text-indent:-18.0pt"><span style='font-family:"Calibri","sans-serif"'>-<span style='font:7.0pt "Times New Roman"'>       
+</span></span>Diagnose clinically: Shifting Dullness (however this requires
+1-1.5litres to be detectable)</p>
+
+<p class="MsoListParagraphCxSpMiddle" style="margin-left:37.8pt;text-indent:-18.0pt"><span style='font-family:"Calibri","sans-serif"'>-<span style='font:7.0pt "Times New Roman"'>       
+</span></span>Diagnose on Abdominal US (earlier)</p>
+
+<p class="MsoListParagraphCxSpMiddle" style="margin-left:37.8pt;text-indent:-18.0pt"><span style='font-family:"Calibri","sans-serif"'>-<span style='font:7.0pt "Times New Roman"'>       
+</span></span><b>ALWAYS take an aspirate sample of the ascites fluid</b></p>
+
+<p class="MsoListParagraphCxSpMiddle" style="margin-left:91.8pt;text-indent:-18.0pt"><span style="font-family:Symbol">·<span style='font:7.0pt "Times New Roman"'>       
+</span></span>Transudate           </p>
+
+<p class="MsoListParagraphCxSpMiddle" style="margin-left:145.8pt;text-indent:
+-18.0pt"><span style="font-family:Symbol">·<span style='font:7.0pt "Times New Roman"'>       
+</span></span>&lt;25g/litre, low LDH</p>
+
+<p class="MsoListParagraphCxSpMiddle" style="margin-left:145.8pt;text-indent:
+-18.0pt"><span style="font-family:Symbol">·<span style='font:7.0pt "Times New Roman"'>       
+</span></span>Due to systemic causes</p>
+
+<p class="MsoListParagraphCxSpMiddle" style="margin-left:145.8pt;text-indent:
+-18.0pt"><span style="font-family:Symbol">·<span style='font:7.0pt "Times New Roman"'>       
+</span></span>Most common = LF: Portal Hypertension + low albumin</p>
+
+<p class="MsoListParagraphCxSpMiddle" style="margin-left:145.8pt;text-indent:
+-18.0pt"><span style="font-family:Symbol">·<span style='font:7.0pt "Times New Roman"'>       
+</span></span>Other causes:</p>
+
+<p class="MsoListParagraphCxSpMiddle" style="margin-left:165.0pt;text-indent:
+-18.0pt"><span style="font-family:Symbol;color:#7030A0">·<span style='font:7.0pt "Times New Roman"'>       
+</span></span>Hypoalbuminaemia due to proteinuria from nephrotic syndrome </p>
+
+<p class="MsoListParagraphCxSpMiddle" style="margin-left:165.0pt;text-indent:
+-18.0pt"><span style="font-family:Symbol;color:#7030A0">·<span style='font:7.0pt "Times New Roman"'>       
+</span></span>Constrictive pericarditis </p>
+
+<p class="MsoListParagraphCxSpMiddle" style="margin-left:145.8pt"> </p>
+
+<p class="MsoListParagraphCxSpMiddle" style="margin-left:91.8pt;text-indent:-18.0pt"><span style="font-family:Symbol">·<span style='font:7.0pt "Times New Roman"'>       
+</span></span>Exudate <b>(rare!)</b></p>
+
+<p class="MsoListParagraphCxSpMiddle" style="margin-left:145.8pt;text-indent:
+-18.0pt"><span style="font-family:Symbol">·<span style='font:7.0pt "Times New Roman"'>       
+</span></span>&gt;25g/litre, high LDH  (&gt;200U/l)</p>
+
+<p class="MsoListParagraphCxSpMiddle" style="margin-left:145.8pt;text-indent:
+-18.0pt"><span style="font-family:Symbol">·<span style='font:7.0pt "Times New Roman"'>       
+</span></span>Due to local causes</p>
+
+<p class="MsoListParagraphCxSpMiddle" style="margin-left:145.8pt;text-indent:
+-18.0pt"><span style="font-family:Symbol">·<span style='font:7.0pt "Times New Roman"'>       
+</span></span>Malignancy – eg mets from ovarian/pelvic tumour</p>
+
+<p class="MsoListParagraphCxSpMiddle" style="margin-left:145.8pt;text-indent:
+-18.0pt"><span style="font-family:Symbol">·<span style='font:7.0pt "Times New Roman"'>       
+</span></span>Infection (TB)</p>
+
+<p class="MsoListParagraphCxSpLast" style="margin-left:145.8pt"> </p>
+
+<p class="MsoNormal"><span style='font-family:"Arial","sans-serif"'>Also measure:</span></p>
+
+<p class="MsoListParagraphCxSpFirst" style="margin-left:21.0pt;text-indent:-18.0pt"><span style='font-family:"Times New Roman","serif"'>-<span style='font:7.0pt "Times New Roman"'>       
+</span></span>WBCs in the fluid, if WCC &gt;500 mm3 or Neutrophils &gt;250 = <b><u>Spontaneous
+Bacterial Peritonitis</u></b></p>
+
+<p class="MsoListParagraphCxSpMiddle" style="margin-left:57.0pt;text-indent:-18.0pt"><span style="font-family:Symbol;color:#7030A0">·<span style='font:7.0pt "Times New Roman"'>       
+</span></span>Very serious complication of ascites; presents with abdominal
+pain, peritonitis and s/s of sepsis; can lead to death. Consider in any patient
+with ascites who becomes acutely unwell.  Treat with broad spec antibiotics (eg
+IV augmentin). Results from translocation of gut flora through the bowel wall
+and into ascetic fluid causing peritonitis and sepsis.</p>
+
+<p class="MsoListParagraphCxSpMiddle" style="margin-left:72.0pt"> </p>
+
+<p class="MsoListParagraphCxSpMiddle" style="margin-left:21.0pt;text-indent:-18.0pt"><span style='font-family:"Times New Roman","serif"'>-<span style='font:7.0pt "Times New Roman"'>       
+</span></span><b>Serum-ascetic albumin gradient (SAAG).</b> This is the
+difference between serum Albumin and conc of albumin in the ascites fluid. If
+SAAG &gt; 11/g = portal hypertension! (NB In chronic renal failure albumin
+decreases so globulin levels in the serum rise)</p>
+
+<p class="MsoListParagraphCxSpMiddle"> </p>
+
+<p class="MsoListParagraphCxSpLast" style="margin-left:21.0pt;text-indent:-18.0pt"><span style='font-family:"Times New Roman","serif"'>-<span style='font:7.0pt "Times New Roman"'>       
+</span></span>lymphocytes present in the ascites fluid = TB?</p>
+
+<p class="MsoNormal"><span style='font-family:"Arial","sans-serif"'> </span></p>
+
+<table class="MsoTableGrid" border="1" cellspacing="0" cellpadding="0" style="background:yellow;border-collapse:collapse;border:none"><tr>
+<td width="770" valign="top" style="width:462.1pt;border:solid black 1.0pt;
+  padding:0cm 5.4pt 0cm 5.4pt">
+  <p class="MsoNormal" style="margin-bottom:0cm;margin-bottom:.0001pt;line-height:
+  normal"><span style='font-family:"Arial","sans-serif"'>So send ascites
+  aspirate to:</span></p>
+  <p class="MsoNormal" style="margin-bottom:0cm;margin-bottom:.0001pt;line-height:
+  normal"><span style='font-family:"Arial","sans-serif"'> </span></p>
+  <p class="MsoListParagraphCxSpFirst" style="text-indent:-18.0pt"><span style="font-family:Wingdings">Ø<span style='font:7.0pt "Times New Roman"'> 
+  </span></span><b>Biochemistry</b>             </p>
+  <p class="MsoListParagraphCxSpMiddle" style="margin-left:57.0pt;text-indent:
+  -18.0pt"><span style="font-family:Symbol;color:#7030A0">·<span style='font:7.0pt "Times New Roman"'>       
+  </span></span>Transudate vs exudates</p>
+  <p class="MsoListParagraphCxSpMiddle" style="margin-left:57.0pt;text-indent:
+  -18.0pt"><span style="font-family:Symbol;color:#7030A0">·<span style='font:7.0pt "Times New Roman"'>       
+  </span></span>If SAAG &gt;11 <span style="font-family:Wingdings">à</span> due
+  to portal hypertension</p>
+  <p class="MsoListParagraphCxSpMiddle" style="margin-left:72.0pt"> </p>
+  <p class="MsoListParagraphCxSpMiddle" style="text-indent:-18.0pt"><span style="font-family:Wingdings">Ø<span style='font:7.0pt "Times New Roman"'> 
+  </span></span><b>Microbiology</b>  </p>
+  <p class="MsoListParagraphCxSpMiddle" style="margin-left:57.0pt;text-indent:
+  -18.0pt"><span style="font-family:Symbol;color:#7030A0">·<span style='font:7.0pt "Times New Roman"'>       
+  </span></span>WCC &gt; 250 (or neutrophils &gt;250) = SBP! Culture &amp;
+  Start IV antibiotics</p>
+  <p class="MsoListParagraphCxSpLast" style="margin-left:57.0pt;text-indent:-18.0pt"><span style="font-family:Symbol;color:#7030A0">·<span style='font:7.0pt "Times New Roman"'>       
+  </span></span>Culture</p>
+  <p class="MsoNormal" style="margin-bottom:0cm;margin-bottom:.0001pt;line-height:
+  normal"><span style='font-family:"Arial","sans-serif"'> </span></p>
+  <p class="MsoListParagraphCxSpFirst" style="text-indent:-18.0pt"><span style="font-family:Wingdings">Ø<span style='font:7.0pt "Times New Roman"'> 
+  </span></span><b>Cytology</b> </p>
+  <p class="MsoListParagraphCxSpMiddle" style="margin-left:57.0pt;text-indent:
+  -18.0pt"><span style="font-family:Symbol;color:#7030A0">·<span style='font:7.0pt "Times New Roman"'>       
+  </span></span>Malignant cells?</p>
+  <p class="MsoListParagraphCxSpLast" style="margin-left:72.0pt"> </p>
+  <p class="MsoNormal" style="margin-bottom:0cm;margin-bottom:.0001pt;line-height:
+  normal"><span style='font-family:"Arial","sans-serif"'> </span></p>
+  <p class="MsoNormal" style="margin-bottom:0cm;margin-bottom:.0001pt;line-height:
+  normal"><span style='font-family:"Arial","sans-serif"'>If new ascites, also
+  get Ultrasound to screen for hepatocellular carcinoma.</span></p>
+  <p class="MsoNormal" style="margin-bottom:0cm;margin-bottom:.0001pt;line-height:
+  normal"><span style='font-family:"Arial","sans-serif"'> </span></p>
+  </td>
+ </tr></table>
+<p class="MsoNormal"><u><span style='font-family:"Arial","sans-serif"'><span style="text-decoration:none"> </span></span></u></p>
+
+<p class="MSBsub-heading">Management of Ascites:</p>
+
+<p class="MSBsub-heading"><span style="text-decoration:none"> </span></p>
+
+<p class="MsoNormal"><span style='font-family:"Arial","sans-serif"'>If severe (ie
+distension affecting breathing) – <b>drain</b>. </span></p>
+
+<p class="MsoListParagraphCxSpFirst" style="margin-left:72.0pt;text-indent:-18.0pt"><span style="font-family:Wingdings">Ø<span style='font:7.0pt "Times New Roman"'> 
+</span></span>Can drain up to 20 litres! Can drain ascites in one go (unlike pleural
+effusion). <u>Need to give one vial of IV <b>albumin</b> for every 1.5litres</u>
+that you drain in order to prevent hypotension. </p>
+
+<p class="MsoListParagraphCxSpLast" style="margin-left:72.0pt"> </p>
+
+<p class="MsoNormal"><span style='font-family:"Arial","sans-serif"'>For moderate
+ascites:</span></p>
+
+<p class="MsoListParagraphCxSpFirst" style="text-indent:-18.0pt"><span style="font-family:Symbol">·<span style='font:7.0pt "Times New Roman"'>       
+</span></span>Bed rest</p>
+
+<p class="MsoListParagraphCxSpMiddle" style="text-indent:-18.0pt"><span style="font-family:Symbol">·<span style='font:7.0pt "Times New Roman"'>       
+</span></span>Restrict Na (2g/day) &amp; Water intake (1.5-2l/day)</p>
+
+<p class="MsoListParagraphCxSpMiddle" style="text-indent:-18.0pt"><span style="font-family:Symbol">·<span style='font:7.0pt "Times New Roman"'>       
+</span></span>Laxatives – constipation can precipitate encephalopathy</p>
+
+<p class="MsoListParagraphCxSpMiddle" style="text-indent:-18.0pt"><span style="font-family:Symbol">·<span style='font:7.0pt "Times New Roman"'>       
+</span></span>Diuretics – <b>both</b> – Loop (Furosemide) &amp; K-sparing
+(Spironolactone)</p>
+
+<p class="MsoListParagraphCxSpMiddle" style="text-indent:-18.0pt"><span style="font-family:Symbol">·<span style='font:7.0pt "Times New Roman"'>       
+</span></span>Monitor weight daily (more practical than fluid balance chart)</p>
+
+<p class="MsoListParagraphCxSpMiddle" style="margin-left:57.0pt;text-indent:-18.0pt"><span style="font-family:Symbol;color:#7030A0">·<span style='font:7.0pt "Times New Roman"'>       
+</span></span>aim for ~ 1lb/day weight loss</p>
+
+<p class="MsoListParagraphCxSpLast" style="margin-left:73.8pt"> </p>
+
+<div style="border:solid windowtext 1.0pt;padding:1.0pt 4.0pt 1.0pt 3.0pt;
+background:#CC99FF">
+
+<p class="MsoNormal" style="background:#CC99FF;border:none;padding:0cm"><u><span style='font-family:"Arial","sans-serif"'>2 clinical situations can result from
+treatment:</span></u></p>
+
+<p class="MsoNormal" style="background:#CC99FF;border:none;padding:0cm"><i><span style='font-family:"Arial","sans-serif"'>Diuretic sensitive</span></i><span style='font-family:"Arial","sans-serif"'> – can develop worrying low Na+ conc
+due to diuresis and dilution of Na+ concentration due to fluid oedema.</span></p>
+
+<p class="MsoNormal" style="background:#CC99FF;border:none;padding:0cm"><i><span style='font-family:"Arial","sans-serif"'>Diuretic Resistant</span></i><span style='font-family:"Arial","sans-serif"'> – diuretics have no effect.</span></p>
+
+</div>
+
+<p class="MsoNormal"><span style='font-family:"Arial","sans-serif"'>If management
+is unsuccessful it may be necessary to perform a Trans-jugular Intra-hepatic
+Portal Systemic Shunt or <b>TIPSS Procedure</b>.</span></p>
+
+<p class="MsoListParagraphCxSpFirst" style="margin-left:37.8pt;text-indent:-18.0pt"><span style='font-family:"Calibri","sans-serif"'>-<span style='font:7.0pt "Times New Roman"'>       
+</span></span>Invasive procedure that bypasses blood from the portal vein
+straight into the hepatic vein missing out the liver</p>
+
+<p class="MsoListParagraphCxSpMiddle" style="margin-left:37.8pt;text-indent:-18.0pt"><span style='font-family:"Calibri","sans-serif"'>-<span style='font:7.0pt "Times New Roman"'>       
+</span></span>Indications: </p>
+
+<p class="MsoListParagraphCxSpMiddle" style="margin-left:57.0pt;text-indent:-18.0pt"><span style="font-family:Symbol;color:#7030A0">·<span style='font:7.0pt "Times New Roman"'>       
+</span></span>Resistant Ascites</p>
+
+<p class="MsoListParagraphCxSpMiddle" style="margin-left:57.0pt;text-indent:-18.0pt"><span style="font-family:Symbol;color:#7030A0">·<span style='font:7.0pt "Times New Roman"'>       
+</span></span>Resistant Variceal bleeding</p>
+
+<p class="MsoListParagraphCxSpMiddle" style="margin-left:37.8pt;text-indent:-18.0pt"><span style='font-family:"Calibri","sans-serif"'>-<span style='font:7.0pt "Times New Roman"'>       
+</span></span>Not suitable for patients with Fulminant hepatic failure or
+severe encephalopathy!</p>
+
+<p class="MsoListParagraphCxSpMiddle" style="margin-left:37.8pt;text-indent:-18.0pt"><span style='font-family:"Calibri","sans-serif"'>-<span style='font:7.0pt "Times New Roman"'>       
+</span></span>Catheter is inserted in the jugular vein <span style="font-family:
+Wingdings">à</span> SVC <span style="font-family:Wingdings">à</span> IVC <span style="font-family:Wingdings">à</span> Hepatic vein. Then make a small puncture
+in Portal vein and place a metal stent to decrease portal pressure</p>
+
+<p class="MsoListParagraphCxSpMiddle" style="margin-left:37.8pt;text-indent:-18.0pt"><span style='font-family:"Calibri","sans-serif"'>-<span style='font:7.0pt "Times New Roman"'>       
+</span></span>Can lead to increased incidence of Encephalopathy however.</p>
+
+<p class="MsoListParagraphCxSpMiddle" style="margin-left:37.8pt;text-indent:-18.0pt"><span style='font-family:"Calibri","sans-serif"'>-<span style='font:7.0pt "Times New Roman"'>       
+</span></span>Used as a therapeutic bridge between Transplant for patients with
+chronic liver disease – means patient doesn’t have to come in daily to have
+their ascites drained</p>
+
+<p class="MsoListParagraphCxSpLast" style="margin-left:37.8pt"> </p>
+
+<p class="MSBboldunderlinednormaltextCxSpFirst">Liver Transplant</p>
+
+<p class="MSBboldunderlinednormaltextCxSpLast"><span style="text-decoration:none"> </span></p>
+
+<p class="MsoNormal"><span style='font-family:"Arial","sans-serif"'>The only cure
+for cirrhosis.</span></p>
+
+<p class="MsoNormal"><span style='font-family:"Arial","sans-serif"'>Donor livers
+are very scarce; most are cadaveric.</span></p>
+
+<p class="MsoNormal"><span style='font-family:"Arial","sans-serif"'>Need to have
+stopped drinking &#8805; 6 months to even be considered for transplant.</span></p>
+
+<p class="MsoNormal" style="margin-bottom:0cm;margin-bottom:.0001pt"><span style='font-family:"Arial","sans-serif"'>Require lifelong immunosuppression post-transplant
+( eg ciclosporin; tacrolimus)</span></p>
+
+<p class="MsoNormal" style="margin-bottom:0cm;margin-bottom:.0001pt"><span style='font-family:"Arial","sans-serif"'> </span></p>
+
+<p class="MsoNormal" style="margin-bottom:0cm;margin-bottom:.0001pt"><span style='font-family:"Arial","sans-serif"'>5 year post-transplant survival
+~70-85%</span></p>
+
+<p class="MsoNormal"><span style='font-family:"Arial","sans-serif"'> </span></p>
+
+<table class="MsoTableGrid" border="1" cellspacing="0" cellpadding="0" style="border-collapse:collapse;border:none"><tr>
+<td width="770" valign="top" style="width:462.1pt;border:solid black 1.0pt;
+  background:#CC99FF;padding:0cm 5.4pt 0cm 5.4pt">
+  <p class="MsoNormal" style="margin-bottom:0cm;margin-bottom:.0001pt;line-height:
+  normal"><b><span style='font-family:"Arial","sans-serif"'>Split-liver Live
+  donation</span></b><span style='font-family:"Arial","sans-serif"'> – remove a
+  large part of the right lobe from the donor (remaining liver regenerates). Possible,
+  but rarely done due to high <b><i><u>donor</u></i></b> mortality. More used
+  for children who require transplant because they require a smaller portion of
+  liver so less risk to donor.</span></p>
+  <p class="MsoNormal" style="margin-bottom:0cm;margin-bottom:.0001pt;line-height:
+  normal"><span style='font-family:"Arial","sans-serif"'> </span></p>
+  </td>
+ </tr></table>
+<p class="MsoNormal"><span style='font-family:"Arial","sans-serif"'> </span></p>
+
+<p class="MSBsub-heading" style="margin-left:36.0pt;text-indent:-18.0pt"><span style="text-decoration:none">2)<span style='font:7.0pt "Times New Roman"'>   
+</span></span>Encephalopathy</p>
+
+<p class="MsoListParagraphCxSpFirst"><u><span style="text-decoration:none"> </span></u></p>
+
+<p class="MsoListParagraphCxSpMiddle">Signs of Encephalopathy:</p>
+
+<p class="MsoListParagraphCxSpMiddle" style="margin-left:108.0pt;text-indent:
+-18.0pt"><span style="font-family:Symbol">·<span style='font:7.0pt "Times New Roman"'>       
+</span></span>Flap</p>
+
+<p class="MsoListParagraphCxSpMiddle" style="margin-left:108.0pt;text-indent:
+-18.0pt"><span style="font-family:Symbol">·<span style='font:7.0pt "Times New Roman"'>       
+</span></span>Confusion/&#8595;cognition</p>
+
+<p class="MsoListParagraphCxSpMiddle" style="margin-left:108.0pt;text-indent:
+-18.0pt"><span style="font-family:Symbol">·<span style='font:7.0pt "Times New Roman"'>       
+</span></span>Constructive apraxia – unable to draw shapes</p>
+
+<p class="MsoListParagraphCxSpMiddle" style="margin-left:108.0pt;text-indent:
+-18.0pt"><span style="font-family:Symbol">·<span style='font:7.0pt "Times New Roman"'>       
+</span></span>Foetar Hepaticus – a sweet but faecal smell</p>
+
+<p class="MsoListParagraphCxSpMiddle"> </p>
+
+<p class="MsoListParagraphCxSpMiddle"><u><span style="text-decoration:none"> </span></u></p>
+
+<p class="MsoListParagraphCxSpMiddle" style="margin-left:21.0pt;text-indent:-18.0pt"><span style='font-family:"Times New Roman","serif"'>-<span style='font:7.0pt "Times New Roman"'>       
+</span></span>Encephalopathy can occur in:</p>
+
+<p class="MsoListParagraphCxSpMiddle" style="margin-left:57.0pt;text-indent:-18.0pt"><span style="font-family:Symbol;color:#7030A0">·<span style='font:7.0pt "Times New Roman"'>       
+</span></span>Fulminant Hepatic Failure</p>
+
+<p class="MsoListParagraphCxSpMiddle" style="margin-left:57.0pt;text-indent:-18.0pt"><span style="font-family:Symbol;color:#7030A0">·<span style='font:7.0pt "Times New Roman"'>       
+</span></span>Decompensation of chronic Liver Disease</p>
+
+<p class="MsoListParagraphCxSpMiddle" style="margin-left:93.0pt;text-indent:-18.0pt"><span style="font-family:Wingdings">§<span style='font:7.0pt "Times New Roman"'> 
+</span></span>Most have precipitating factors eg Bleed, Sepsis, Dehydration,
+biochemical abnormality due to diuretic sensitivity</p>
+
+<p class="MsoListParagraphCxSpMiddle" style="margin-left:93.0pt;text-indent:-18.0pt"><span style="font-family:Wingdings">§<span style='font:7.0pt "Times New Roman"'> 
+</span></span>Investigate &amp; treat precipitating cause eg Gastric tube – is
+there blood? Blood cultures? Ascites aspirate?</p>
+
+<p class="MsoListParagraphCxSpMiddle" style="margin-left:93.0pt;text-indent:-18.0pt"><span style="font-family:Wingdings">§<span style='font:7.0pt "Times New Roman"'> 
+</span></span>Also give LACTULOSE (20mg tds) – non-absorbable carbohydrate,
+laxative; constipation can precipitate encephalopathy in patients with chronic
+liver failure.</p>
+
+<p class="MsoListParagraphCxSpLast" style="margin-left:109.8pt"> </p>
+
+<table class="MsoTableGrid" border="1" cellspacing="0" cellpadding="0" style="background:#CC99FF;border-collapse:collapse;border:none"><tr>
+<td width="770" valign="top" style="width:462.1pt;border:solid black 1.0pt;
+  padding:0cm 5.4pt 0cm 5.4pt">
+  <p class="MsoNormal" style="margin-bottom:0cm;margin-bottom:.0001pt;line-height:
+  normal"><u><span style='font-family:"Arial","sans-serif"'>Grades of
+  Encephaolpathy</span></u></p>
+  <p class="MsoNormal" style="margin-bottom:0cm;margin-bottom:.0001pt;line-height:
+  normal"><u><span style='font-family:"Arial","sans-serif"'><span style="text-decoration:none"> </span></span></u></p>
+  <p class="MsoNormal" style="margin-bottom:0cm;margin-bottom:.0001pt;line-height:
+  normal"><span style='font-family:"Arial","sans-serif"'>1 – confusion, hand
+  flap, +/- EEG changes</span></p>
+  <p class="MsoNormal" style="margin-bottom:0cm;margin-bottom:.0001pt;line-height:
+  normal"><span style='font-family:"Arial","sans-serif"'>2 – Drowsy</span></p>
+  <p class="MsoNormal" style="margin-bottom:0cm;margin-bottom:.0001pt;line-height:
+  normal"><span style='font-family:"Arial","sans-serif"'>3 – unconscious but
+  can be roused</span></p>
+  <p class="MsoNormal" style="margin-bottom:0cm;margin-bottom:.0001pt;line-height:
+  normal"><span style='font-family:"Arial","sans-serif"'>4 – Coma</span></p>
+  <p class="MsoNormal" style="margin-bottom:0cm;margin-bottom:.0001pt;line-height:
+  normal"> </p>
+  </td>
+ </tr></table>
+<p class="MsoNormal"><span style='font-family:"Arial","sans-serif"'> </span></p>
+
+<p class="MSBsub-heading" style="margin-left:36.0pt;text-indent:-18.0pt"><span style="text-decoration:none">3)<span style='font:7.0pt "Times New Roman"'>   
+</span></span>Varices</p>
+
+<p class="MsoListParagraphCxSpFirst"><u><span style="text-decoration:none"> </span></u></p>
+
+<p class="MsoListParagraphCxSpMiddle" style="margin-left:37.8pt;text-indent:-18.0pt"><span style='font-family:"Calibri","sans-serif"'>-<span style='font:7.0pt "Times New Roman"'>       
+</span></span>90% of pts with cirrhosis develop varices however only 30% of
+these will ever bleed</p>
+
+<p class="MsoListParagraphCxSpMiddle" style="margin-left:37.8pt;text-indent:-18.0pt"><span style='font-family:"Calibri","sans-serif"'>-<span style='font:7.0pt "Times New Roman"'>       
+</span></span>Regular endoscopic screening for presence of varices</p>
+
+<p class="MsoListParagraphCxSpMiddle" style="margin-left:37.8pt;text-indent:-18.0pt"><span style='font-family:"Calibri","sans-serif"'>-<span style='font:7.0pt "Times New Roman"'>       
+</span></span>If small varices &#8594; start on Propanolol (decreases portal
+pressure)</p>
+
+<p class="MsoListParagraphCxSpMiddle" style="margin-left:37.8pt;text-indent:-18.0pt"><span style='font-family:"Calibri","sans-serif"'>-<span style='font:7.0pt "Times New Roman"'>       
+</span></span>If medium - large varices – start on propanolol and enter into
+variceal eradiation programme (eg Endoscopic Band ligation)</p>
+
+<p class="MsoListParagraphCxSpMiddle" style="margin-left:37.8pt;text-indent:-18.0pt"><span style='font-family:"Calibri","sans-serif"'>-<span style='font:7.0pt "Times New Roman"'>       
+</span></span>If present acutely with haematemeis follow emergency management
+protocol (see notes on haematemesis)</p>
+
+<p class="MsoListParagraphCxSpLast" style="margin-left:37.8pt"> </p>
+
+<table class="MsoTableGrid" border="1" cellspacing="0" cellpadding="0" style="background:#CC99FF;border-collapse:collapse;border:none"><tr>
+<td width="770" valign="top" style="width:462.1pt;border:solid black 1.0pt;
+  padding:0cm 5.4pt 0cm 5.4pt">
+  <p class="MsoNormal" style="margin-bottom:0cm;margin-bottom:.0001pt;line-height:
+  normal"><b><u><span style='font-family:"Arial","sans-serif"'>Other
+  complications of Liver Disease:</span></u></b></p>
+  <p class="MsoNormal" style="margin-bottom:0cm;margin-bottom:.0001pt;line-height:
+  normal"><b><u><span style='font-family:"Arial","sans-serif"'><span style="text-decoration:none"> </span></span></u></b></p>
+  <p class="MsoNormal" style="margin-bottom:0cm;margin-bottom:.0001pt;line-height:
+  normal"><u><span style='font-family:"Arial","sans-serif"'>Coagulopathy</span></u></p>
+  <p class="MsoNormal" style="margin-bottom:0cm;margin-bottom:.0001pt;line-height:
+  normal"><u><span style='font-family:"Arial","sans-serif"'><span style="text-decoration:none"> </span></span></u></p>
+  <p class="MsoListParagraphCxSpFirst" style="margin-left:37.8pt;text-indent:
+  -18.0pt"><span style='font-family:"Calibri","sans-serif"'>-<span style='font:7.0pt "Times New Roman"'>       
+  </span></span>Serious complication, especially if varices!</p>
+  <p class="MsoListParagraphCxSpMiddle" style="margin-left:37.8pt;text-indent:
+  -18.0pt"><span style='font-family:"Calibri","sans-serif"'>-<span style='font:7.0pt "Times New Roman"'>       
+  </span></span>The liver produces clotting factors, so coagulopathies are
+  common.</p>
+  <p class="MsoListParagraphCxSpLast" style="margin-left:37.8pt;text-indent:-18.0pt"><span style='font-family:"Calibri","sans-serif"'>-<span style='font:7.0pt "Times New Roman"'>       
+  </span></span>Monitor coag! May require transfusion of Fresh Frozen Plasma</p>
+  <p class="MsoNormal" style="margin-bottom:0cm;margin-bottom:.0001pt;line-height:
+  normal"><u><span style="text-decoration:none"> </span></u></p>
+  <p class="MSBnormaltextnolist"><u>Thrombocytopaenia</u></p>
+  <p class="MsoNormal" style="margin-bottom:0cm;margin-bottom:.0001pt;line-height:
+  normal"><u><span style='font-family:"Arial","sans-serif"'><span style="text-decoration:none"> </span></span></u></p>
+  <p class="MsoListParagraphCxSpFirst" style="margin-left:37.8pt;text-indent:
+  -18.0pt"><span style='font-family:"Calibri","sans-serif"'>-<span style='font:7.0pt "Times New Roman"'>       
+  </span></span>Portal hypertension <span style="font-family:Wingdings">à</span>
+  back pressure to spleen <span style="font-family:Wingdings">à</span>
+  splenomegaly <span style="font-family:Wingdings">à</span> hypersplenism <span style="font-family:Wingdings">à</span> decreased platelets, as the platelets
+  all sequester in the enlarged spleen</p>
+  <p class="MsoListParagraphCxSpLast" style="margin-left:37.8pt;text-indent:-18.0pt"><span style='font-family:"Calibri","sans-serif"'>-<span style='font:7.0pt "Times New Roman"'>       
+  </span></span>Can also result from direct toxic effect of alcohol on bone
+  marrow</p>
+  <p class="MsoNormal" style="margin-bottom:0cm;margin-bottom:.0001pt;line-height:
+  normal"><u><span style='font-family:"Arial","sans-serif"'><span style="text-decoration:none"> </span></span></u></p>
+  <p class="MsoNormal" style="margin-bottom:0cm;margin-bottom:.0001pt;line-height:
+  normal"><u><span style='font-family:"Arial","sans-serif"'>Hypoglycaemia</span></u></p>
+  <p class="MsoNormal" style="margin-bottom:0cm;margin-bottom:.0001pt;line-height:
+  normal"><u><span style='font-family:"Arial","sans-serif"'><span style="text-decoration:none"> </span></span></u></p>
+  <p class="MsoListParagraph" style="margin-left:37.8pt;text-indent:-18.0pt"><span style='font-family:"Calibri","sans-serif"'>-<span style='font:7.0pt "Times New Roman"'>       
+  </span></span>The liver is a major store of glycogen and also plays an
+  integral role in glucose metabolism</p>
+  <p class="MsoNormal" style="margin-bottom:0cm;margin-bottom:.0001pt;line-height:
+  normal"><u><span style='font-family:"Arial","sans-serif"'><span style="text-decoration:none"> </span></span></u></p>
+  <p class="MsoNormal" style="margin-bottom:0cm;margin-bottom:.0001pt;line-height:
+  normal"><u><span style='font-family:"Arial","sans-serif"'>Hepato-renal
+  syndrome (HRS)</span></u></p>
+  <p class="MsoNormal" style="margin-bottom:0cm;margin-bottom:.0001pt;line-height:
+  normal"><u><span style='font-family:"Arial","sans-serif"'><span style="text-decoration:none"> </span></span></u></p>
+  <p class="MsoListParagraphCxSpFirst" style="margin-left:37.8pt;text-indent:
+  -18.0pt"><span style='font-family:"Calibri","sans-serif"'>-<span style='font:7.0pt "Times New Roman"'>       
+  </span></span>Complication of end-stage liver disease </p>
+  <p class="MsoListParagraphCxSpMiddle" style="margin-left:37.8pt;text-indent:
+  -18.0pt"><span style='font-family:"Calibri","sans-serif"'>-<span style='font:7.0pt "Times New Roman"'>       
+  </span></span>liver failure produces renal failure in healthy kidneys</p>
+  <p class="MsoListParagraphCxSpMiddle" style="margin-left:37.8pt;text-indent:
+  -18.0pt"><span style='font-family:"Calibri","sans-serif"'>-<span style='font:7.0pt "Times New Roman"'>       
+  </span></span>Can occur in chronic or acute liver failure</p>
+  <p class="MsoListParagraphCxSpMiddle" style="margin-left:37.8pt;text-indent:
+  -18.0pt"><span style='font-family:"Calibri","sans-serif"'>-<span style='font:7.0pt "Times New Roman"'>       
+  </span></span>Occurs due to decreased peripheral vascular volume due to
+  ascites leading to pre-renal failure</p>
+  <p class="MsoListParagraphCxSpMiddle" style="margin-left:37.8pt;text-indent:
+  -18.0pt"><span style='font-family:"Calibri","sans-serif"'>-<span style='font:7.0pt "Times New Roman"'>       
+  </span></span>ALSO portal hypertension is thought to alter blood flow and
+  vessel tone from the kidneys (even though the renal vein does not contribute
+  to the portal vein)</p>
+  <p class="MsoListParagraphCxSpMiddle" style="margin-left:37.8pt;text-indent:
+  -18.0pt"><span style='font-family:"Calibri","sans-serif"'>-<span style='font:7.0pt "Times New Roman"'>       
+  </span></span>Also phenomenon where reduced hepatic clearance of toxins
+  directly damages kidneys</p>
+  <p class="MsoListParagraphCxSpMiddle" style="margin-left:37.8pt;text-indent:
+  -18.0pt"><span style='font-family:"Calibri","sans-serif"'>-<span style='font:7.0pt "Times New Roman"'>       
+  </span></span>The kidneys themselves have no pathology</p>
+  <p class="MsoListParagraphCxSpMiddle" style="margin-left:37.8pt;text-indent:
+  -18.0pt"><span style='font-family:"Calibri","sans-serif"'>-<span style='font:7.0pt "Times New Roman"'>       
+  </span></span>May be precipitated by anything that lowers BP eg Infection,
+  haemorrhage</p>
+  <p class="MsoListParagraphCxSpMiddle" style="margin-left:37.8pt;text-indent:
+  -18.0pt"><span style='font-family:"Calibri","sans-serif"'>-<span style='font:7.0pt "Times New Roman"'>       
+  </span></span>Presents with &#8593; Ct, oligouria and worsening ascites</p>
+  <p class="MsoListParagraphCxSpMiddle" style="margin-left:37.8pt;text-indent:
+  -18.0pt"><span style='font-family:"Calibri","sans-serif"'>-<span style='font:7.0pt "Times New Roman"'>       
+  </span></span>Can be acute (type 1; ~2 weeks) or chronic onset (type 2)</p>
+  <p class="MsoListParagraphCxSpMiddle" style="margin-left:37.8pt;text-indent:
+  -18.0pt"><span style='font-family:"Calibri","sans-serif"'>-<span style='font:7.0pt "Times New Roman"'>       
+  </span></span>Diagnose by excluding other causes of RF</p>
+  <p class="MsoListParagraphCxSpMiddle" style="margin-left:37.8pt;text-indent:
+  -18.0pt"><span style='font-family:"Calibri","sans-serif"'>-<span style='font:7.0pt "Times New Roman"'>       
+  </span></span>Survival:          </p>
+  <p class="MsoListParagraphCxSpMiddle" style="margin-left:109.8pt;text-indent:
+  -18.0pt"><span style="font-family:Wingdings">§<span style='font:7.0pt "Times New Roman"'> 
+  </span></span>Type 1 = 10%</p>
+  <p class="MsoListParagraphCxSpMiddle" style="margin-left:109.8pt;text-indent:
+  -18.0pt"><span style="font-family:Wingdings">§<span style='font:7.0pt "Times New Roman"'> 
+  </span></span>Type 2 = median 6 months</p>
+  <p class="MsoListParagraphCxSpLast" style="margin-left:37.8pt;text-indent:-18.0pt"><span style='font-family:"Calibri","sans-serif"'>-<span style='font:7.0pt "Times New Roman"'>       
+  </span></span>IV albumin may reduce incidence</p>
+  <p class="MsoNormal" style="margin-bottom:0cm;margin-bottom:.0001pt;line-height:
+  normal"><u><span style="text-decoration:none"> </span></u></p>
+  </td>
+ </tr></table>
+<p class="MsoNormal"><u><span style='font-family:"Arial","sans-serif"'><span style="text-decoration:none"> </span></span></u></p>
+
+<p class="MSBHeading1"><u>Specific Causes of Liver Disease</u></p>
+
+<p class="MSBHeading2"> </p>
+
+<p class="MSBHeading2">Non-Alcoholic Fatty Liver Disease (NAFLD)</p>
+
+<p class="MSBsub-heading"><span style="text-decoration:none"> </span></p>
+
+<p class="MsoNormal"><span style='font-family:"Arial","sans-serif"'>Most common
+cause of Chronic Liver Disease in the West is Non-Alcoholic Fatty Liver Disease
+(NAFLD).</span></p>
+
+<p class="MsoNormal"><span style='font-family:"Arial","sans-serif"'>This is
+largely benign and has few or no signs other than deranged LFTs.</span></p>
+
+<p class="MsoNormal"><span style='font-family:"Arial","sans-serif"'>NAFLD – the
+presence of Fat in the hepatocytes – can progress however onto a form of
+Hepatitis known as Non-Alcohol Steatosis (NASH). </span></p>
+
+<p class="MsoNormal"><span style='font-family:"Arial","sans-serif"'>NASH is a
+more severe form of disease that can progress onto fibrosis and ultimately
+cirrhosis.</span></p>
+
+<div style="border:solid windowtext 1.0pt;padding:1.0pt 4.0pt 1.0pt 4.0pt;
+background:#CC99FF">
+
+<p class="MsoNormal" style="background:#CC99FF;border:none;padding:0cm"><span style='font-family:"Arial","sans-serif"'>NAFLD &#8594; NASH (inflammation
+around the fatty hepatocytes) &#8594; Fibrosis &#8594; Cirrhosis.</span></p>
+
+</div>
+
+<p class="MsoNormal"><span style='font-family:"Arial","sans-serif"'>Consumption
+of alcohol &gt;20g/day automatically excludes NAFLD.</span></p>
+
+<p class="MsoNormal"><span style='font-family:"Arial","sans-serif"'>The main
+cause is OBESITY. Can result from other causes eg Drugs, amiodarone.</span></p>
+
+<p class="MsoNormal"><span style='font-family:"Arial","sans-serif"'>NAFLD is
+associated with insulin resistance. It is thought that measures effective in
+treating T2DM (eg weight loss, exercise, metformin) may be effective in
+treating NAFLD.</span></p>
+
+<p class="MsoNormal" style="margin-bottom:0cm;margin-bottom:.0001pt"><span class="MSBHeading1Char"><u><span style="font-size:20.0pt;line-height:115%"><span style="text-decoration:none"> </span></span></u></span></p>
+
+<p class="MsoNormal" style="margin-bottom:0cm;margin-bottom:.0001pt"><span class="MSBHeading1Char"><u><span style="font-size:20.0pt;line-height:115%">Alcoholic
+Liver Disease</span></u></span></p>
+
+<p class="MsoNormal" style="margin-bottom:0cm;margin-bottom:.0001pt"><u><span style='font-family:"Arial","sans-serif"'><span style="text-decoration:none"> </span></span></u></p>
+
+<p class="MSBHeading2">Pathology</p>
+
+<p class="MsoNormal" style="margin-top:0cm;margin-right:0cm;margin-bottom:0cm;
+margin-left:3.75pt;margin-bottom:.0001pt"><u><span style='font-family:"Arial","sans-serif"'><span style="text-decoration:none"> </span></span></u></p>
+
+<p class="MsoNormal" style="margin-top:0cm;margin-right:0cm;margin-bottom:0cm;
+margin-left:3.75pt;margin-bottom:.0001pt"><span style='font-family:"Arial","sans-serif"'>The
+term alcoholic liver disease encompasses a spectrum of pathology that can
+result from alcohol excess. </span></p>
+
+<p class="MsoNormal" style="margin-top:0cm;margin-right:0cm;margin-bottom:0cm;
+margin-left:3.75pt;margin-bottom:.0001pt"><span style='font-family:"Arial","sans-serif"'> </span></p>
+
+<div style="border:solid windowtext 1.0pt;padding:1.0pt 4.0pt 1.0pt 4.0pt;
+background:#CC99FF;margin-left:3.75pt;margin-right:0cm">
+
+<p class="MsoNormal" style="margin-bottom:0cm;margin-bottom:.0001pt;background:
+#CC99FF;border:none;padding:0cm"><span style='font-family:"Arial","sans-serif"'>Fatty
+change </span><span lang="EN-US">&#8594;</span><span style='font-family:"Arial","sans-serif"'>
+Alcoholic Hepatitis </span><span lang="EN-US">&#8594;</span><span style='font-family:"Arial","sans-serif"'> Alcoholic Cirrhosis</span></p>
+
+</div>
+
+<p class="MsoNormal" style="margin-bottom:0cm;margin-bottom:.0001pt"><span style='font-family:"Arial","sans-serif"'> </span></p>
+
+<p class="MsoNormal" style="margin-top:0cm;margin-right:0cm;margin-bottom:0cm;
+margin-left:3.75pt;margin-bottom:.0001pt"><span style='font-family:"Arial","sans-serif"'>Only
+10-20% of heavy drinkers will develop cirrhosis. It is unknown why some
+drinkers are susceptible to cirrhosis and others are somewhat protected.</span></p>
+
+<p class="MsoNormal" style="margin-top:0cm;margin-right:0cm;margin-bottom:0cm;
+margin-left:3.75pt;margin-bottom:.0001pt"><span style='font-family:"Arial","sans-serif"'> </span></p>
+
+<p class="MSBboldunderlinednormaltext">Fatty Change</p>
+
+<p class="MsoNormal" style="margin-top:0cm;margin-right:0cm;margin-bottom:0cm;
+margin-left:3.75pt;margin-bottom:.0001pt"><span style='font-family:"Arial","sans-serif"'> </span></p>
+
+<p class="MsoNormal" style="margin-top:0cm;margin-right:0cm;margin-bottom:0cm;
+margin-left:21.75pt;margin-bottom:.0001pt;text-indent:-18.0pt"><span style='font-family:"Verdana","sans-serif"'>-<span style='font:7.0pt "Times New Roman"'>     
+</span></span><span style='font-family:"Arial","sans-serif"'>invariably occurs
+with alcohol excess </span></p>
+
+<p class="MsoNormal" style="margin-top:0cm;margin-right:0cm;margin-bottom:0cm;
+margin-left:21.75pt;margin-bottom:.0001pt;text-indent:-18.0pt"><span style='font-family:"Verdana","sans-serif"'>-<span style='font:7.0pt "Times New Roman"'>     
+</span></span><span style='font-family:"Arial","sans-serif"'>changes are
+reversible on stopping drinking</span></p>
+
+<p class="MsoNormal" style="margin-top:0cm;margin-right:0cm;margin-bottom:0cm;
+margin-left:21.75pt;margin-bottom:.0001pt;text-indent:-18.0pt"><span style='font-family:"Verdana","sans-serif"'>-<span style='font:7.0pt "Times New Roman"'>     
+</span></span><span style='font-family:"Arial","sans-serif"'>present to minimal
+degree even after moderate quantities of alcohol</span></p>
+
+<p class="MsoNormal" style="margin-top:0cm;margin-right:0cm;margin-bottom:0cm;
+margin-left:21.75pt;margin-bottom:.0001pt;text-indent:-18.0pt"><span style='font-family:"Verdana","sans-serif"'>-<span style='font:7.0pt "Times New Roman"'>     
+</span></span><span style='font-family:"Arial","sans-serif"'>mainly in zone 3
+of liver acinus</span></p>
+
+<p class="MsoNormal" style="margin-top:0cm;margin-right:0cm;margin-bottom:0cm;
+margin-left:21.75pt;margin-bottom:.0001pt;text-indent:-18.0pt"><span style='font-family:"Verdana","sans-serif"'>-<span style='font:7.0pt "Times New Roman"'>     
+</span></span><span style='font-family:"Arial","sans-serif"'>Metabolism of
+alcohol increases NADH/NAD ratio – decreases redox potential </span><span lang="EN-US">&#8594;</span><span style='font-family:"Arial","sans-serif"'>
+increased hepatic fatty acid synthesis + decreased fatty acid oxidation </span><span lang="EN-US">&#8594;</span><span style='font-family:"Arial","sans-serif"'>
+accumulation of fatty acids which are esterified to TGs.</span></p>
+
+<p class="MsoNormal" style="margin-top:0cm;margin-right:0cm;margin-bottom:0cm;
+margin-left:21.75pt;margin-bottom:.0001pt;text-indent:-18.0pt"><span style='font-family:"Verdana","sans-serif"'>-<span style='font:7.0pt "Times New Roman"'>     
+</span></span><span style='font-family:"Arial","sans-serif"'>cells become
+swollen with fat </span></p>
+
+<p class="MsoNormal" style="margin-top:0cm;margin-right:0cm;margin-bottom:0cm;
+margin-left:21.75pt;margin-bottom:.0001pt;text-indent:-18.0pt"><span style='font-family:"Verdana","sans-serif"'>-<span style='font:7.0pt "Times New Roman"'>     
+</span></span><span style='font-family:"Arial","sans-serif"'>steatosis can also
+occur in obesity, diabetes, starvation and chronic illness</span></p>
+
+<p class="MsoNormal" style="margin-top:0cm;margin-right:0cm;margin-bottom:0cm;
+margin-left:21.75pt;margin-bottom:.0001pt;text-indent:-18.0pt"><span style='font-family:"Verdana","sans-serif"'>-<span style='font:7.0pt "Times New Roman"'>     
+</span></span><span style='font-family:"Arial","sans-serif"'>can lead to
+fibrosis if collagen is laid down around the central hepatic veins. This can
+eventually escalate to cirrhosis, even without a preceding hepatitis. Occurs
+due to the direct effects of alcohol on stellate cells, transforming them into
+collagen-producing myofibroblast cells.</span></p>
+
+<p class="MsoNormal" style="margin-top:0cm;margin-right:0cm;margin-bottom:0cm;
+margin-left:21.75pt;margin-bottom:.0001pt"><span style='font-family:"Arial","sans-serif"'> </span></p>
+
+<table class="MsoTableGrid" border="1" cellspacing="0" cellpadding="0" style="border-collapse:collapse;border:none"><tr>
+<td width="710" valign="top" style="width:426.1pt;border:solid black 1.0pt;
+  background:#CC99FF;padding:0cm 5.4pt 0cm 5.4pt">
+  <p class="MsoNormal" style="margin-bottom:0cm;margin-bottom:.0001pt;line-height:
+  normal"><u><span style='font-family:"Arial","sans-serif"'>Clinical features
+  of Fatty Changes:</span></u></p>
+  <p class="MsoNormal" style="margin-top:0cm;margin-right:0cm;margin-bottom:0cm;
+  margin-left:21.75pt;margin-bottom:.0001pt;line-height:normal"><span style='font-family:"Arial","sans-serif"'> </span></p>
+  <p class="MsoNormal" style="margin-top:0cm;margin-right:0cm;margin-bottom:0cm;
+  margin-left:21.75pt;margin-bottom:.0001pt;text-indent:-18.0pt;line-height:
+  normal"><span style='font-family:"Verdana","sans-serif"'>-<span style='font:7.0pt "Times New Roman"'>      </span></span><span style='font-family:"Arial","sans-serif"'>Often asymptomatic</span></p>
+  <p class="MsoNormal" style="margin-top:0cm;margin-right:0cm;margin-bottom:0cm;
+  margin-left:21.75pt;margin-bottom:.0001pt;text-indent:-18.0pt;line-height:
+  normal"><span style='font-family:"Verdana","sans-serif"'>-<span style='font:7.0pt "Times New Roman"'>      </span></span><span style='font-family:"Arial","sans-serif"'>Mild elevation in LFTs</span></p>
+  <p class="MsoNormal" style="margin-top:0cm;margin-right:0cm;margin-bottom:0cm;
+  margin-left:21.75pt;margin-bottom:.0001pt;text-indent:-18.0pt;line-height:
+  normal"><span style='font-family:"Verdana","sans-serif"'>-<span style='font:7.0pt "Times New Roman"'>      </span></span><span style='font-family:"Arial","sans-serif"'>Vague abdominal symptoms eg nausea,
+  D+V, are due to direct effects of alcohol on GI system</span></p>
+  <p class="MsoNormal" style="margin-top:0cm;margin-right:0cm;margin-bottom:0cm;
+  margin-left:21.75pt;margin-bottom:.0001pt;text-indent:-18.0pt;line-height:
+  normal"><span style='font-family:"Verdana","sans-serif"'>-<span style='font:7.0pt "Times New Roman"'>      </span></span><span style='font-family:"Arial","sans-serif"'>Hepatomegaly can be present</span></p>
+  <p class="MsoNormal" style="margin-bottom:0cm;margin-bottom:.0001pt;line-height:
+  normal"><u><span style='font-family:"Arial","sans-serif"'><span style="text-decoration:none"> </span></span></u></p>
+  </td>
+ </tr></table>
+<p class="MsoNormal" style="margin-bottom:0cm;margin-bottom:.0001pt"><u><span style='font-family:"Arial","sans-serif"'><span style="text-decoration:none"> </span></span></u></p>
+
+<p class="MsoNormal" style="margin-bottom:0cm;margin-bottom:.0001pt"><b><u><span style='font-family:"Arial","sans-serif"'>Alcoholic Hepatitis</span></u></b></p>
+
+<p class="MsoNormal" style="margin-bottom:0cm;margin-bottom:.0001pt"><span style='font-family:"Arial","sans-serif"'> </span></p>
+
+<p class="MsoNormal" style="margin-top:0cm;margin-right:0cm;margin-bottom:0cm;
+margin-left:21.75pt;margin-bottom:.0001pt;text-indent:-18.0pt"><span style='font-family:"Verdana","sans-serif"'>-<span style='font:7.0pt "Times New Roman"'>     
+</span></span><span style='font-family:"Arial","sans-serif"'>Fatty change +
+infiltration by WBCs (mainly neutrophils) ie Inflammation</span></p>
+
+<p class="MsoNormal" style="margin-top:0cm;margin-right:0cm;margin-bottom:0cm;
+margin-left:21.75pt;margin-bottom:.0001pt;text-indent:-18.0pt"><span style='font-family:"Verdana","sans-serif"'>-<span style='font:7.0pt "Times New Roman"'>     
+</span></span><span style='font-family:"Arial","sans-serif"'>Hepatocyte
+necrosis occurs in zone 3</span></p>
+
+<p class="MsoNormal" style="margin-top:0cm;margin-right:0cm;margin-bottom:0cm;
+margin-left:21.75pt;margin-bottom:.0001pt;text-indent:-18.0pt"><span style='font-family:"Verdana","sans-serif"'>-<span style='font:7.0pt "Times New Roman"'>     
+</span></span><span style='font-family:"Arial","sans-serif"'>Mallory bodies
+(dense cytoplasmic inclusions) can be seen in hepatocytes (also seen in
+Wilson’s and PBC)</span></p>
+
+<p class="MsoNormal" style="margin-top:0cm;margin-right:0cm;margin-bottom:0cm;
+margin-left:21.75pt;margin-bottom:.0001pt;text-indent:-18.0pt"><span style='font-family:"Verdana","sans-serif"'>-<span style='font:7.0pt "Times New Roman"'>     
+</span></span><span style='font-family:"Arial","sans-serif"'>Can progress to
+cirrhosis</span></p>
+
+<p class="MsoNormal" style="margin-top:0cm;margin-right:0cm;margin-bottom:0cm;
+margin-left:21.75pt;margin-bottom:.0001pt"><span style='font-family:"Arial","sans-serif"'> </span></p>
+
+<table class="MsoNormalTable" border="1" cellspacing="0" cellpadding="0" style="border-collapse:collapse;border:none"><tr>
+<td width="710" valign="top" style="width:426.1pt;border:solid windowtext 1.0pt;
+  background:#CC99FF;padding:0cm 5.4pt 0cm 5.4pt">
+  <p class="MsoNormal" style="margin-top:0cm;margin-right:0cm;margin-bottom:0cm;
+  margin-left:3.75pt;margin-bottom:.0001pt"><u><span style='font-family:"Arial","sans-serif"'>Clinical
+  features of Alcoholic Hepatitis</span></u></p>
+  <p class="MsoNormal" style="margin-top:0cm;margin-right:0cm;margin-bottom:0cm;
+  margin-left:3.75pt;margin-bottom:.0001pt"><span style='font-family:"Arial","sans-serif"'> </span></p>
+  <p class="MsoNormal" style="margin-top:0cm;margin-right:0cm;margin-bottom:0cm;
+  margin-left:3.75pt;margin-bottom:.0001pt"><span style='font-family:"Arial","sans-serif"'>Varying
+  clinical presentation:</span></p>
+  <p class="MsoNormal" style="margin-top:0cm;margin-right:0cm;margin-bottom:0cm;
+  margin-left:21.75pt;margin-bottom:.0001pt;text-indent:-18.0pt"><span style='font-family:"Verdana","sans-serif"'>-<span style='font:7.0pt "Times New Roman"'>     
+  </span></span><span style='font-family:"Arial","sans-serif"'>Patient can be
+  well – hepatitis only present on liver biopsy along with fatty changes</span></p>
+  <p class="MsoNormal" style="margin-top:0cm;margin-right:0cm;margin-bottom:0cm;
+  margin-left:21.75pt;margin-bottom:.0001pt;text-indent:-18.0pt"><span style='font-family:"Verdana","sans-serif"'>-<span style='font:7.0pt "Times New Roman"'>     
+  </span></span><span style='font-family:"Arial","sans-serif"'>Moderate illness
+  – jaundice plus other symptoms of chronic liver. LFTs are deranged. Diagnosed
+  clinically on symptoms + blood tests (or on liver histology).</span></p>
+  <p class="MsoNormal" style="margin-top:0cm;margin-right:0cm;margin-bottom:0cm;
+  margin-left:21.75pt;margin-bottom:.0001pt;text-indent:-18.0pt"><span style='font-family:"Verdana","sans-serif"'>-<span style='font:7.0pt "Times New Roman"'>     
+  </span></span><span style='font-family:"Arial","sans-serif"'>Severe illness –
+  can occur on top of underlying cirrhosis. Fever (due to liver necrosis),
+  pain, jaundice, ascites, hepatomegaly, coagulopathy plus any other signs of
+  chronic liver disease may be present. In severe alcohol hepatitis patients
+  can have changes of decompensated liver disease even if there is no cirrhosis
+  present</span></p>
+  <p class="MsoNormal" style="margin-top:0cm;margin-right:0cm;margin-bottom:0cm;
+  margin-left:21.75pt;margin-bottom:.0001pt"><u><span style='font-family:"Arial","sans-serif"'><span style="text-decoration:none"> </span></span></u></p>
+  </td>
+ </tr></table>
+<p class="MsoNormal" style="margin-bottom:0cm;margin-bottom:.0001pt"><u><span style='font-family:"Arial","sans-serif"'><span style="text-decoration:none"> </span></span></u></p>
+
+<p class="MsoNormal" style="margin-bottom:0cm;margin-bottom:.0001pt"><b><u><span style='font-family:"Arial","sans-serif"'>Alcoholic Cirrhosis</span></u></b></p>
+
+<p class="MsoNormal" style="margin-top:0cm;margin-right:0cm;margin-bottom:0cm;
+margin-left:3.75pt;margin-bottom:.0001pt"><span style='font-family:"Arial","sans-serif"'> </span></p>
+
+<p class="MsoNormal" style="margin-top:0cm;margin-right:0cm;margin-bottom:0cm;
+margin-left:21.75pt;margin-bottom:.0001pt;text-indent:-18.0pt"><span style='font-family:"Verdana","sans-serif"'>-<span style='font:7.0pt "Times New Roman"'>     
+</span></span><span style='font-family:"Arial","sans-serif"'>Chronic injury to
+liver leads to activation of stellate cells. These secrete collagen in the
+Space of Disse leading to fibrosis. The collagen blocks the sinusoidal
+fenestrations thus decreasing liver function. </span></p>
+
+<p class="MsoNormal" style="margin-top:0cm;margin-right:0cm;margin-bottom:0cm;
+margin-left:21.75pt;margin-bottom:.0001pt;text-indent:-18.0pt"><span style='font-family:"Verdana","sans-serif"'>-<span style='font:7.0pt "Times New Roman"'>     
+</span></span><span style='font-family:"Arial","sans-serif"'>Amidst the
+fibrosis, the hepatocytes continue to regeneration in a classically ‘micronodular’
+pattern</span></p>
+
+<p class="MsoNormal" style="margin-bottom:0cm;margin-bottom:.0001pt"><span style='font-family:"Arial","sans-serif"'> </span></p>
+
+<table class="MsoTableGrid" border="1" cellspacing="0" cellpadding="0" style="background:#CC99FF;border-collapse:collapse;border:none"><tr>
+<td width="710" valign="top" style="width:426.1pt;border:solid black 1.0pt;
+  padding:0cm 5.4pt 0cm 5.4pt">
+  <p class="MsoNormal" style="margin-bottom:0cm;margin-bottom:.0001pt;line-height:
+  normal"><u><span style='font-family:"Arial","sans-serif"'>Clinical features
+  of Alcoholic Cirrhosis</span></u></p>
+  <p class="MsoNormal" style="margin-bottom:0cm;margin-bottom:.0001pt;line-height:
+  normal"><span style='font-family:"Arial","sans-serif"'> </span></p>
+  <p class="MsoNormal" style="margin-top:0cm;margin-right:0cm;margin-bottom:0cm;
+  margin-left:21.75pt;margin-bottom:.0001pt;text-indent:-18.0pt;line-height:
+  normal"><span style='font-family:"Verdana","sans-serif"'>-<span style='font:7.0pt "Times New Roman"'>      </span></span><span style='font-family:"Arial","sans-serif"'>Can be compensated or decompensated</span></p>
+  <p class="MsoNormal" style="margin-top:0cm;margin-right:0cm;margin-bottom:0cm;
+  margin-left:21.75pt;margin-bottom:.0001pt;text-indent:-18.0pt;line-height:
+  normal"><span style='font-family:"Verdana","sans-serif"'>-<span style='font:7.0pt "Times New Roman"'>      </span></span><span style='font-family:"Arial","sans-serif"'>If compensated, the residual viable
+  tissue is sufficient to carry out function and so very few s/s are present</span></p>
+  <p class="MsoNormal" style="margin-top:0cm;margin-right:0cm;margin-bottom:0cm;
+  margin-left:21.75pt;margin-bottom:.0001pt;text-indent:-18.0pt;line-height:
+  normal"><span style='font-family:"Verdana","sans-serif"'>-<span style='font:7.0pt "Times New Roman"'>      </span></span><span style='font-family:"Arial","sans-serif"'>Decompensated = ascites,
+  encephalopathy, variceal bleeding, coagulopathy, jaundice</span></p>
+  <p class="MsoNormal" style="margin-bottom:0cm;margin-bottom:.0001pt;line-height:
+  normal"><span style='font-family:"Arial","sans-serif"'> </span></p>
+  </td>
+ </tr></table>
+<p class="MsoNormal" style="margin-bottom:0cm;margin-bottom:.0001pt"><span style='font-family:"Arial","sans-serif"'> </span></p>
+
+<p class="MsoNormal" style="margin-top:0cm;margin-right:0cm;margin-bottom:0cm;
+margin-left:3.75pt;margin-bottom:.0001pt"><span style='font-family:"Arial","sans-serif"'> </span></p>
+
+<p class="MSBHeading2">Investigations:</p>
+
+<p class="MsoNormal" style="margin-top:0cm;margin-right:0cm;margin-bottom:0cm;
+margin-left:3.75pt;margin-bottom:.0001pt"><span style='font-family:"Arial","sans-serif"'> </span></p>
+
+<p class="MsoNormal" style="margin-top:0cm;margin-right:0cm;margin-bottom:0cm;
+margin-left:21.0pt;margin-bottom:.0001pt;text-indent:-18.0pt"><span style='font-family:"Times New Roman","serif"'>-<span style='font:7.0pt "Times New Roman"'>       
+</span></span><span style='font-family:"Arial","sans-serif"'>Bloods</span></p>
+
+<p class="MsoNormal" style="margin-top:0cm;margin-right:0cm;margin-bottom:0cm;
+margin-left:57.0pt;margin-bottom:.0001pt;text-indent:-18.0pt"><span style="font-family:Symbol;color:#7030A0">·<span style='font:7.0pt "Times New Roman"'>       
+</span></span><span style='font-family:"Arial","sans-serif"'>LFTs - &#8593;AST
+and ALT. &#8595;albumin (implies decreased synthetic function of liver)</span></p>
+
+<p class="MsoNormal" style="margin-top:0cm;margin-right:0cm;margin-bottom:0cm;
+margin-left:57.0pt;margin-bottom:.0001pt;text-indent:-18.0pt"><span style="font-family:Symbol;color:#7030A0">·<span style='font:7.0pt "Times New Roman"'>       
+</span></span><span style='font-family:"Arial","sans-serif"'>GGT - &#8593; if
+recent drinking</span></p>
+
+<p class="MsoNormal" style="margin-top:0cm;margin-right:0cm;margin-bottom:0cm;
+margin-left:57.0pt;margin-bottom:.0001pt;text-indent:-18.0pt"><span style="font-family:Symbol;color:#7030A0">·<span style='font:7.0pt "Times New Roman"'>       
+</span></span><span style='font-family:"Arial","sans-serif"'>FBC - &#8595;Hb + &#8593;MCV
+(macrocytic anaemia due to B12 and folate deficiency), &#8593;WCC (in
+hepatitis), &#8595;platelets</span></p>
+
+<p class="MsoNormal" style="margin-top:0cm;margin-right:0cm;margin-bottom:0cm;
+margin-left:57.0pt;margin-bottom:.0001pt;text-indent:-18.0pt"><span style="font-family:Symbol;color:#7030A0">·<span style='font:7.0pt "Times New Roman"'>       
+</span></span><span style='font-family:"Arial","sans-serif"'>Coag - &#8593;PT</span></p>
+
+<p class="MsoNormal" style="margin-top:0cm;margin-right:0cm;margin-bottom:0cm;
+margin-left:57.0pt;margin-bottom:.0001pt"><span style='font-family:"Arial","sans-serif"'> </span></p>
+
+<p class="MsoNormal" style="margin-top:0cm;margin-right:0cm;margin-bottom:0cm;
+margin-left:21.0pt;margin-bottom:.0001pt;text-indent:-18.0pt"><span style='font-family:"Times New Roman","serif"'>-<span style='font:7.0pt "Times New Roman"'>       
+</span></span><span style='font-family:"Arial","sans-serif"'>Ultrasound</span></p>
+
+<p class="MsoNormal" style="margin-top:0cm;margin-right:0cm;margin-bottom:0cm;
+margin-left:57.0pt;margin-bottom:.0001pt;text-indent:-18.0pt"><span style="font-family:Symbol;color:#7030A0">·<span style='font:7.0pt "Times New Roman"'>       
+</span></span><span style='font-family:"Arial","sans-serif"'>Will show fatty
+change, ascites, cirrhosis, hepatomegaly or shrunken liver if cirrhosis. Also
+screens for HCC (However if &#8593; AFP it is necessary to do a more sensitive
+scan eg CT or MRI).</span></p>
+
+<p class="MsoNormal" style="margin-top:0cm;margin-right:0cm;margin-bottom:0cm;
+margin-left:21.0pt;margin-bottom:.0001pt;text-indent:-18.0pt"><span style='font-family:"Times New Roman","serif"'>-<span style='font:7.0pt "Times New Roman"'>       
+</span></span><span style='font-family:"Arial","sans-serif"'>Ascitic tap</span></p>
+
+<p class="MsoNormal" style="margin-top:0cm;margin-right:0cm;margin-bottom:0cm;
+margin-left:57.0pt;margin-bottom:.0001pt;text-indent:-18.0pt"><span style="font-family:Symbol;color:#7030A0">·<span style='font:7.0pt "Times New Roman"'>       
+</span></span><span style='font-family:"Arial","sans-serif"'>For biochemistry,
+microbiology and cytology</span></p>
+
+<p class="MsoNormal" style="margin-top:0cm;margin-right:0cm;margin-bottom:0cm;
+margin-left:21.0pt;margin-bottom:.0001pt"><span style='font-family:"Arial","sans-serif"'> </span></p>
+
+<p class="MsoNormal" style="margin-top:0cm;margin-right:0cm;margin-bottom:0cm;
+margin-left:21.0pt;margin-bottom:.0001pt;text-indent:-18.0pt"><span style='font-family:"Times New Roman","serif"'>-<span style='font:7.0pt "Times New Roman"'>       
+</span></span><span style='font-family:"Arial","sans-serif"'>CT/MRI</span></p>
+
+<p class="MsoNormal" style="margin-top:0cm;margin-right:0cm;margin-bottom:0cm;
+margin-left:57.0pt;margin-bottom:.0001pt;text-indent:-18.0pt"><span style="font-family:Symbol;color:#7030A0">·<span style='font:7.0pt "Times New Roman"'>       
+</span></span><span style='font-family:"Arial","sans-serif"'>Useful if ?HCC,
+collateral varices.</span></p>
+
+<p class="MsoNormal" style="margin-top:0cm;margin-right:0cm;margin-bottom:0cm;
+margin-left:57.0pt;margin-bottom:.0001pt"><span style='font-family:"Arial","sans-serif"'> </span></p>
+
+<p class="MsoNormal" style="margin-top:0cm;margin-right:0cm;margin-bottom:0cm;
+margin-left:21.0pt;margin-bottom:.0001pt;text-indent:-18.0pt"><span style='font-family:"Times New Roman","serif"'>-<span style='font:7.0pt "Times New Roman"'>       
+</span></span><span style='font-family:"Arial","sans-serif"'>Endoscopy – for
+detection and treatment of varices</span></p>
+
+<p class="MsoNormal" style="margin-top:0cm;margin-right:0cm;margin-bottom:0cm;
+margin-left:21.0pt;margin-bottom:.0001pt"><span style='font-family:"Arial","sans-serif"'> </span></p>
+
+<p class="MsoNormal" style="margin-top:0cm;margin-right:0cm;margin-bottom:0cm;
+margin-left:21.0pt;margin-bottom:.0001pt;text-indent:-18.0pt"><span style='font-family:"Times New Roman","serif"'>-<span style='font:7.0pt "Times New Roman"'>       
+</span></span><span style='font-family:"Arial","sans-serif"'>Liver Biospy – not
+routinely done in alcoholic liver disease but can confirm severity and type of
+liver disease. Stain for iron and copper if any doubt as to aetiology. Need to
+make sure coag is OK prior to biopsy.</span></p>
+
+<p class="MsoNormal" style="margin-bottom:0cm;margin-bottom:.0001pt"><span style='font-family:"Arial","sans-serif"'> </span></p>
+
+<p class="MsoNormal" style="margin-top:0cm;margin-right:0cm;margin-bottom:0cm;
+margin-left:3.75pt;margin-bottom:.0001pt"><span style='font-family:"Arial","sans-serif"'> </span></p>
+
+<p class="MSBHeading2">Management and Prognosis</p>
+
+<p class="MsoNormal" style="margin-bottom:0cm;margin-bottom:.0001pt"><span style='font-family:"Arial","sans-serif"'> </span></p>
+
+<p class="MsoNormal" style="margin-top:0cm;margin-right:0cm;margin-bottom:0cm;
+margin-left:21.0pt;margin-bottom:.0001pt;text-indent:-18.0pt"><span style='font-family:"Times New Roman","serif"'>-<span style='font:7.0pt "Times New Roman"'>       
+</span></span><span style='font-family:"Arial","sans-serif"'>Stop drinking</span></p>
+
+<p class="MsoNormal" style="margin-top:0cm;margin-right:0cm;margin-bottom:0cm;
+margin-left:21.0pt;margin-bottom:.0001pt;text-indent:-18.0pt"><span style='font-family:"Times New Roman","serif"'>-<span style='font:7.0pt "Times New Roman"'>       
+</span></span><span style='font-family:"Arial","sans-serif"'>Treat Withdrawal/Delerium
+Tremens (see below)</span></p>
+
+<p class="MsoNormal" style="margin-top:0cm;margin-right:0cm;margin-bottom:0cm;
+margin-left:21.0pt;margin-bottom:.0001pt;text-indent:-18.0pt"><span style='font-family:"Times New Roman","serif"'>-<span style='font:7.0pt "Times New Roman"'>       
+</span></span><span style='font-family:"Arial","sans-serif"'>IV thiamine to
+prevent Wernicke-korsakoff syndrome (then oral thiamine)</span></p>
+
+<p class="MsoNormal" style="margin-top:0cm;margin-right:0cm;margin-bottom:0cm;
+margin-left:21.0pt;margin-bottom:.0001pt;text-indent:-18.0pt"><span style='font-family:"Times New Roman","serif"'>-<span style='font:7.0pt "Times New Roman"'>       
+</span></span><span style='font-family:"Arial","sans-serif"'>Bed rest</span></p>
+
+<p class="MsoNormal" style="margin-top:0cm;margin-right:0cm;margin-bottom:0cm;
+margin-left:21.0pt;margin-bottom:.0001pt;text-indent:-18.0pt"><span style='font-family:"Times New Roman","serif"'>-<span style='font:7.0pt "Times New Roman"'>       
+</span></span><span style='font-family:"Arial","sans-serif"'>High protein diet
+with supplementary vitamins (this is due to high rate of malnutrition amongst
+liver disease patients). If encephalopathic, the patient may not be able to
+tolerate high protein – give what they can manage.</span></p>
+
+<p class="MsoNormal" style="margin-top:0cm;margin-right:0cm;margin-bottom:0cm;
+margin-left:21.0pt;margin-bottom:.0001pt;text-indent:-18.0pt"><span style='font-family:"Times New Roman","serif"'>-<span style='font:7.0pt "Times New Roman"'>       
+</span></span><span style='font-family:"Arial","sans-serif"'>Monitor
+coagulation</span></p>
+
+<p class="MsoNormal" style="margin-top:0cm;margin-right:0cm;margin-bottom:0cm;
+margin-left:21.0pt;margin-bottom:.0001pt;text-indent:-18.0pt"><span style='font-family:"Times New Roman","serif"'>-<span style='font:7.0pt "Times New Roman"'>       
+</span></span><span style='font-family:"Arial","sans-serif"'>Corticosteroids
+should be given depending on GAHS.</span></p>
+
+<p class="MsoNormal" style="margin-top:0cm;margin-right:0cm;margin-bottom:0cm;
+margin-left:57.0pt;margin-bottom:.0001pt;text-indent:-18.0pt"><span style="font-family:Symbol;color:#7030A0">·<span style='font:7.0pt "Times New Roman"'>       
+</span></span><span style='font-family:"Arial","sans-serif"'>But NOT if co-existing
+infection is a contraindication!</span></p>
+
+<p class="MsoNormal" style="margin-bottom:0cm;margin-bottom:.0001pt"><span style='font-family:"Arial","sans-serif"'> </span></p>
+
+<table class="MsoNormalTable" border="1" cellspacing="0" cellpadding="0" style="background:#CC99FF;border-collapse:collapse;border:none"><tr>
+<td width="710" valign="top" style="width:426.1pt;border:solid windowtext 1.0pt;
+  padding:0cm 5.4pt 0cm 5.4pt">
+  <p class="MSBboldunderlinednormaltext">Glasgow Alcoholic Hepatitis Score</p>
+  <p class="MsoListParagraphCxSpFirst" style="margin-left:0cm;line-height:115%"><b><span style="line-height:115%"> </span></b></p>
+  <p class="MsoListParagraphCxSpMiddle" style="margin-left:37.8pt;text-indent:
+  -18.0pt"><span style='font-family:"Calibri","sans-serif"'>-<span style='font:7.0pt "Times New Roman"'>       
+  </span></span>Based on 5 criteria</p>
+  <p class="MsoListParagraphCxSpMiddle" style="margin-left:37.8pt;text-indent:
+  -18.0pt"><span style='font-family:"Calibri","sans-serif"'>-<span style='font:7.0pt "Times New Roman"'>       
+  </span></span>Max score= 12</p>
+  <p class="MsoListParagraphCxSpMiddle" style="margin-left:37.8pt;text-indent:
+  -18.0pt"><span style='font-family:"Calibri","sans-serif"'>-<span style='font:7.0pt "Times New Roman"'>       
+  </span></span>If &gt;9 = patient would benefit from STEROIDS!</p>
+  <p class="MsoListParagraphCxSpMiddle" style="margin-left:37.8pt;text-indent:
+  -18.0pt"><span style='font-family:"Calibri","sans-serif"'>-<span style='font:7.0pt "Times New Roman"'>       
+  </span></span>If &gt;9 and patient is not given steroids (eg contra-indicated
+  to steroids eg sepsis) then outcome is poor</p>
+  <p class="MsoListParagraphCxSpMiddle" style="margin-left:37.8pt"> </p>
+  <table class="MsoNormalTable" border="1" cellspacing="0" cellpadding="0" style="border-collapse:collapse;border:none">
+<tr>
+<td width="178" valign="top" style="width:106.5pt;border:solid windowtext 1.0pt;
+    padding:0cm 5.4pt 0cm 5.4pt">
+    <p class="MsoListParagraphCxSpMiddle" style="margin-left:0cm;line-height:
+    115%"><span style="line-height:115%"> </span></p>
+    </td>
+    <td width="178" valign="top" style="width:106.5pt;border:solid windowtext 1.0pt;
+    border-left:none;padding:0cm 5.4pt 0cm 5.4pt">
+    <p class="MsoListParagraphCxSpMiddle" align="center" style="margin-left:0cm;
+    text-align:center;line-height:115%"><b><span style="line-height:115%">1</span></b></p>
+    </td>
+    <td width="178" valign="top" style="width:106.55pt;border:solid windowtext 1.0pt;
+    border-left:none;padding:0cm 5.4pt 0cm 5.4pt">
+    <p class="MsoListParagraphCxSpMiddle" align="center" style="margin-left:0cm;
+    text-align:center;line-height:115%"><b><span style="line-height:115%">2</span></b></p>
+    </td>
+    <td width="178" valign="top" style="width:106.55pt;border:solid windowtext 1.0pt;
+    border-left:none;padding:0cm 5.4pt 0cm 5.4pt">
+    <p class="MsoListParagraphCxSpLast" align="center" style="margin-left:0cm;
+    text-align:center;line-height:115%"><b><span style="line-height:115%">3</span></b></p>
+    </td>
+   </tr>
+<tr>
+<td width="178" valign="top" style="width:106.5pt;border:solid windowtext 1.0pt;
+    border-top:none;padding:0cm 5.4pt 0cm 5.4pt">
+    <p class="MsoListParagraphCxSpFirst" style="margin-left:0cm;line-height:115%"><span style="line-height:115%">Age</span></p>
+    </td>
+    <td width="178" valign="top" style="width:106.5pt;border-top:none;border-left:
+    none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+    padding:0cm 5.4pt 0cm 5.4pt">
+    <p class="MsoListParagraphCxSpMiddle" align="center" style="margin-left:0cm;
+    text-align:center;line-height:115%"><span style="line-height:115%">&lt;50</span></p>
+    </td>
+    <td width="178" valign="top" style="width:106.55pt;border-top:none;border-left:
+    none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+    padding:0cm 5.4pt 0cm 5.4pt">
+    <p class="MsoListParagraphCxSpMiddle" align="center" style="margin-left:0cm;
+    text-align:center;line-height:115%"><span style="line-height:115%">&#8805;50</span></p>
+    </td>
+    <td width="178" valign="top" style="width:106.55pt;border-top:none;border-left:
+    none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+    padding:0cm 5.4pt 0cm 5.4pt">
+    <p class="MsoListParagraphCxSpLast" align="center" style="margin-left:0cm;
+    text-align:center;line-height:115%"><span style="line-height:115%"> </span></p>
+    </td>
+   </tr>
+<tr>
+<td width="178" valign="top" style="width:106.5pt;border:solid windowtext 1.0pt;
+    border-top:none;padding:0cm 5.4pt 0cm 5.4pt">
+    <p class="MsoListParagraphCxSpFirst" style="margin-left:0cm;line-height:115%"><span style="line-height:115%">WCC (10^9)</span></p>
+    </td>
+    <td width="178" valign="top" style="width:106.5pt;border-top:none;border-left:
+    none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+    padding:0cm 5.4pt 0cm 5.4pt">
+    <p class="MsoListParagraphCxSpMiddle" align="center" style="margin-left:0cm;
+    text-align:center;line-height:115%"><span style="line-height:115%">&lt;15</span></p>
+    </td>
+    <td width="178" valign="top" style="width:106.55pt;border-top:none;border-left:
+    none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+    padding:0cm 5.4pt 0cm 5.4pt">
+    <p class="MsoListParagraphCxSpMiddle" align="center" style="margin-left:0cm;
+    text-align:center;line-height:115%"><span style="line-height:115%">&#8805;15</span></p>
+    </td>
+    <td width="178" valign="top" style="width:106.55pt;border-top:none;border-left:
+    none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+    padding:0cm 5.4pt 0cm 5.4pt">
+    <p class="MsoListParagraphCxSpLast" align="center" style="margin-left:0cm;
+    text-align:center;line-height:115%"><span style="line-height:115%"> </span></p>
+    </td>
+   </tr>
+<tr>
+<td width="178" valign="top" style="width:106.5pt;border:solid windowtext 1.0pt;
+    border-top:none;padding:0cm 5.4pt 0cm 5.4pt">
+    <p class="MsoListParagraphCxSpFirst" style="margin-left:0cm;line-height:115%"><span style="line-height:115%">Urea (mmol/l)</span></p>
+    </td>
+    <td width="178" valign="top" style="width:106.5pt;border-top:none;border-left:
+    none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+    padding:0cm 5.4pt 0cm 5.4pt">
+    <p class="MsoListParagraphCxSpMiddle" align="center" style="margin-left:0cm;
+    text-align:center;line-height:115%"><span style="line-height:115%">&lt;5</span></p>
+    </td>
+    <td width="178" valign="top" style="width:106.55pt;border-top:none;border-left:
+    none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+    padding:0cm 5.4pt 0cm 5.4pt">
+    <p class="MsoListParagraphCxSpMiddle" align="center" style="margin-left:0cm;
+    text-align:center;line-height:115%"><span style="line-height:115%">&#8805;5</span></p>
+    </td>
+    <td width="178" valign="top" style="width:106.55pt;border-top:none;border-left:
+    none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+    padding:0cm 5.4pt 0cm 5.4pt">
+    <p class="MsoListParagraphCxSpLast" align="center" style="margin-left:0cm;
+    text-align:center;line-height:115%"><span style="line-height:115%"> </span></p>
+    </td>
+   </tr>
+<tr>
+<td width="178" valign="top" style="width:106.5pt;border:solid windowtext 1.0pt;
+    border-top:none;padding:0cm 5.4pt 0cm 5.4pt">
+    <p class="MsoListParagraphCxSpFirst" style="margin-left:0cm;line-height:115%"><span style="line-height:115%">PT ratio</span></p>
+    </td>
+    <td width="178" valign="top" style="width:106.5pt;border-top:none;border-left:
+    none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+    padding:0cm 5.4pt 0cm 5.4pt">
+    <p class="MsoListParagraphCxSpMiddle" align="center" style="margin-left:0cm;
+    text-align:center;line-height:115%"><span style="line-height:115%">&lt;1.5</span></p>
+    </td>
+    <td width="178" valign="top" style="width:106.55pt;border-top:none;border-left:
+    none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+    padding:0cm 5.4pt 0cm 5.4pt">
+    <p class="MsoListParagraphCxSpMiddle" align="center" style="margin-left:0cm;
+    text-align:center;line-height:115%"><span style="line-height:115%">1.5-2.0</span></p>
+    </td>
+    <td width="178" valign="top" style="width:106.55pt;border-top:none;border-left:
+    none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+    padding:0cm 5.4pt 0cm 5.4pt">
+    <p class="MsoListParagraphCxSpLast" align="center" style="margin-left:0cm;
+    text-align:center;line-height:115%"><span style="line-height:115%">&gt;2.0</span></p>
+    </td>
+   </tr>
+<tr>
+<td width="178" valign="top" style="width:106.5pt;border:solid windowtext 1.0pt;
+    border-top:none;padding:0cm 5.4pt 0cm 5.4pt">
+    <p class="MsoListParagraphCxSpFirst" style="margin-left:0cm;line-height:115%"><span style="line-height:115%">Bilirubin (umol/l)</span></p>
+    </td>
+    <td width="178" valign="top" style="width:106.5pt;border-top:none;border-left:
+    none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+    padding:0cm 5.4pt 0cm 5.4pt">
+    <p class="MsoListParagraphCxSpMiddle" align="center" style="margin-left:0cm;
+    text-align:center;line-height:115%"><span style="line-height:115%">&lt;125</span></p>
+    </td>
+    <td width="178" valign="top" style="width:106.55pt;border-top:none;border-left:
+    none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+    padding:0cm 5.4pt 0cm 5.4pt">
+    <p class="MsoListParagraphCxSpMiddle" align="center" style="margin-left:0cm;
+    text-align:center;line-height:115%"><span style="line-height:115%">125-250</span></p>
+    </td>
+    <td width="178" valign="top" style="width:106.55pt;border-top:none;border-left:
+    none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+    padding:0cm 5.4pt 0cm 5.4pt">
+    <p class="MsoListParagraphCxSpLast" align="center" style="margin-left:0cm;
+    text-align:center;line-height:115%"><span style="line-height:115%">&gt;250</span></p>
+    </td>
+   </tr>
+</table>
+<p class="MsoListParagraph" style="margin-left:0cm;line-height:115%"></p>
+  </td>
+ </tr></table>
+<p class="MsoNormal" style="margin-bottom:0cm;margin-bottom:.0001pt"><span style='font-family:"Arial","sans-serif"'> </span></p>
+
+<p class="MsoNormal" style="margin-top:0cm;margin-right:0cm;margin-bottom:0cm;
+margin-left:21.0pt;margin-bottom:.0001pt;text-indent:-18.0pt"><span style='font-family:"Times New Roman","serif"'>-<span style='font:7.0pt "Times New Roman"'>       
+</span></span><span style='font-family:"Arial","sans-serif"'>If cirrhosis is
+present</span></p>
+
+<p class="MsoNormal" style="margin-top:0cm;margin-right:0cm;margin-bottom:0cm;
+margin-left:57.0pt;margin-bottom:.0001pt;text-indent:-18.0pt"><span style="font-family:Symbol;color:#7030A0">·<span style='font:7.0pt "Times New Roman"'>       
+</span></span><span style='font-family:"Arial","sans-serif"'>Damage is irreversible</span></p>
+
+<p class="MsoNormal" style="margin-top:0cm;margin-right:0cm;margin-bottom:0cm;
+margin-left:57.0pt;margin-bottom:.0001pt;text-indent:-18.0pt"><span style="font-family:Symbol;color:#7030A0">·<span style='font:7.0pt "Times New Roman"'>       
+</span></span><span style='font-family:"Arial","sans-serif"'>However by
+stopping drinking you can halt the progression</span></p>
+
+<p class="MsoNormal" style="margin-top:0cm;margin-right:0cm;margin-bottom:0cm;
+margin-left:21.0pt;margin-bottom:.0001pt;text-indent:-18.0pt"><span style='font-family:"Times New Roman","serif"'>-<span style='font:7.0pt "Times New Roman"'>       
+</span></span><span style='font-family:"Arial","sans-serif"'>Screen for
+hepatocellular carcinoma: US and monitor Alpha-feto-protein 6 monthly</span></p>
+
+<p class="MsoNormal" style="margin-top:0cm;margin-right:0cm;margin-bottom:0cm;
+margin-left:21.0pt;margin-bottom:.0001pt;text-indent:-18.0pt"><span style='font-family:"Times New Roman","serif"'>-<span style='font:7.0pt "Times New Roman"'>       
+</span></span><span style='font-family:"Arial","sans-serif"'>Endoscopy – detect
+and treat varices</span></p>
+
+<p class="MSBnormaltextCxSpFirst"><span style='font-family:"Times New Roman","serif"'>-<span style='font:7.0pt "Times New Roman"'>       
+</span></span>Patients with recurrent ascites or recurrent variceal bleeding
+may benefit from TIPSS procedure </p>
+
+<p class="MSBnormaltextCxSpMiddle" style="margin-left:57.0pt"><span style="font-family:Symbol;color:#7030A0">·<span style='font:7.0pt "Times New Roman"'>       
+</span></span>Trans-jugular Intra-hepatic Porto-systemic Shunt</p>
+
+<p class="MSBnormaltextCxSpMiddle" style="margin-left:57.0pt"><span style="font-family:Symbol;color:#7030A0">·<span style='font:7.0pt "Times New Roman"'>       
+</span></span>Invasive procedure that bypasses blood from the portal vein
+straight into the hepatic vein missing out the liver</p>
+
+<p class="MSBnormaltextCxSpMiddle" style="margin-left:57.0pt"><span style="font-family:Symbol;color:#7030A0">·<span style='font:7.0pt "Times New Roman"'>       
+</span></span>Catheter is inserted in the jugular vein <span style="font-family:
+Wingdings">à</span> SVC <span style="font-family:Wingdings">à</span> IVC <span style="font-family:Wingdings">à</span> Hepatic vein. Then make a small puncture
+in Portal vein and place a metal stent to decrease portal pressure</p>
+
+<p class="MSBnormaltextCxSpMiddle" style="margin-left:57.0pt"><span style="font-family:Symbol;color:#7030A0">·<span style='font:7.0pt "Times New Roman"'>       
+</span></span>Can lead to increased incidence of Encephalopathy therefore not
+suitable for patients with encephalopathy!</p>
+
+<p class="MSBnormaltextCxSpMiddle" style="margin-left:57.0pt"><span style="font-family:Symbol;color:#7030A0">·<span style='font:7.0pt "Times New Roman"'>       
+</span></span>Used as a therapeutic bridge between Transplant for patients with
+chronic liver disease – means patient doesn’t have to come in daily to have
+their ascites drained</p>
+
+<p class="MSBnormaltextCxSpLast" style="margin-left:57.0pt;text-indent:0cm"> </p>
+
+<p class="MsoNormal" style="margin-top:0cm;margin-right:0cm;margin-bottom:0cm;
+margin-left:21.0pt;margin-bottom:.0001pt;text-indent:-18.0pt"><span style='font-family:"Times New Roman","serif"'>-<span style='font:7.0pt "Times New Roman"'>       
+</span></span><span style='font-family:"Arial","sans-serif"'>Liver transplant
+is the only cure for cirrhosis</span></p>
+
+<p class="MsoNormal" style="margin-top:0cm;margin-right:0cm;margin-bottom:0cm;
+margin-left:57.0pt;margin-bottom:.0001pt;text-indent:-18.0pt"><span style="font-family:Symbol;color:#7030A0">·<span style='font:7.0pt "Times New Roman"'>       
+</span></span><span style='font-family:"Arial","sans-serif"'>Donor livers are
+very scarce; most are cadaveric.</span></p>
+
+<p class="MsoNormal" style="margin-top:0cm;margin-right:0cm;margin-bottom:0cm;
+margin-left:57.0pt;margin-bottom:.0001pt;text-indent:-18.0pt"><span style="font-family:Symbol;color:#7030A0">·<span style='font:7.0pt "Times New Roman"'>       
+</span></span><span style='font-family:"Arial","sans-serif"'>Need to have
+stopped drinking &#8805; 6 months to even be considered for transplant.</span></p>
+
+<p class="MsoNormal" style="margin-top:0cm;margin-right:0cm;margin-bottom:0cm;
+margin-left:57.0pt;margin-bottom:.0001pt;text-indent:-18.0pt"><span style="font-family:Symbol;color:#7030A0">·<span style='font:7.0pt "Times New Roman"'>       
+</span></span><span style='font-family:"Arial","sans-serif"'>Require lifelong
+immunosuppression post-transplant ( eg ciclosporin; tacrolimus)     </span></p>
+
+<p class="MsoNormal" style="margin-top:0cm;margin-right:0cm;margin-bottom:0cm;
+margin-left:57.0pt;margin-bottom:.0001pt;text-indent:-18.0pt"><span style="font-family:Symbol;color:#7030A0">·<span style='font:7.0pt "Times New Roman"'>       
+</span></span><span style='font-family:"Arial","sans-serif"'>5 year
+post-transplant survival ~70-85%</span></p>
+
+<p class="MsoNormal" style="margin-bottom:0cm;margin-bottom:.0001pt"><span style='font-family:"Arial","sans-serif"'> </span></p>
+
+<p class="MsoNormal" style="margin-top:0cm;margin-right:0cm;margin-bottom:0cm;
+margin-left:21.0pt;margin-bottom:.0001pt;text-indent:-18.0pt"><span style='font-family:"Times New Roman","serif"'>-<span style='font:7.0pt "Times New Roman"'>       
+</span></span><span style='font-family:"Arial","sans-serif"'>Without transplant
+survival is poor if patient continues to drink</span></p>
+
+<p class="MsoNormal" style="margin-top:0cm;margin-right:0cm;margin-bottom:0cm;
+margin-left:57.0pt;margin-bottom:.0001pt;text-indent:-18.0pt"><span style="font-family:Symbol;color:#7030A0">·<span style='font:7.0pt "Times New Roman"'>       
+</span></span><span style='font-family:"Arial","sans-serif"'>~35% survival at 5
+years if complications present</span></p>
+
+<p class="MsoNormal" style="margin-bottom:0cm;margin-bottom:.0001pt"><span style='font-family:"Arial","sans-serif"'> </span></p>
+
+<p class="MSBHeading2"> </p>
+
+<p class="MSBHeading1"><u>Viral hepatitis</u></p>
+
+<p class="MSBHeading2"> </p>
+
+<table class="MsoTableGrid" border="1" cellspacing="0" cellpadding="0" style="background:yellow;border-collapse:collapse;border:none"><tr style="height:57.9pt">
+<td width="200" valign="top" style="width:119.85pt;border:solid black 1.0pt;
+  padding:0cm 5.4pt 0cm 5.4pt;height:57.9pt">
+  <p class="MSBnormaltextnolistCxSpFirst">Hepatitis:</p>
+  <p class="MSBnormaltextnolistCxSpMiddle"> </p>
+  <p class="MSBnormaltextnolistCxSpMiddle">           A = acute</p>
+  <p class="MSBnormaltextnolistCxSpMiddle">           C = chronic</p>
+  <p class="MSBnormaltextnolistCxSpLast">           B = both</p>
+  </td>
+ </tr></table>
+<p class="MSBnormaltextnolistCxSpFirst"> </p>
+
+<p class="MSBnormaltextnolistCxSpMiddle" style="margin-left:37.8pt;text-indent:
+-18.0pt"><span style='font-family:"Calibri","sans-serif"'>-<span style='font:7.0pt "Times New Roman"'>       
+</span></span>B+C can progress to cirrhosis</p>
+
+<p class="MSBnormaltextnolistCxSpMiddle" style="margin-left:37.8pt;text-indent:
+-18.0pt"><span style='font-family:"Calibri","sans-serif"'>-<span style='font:7.0pt "Times New Roman"'>       
+</span></span>Also increase risk of hepatocellular carcinoma</p>
+
+<p class="MSBnormaltextnolistCxSpMiddle" style="margin-left:37.8pt;text-indent:
+-18.0pt"><span style='font-family:"Calibri","sans-serif"'>-<span style='font:7.0pt "Times New Roman"'>       
+</span></span>Hepatitis D only occurs in conjuction with Hep B infection</p>
+
+<p class="MSBnormaltextnolistCxSpLast"> </p>
+
+<p class="MSBsub-heading">Hepatitis A Virus</p>
+
+<p class="MSBsub-heading"><span style="text-decoration:none"> </span></p>
+
+<p class="MSBnormaltextnolistCxSpFirst" style="margin-left:21.0pt;text-indent:
+-18.0pt"><span style='font-family:"Times New Roman","serif"'>-<span style='font:7.0pt "Times New Roman"'>       
+</span></span>Acute viral infection (NOT chronic)</p>
+
+<p class="MSBnormaltextnolistCxSpMiddle" style="margin-left:21.0pt;text-indent:
+-18.0pt"><span style='font-family:"Times New Roman","serif"'>-<span style='font:7.0pt "Times New Roman"'>       
+</span></span>Mainly affects children and young adults</p>
+
+<p class="MSBnormaltextnolistCxSpMiddle" style="margin-left:21.0pt;text-indent:
+-18.0pt"><span style='font-family:"Times New Roman","serif"'>-<span style='font:7.0pt "Times New Roman"'>       
+</span></span>Esp if travel history to endemic countries (it is not common in
+the UK)</p>
+
+<p class="MSBnormaltextnolistCxSpMiddle" style="margin-left:21.0pt;text-indent:
+-18.0pt"><span style='font-family:"Times New Roman","serif"'>-<span style='font:7.0pt "Times New Roman"'>       
+</span></span>Spread by food and drink/oro-faecal route (NOT blood borne)</p>
+
+<p class="MSBnormaltextnolistCxSpMiddle" style="margin-left:21.0pt;text-indent:
+-18.0pt"><span style='font-family:"Times New Roman","serif"'>-<span style='font:7.0pt "Times New Roman"'>       
+</span></span>Vaccination available – lasts 25 years if booster vaccine given
+within 12 months of first vaccine</p>
+
+<p class="MSBnormaltextnolistCxSpMiddle" style="margin-left:0cm"> </p>
+
+<p class="MSBnormaltextnolistCxSpMiddle" style="margin-left:0cm"><i><u>Clinical
+features:</u></i></p>
+
+<p class="MSBnormaltextnolistCxSpMiddle" style="margin-left:0cm"><i><u><span style="text-decoration:none"> </span></u></i></p>
+
+<p class="MSBnormaltextnolistCxSpMiddle" style="margin-left:21.0pt;text-indent:
+-18.0pt"><span style='font-family:"Times New Roman","serif"'>-<span style='font:7.0pt "Times New Roman"'>       
+</span></span>3-6 weeks incubation time</p>
+
+<p class="MSBnormaltextnolistCxSpMiddle" style="margin-left:21.0pt;text-indent:
+-18.0pt"><span style='font-family:"Times New Roman","serif"'>-<span style='font:7.0pt "Times New Roman"'>       
+</span></span>Prodromal symptoms:</p>
+
+<p class="MSBnormaltextnolistCxSpMiddle" style="margin-left:57.0pt;text-indent:
+-18.0pt"><span style="font-family:Symbol;color:#7030A0">·<span style='font:7.0pt "Times New Roman"'>       
+</span></span>Lethargy</p>
+
+<p class="MSBnormaltextnolistCxSpMiddle" style="margin-left:57.0pt;text-indent:
+-18.0pt"><span style="font-family:Symbol;color:#7030A0">·<span style='font:7.0pt "Times New Roman"'>       
+</span></span>Nauseas &amp; vomiting</p>
+
+<p class="MSBnormaltextnolistCxSpMiddle" style="margin-left:21.0pt;text-indent:
+-18.0pt"><span style='font-family:"Times New Roman","serif"'>-<span style='font:7.0pt "Times New Roman"'>       
+</span></span>Hepatitis symptoms:</p>
+
+<p class="MSBnormaltextnolistCxSpMiddle" style="margin-left:57.0pt;text-indent:
+-18.0pt"><span style="font-family:Symbol;color:#7030A0">·<span style='font:7.0pt "Times New Roman"'>       
+</span></span>Jaundice</p>
+
+<p class="MSBnormaltextnolistCxSpMiddle" style="margin-left:57.0pt;text-indent:
+-18.0pt"><span style="font-family:Symbol;color:#7030A0">·<span style='font:7.0pt "Times New Roman"'>       
+</span></span>Hepatomegaly</p>
+
+<p class="MSBnormaltextnolistCxSpMiddle" style="margin-left:57.0pt;text-indent:
+-18.0pt"><span style="font-family:Symbol;color:#7030A0">·<span style='font:7.0pt "Times New Roman"'>       
+</span></span>RUQ pain</p>
+
+<p class="MSBnormaltextnolistCxSpMiddle"> </p>
+
+<p class="MSBnormaltextnolistCxSpMiddle"><i><u>Investigations:</u></i></p>
+
+<p class="MSBnormaltextnolistCxSpMiddle"> </p>
+
+<p class="MSBnormaltextnolistCxSpMiddle" style="margin-left:21.0pt;text-indent:
+-18.0pt"><span style='font-family:"Times New Roman","serif"'>-<span style='font:7.0pt "Times New Roman"'>       
+</span></span>Suspect after history + deranged LFTs</p>
+
+<p class="MSBnormaltextnolistCxSpMiddle" style="margin-left:21.0pt;text-indent:
+-18.0pt"><span style='font-family:"Times New Roman","serif"'>-<span style='font:7.0pt "Times New Roman"'>       
+</span></span>Confirm diagnosis with serology – Hep A Virus antibody</p>
+
+<p class="MSBnormaltextnolistCxSpMiddle"> </p>
+
+<p class="MSBnormaltextnolistCxSpMiddle"><i><u>Management:</u></i></p>
+
+<p class="MSBnormaltextnolistCxSpMiddle"><i><u><span style="text-decoration:none"> </span></u></i></p>
+
+<p class="MSBnormaltextnolistCxSpMiddle" style="margin-left:21.0pt;text-indent:
+-18.0pt"><span style='font-family:"Times New Roman","serif"'>-<span style='font:7.0pt "Times New Roman"'>       
+</span></span>Conservative.</p>
+
+<p class="MSBnormaltextnolistCxSpMiddle" style="margin-left:21.0pt;text-indent:
+-18.0pt"><span style='font-family:"Times New Roman","serif"'>-<span style='font:7.0pt "Times New Roman"'>       
+</span></span>Monitor coag</p>
+
+<p class="MSBnormaltextnolistCxSpMiddle" style="margin-left:21.0pt;text-indent:
+-18.0pt"><span style='font-family:"Times New Roman","serif"'>-<span style='font:7.0pt "Times New Roman"'>       
+</span></span>Self-resolving</p>
+
+<p class="MSBnormaltextnolistCxSpLast"> </p>
+
+<p class="MSBsub-heading">Hepatitis B</p>
+
+<p class="MSBnormaltextnolistCxSpFirst"> </p>
+
+<p class="MSBnormaltextnolistCxSpMiddle" style="margin-left:21.0pt;text-indent:
+-18.0pt"><span style='font-family:"Times New Roman","serif"'>-<span style='font:7.0pt "Times New Roman"'>       
+</span></span>Can be acute or chronic</p>
+
+<p class="MSBnormaltextnolistCxSpMiddle" style="margin-left:21.0pt;text-indent:
+-18.0pt"><span style='font-family:"Times New Roman","serif"'>-<span style='font:7.0pt "Times New Roman"'>       
+</span></span>It is a Blood borne virus</p>
+
+<p class="MSBnormaltextnolistCxSpMiddle" style="margin-left:57.0pt;text-indent:
+-18.0pt"><span style="font-family:Symbol;color:#7030A0">·<span style='font:7.0pt "Times New Roman"'>       
+</span></span>Endemic in many countries</p>
+
+<p class="MSBnormaltextnolistCxSpLast" style="margin-left:57.0pt;text-indent:
+-18.0pt"><span style="font-family:Symbol;color:#7030A0">·<span style='font:7.0pt "Times New Roman"'>       
+</span></span>Risk factors: IVDU, sexual promiscuity, travel history, tattoos,
+piercings, foreign medical treatment, pre1987 blood transfusion, or a sexual
+partner with anyone with these risk factors</p>
+
+<p class="MsoNormal"><span style='font-family:"Arial","sans-serif"'> </span></p>
+
+<p class="MsoListParagraphCxSpFirst" style="margin-left:21.0pt;text-indent:-18.0pt"><span style='font-family:"Times New Roman","serif"'>-<span style='font:7.0pt "Times New Roman"'>       
+</span></span>Vaccination available</p>
+
+<p class="MsoListParagraphCxSpLast" style="margin-left:57.0pt;text-indent:-18.0pt"><span style="font-family:Symbol;color:#7030A0">·<span style='font:7.0pt "Times New Roman"'>       
+</span></span>Given to high risk individuals (eg healthcare workers, IVDU, sex
+workers)</p>
+
+<p class="MSBnormaltextnolistCxSpFirst"> </p>
+
+<p class="MSBnormaltextnolistCxSpMiddle"><i><u>Clinical features:</u></i></p>
+
+<p class="MSBnormaltextnolistCxSpMiddle"><i><u><span style="text-decoration:none"> </span></u></i></p>
+
+<p class="MSBnormaltextnolistCxSpMiddle" style="margin-left:21.0pt;text-indent:
+-18.0pt"><span style='font-family:"Times New Roman","serif"'>-<span style='font:7.0pt "Times New Roman"'>       
+</span></span>Incubation time – long, 1-6 months</p>
+
+<p class="MSBnormaltextnolistCxSpMiddle" style="margin-left:21.0pt;text-indent:
+-18.0pt"><span style='font-family:"Times New Roman","serif"'>-<span style='font:7.0pt "Times New Roman"'>       
+</span></span>Similar presentation to Hep A:</p>
+
+<p class="MSBnormaltextnolistCxSpMiddle" style="margin-left:57.0pt;text-indent:
+-18.0pt"><span style="font-family:Symbol;color:#7030A0">·<span style='font:7.0pt "Times New Roman"'>       
+</span></span>Prodromal symptoms:</p>
+
+<p class="MSBnormaltextnolistCxSpMiddle" style="margin-left:93.0pt;text-indent:
+-18.0pt"><span style="font-family:Wingdings">§<span style='font:7.0pt "Times New Roman"'> 
+</span></span>Lethargy</p>
+
+<p class="MSBnormaltextnolistCxSpMiddle" style="margin-left:93.0pt;text-indent:
+-18.0pt"><span style="font-family:Wingdings">§<span style='font:7.0pt "Times New Roman"'> 
+</span></span>Nauseas &amp; vomiting</p>
+
+<p class="MSBnormaltextnolistCxSpMiddle" style="margin-left:57.0pt;text-indent:
+-18.0pt"><span style="font-family:Symbol;color:#7030A0">·<span style='font:7.0pt "Times New Roman"'>       
+</span></span>Hepatitis symptoms:</p>
+
+<p class="MSBnormaltextnolistCxSpMiddle" style="margin-left:93.0pt;text-indent:
+-18.0pt"><span style="font-family:Wingdings">§<span style='font:7.0pt "Times New Roman"'> 
+</span></span>Jaundice</p>
+
+<p class="MSBnormaltextnolistCxSpMiddle" style="margin-left:93.0pt;text-indent:
+-18.0pt"><span style="font-family:Wingdings">§<span style='font:7.0pt "Times New Roman"'> 
+</span></span>Hepatomegaly</p>
+
+<p class="MSBnormaltextnolistCxSpMiddle" style="margin-left:93.0pt;text-indent:
+-18.0pt"><span style="font-family:Wingdings">§<span style='font:7.0pt "Times New Roman"'> 
+</span></span>RUQ pain</p>
+
+<p class="MSBnormaltextnolistCxSpMiddle" style="margin-left:21.0pt;text-indent:
+-18.0pt"><span style='font-family:"Times New Roman","serif"'>-<span style='font:7.0pt "Times New Roman"'>       
+</span></span> + extra hepatic features eg - urticaria + arthralgia</p>
+
+<p class="MSBnormaltextnolistCxSpMiddle"> </p>
+
+<p class="MSBnormaltextnolistCxSpMiddle"><i><u>Investigations</u></i>:</p>
+
+<p class="MSBnormaltextnolistCxSpMiddle"> </p>
+
+<p class="MSBnormaltextnolistCxSpMiddle">Serology:</p>
+
+<p class="MSBnormaltextnolistCxSpMiddle" style="margin-left:21.0pt;text-indent:
+-18.0pt"><span style='font-family:"Times New Roman","serif"'>-<span style='font:7.0pt "Times New Roman"'>       
+</span></span>HB-C – Core Ag – detectable early and persists for life. Implies
+previous or ongoing hep B infection.</p>
+
+<p class="MSBnormaltextnolistCxSpMiddle" style="margin-left:21.0pt;text-indent:
+-18.0pt"><span style='font-family:"Times New Roman","serif"'>-<span style='font:7.0pt "Times New Roman"'>       
+</span></span>HB- S – Surface Ag – if present for &gt;6months <span style="font-family:Wingdings">à</span> chronic infection</p>
+
+<p class="MSBnormaltextnolistCxSpMiddle" style="margin-left:21.0pt;text-indent:
+-18.0pt"><span style='font-family:"Times New Roman","serif"'>-<span style='font:7.0pt "Times New Roman"'>       
+</span></span>HB-E – only present if super-infection (very infectious) </p>
+
+<p class="MSBnormaltextnolistCxSpMiddle"> </p>
+
+<p class="MSBnormaltextnolistCxSpMiddle" style="margin-left:21.0pt;text-indent:
+-18.0pt"><span style='font-family:"Times New Roman","serif"'>-<span style='font:7.0pt "Times New Roman"'>       
+</span></span>IgM anti-HBc – occurs in acute infection. If present implies
+&lt;6 months since exposure</p>
+
+<p class="MSBnormaltextnolistCxSpLast" style="margin-left:21.0pt;text-indent:
+-18.0pt"><span style='font-family:"Times New Roman","serif"'>-<span style='font:7.0pt "Times New Roman"'>       
+</span></span>Anti-HBs – Hep B Surface Antibody – implies previous exposure and
+immunity or effective vaccination</p>
+
+<p class="MsoListParagraph"> </p>
+
+<p class="MSBnormaltextnolistCxSpFirst" style="margin-left:21.0pt"> </p>
+
+<p class="MSBnormaltextnolistCxSpMiddle"><i><u>Management</u></i>:</p>
+
+<p class="MSBnormaltextnolistCxSpMiddle"> </p>
+
+<p class="MSBnormaltextnolistCxSpMiddle" style="margin-left:21.0pt;text-indent:
+-18.0pt"><span style='font-family:"Times New Roman","serif"'>-<span style='font:7.0pt "Times New Roman"'>       
+</span></span>Post-exposure prophylaxis</p>
+
+<p class="MSBnormaltextnolistCxSpMiddle" style="margin-left:57.0pt;text-indent:
+-18.0pt"><span style="font-family:Symbol;color:#7030A0">·<span style='font:7.0pt "Times New Roman"'>       
+</span></span>INTERFERON-alpha – subcut injection twice weekly for 6 weeks</p>
+
+<p class="MSBnormaltextnolistCxSpMiddle" style="margin-left:57.0pt;text-indent:
+-18.0pt"><span style="font-family:Symbol;color:#7030A0">·<span style='font:7.0pt "Times New Roman"'>       
+</span></span>Give vaccination</p>
+
+<p class="MSBnormaltextnolistCxSpMiddle" style="margin-left:21.0pt;text-indent:
+-18.0pt"><span style='font-family:"Times New Roman","serif"'>-<span style='font:7.0pt "Times New Roman"'>       
+</span></span>Primary treatment</p>
+
+<p class="MSBnormaltextnolistCxSpMiddle" style="margin-left:57.0pt;text-indent:
+-18.0pt"><span style="font-family:Symbol;color:#7030A0">·<span style='font:7.0pt "Times New Roman"'>       
+</span></span>Supportive</p>
+
+<p class="MSBnormaltextnolistCxSpMiddle" style="margin-left:57.0pt;text-indent:
+-18.0pt"><span style="font-family:Symbol;color:#7030A0">·<span style='font:7.0pt "Times New Roman"'>       
+</span></span>Avoid alcohol</p>
+
+<p class="MSBnormaltextnolistCxSpMiddle" style="margin-left:57.0pt;text-indent:
+-18.0pt"><span style="font-family:Symbol;color:#7030A0">·<span style='font:7.0pt "Times New Roman"'>       
+</span></span>Vaccinate sexual contacts</p>
+
+<p class="MSBnormaltextnolistCxSpMiddle" style="margin-left:57.0pt;text-indent:
+-18.0pt"><span style="font-family:Symbol;color:#7030A0">·<span style='font:7.0pt "Times New Roman"'>       
+</span></span>Interferon and other antivirals may have a role in chronic
+disease</p>
+
+<p class="MSBnormaltextnolistCxSpMiddle"> </p>
+
+<p class="MSBnormaltextnolistCxSpMiddle"><i><u>Prognosis:</u></i></p>
+
+<p class="MSBnormaltextnolistCxSpMiddle"><i><u><span style="text-decoration:none"> </span></u></i></p>
+
+<p class="MSBnormaltextnolistCxSpMiddle" style="margin-left:21.0pt;text-indent:
+-18.0pt"><span style='font-family:"Times New Roman","serif"'>-<span style='font:7.0pt "Times New Roman"'>       
+</span></span>Some patients clear infection</p>
+
+<p class="MSBnormaltextnolistCxSpMiddle" style="margin-left:21.0pt;text-indent:
+-18.0pt"><span style='font-family:"Times New Roman","serif"'>-<span style='font:7.0pt "Times New Roman"'>       
+</span></span>Proportion of patients (~5-10% adults; much higher incidence in
+children) never clear infection <span style="font-family:Wingdings">à</span>
+chronic liver disease</p>
+
+<p class="MSBnormaltextnolistCxSpMiddle" style="margin-left:21.0pt;text-indent:
+-18.0pt"><span style='font-family:"Times New Roman","serif"'>-<span style='font:7.0pt "Times New Roman"'>       
+</span></span>1% develop fulminant hepatic failure</p>
+
+<p class="MSBnormaltextnolistCxSpLast"> </p>
+
+<p class="MSBsub-heading">Hepatitis C</p>
+
+<p class="MSBsub-heading"><span style="text-decoration:none"> </span></p>
+
+<p class="MsoListParagraph" style="margin-left:21.0pt;text-indent:-18.0pt"><span style='font-family:"Times New Roman","serif"'>-<span style='font:7.0pt "Times New Roman"'>       
+</span></span>Common Blood borne virus</p>
+
+<p class="MSBnormaltextCxSpFirst"><span style='font-family:"Times New Roman","serif"'>-<span style='font:7.0pt "Times New Roman"'>       
+</span></span>Major cause of liver transplantation</p>
+
+<p class="MSBnormaltextCxSpMiddle"><span style='font-family:"Times New Roman","serif"'>-<span style='font:7.0pt "Times New Roman"'>       
+</span></span>CHRONIC INFECTION</p>
+
+<p class="MSBnormaltextCxSpMiddle"><i><u><span style="text-decoration:none"> </span></u></i></p>
+
+<p class="MSBnormaltextCxSpMiddle"><i><u>Clinical Features:</u></i></p>
+
+<p class="MSBnormaltextCxSpMiddle"> </p>
+
+<p class="MSBnormaltextCxSpMiddle"><span style='font-family:"Times New Roman","serif"'>-<span style='font:7.0pt "Times New Roman"'>       
+</span></span>Presents late, with signs of CHRONIC liver disease</p>
+
+<p class="MSBnormaltextCxSpMiddle"><span style='font-family:"Times New Roman","serif"'>-<span style='font:7.0pt "Times New Roman"'>       
+</span></span>Risk of cirrhosis &#8593;&#8593; if also drinks alcohol</p>
+
+<p class="MSBnormaltextCxSpMiddle" style="text-indent:0cm"><i><u><span style="text-decoration:none"> </span></u></i></p>
+
+<p class="MSBnormaltextCxSpMiddle"><i><u>Investigations:</u></i></p>
+
+<p class="MSBnormaltextCxSpMiddle" style="text-indent:0cm"> </p>
+
+<p class="MSBnormaltextCxSpMiddle"><span style='font-family:"Times New Roman","serif"'>-<span style='font:7.0pt "Times New Roman"'>       
+</span></span>Confirm diagnosis by HC antibodies (via PCR)</p>
+
+<p class="MSBnormaltextCxSpMiddle"><span style='font-family:"Times New Roman","serif"'>-<span style='font:7.0pt "Times New Roman"'>       
+</span></span>Liver biopsy if serology is inconclusive</p>
+
+<p class="MSBnormaltextCxSpLast" style="text-indent:0cm"> </p>
+
+<p class="MSBnormaltextnolistCxSpFirst"><i><u>Management:</u></i></p>
+
+<p class="MSBnormaltextnolistCxSpLast"> </p>
+
+<p class="MsoListParagraphCxSpFirst" style="margin-left:21.0pt;text-indent:-18.0pt"><span style='font-family:"Times New Roman","serif"'>-<span style='font:7.0pt "Times New Roman"'>       
+</span></span>Interferon-alpha</p>
+
+<p class="MsoListParagraphCxSpMiddle" style="margin-left:21.0pt;text-indent:-18.0pt"><span style='font-family:"Times New Roman","serif"'>-<span style='font:7.0pt "Times New Roman"'>       
+</span></span>Ribavirin</p>
+
+<p class="MsoListParagraphCxSpMiddle" style="margin-left:21.0pt;text-indent:-18.0pt"><span style='font-family:"Times New Roman","serif"'>-<span style='font:7.0pt "Times New Roman"'>       
+</span></span>50% success rate with treatment (ie 50% remain long term
+carriers)</p>
+
+<p class="MsoListParagraphCxSpMiddle" style="margin-left:21.0pt;text-indent:-18.0pt"><span style='font-family:"Times New Roman","serif"'>-<span style='font:7.0pt "Times New Roman"'>       
+</span></span>30% develop cirrhosis in 20 years</p>
+
+<p class="MsoListParagraphCxSpLast" style="margin-left:21.0pt;text-indent:-18.0pt"><span style='font-family:"Times New Roman","serif"'>-<span style='font:7.0pt "Times New Roman"'>       
+</span></span>Increased risk of hepatocellular carcinoma</p>
+
+<p class="MsoNormal"><span style='font-family:"Arial","sans-serif"'> </span></p>
+
+<p class="MSBHeading1"><u>Genetic Causes of Liver Disease</u></p>
+
+<p class="MSBHeading2"> </p>
+
+<p class="MSBHeading2">Haemachromatosis</p>
+
+<p class="MSBsub-heading"><span style="text-decoration:none"> </span></p>
+
+<p class="MsoListParagraphCxSpFirst" style="margin-left:21.0pt;text-indent:-18.0pt"><span style='font-family:"Times New Roman","serif"'>-<span style='font:7.0pt "Times New Roman"'>       
+</span></span>Genetic</p>
+
+<p class="MsoListParagraphCxSpMiddle" style="margin-left:57.0pt;text-indent:-18.0pt"><span style="font-family:Symbol;color:#7030A0">·<span style='font:7.0pt "Times New Roman"'>       
+</span></span>Autosomal recessive</p>
+
+<p class="MsoListParagraphCxSpMiddle" style="margin-left:57.0pt;text-indent:-18.0pt"><span style="font-family:Symbol;color:#7030A0">·<span style='font:7.0pt "Times New Roman"'>       
+</span></span>Common, 1 in 10 are carriers in Scotland </p>
+
+<p class="MsoListParagraphCxSpMiddle" style="margin-left:21.0pt;text-indent:-18.0pt"><span style='font-family:"Times New Roman","serif"'>-<span style='font:7.0pt "Times New Roman"'>       
+</span></span>Mutation in the HFE gene <span style="font-family:Wingdings">à</span>
+&#8593; iron absorption from the gut. This leads to &#8593; depsotiion of free
+iron in the liver <span style="font-family:Wingdings">à</span> TOXIC      </p>
+
+<p class="MsoListParagraphCxSpMiddle" style="margin-left:21.0pt;text-indent:-18.0pt"><span style='font-family:"Times New Roman","serif"'>-<span style='font:7.0pt "Times New Roman"'>       
+</span></span>Also deposits in joints (arthritis), pancreas (diabetes), heart
+and pituitary</p>
+
+<p class="MsoListParagraphCxSpLast" style="margin-left:21.0pt;text-indent:-18.0pt"><span style='font-family:"Times New Roman","serif"'>-<span style='font:7.0pt "Times New Roman"'>       
+</span></span>&#8593; risk of cirrhosis and hepatocellular carcinoma </p>
+
+<p class="MSBnormaltextCxSpFirst"><span style='font-family:"Times New Roman","serif"'>-<span style='font:7.0pt "Times New Roman"'>       
+</span></span>However treatment is effective if diagnosis is made</p>
+
+<p class="MSBnormaltextCxSpMiddle" style="margin-left:3.0pt;text-indent:0cm"> </p>
+
+<p class="MSBnormaltextCxSpMiddle" style="margin-left:3.0pt;text-indent:0cm"><i><u>Clinical
+features:</u></i></p>
+
+<p class="MSBnormaltextCxSpMiddle" style="margin-left:3.0pt;text-indent:0cm"> </p>
+
+<p class="MSBnormaltextCxSpMiddle"><span style='font-family:"Times New Roman","serif"'>-<span style='font:7.0pt "Times New Roman"'>       
+</span></span>Usu presents 3-60 years (takes time for iron to build up)</p>
+
+<p class="MSBnormaltextCxSpMiddle"><span style='font-family:"Times New Roman","serif"'>-<span style='font:7.0pt "Times New Roman"'>       
+</span></span>Can occur in children</p>
+
+<p class="MSBnormaltextCxSpMiddle"><span style='font-family:"Times New Roman","serif"'>-<span style='font:7.0pt "Times New Roman"'>       
+</span></span>More commonly presents in males (due to lack of menstruation)</p>
+
+<p class="MSBnormaltextCxSpMiddle"><span style='font-family:"Times New Roman","serif"'>-<span style='font:7.0pt "Times New Roman"'>       
+</span></span>Diverse group of symptoms depending where iron is deposited:</p>
+
+<p class="MSBnormaltextCxSpMiddle" style="margin-left:57.0pt"><span style="font-family:Symbol;color:#7030A0">·<span style='font:7.0pt "Times New Roman"'>       
+</span></span>Fatigue</p>
+
+<p class="MSBnormaltextCxSpMiddle" style="margin-left:57.0pt"><span style="font-family:Symbol;color:#7030A0">·<span style='font:7.0pt "Times New Roman"'>       
+</span></span>Mood swings, depression - <i>brain</i></p>
+
+<p class="MSBnormaltextCxSpMiddle" style="margin-left:57.0pt"><span style="font-family:Symbol;color:#7030A0">·<span style='font:7.0pt "Times New Roman"'>       
+</span></span>Arthritis, commonly knuckles - <i>joints</i></p>
+
+<p class="MSBnormaltextCxSpMiddle" style="margin-left:57.0pt"><span style="font-family:Symbol;color:#7030A0">·<span style='font:7.0pt "Times New Roman"'>       
+</span></span>Sexual dysfunction (erectile dysfunction or amenorrhoea) - <i>pituitary</i></p>
+
+<p class="MSBnormaltextCxSpMiddle" style="margin-left:57.0pt"><span style="font-family:Symbol;color:#7030A0">·<span style='font:7.0pt "Times New Roman"'>       
+</span></span>CardiomyopathyHeart failure/arrthymias - <i>heart</i></p>
+
+<p class="MSBnormaltextCxSpMiddle" style="margin-left:57.0pt"><span style="font-family:Symbol;color:#7030A0">·<span style='font:7.0pt "Times New Roman"'>       
+</span></span>Diabetes - <i>pancreas</i></p>
+
+<p class="MSBnormaltextCxSpMiddle" style="margin-left:57.0pt"><span style="font-family:Symbol;color:#7030A0">·<span style='font:7.0pt "Times New Roman"'>       
+</span></span>Liver disease/RUQ pain -<i>liver</i></p>
+
+<p class="MSBnormaltextCxSpMiddle" style="margin-left:57.0pt"><span style="font-family:Symbol;color:#7030A0">·<span style='font:7.0pt "Times New Roman"'>       
+</span></span>Bronzing of the skin/permanent ‘tan’ - <i>skin</i></p>
+
+<p class="MSBnormaltextCxSpMiddle" style="margin-left:3.0pt;text-indent:0cm"> </p>
+
+<p class="MSBnormaltextCxSpMiddle" style="margin-left:3.0pt;text-indent:0cm"><i><u>Investigations:</u></i></p>
+
+<p class="MSBnormaltextCxSpMiddle" style="margin-left:3.0pt;text-indent:0cm"> </p>
+
+<p class="MSBnormaltextCxSpMiddle"><span style='font-family:"Times New Roman","serif"'>-<span style='font:7.0pt "Times New Roman"'>       
+</span></span>Usu an incidental finding on FBC - &#8593;Hb</p>
+
+<p class="MSBnormaltextCxSpMiddle"><span style='font-family:"Times New Roman","serif"'>-<span style='font:7.0pt "Times New Roman"'>       
+</span></span>Then test iron studies: Free iron (&#8593;), iron binding
+capacity (&#8595;), trasnferrin saturation (&#8593;), ferritin (&#8593;)</p>
+
+<p class="MSBnormaltextCxSpMiddle"><span style='font-family:"Times New Roman","serif"'>-<span style='font:7.0pt "Times New Roman"'>       
+</span></span>If concern over relatives being affected, a simple blood test can
+be used to identify the HFE gene mutation using PCR. The same mutation is
+present in &gt;90% of cases.</p>
+
+<p class="MSBnormaltextCxSpMiddle" style="margin-left:0cm;text-indent:0cm"> </p>
+
+<p class="MSBnormaltextCxSpMiddle" style="margin-left:3.0pt;text-indent:0cm"><i><u>Management:</u></i></p>
+
+<p class="MSBnormaltextCxSpMiddle" style="text-indent:0cm"> </p>
+
+<p class="MSBnormaltextCxSpMiddle"><span style='font-family:"Times New Roman","serif"'>-<span style='font:7.0pt "Times New Roman"'>       
+</span></span>VENESECTION </p>
+
+<p class="MSBnormaltextCxSpMiddle" style="margin-left:57.0pt"><span style="font-family:Symbol;color:#7030A0">·<span style='font:7.0pt "Times New Roman"'>       
+</span></span>removal of 1 pint of blood</p>
+
+<p class="MSBnormaltextCxSpMiddle" style="margin-left:57.0pt"><span style="font-family:Symbol;color:#7030A0">·<span style='font:7.0pt "Times New Roman"'>       
+</span></span>2x/week for 2 years</p>
+
+<p class="MSBnormaltextCxSpMiddle" style="margin-left:57.0pt"><span style="font-family:Symbol;color:#7030A0">·<span style='font:7.0pt "Times New Roman"'>       
+</span></span>Then 3-4x/year after that</p>
+
+<p class="MSBnormaltextCxSpMiddle"> </p>
+
+<p class="MSBnormaltextCxSpLast"> </p>
+
+<p class="MSBHeading2">Wilson’s Disease</p>
+
+<p class="MSBnormaltextCxSpFirst"> </p>
+
+<p class="MSBnormaltextCxSpMiddle"><span style='font-family:"Times New Roman","serif"'>-<span style='font:7.0pt "Times New Roman"'>       
+</span></span>Genetic: autosomal recessive</p>
+
+<p class="MSBnormaltextCxSpMiddle"><span style='font-family:"Times New Roman","serif"'>-<span style='font:7.0pt "Times New Roman"'>       
+</span></span>Rare</p>
+
+<p class="MSBnormaltextCxSpMiddle"><span style='font-family:"Times New Roman","serif"'>-<span style='font:7.0pt "Times New Roman"'>       
+</span></span>Mutation in the gene responsible for a COPPER transport protein,
+results in  &#8593; copper deposition in liver and CNS (especially the basal
+ganglia)</p>
+
+<p class="MSBnormaltextCxSpMiddle"><span style='font-family:"Times New Roman","serif"'>-<span style='font:7.0pt "Times New Roman"'>       
+</span></span>Copper is normally absorbed in proximal small intestine. In the
+liver copper is incorporated in caeruloplasmin, which can then be excreted in
+bile if there is excess copper. In Wilson’s disease, copper absorption from the
+GIT is normal but it is not then incorporated into caeruloplasmin. This results
+in free copper accumulating in the liver and other organs.</p>
+
+<p class="MSBnormaltextCxSpMiddle"> </p>
+
+<p class="MSBnormaltextCxSpMiddle"><i><u>Clinical features:</u></i></p>
+
+<p class="MSBnormaltextCxSpMiddle"> </p>
+
+<p class="MSBnormaltextCxSpMiddle"><span style='font-family:"Times New Roman","serif"'>-<span style='font:7.0pt "Times New Roman"'>       
+</span></span>Usu presents in childhood </p>
+
+<p class="MSBnormaltextCxSpMiddle" style="margin-left:57.0pt"><span style="font-family:Symbol;color:#7030A0">·<span style='font:7.0pt "Times New Roman"'>       
+</span></span>*suspect Wilsons in all children with abnormal LFTs</p>
+
+<p class="MSBnormaltextCxSpMiddle" style="text-indent:0cm"> </p>
+
+<p class="MSBnormaltextCxSpMiddle"><span style='font-family:"Times New Roman","serif"'>-<span style='font:7.0pt "Times New Roman"'>       
+</span></span>CNS s/s: behavioural changes, tremor, dysarthria, dementia,
+parkinsonism</p>
+
+<p class="MSBnormaltextCxSpMiddle" style="text-indent:0cm"> </p>
+
+<p class="MSBnormaltextCxSpMiddle"><span style='font-family:"Times New Roman","serif"'>-<span style='font:7.0pt "Times New Roman"'>       
+</span></span>Kayser-flescher Rings </p>
+
+<p class="MSBnormaltextCxSpMiddle" style="margin-left:57.0pt"><span style="font-family:Symbol;color:#7030A0">·<span style='font:7.0pt "Times New Roman"'>       
+</span></span>copper deposition in Iris</p>
+
+<p class="MSBnormaltextCxSpMiddle" style="margin-left:57.0pt"><span style="font-family:Symbol;color:#7030A0">·<span style='font:7.0pt "Times New Roman"'>       
+</span></span>distinguish from corneal arcus by looking for copper particles on
+ophthalmoscopy </p>
+
+<p class="MSBnormaltextCxSpMiddle" style="text-indent:0cm"> </p>
+
+<p class="MSBnormaltextCxSpMiddle" style="text-indent:0cm"> </p>
+
+<p class="MSBnormaltextCxSpMiddle"><i><u>Investigations:</u></i></p>
+
+<p class="MSBnormaltextCxSpMiddle"> </p>
+
+<p class="MSBnormaltextCxSpMiddle"><span style='font-family:"Times New Roman","serif"'>-<span style='font:7.0pt "Times New Roman"'>       
+</span></span>LOW CAERULOPLASMIN</p>
+
+<p class="MSBnormaltextCxSpMiddle"><span style='font-family:"Times New Roman","serif"'>-<span style='font:7.0pt "Times New Roman"'>       
+</span></span>Low total serum copper, but &#8593; free serum copper</p>
+
+<p class="MSBnormaltextCxSpMiddle"><span style='font-family:"Times New Roman","serif"'>-<span style='font:7.0pt "Times New Roman"'>       
+</span></span>&#8593; urinary excretion of copper (24 hour collection)</p>
+
+<p class="MSBnormaltextCxSpMiddle"><span style='font-family:"Times New Roman","serif"'>-<span style='font:7.0pt "Times New Roman"'>       
+</span></span>PCR for gene mutation</p>
+
+<p class="MSBnormaltextCxSpMiddle"><span style='font-family:"Times New Roman","serif"'>-<span style='font:7.0pt "Times New Roman"'>       
+</span></span>Liver biopsy - &#8593; hepatic copper</p>
+
+<p class="MSBnormaltextCxSpMiddle"><span style='font-family:"Times New Roman","serif"'>-<span style='font:7.0pt "Times New Roman"'>       
+</span></span>MRI – basal ganglia degeneration ± frontotemporal, cerebrellar
+and brainstem atrophy</p>
+
+<p class="MSBnormaltextCxSpMiddle" style="text-indent:0cm"> </p>
+
+<p class="MSBnormaltextCxSpMiddle"><i><u>Management:</u></i></p>
+
+<p class="MSBnormaltextCxSpMiddle"> </p>
+
+<p class="MSBnormaltextCxSpMiddle"><span style='font-family:"Times New Roman","serif"'>-<span style='font:7.0pt "Times New Roman"'>       
+</span></span>Chelate with penicillamine (lifelong)</p>
+
+<p class="MSBnormaltextCxSpMiddle" style="margin-left:57.0pt"><span style="font-family:Symbol;color:#7030A0">·<span style='font:7.0pt "Times New Roman"'>       
+</span></span>s/e of penicillamine – rash, marrow suppression (neutropaenia,
+anaemia), Lupus.</p>
+
+<p class="MSBnormaltextCxSpMiddle"><span style='font-family:"Times New Roman","serif"'>-<span style='font:7.0pt "Times New Roman"'>       
+</span></span>If early <span style="font-family:Wingdings">à</span> changes are
+reversible</p>
+
+<p class="MSBnormaltextCxSpMiddle"><span style='font-family:"Times New Roman","serif"'>-<span style='font:7.0pt "Times New Roman"'>       
+</span></span>Sadly CNS signs are often irreversible</p>
+
+<p class="MSBnormaltextCxSpMiddle"><span style='font-family:"Times New Roman","serif"'>-<span style='font:7.0pt "Times New Roman"'>       
+</span></span>May require liver transplant</p>
+
+<p class="MSBnormaltextCxSpMiddle"><span style='font-family:"Times New Roman","serif"'>-<span style='font:7.0pt "Times New Roman"'>       
+</span></span>Also avoid copper rich foods (liver, chocolate, mushrooms)</p>
+
+<p class="MSBnormaltextCxSpMiddle"><span style='font-family:"Times New Roman","serif"'>-<span style='font:7.0pt "Times New Roman"'>       
+</span></span>Screen siblings for gene mutation</p>
+
+<p class="MSBnormaltextCxSpMiddle" style="margin-left:3.0pt;text-indent:0cm"> </p>
+
+<p class="MSBnormaltextCxSpLast"> </p>
+
+<p class="MSBHeading2">Alpha-1 Antitrypsin deficiency</p>
+
+<p class="MSBnormaltextCxSpFirst"> </p>
+
+<p class="MSBnormaltextCxSpMiddle"><span style='font-family:"Times New Roman","serif"'>-<span style='font:7.0pt "Times New Roman"'>       
+</span></span>Rare, autosomal dominant cause of liver disease</p>
+
+<p class="MSBnormaltextCxSpMiddle" style="margin-left:57.0pt"><span style="font-family:Symbol;color:#7030A0">·<span style='font:7.0pt "Times New Roman"'>       
+</span></span>Although autosomal dominant, the gene is co-dominant menaing that
+each allele contributes 50% to the phenotype, therefore it is usually only
+clinically significant if homozygous for the gene mutation</p>
+
+<p class="MSBnormaltextCxSpMiddle"><span style='font-family:"Times New Roman","serif"'>-<span style='font:7.0pt "Times New Roman"'>       
+</span></span>Associated with emphysema</p>
+
+<p class="MSBnormaltextCxSpMiddle" style="margin-left:57.0pt"><span style="font-family:Symbol;color:#7030A0">·<span style='font:7.0pt "Times New Roman"'>       
+</span></span>Suspect in any young patient with COPD and deranged LFTs. </p>
+
+<p class="MSBnormaltextCxSpMiddle" style="margin-left:57.0pt"><span style="font-family:Symbol;color:#7030A0">·<span style='font:7.0pt "Times New Roman"'>       
+</span></span>Also consider it in older patients with severe progressive COPD.</p>
+
+<p class="MSBnormaltextCxSpMiddle"><span style='font-family:"Times New Roman","serif"'>-<span style='font:7.0pt "Times New Roman"'>       
+</span></span>Alpha-1 antitrypsin is a protease inhibitor, one of its main
+functions is inhibiting elastase enzyme released by neutrophils to prevent
+auto-destruction of tissues. If deficient in Alpha-1 antitrypsin, when
+neutrophils release elastase in response to cigarette smoke/infection, the
+elastase destroys the lung tissue <span style="font-family:Wingdings">à</span>
+emphysema</p>
+
+<p class="MSBnormaltextCxSpMiddle"><span style='font-family:"Times New Roman","serif"'>-<span style='font:7.0pt "Times New Roman"'>       
+</span></span>Alpha-1 antitrypsin is produced in the liver and can also cause
+liver disease. In Alpha-1 antitrypsin deficiency the protein is produced but
+not released. Therefore it builds up in the hepatocytes and disturbs the cells
+function before eventually triggering to cell death.</p>
+
+<p class="MSBnormaltextCxSpMiddle"> </p>
+
+<p class="MSBnormaltextCxSpMiddle"> </p>
+
+<p class="MSBnormaltextCxSpLast"> </p>
+
+<p class="MSBHeading1"><u>Auto-immune Liver Disease</u></p>
+
+<p class="MSBnormaltextCxSpFirst"> </p>
+
+<p class="MSBnormaltextCxSpLast"> </p>
+
+<p class="MSBHeading2">Auto-immune Hepatitis (AIH)</p>
+
+<p class="MSBnormaltextCxSpFirst"> </p>
+
+<p class="MSBnormaltextCxSpMiddle"><span style='font-family:"Times New Roman","serif"'>-<span style='font:7.0pt "Times New Roman"'>       
+</span></span>Aka Chronic Active Hepatitis (CAH)</p>
+
+<p class="MSBnormaltextCxSpMiddle"><span style='font-family:"Times New Roman","serif"'>-<span style='font:7.0pt "Times New Roman"'>       
+</span></span>Auto-antibodies again hepatocytes</p>
+
+<p class="MSBnormaltextCxSpMiddle"><span style='font-family:"Times New Roman","serif"'>-<span style='font:7.0pt "Times New Roman"'>       
+</span></span>Affects young-middle aged women</p>
+
+<p class="MSBnormaltextCxSpMiddle"><i><u><span style="text-decoration:none"> </span></u></i></p>
+
+<p class="MSBnormaltextCxSpMiddle"><i><u>Clinical features:</u></i></p>
+
+<p class="MSBnormaltextCxSpMiddle"> </p>
+
+<p class="MSBnormaltextCxSpMiddle"><span style='font-family:"Times New Roman","serif"'>-<span style='font:7.0pt "Times New Roman"'>       
+</span></span>Presents with hepatitis (can be acute or insidious)</p>
+
+<p class="MSBnormaltextCxSpMiddle" style="margin-left:57.0pt"><span style="font-family:Symbol;color:#7030A0">·<span style='font:7.0pt "Times New Roman"'>       
+</span></span>Jaundice, RUQ pain, fever, hepatomegaly</p>
+
+<p class="MSBnormaltextCxSpMiddle"><span style='font-family:"Times New Roman","serif"'>-<span style='font:7.0pt "Times New Roman"'>       
+</span></span>± signs of auto-immune disease</p>
+
+<p class="MSBnormaltextCxSpMiddle" style="margin-left:57.0pt"><span style="font-family:Symbol;color:#7030A0">·<span style='font:7.0pt "Times New Roman"'>       
+</span></span>Fever, malaise, urticaria, polyarthritis, glomerulonephritis</p>
+
+<p class="MSBnormaltextCxSpMiddle"> </p>
+
+<p class="MSBnormaltextCxSpMiddle"><span style='font-family:"Times New Roman","serif"'>-<span style='font:7.0pt "Times New Roman"'>       
+</span></span>Amenorrhoea is also common</p>
+
+<p class="MSBnormaltextCxSpMiddle"><i><u><span style="text-decoration:none"> </span></u></i></p>
+
+<p class="MSBnormaltextCxSpMiddle"><i><u>Investigations:</u></i></p>
+
+<p class="MSBnormaltextCxSpMiddle"> </p>
+
+<p class="MSBnormaltextCxSpMiddle"><span style='font-family:"Times New Roman","serif"'>-<span style='font:7.0pt "Times New Roman"'>       
+</span></span>LFTs abnormal</p>
+
+<p class="MSBnormaltextCxSpMiddle"><span style='font-family:"Times New Roman","serif"'>-<span style='font:7.0pt "Times New Roman"'>       
+</span></span>Auto-antibodies – ANCA, smooth muscle antibody (SMA), SLA</p>
+
+<p class="MSBnormaltextCxSpMiddle"><span style='font-family:"Times New Roman","serif"'>-<span style='font:7.0pt "Times New Roman"'>       
+</span></span>Liver biopsy</p>
+
+<p class="MSBnormaltextCxSpMiddle"> </p>
+
+<p class="MSBnormaltextCxSpMiddle">Diagnosis is inexact – there is a lot of
+overlap between PBC, PSC etc.</p>
+
+<p class="MSBnormaltextCxSpMiddle"> </p>
+
+<p class="MSBnormaltextCxSpMiddle"><i><u>Management:</u></i></p>
+
+<p class="MSBnormaltextCxSpMiddle"> </p>
+
+<p class="MSBnormaltextCxSpMiddle"><span style='font-family:"Times New Roman","serif"'>-<span style='font:7.0pt "Times New Roman"'>       
+</span></span>Steroids in acute setting</p>
+
+<p class="MSBnormaltextCxSpMiddle"><span style='font-family:"Times New Roman","serif"'>-<span style='font:7.0pt "Times New Roman"'>       
+</span></span>Azathioprine</p>
+
+<p class="MSBnormaltextCxSpMiddle"><span style='font-family:"Times New Roman","serif"'>-<span style='font:7.0pt "Times New Roman"'>       
+</span></span>Liver transplant</p>
+
+<p class="MSBnormaltextCxSpMiddle"> </p>
+
+<p class="MSBnormaltextCxSpMiddle"><i><u>Prognosis:</u></i></p>
+
+<p class="MSBnormaltextCxSpMiddle"><span style='font-family:"Times New Roman","serif"'>-<span style='font:7.0pt "Times New Roman"'>       
+</span></span>10 year survival &gt;80% overall (worse if cirrhosis at presentation)</p>
+
+<p class="MSBnormaltextCxSpMiddle"><span style='font-family:"Times New Roman","serif"'>-<span style='font:7.0pt "Times New Roman"'>       
+</span></span>Some patients go into remission with treatment</p>
+
+<p class="MSBnormaltextCxSpLast"> </p>
+
+<p class="MSBHeading2">Primary Biliary Cirrhosis</p>
+
+<p class="MSBnormaltextCxSpFirst"> </p>
+
+<p class="MSBnormaltextCxSpMiddle"><span style='font-family:"Times New Roman","serif"'>-<span style='font:7.0pt "Times New Roman"'>       
+</span></span>Progressive auto-immune destruction of bile duct within the lvier</p>
+
+<p class="MSBnormaltextCxSpMiddle"><span style='font-family:"Times New Roman","serif"'>-<span style='font:7.0pt "Times New Roman"'>       
+</span></span>Bile accumulates in liver <span style="font-family:Wingdings">à</span>
+hepatocyte damage <span style="font-family:Wingdings">à</span> cirrhosis</p>
+
+<p class="MSBnormaltextCxSpMiddle"><span style='font-family:"Times New Roman","serif"'>-<span style='font:7.0pt "Times New Roman"'>       
+</span></span>90% are women</p>
+
+<p class="MSBnormaltextCxSpMiddle"> </p>
+
+<p class="MSBnormaltextCxSpMiddle"><i><u>Clinical features:</u></i></p>
+
+<p class="MSBnormaltextCxSpMiddle"> </p>
+
+<p class="MSBnormaltextCxSpMiddle"><span style='font-family:"Times New Roman","serif"'>-<span style='font:7.0pt "Times New Roman"'>       
+</span></span>Presents with:</p>
+
+<p class="MSBnormaltextCxSpMiddle" style="margin-left:57.0pt"><span style="font-family:Symbol;color:#7030A0">·<span style='font:7.0pt "Times New Roman"'>       
+</span></span>Pruritis</p>
+
+<p class="MSBnormaltextCxSpMiddle" style="margin-left:57.0pt"><span style="font-family:Symbol;color:#7030A0">·<span style='font:7.0pt "Times New Roman"'>       
+</span></span>Lethargy</p>
+
+<p class="MSBnormaltextCxSpMiddle" style="margin-left:57.0pt"><span style="font-family:Symbol;color:#7030A0">·<span style='font:7.0pt "Times New Roman"'>       
+</span></span>RUQ tenderness</p>
+
+<p class="MSBnormaltextCxSpMiddle" style="margin-left:57.0pt"><span style="font-family:Symbol;color:#7030A0">·<span style='font:7.0pt "Times New Roman"'>       
+</span></span>Xanthalasma</p>
+
+<p class="MSBnormaltextCxSpMiddle" style="margin-left:57.0pt"><span style="font-family:Symbol;color:#7030A0">·<span style='font:7.0pt "Times New Roman"'>       
+</span></span>Jaundice</p>
+
+<p class="MSBnormaltextCxSpMiddle" style="margin-left:57.0pt"><span style="font-family:Symbol;color:#7030A0">·<span style='font:7.0pt "Times New Roman"'>       
+</span></span>Incidental finding of  deranged LFTs</p>
+
+<p class="MSBnormaltextCxSpMiddle" style="margin-left:57.0pt"><span style="font-family:Symbol;color:#7030A0">·<span style='font:7.0pt "Times New Roman"'>       
+</span></span>Following investigation for hypercholesterolaemia</p>
+
+<p class="MSBnormaltextCxSpMiddle"><span style='font-family:"Times New Roman","serif"'>-<span style='font:7.0pt "Times New Roman"'>       
+</span></span>Later develops s/s of chronic liver disease</p>
+
+<p class="MSBnormaltextCxSpMiddle" style="text-indent:0cm"> </p>
+
+<p class="MSBnormaltextCxSpMiddle"><i><u>Investigations:</u></i></p>
+
+<p class="MSBnormaltextCxSpMiddle"> </p>
+
+<p class="MSBnormaltextCxSpMiddle"><span style='font-family:"Times New Roman","serif"'>-<span style='font:7.0pt "Times New Roman"'>       
+</span></span>LFTs &#8593;</p>
+
+<p class="MSBnormaltextCxSpMiddle"><span style='font-family:"Times New Roman","serif"'>-<span style='font:7.0pt "Times New Roman"'>       
+</span></span>Serology – Anti-mitochondrial antibodies (AMA) present in &gt;90%</p>
+
+<p class="MSBnormaltextCxSpMiddle"><span style='font-family:"Times New Roman","serif"'>-<span style='font:7.0pt "Times New Roman"'>       
+</span></span>Coag screen – coagulopathy is common</p>
+
+<p class="MSBnormaltextCxSpMiddle"><span style='font-family:"Times New Roman","serif"'>-<span style='font:7.0pt "Times New Roman"'>       
+</span></span>Liver biopsy – confirms diagnosis (shows granulomas and
+cirrhosis)</p>
+
+<p class="MSBnormaltextCxSpMiddle"> </p>
+
+<p class="MSBnormaltextCxSpMiddle"> </p>
+
+<p class="MSBnormaltextCxSpMiddle"><i><u>Management:</u></i></p>
+
+<p class="MSBnormaltextCxSpMiddle"> </p>
+
+<p class="MSBnormaltextCxSpMiddle"><span style='font-family:"Times New Roman","serif"'>-<span style='font:7.0pt "Times New Roman"'>       
+</span></span>Ursodeoxycholic acid – may slow disease progression</p>
+
+<p class="MSBnormaltextCxSpMiddle"><span style='font-family:"Times New Roman","serif"'>-<span style='font:7.0pt "Times New Roman"'>       
+</span></span>Symptomatic control:</p>
+
+<p class="MSBnormaltextCxSpMiddle" style="margin-left:57.0pt"><span style="font-family:Symbol;color:#7030A0">·<span style='font:7.0pt "Times New Roman"'>       
+</span></span>Colestyramine ± rifampicin for the itch</p>
+
+<p class="MSBnormaltextCxSpMiddle" style="margin-left:57.0pt"><span style="font-family:Symbol;color:#7030A0">·<span style='font:7.0pt "Times New Roman"'>       
+</span></span>Codeine phosphate for diarrhoea</p>
+
+<p class="MSBnormaltextCxSpMiddle"><span style='font-family:"Times New Roman","serif"'>-<span style='font:7.0pt "Times New Roman"'>       
+</span></span>Liver transplant</p>
+
+<p class="MSBnormaltextCxSpMiddle"><span style='font-family:"Times New Roman","serif"'>-<span style='font:7.0pt "Times New Roman"'>       
+</span></span>Also remember:</p>
+
+<p class="MSBnormaltextCxSpMiddle" style="margin-left:57.0pt"><span style="font-family:Symbol;color:#7030A0">·<span style='font:7.0pt "Times New Roman"'>       
+</span></span>Osteoposis prevention</p>
+
+<p class="MSBnormaltextCxSpMiddle" style="margin-left:57.0pt"><span style="font-family:Symbol;color:#7030A0">·<span style='font:7.0pt "Times New Roman"'>       
+</span></span>Vitamin supplements</p>
+
+<p class="MSBnormaltextCxSpMiddle"> </p>
+
+<p class="MSBnormaltextCxSpMiddle"><i><u>Prognosis:</u></i></p>
+
+<p class="MSBnormaltextCxSpMiddle"> </p>
+
+<p class="MSBnormaltextCxSpMiddle"><span style='font-family:"Times New Roman","serif"'>-<span style='font:7.0pt "Times New Roman"'>       
+</span></span>Mean survival &lt;2 years from onset of jaundice</p>
+
+<p class="MSBnormaltextCxSpMiddle"><span style='font-family:"Times New Roman","serif"'>-<span style='font:7.0pt "Times New Roman"'>       
+</span></span>Transplant improves survival</p>
+
+<p class="MSBnormaltextCxSpLast"> </p>
+
+<p class="MSBHeading2">Primary Scelorsing Cholangitis</p>
+
+<p class="MSBnormaltextCxSpFirst"> </p>
+
+<p class="MSBnormaltextCxSpMiddle"><span style='font-family:"Times New Roman","serif"'>-<span style='font:7.0pt "Times New Roman"'>       
+</span></span>Similar to PBC</p>
+
+<p class="MSBnormaltextCxSpMiddle"><span style='font-family:"Times New Roman","serif"'>-<span style='font:7.0pt "Times New Roman"'>       
+</span></span>Causes progressive destrucrtion of both intra+extra-hepatic bile
+ducts</p>
+
+<p class="MSBnormaltextCxSpMiddle"><span style='font-family:"Times New Roman","serif"'>-<span style='font:7.0pt "Times New Roman"'>       
+</span></span>Strong association with Ulcerative colitis</p>
+
+<p class="MSBnormaltextCxSpMiddle"><span style='font-family:"Times New Roman","serif"'>-<span style='font:7.0pt "Times New Roman"'>       
+</span></span>Uncommonly for auto-immune diseases it is more common in men with
+UC, than women (m:f = 2:1)</p>
+
+<p class="MSBnormaltextCxSpMiddle"> </p>
+
+<p class="MSBnormaltextCxSpMiddle"><i><u>Clinical features:</u></i></p>
+
+<p class="MSBnormaltextCxSpMiddle"> </p>
+
+<p class="MSBnormaltextCxSpMiddle"><span style='font-family:"Times New Roman","serif"'>-<span style='font:7.0pt "Times New Roman"'>       
+</span></span>Similar presentation as PBC – itch, lethargy, RUQ pain, abnormal
+LFTs</p>
+
+<p class="MSBnormaltextCxSpMiddle"><span style='font-family:"Times New Roman","serif"'>-<span style='font:7.0pt "Times New Roman"'>       
+</span></span>Can present with picture similar to gallstones if extra-hepatic
+bile duct stricture i.e. obstructive jaundice (RUQ pain, pale stools, dark
+urine).</p>
+
+<p class="MSBnormaltextCxSpMiddle"> </p>
+
+<p class="MSBnormaltextCxSpMiddle"><i><u>Investigations</u></i></p>
+
+<p class="MSBnormaltextCxSpMiddle"> </p>
+
+<p class="MSBnormaltextCxSpMiddle"><span style='font-family:"Times New Roman","serif"'>-<span style='font:7.0pt "Times New Roman"'>       
+</span></span>Diagnosis made on MRCP</p>
+
+<p class="MSBnormaltextCxSpMiddle"><span style='font-family:"Times New Roman","serif"'>-<span style='font:7.0pt "Times New Roman"'>       
+</span></span>Liver biopsy</p>
+
+<p class="MSBnormaltextCxSpMiddle"><span style='font-family:"Times New Roman","serif"'>-<span style='font:7.0pt "Times New Roman"'>       
+</span></span>Auto-antibodies – AMA –ve (deifferentiates from PBC), but other
+auto-antibodies are commonly positive.</p>
+
+<p class="MSBnormaltextCxSpMiddle"> </p>
+
+<p class="MSBnormaltextCxSpMiddle"><i><u>Management</u></i>:</p>
+
+<p class="MSBnormaltextCxSpMiddle"> </p>
+
+<p class="MSBnormaltextCxSpMiddle"><span style='font-family:"Times New Roman","serif"'>-<span style='font:7.0pt "Times New Roman"'>       
+</span></span>Endoscopic stenting of extra-hepatic bile ducts if large enough</p>
+
+<p class="MSBnormaltextCxSpMiddle"><span style='font-family:"Times New Roman","serif"'>-<span style='font:7.0pt "Times New Roman"'>       
+</span></span>Otherwise treat as PBC:</p>
+
+<p class="MSBnormaltextCxSpMiddle" style="margin-left:57.0pt"><span style="font-family:Symbol;color:#7030A0">·<span style='font:7.0pt "Times New Roman"'>       
+</span></span>Ursodeoxycholic acid – may slow disease progression</p>
+
+<p class="MSBnormaltextCxSpMiddle" style="margin-left:57.0pt"><span style="font-family:Symbol;color:#7030A0">·<span style='font:7.0pt "Times New Roman"'>       
+</span></span>Symptomatic control:</p>
+
+<p class="MSBnormaltextCxSpMiddle" style="margin-left:93.0pt"><span style="font-family:Wingdings">§<span style='font:7.0pt "Times New Roman"'> 
+</span></span>Colestyramine ± rifampicin for the itch</p>
+
+<p class="MSBnormaltextCxSpMiddle" style="margin-left:93.0pt"><span style="font-family:Wingdings">§<span style='font:7.0pt "Times New Roman"'> 
+</span></span>Codeine phosphate for diarrhoea</p>
+
+<p class="MSBnormaltextCxSpMiddle" style="margin-left:57.0pt"><span style="font-family:Symbol;color:#7030A0">·<span style='font:7.0pt "Times New Roman"'>       
+</span></span>Liver transplant</p>
+
+<p class="MSBnormaltextCxSpMiddle" style="margin-left:57.0pt"><span style="font-family:Symbol;color:#7030A0">·<span style='font:7.0pt "Times New Roman"'>       
+</span></span>Also remember:</p>
+
+<p class="MSBnormaltextCxSpMiddle" style="margin-left:93.0pt"><span style="font-family:Wingdings">§<span style='font:7.0pt "Times New Roman"'> 
+</span></span>Osteoposis prevention</p>
+
+<p class="MSBnormaltextCxSpMiddle" style="margin-left:93.0pt"><span style="font-family:Wingdings">§<span style='font:7.0pt "Times New Roman"'> 
+</span></span>Vitamin supplements</p>
+
+<p class="MSBnormaltextCxSpMiddle"><span style='font-family:"Times New Roman","serif"'>-<span style='font:7.0pt "Times New Roman"'>       
+</span></span>Also need to screen annually for colorectal cancer (due to UC;
+colonscopy) and cholangiocarcinoma (ultrasound).</p>
+
+<p class="MSBnormaltextCxSpLast"> </p>
+
+<p class="MSBHeading1"><u>Other causes of Liver Disease</u></p>
+
+<p class="MSBnormaltext"> </p>
+
+<p class="MSBHeading2">Budd-Chiari Syndrome</p>
+
+<p class="MSBnormaltextCxSpFirst"> </p>
+
+<p class="MSBnormaltextCxSpMiddle"><span style='font-family:"Times New Roman","serif"'>-<span style='font:7.0pt "Times New Roman"'>       
+</span></span>Occlusion of hepatic vein</p>
+
+<p class="MSBnormaltextCxSpMiddle"><span style='font-family:"Times New Roman","serif"'>-<span style='font:7.0pt "Times New Roman"'>       
+</span></span>Triad of abdo pain, ascites and hepatomegaly</p>
+
+<p class="MSBnormaltextCxSpMiddle"><span style='font-family:"Times New Roman","serif"'>-<span style='font:7.0pt "Times New Roman"'>       
+</span></span>Can be acute or chronic</p>
+
+<p class="MSBnormaltextCxSpMiddle"><span style='font-family:"Times New Roman","serif"'>-<span style='font:7.0pt "Times New Roman"'>       
+</span></span>Risk factors of thrombosis: thrombophilia, OCP, previous DVT,
+smoking etc</p>
+
+<p class="MSBnormaltextCxSpMiddle"><span style='font-family:"Times New Roman","serif"'>-<span style='font:7.0pt "Times New Roman"'>       
+</span></span>Investigations: Ultrasound</p>
+
+<p class="MSBnormaltextCxSpMiddle"><span style='font-family:"Times New Roman","serif"'>-<span style='font:7.0pt "Times New Roman"'>       
+</span></span>Management: Anticoagulation</p>
+
+<p class="MSBnormaltextCxSpLast"> </p>
+
+<p class="MSBHeading2">Drugs</p>
+
+<p class="MSBnormaltextCxSpFirst"> </p>
+
+<p class="MSBnormaltextCxSpMiddle"><span style='font-family:"Times New Roman","serif"'>-<span style='font:7.0pt "Times New Roman"'>       
+</span></span>Don’t forget drugs as a common cause for liver disease.</p>
+
+<p class="MSBnormaltextCxSpMiddle"><span style='font-family:"Times New Roman","serif"'>-<span style='font:7.0pt "Times New Roman"'>       
+</span></span>They can derange LFTs, cause jaundice, and even cause cirrhosis.</p>
+
+<p class="MSBnormaltextCxSpMiddle"> </p>
+
+<p class="MSBnormaltextCxSpMiddle">Common offenders include:</p>
+
+<p class="MSBnormaltextCxSpMiddle"> </p>
+
+<p class="MSBnormaltextCxSpMiddle" style="margin-left:57.0pt"><span style="font-family:Symbol;color:#7030A0">·<span style='font:7.0pt "Times New Roman"'>       
+</span></span>Methotrexate – hepatic fibrosis</p>
+
+<p class="MSBnormaltextCxSpMiddle" style="margin-left:57.0pt"><span style="font-family:Symbol;color:#7030A0">·<span style='font:7.0pt "Times New Roman"'>       
+</span></span>Amiodarone – hepatic fibrosis</p>
+
+<p class="MSBnormaltextCxSpMiddle" style="margin-left:57.0pt"><span style="font-family:Symbol;color:#7030A0">·<span style='font:7.0pt "Times New Roman"'>       
+</span></span>Rifampicin – heaptocellular toxicity</p>
+
+<p class="MSBnormaltextCxSpMiddle" style="margin-left:57.0pt"><span style="font-family:Symbol;color:#7030A0">·<span style='font:7.0pt "Times New Roman"'>       
+</span></span>Isoniazid – heaptocellular toxicity</p>
+
+<p class="MSBnormaltextCxSpMiddle" style="margin-left:57.0pt"><span style="font-family:Symbol;color:#7030A0">·<span style='font:7.0pt "Times New Roman"'>       
+</span></span>Erythromycin – cholestatic hepatitis/obstructive jaundice</p>
+
+<p class="MSBnormaltextCxSpMiddle" style="margin-left:57.0pt"><span style="font-family:Symbol;color:#7030A0">·<span style='font:7.0pt "Times New Roman"'>       
+</span></span>Amoxicillin/augmentin – cholestatic hepatitis/obstructive jaundice</p>
+
+<p class="MSBnormaltextCxSpMiddle" style="margin-left:57.0pt"><span style="font-family:Symbol;color:#7030A0">·<span style='font:7.0pt "Times New Roman"'>       
+</span></span>Anabolic steroids – cholestatis/obstructive jaundice. &#8593;HCC risk.</p>
+
+<p class="MSBnormaltextCxSpMiddle" style="margin-left:57.0pt"><span style="font-family:Symbol;color:#7030A0">·<span style='font:7.0pt "Times New Roman"'>       
+</span></span>Paracetamol overdose</p>
+
+<p class="MSBnormaltextCxSpMiddle" style="margin-left:57.0pt"><span style="font-family:Symbol;color:#7030A0">·<span style='font:7.0pt "Times New Roman"'>       
+</span></span>Aspirin – Reye syndrome</p>
+
+<p class="MSBnormaltextCxSpMiddle"> </p>
+
+<p class="MSBnormaltextCxSpLast"> </p>
+
+<p class="MSBHeading1"><u>Investigation of Acute Liver Disease</u></p>
+
+<p class="MSBHeading1"><u><span style="text-decoration:none"> </span></u></p>
+
+<p class="MSBnormaltextnolistCxSpFirst">If a patient presents with new liver
+disease…</p>
+
+<p class="MSBnormaltextnolistCxSpLast"> </p>
+
+<p class="MSBboldunderlinednormaltextCxSpFirst">History </p>
+
+<p class="MSBboldunderlinednormaltextCxSpLast"><span style="text-decoration:none"> </span></p>
+
+<p class="MsoListParagraphCxSpFirst" style="margin-left:20.4pt;text-indent:-18.0pt">-<span style='font:7.0pt "Times New Roman"'>       
+</span>Alcohol</p>
+
+<p class="MsoListParagraphCxSpMiddle" style="margin-left:20.4pt;text-indent:-18.0pt">-<span style='font:7.0pt "Times New Roman"'>       
+</span>Drugs (illicit but also amiodarone, methotraxate, antibiotics?)</p>
+
+<p class="MsoListParagraphCxSpMiddle" style="margin-left:20.4pt;text-indent:-18.0pt">-<span style='font:7.0pt "Times New Roman"'>       
+</span>FH – Wilson’s, haemochromatosis. Gilbert’s disease (minor congenital
+abnormality in haemoglobin metabolism resulting in chronic mild jaundice).</p>
+
+<p class="MsoListParagraphCxSpMiddle" style="margin-left:20.4pt;text-indent:-18.0pt">-<span style='font:7.0pt "Times New Roman"'>       
+</span>Hepatitis risks - tattoos, piercings, IVDU, sexual history, travel
+history, blood transfusions pre 1987, vertical transmission in endemic areas eg
+South East Asia, foreign medical treatment.</p>
+
+<p class="MsoListParagraphCxSpMiddle" style="margin-left:20.4pt;text-indent:-18.0pt">-<span style='font:7.0pt "Times New Roman"'>       
+</span>Pain – gallstones? Painless <span style="font-family:Wingdings">à</span>
+?head of pancreas carcinoma</p>
+
+<p class="MsoListParagraphCxSpLast" style="margin-left:20.4pt"> </p>
+
+<p class="MSBboldunderlinednormaltextCxSpFirst">Blood Tests: </p>
+
+<p class="MSBboldunderlinednormaltextCxSpLast"><span style="text-decoration:none"> </span></p>
+
+<p class="MsoNormal"><u><span style='line-height:115%;font-family:"Arial","sans-serif"'>General:</span></u></p>
+
+<p class="MsoNormal" style="margin-bottom:0cm;margin-bottom:.0001pt"><span style='line-height:115%;font-family:"Arial","sans-serif"'>FBC     –
+?haemochromatosis</span></p>
+
+<p class="MsoNormal" style="margin-bottom:0cm;margin-bottom:.0001pt"><span style='line-height:115%;font-family:"Arial","sans-serif"'>LFTs    – cholestatic?
+Bilirubin?</span></p>
+
+<p class="MsoNormal" style="margin-bottom:0cm;margin-bottom:.0001pt"><span style='line-height:115%;font-family:"Arial","sans-serif"'>Coag   – check
+severity of LF</span></p>
+
+<p class="MsoNormal" style="margin-bottom:0cm;margin-bottom:.0001pt"><span style='line-height:115%;font-family:"Arial","sans-serif"'>Glucose – altered
+hepatic metabolism of carbohydrates</span></p>
+
+<p class="MsoNormal" style="margin-bottom:0cm;margin-bottom:.0001pt"><span style='line-height:115%;font-family:"Arial","sans-serif"'>U+Es   – monitor for
+baseline; hepto-renal syndrome</span></p>
+
+<p class="MsoNormal" style="margin-bottom:0cm;margin-bottom:.0001pt"><span style='line-height:115%;font-family:"Arial","sans-serif"'>AFP     – HCC cancer
+marker</span></p>
+
+<p class="MsoNormal" style="margin-bottom:0cm;margin-bottom:.0001pt"><span style='line-height:115%;font-family:"Arial","sans-serif"'> </span></p>
+
+<p class="MsoNormal" style="margin-bottom:0cm;margin-bottom:.0001pt"><u><span style='line-height:115%;font-family:"Arial","sans-serif"'>Diagnostic Tests:</span></u></p>
+
+<p class="MsoListParagraphCxSpFirst" style="text-indent:-18.0pt"><span style="font-family:Symbol">·<span style='font:7.0pt "Times New Roman"'>       
+</span></span>PBC – anti-mitochondrial antibodies in 95%; ANA in 35%; other
+auto-Abs</p>
+
+<p class="MsoListParagraphCxSpMiddle" style="text-indent:-18.0pt"><span style="font-family:Symbol">·<span style='font:7.0pt "Times New Roman"'>       
+</span></span>CAH – auto-Abs eg antinuclear antibody, anti-smooth muscle
+antibody, antimitochondrial antibody, antiphospholipid antibodies</p>
+
+<p class="MsoListParagraphCxSpMiddle" style="text-indent:-18.0pt"><span style="font-family:Symbol">·<span style='font:7.0pt "Times New Roman"'>       
+</span></span>Viral Hepatitis – serology for viral markers</p>
+
+<p class="MsoListParagraphCxSpMiddle" style="text-indent:-18.0pt"><span style="font-family:Symbol">·<span style='font:7.0pt "Times New Roman"'>       
+</span></span>Wilson’s  - &#8595; serum Caeruloplasmin levels; &#8593; hepatic
+copper levels; + Kayser-Fleischer rings,neurological signs etc</p>
+
+<p class="MsoListParagraphCxSpLast" style="text-indent:-18.0pt"><span style="font-family:Symbol">·<span style='font:7.0pt "Times New Roman"'>       
+</span></span>Haemochromatosis – serum ferritin; transferrin saturation level</p>
+
+<p class="MsoNormal" style="margin-bottom:0cm;margin-bottom:.0001pt"><span style='line-height:115%;font-family:"Arial","sans-serif"'> </span></p>
+
+<table class="MsoTableGrid" border="1" cellspacing="0" cellpadding="0" style="background:#CC99FF;border-collapse:collapse;border:none"><tr>
+<td width="770" valign="top" style="width:462.1pt;border:solid black 1.0pt;
+  padding:0cm 5.4pt 0cm 5.4pt">
+  <p class="MsoNormal" style="margin-bottom:0cm;margin-bottom:.0001pt;line-height:
+  normal"><u><span style='font-family:"Arial","sans-serif"'>If no cause is
+  apparent then you can perform a <b>liver screen</b> which consists of…</span></u></p>
+  <p class="MsoListParagraphCxSpFirst" style="margin-left:21.0pt"> </p>
+  <p class="MsoListParagraphCxSpMiddle" style="margin-left:21.0pt;text-indent:
+  -18.0pt"><span style='font-family:"Times New Roman","serif"'>-<span style='font:7.0pt "Times New Roman"'>       
+  </span></span>Hepatitis Serology – HBV, HCV</p>
+  <p class="MsoListParagraphCxSpMiddle" style="margin-left:21.0pt;text-indent:
+  -18.0pt"><span style='font-family:"Times New Roman","serif"'>-<span style='font:7.0pt "Times New Roman"'>       
+  </span></span>Iron Studies – ferritin, TIBC, HFE</p>
+  <p class="MsoListParagraphCxSpMiddle" style="margin-left:21.0pt;text-indent:
+  -18.0pt"><span style='font-family:"Times New Roman","serif"'>-<span style='font:7.0pt "Times New Roman"'>       
+  </span></span>Alpha-1-antitrypsin</p>
+  <p class="MsoListParagraphCxSpMiddle" style="margin-left:21.0pt;text-indent:
+  -18.0pt"><span style='font-family:"Times New Roman","serif"'>-<span style='font:7.0pt "Times New Roman"'>       
+  </span></span>Caeruloplasmin</p>
+  <p class="MsoListParagraphCxSpMiddle" style="margin-left:21.0pt;text-indent:
+  -18.0pt"><span style='font-family:"Times New Roman","serif"'>-<span style='font:7.0pt "Times New Roman"'>       
+  </span></span>Auto-antibodies – ANA, AMA, ASMA, antiphospholipid</p>
+  <p class="MsoListParagraphCxSpLast" style="margin-left:21.0pt;text-indent:-18.0pt"><span style='font-family:"Times New Roman","serif"'>-<span style='font:7.0pt "Times New Roman"'>       
+  </span></span>Alpha-feto protein</p>
+  <p class="MsoNormal" style="margin-bottom:0cm;margin-bottom:.0001pt;line-height:
+  normal"><span style='font-family:"Arial","sans-serif"'> </span></p>
+  <p class="MsoNormal" style="margin-bottom:0cm;margin-bottom:.0001pt;line-height:
+  normal"><span style='font-family:"Arial","sans-serif"'>Also arrange an
+  abdominal ultrasound!</span></p>
+  <p class="MsoNormal" style="margin-bottom:0cm;margin-bottom:.0001pt;line-height:
+  normal"><span style='font-family:"Arial","sans-serif"'> </span></p>
+  </td>
+ </tr></table>
+<p class="MsoNormal" style="margin-bottom:0cm;margin-bottom:.0001pt"><span style='line-height:115%;font-family:"Arial","sans-serif"'> </span></p>
+
+<p class="MSBboldunderlinednormaltextCxSpFirst">Imaging</p>
+
+<p class="MSBboldunderlinednormaltextCxSpLast"><span style="text-decoration:none"> </span></p>
+
+<p class="MsoNormal" style="margin-bottom:0cm;margin-bottom:.0001pt"><span style='line-height:115%;font-family:"Arial","sans-serif"'>Ultrasound – rule out
+obstruction eg stones</span></p>
+
+<p class="MsoNormal"><span style='line-height:115%;font-family:"Arial","sans-serif"'>MRI
+– eg for neurological lesions in Wilson’s</span></p>
+
+<p class="MSBboldunderlinednormaltextCxSpFirst">Biopsy</p>
+
+<p class="MSBboldunderlinednormaltextCxSpLast"><span style="text-decoration:none"> </span></p>
+
+<p class="MsoNormal"><span style='line-height:115%;font-family:"Arial","sans-serif"'>Liver
+biopsy – stage disease (eg PBC)</span></p>
+
+<p class="MSBboldunderlinednormaltext">Also:</p>
+
+<p class="MsoNormal" style="margin-bottom:0cm;margin-bottom:.0001pt"><span style='line-height:115%;font-family:"Arial","sans-serif"'> </span></p>
+
+<p class="MsoNormal" style="margin-bottom:0cm;margin-bottom:.0001pt"><span style='line-height:115%;font-family:"Arial","sans-serif"'>Ascitic tap –
+transudate vs exudates, ?SBP. ?malignancy</span></p>
+
+<p class="MsoNormal"><u><span style='line-height:115%;font-family:"Arial","sans-serif"'><span style="text-decoration:none"> </span></span></u></p>
+
+<p class="MsoNormal"><span style='font-family:"Arial","sans-serif"'> </span></p>
+
+</div>
+				
+				</div>
+				<div id="sidebar" class="span-6 last">
+					<p>Sidebar</p>
+			  </div>
+		  </div>
+		</div>
+			
+		<div style="line-height:10px;">&nbsp;</div>
+		<div id="footer" class="container">
+				This is the 'sticky' footer
+		</div>
+	</body>
+</html>
